@@ -36,6 +36,14 @@ Dialog tags allow you to inject data into your dialog text.
     ]
 }
 
+			Operator.Equal => val == v, 
+			Operator.GreaterThan => v > val, 
+			Operator.GreaterThanOrEqual => v >= val, 
+			Operator.LessThan => v < val, 
+			Operator.LessThanOrEqual => v <= val, 
+			Operator.NotEqual => v != val, 
+			
+
 Stat management example 
 OnContractFailureResults": [
 		{
