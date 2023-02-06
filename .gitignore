@@ -1,7 +1,7 @@
 # Build and Release Folders
 *.code-workspace
 __*.*
-**/XAI-BW/*.xlsx
+XAI-BW/*.xlsx
 # Other files and folders
 .settings/
 /__TestObjects
