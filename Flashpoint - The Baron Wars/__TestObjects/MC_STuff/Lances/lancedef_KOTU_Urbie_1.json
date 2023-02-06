@@ -1,0 +1,54 @@
+{
+	"Description": {
+		"Id": "lancedef_KOTU_Urbie_1",
+		"Name": "KOTU_Urbie_1",
+		"Details": "Zhao's fanatic followers",
+		"Icon": "",
+		"Cost": 1900,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"Difficulty": 6,
+	"LanceTags": {
+		"items": [],
+		"tagSetSourceFile": ""
+	},
+	"LanceUnits": [
+		{
+			"unitType": "Mech",
+			"unitId": "mechDef_",
+			"pilotId": "pilot_d3_gunner",
+			"unitTagSet": null,
+			"excludedUnitTagSet": null,
+			"pilotTagSet": null,
+			"excludedPilotTagSet": null
+		},
+		{
+			"unitType": "Vehicle",
+			"unitId": "vehicledef_SCORPION_ML",
+			"pilotId": "pilot_d3_gunner",
+			"unitTagSet": null,
+			"excludedUnitTagSet": null,
+			"pilotTagSet": null,
+			"excludedPilotTagSet": null
+		},
+		{
+			"unitType": "Vehicle",
+			"unitId": "vehicledef_SCORPION_LRM",
+			"pilotId": "pilot_d3_gunner",
+			"unitTagSet": null,
+			"excludedUnitTagSet": null,
+			"pilotTagSet": null,
+			"excludedPilotTagSet": null
+		},
+		{
+			"unitType": "Vehicle",
+			"unitId": "vehicledef_SCORPION_LRM",
+			"pilotId": "pilot_d3_gunner",
+			"unitTagSet": null,
+			"excludedUnitTagSet": null,
+			"pilotTagSet": null,
+			"excludedPilotTagSet": null
+		}
+	]
+}

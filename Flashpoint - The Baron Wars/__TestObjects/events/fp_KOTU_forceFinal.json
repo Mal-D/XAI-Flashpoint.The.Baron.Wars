@@ -1,0 +1,135 @@
+{
+    "Description" : {
+        "Id" : "fp_KOTU_forceFinal",
+        "Name" : "DUEL COMBAT DROP -a...",
+        "Details" : "Sorry Yang, we have to drop with what we have ready. \r\n\r\n\"Just need a little tweak on this focusing array and it'll be ready to go Commander.\"\r\n\r\n <i>(whispers to himself)</i> \"No respect for the art... I know how 'Scotty' must feel.\"",
+        "Icon" : "uixTxrSpot_YangWorking.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : 
+            [
+                "fp_KOTU_forceFinal_off"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Time to go.",
+                "Details" : "Time's up Yang - Can't be late now can we?",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [
+                            "fp_KOTU_forceFinal_off"
+                        ],
+                        "tagSetSourceFile" : "tags/CompanyTags"
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Time's up, let's Drop.",
+                        "Details" : "We'll have to make this short and sweet.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "fp_KOTU_forceFinal_off"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "fp_KOTU_forceFinal_on"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "Flashpoint_StartContract",
+                                    "value" : "mapGeneral_cityCenter_uTech",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "",
+                                        "c75403b3-e3a4-4ddc-992a-f6fca3b487d9",
+                                        "c_fp_KOTU_DuoDuel_a_1",
+                                        "ToppletiffHoldings",
+                                        "NewFlakJackals",
+                                        "6",
+                                        "ms_fp_KOTU_302_Talk",
+                                        null,
+                                        null,
+                                        "ms_fp_KOTU_302_Talk",
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "Type" : "System_ResetContracts",
+                                    "value" : "c_fp_KOTU_DuoDuel_a",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "UNPUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

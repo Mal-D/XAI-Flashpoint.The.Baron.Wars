@@ -1,0 +1,18 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 1,
+        "Purchasable" : false,
+        "Manufacturer" : "null",
+        "Model" : "null",
+        "UIName" : "null",
+        "Id" : "heraldrydef_irukjandiCompany",
+        "Name" : "IrukjandiCompany",
+        "Details" : "A Mercenary unit that's a member of nasty collection of entities with a very long reach. They also work for the Comapny Rampart.",    
+        "Icon" : ""
+    },
+    "textureLogoID" : "uixTxrIcon_Irukjandi",
+    "primaryMechColorID" : "Blue_04",
+    "secondaryMechColorID" : "Metallic_Silver",
+    "tertiaryMechColorID" : "BrightRed_02"
+}

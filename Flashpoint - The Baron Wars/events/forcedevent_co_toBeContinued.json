@@ -1,0 +1,93 @@
+{
+    "Description" : {
+        "Id" : "forcedevent_co_toBeContinued",
+        "Name" : "To Be Continued",
+        "Details" : "Congratulations...!\r\n\r\nIf you're seeing this you have braved the machinations and intrigue of Mr. Smith and survived...so far.\r\n\r\nYou have rescued the fair maiden, made several enemies and earned Allies and hopefully made a little money along the way.\r\n\r\nThis is just a pause in the frantic pace of  'Operation - Deep Strike' and I hope you'll be here to the end.\r\n\r\nBe on the lookout for the continaution 'Laying down with Dogs'.",
+        "Icon" : "uix_TxrSpot_ToBeContinued.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "flashpoint_ODS_1_bloodyInsects_complete"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "forcedevent_co_toBeContinued_played"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "To Be Continued",
+                "Details" : "To Be Continued",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue...",
+                        "Details" : "This Flashpoint campaign has been made possible by so many people in the Battletech community that if I miss mentioning any one it is totally my omission and I don't get a lot of space in here to type stuff.\r\n\r\nThe creators of Battletech.\r\nThose Guardians of knowledge who roam the halls of Sarna.net.\r\nThe amazingly talented people at HBS.\r\nAmechwarrior - who opened my eyes to what is be possible.\r\nEdmon - who envisaged a more balanced Battletech game.\r\nDonZappo - who made Ed's vision a reality.\r\nEck - ever willing to help with the inner mysteries of the game.\r\nCWolf and Jamie Wolf - who added such spice to the game.\r\nThe army of people on the BT-R discord channel ready and willing to test my Flashpoints and answer my stupid questions.\r\nI don't have enough room to mention you all - but you know.\r\n\r\nTo Tex of the BPL - The 'voice' of the Innershpere - I salute you.\r\n\r\nAnd finally, those who are reading this - you, who have spent your valuable time playing my Flashpoints, I hope you find them enjoyable and challenging. \r\n\r\nHang on, as the ride is not yet over.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "forcedevent_co_toBeContinued_played"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

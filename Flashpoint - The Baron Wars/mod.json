@@ -1,0 +1,34 @@
+{
+    "Name": "FlashPoint_TheBaronWars",
+    "Enabled": true,
+
+    "Version": "XAI-1.0.1-PreRelease",
+	
+    "Author": "Mal-D",
+
+	"DependsOn": ["Mission Control"],
+    "ConflictsWith": [],
+	
+	"DataAddendumEntries":[ 
+        { "name":"BattleTech.FactionEnumeration", "path":"enums/Faction.json" }
+	],
+    "Manifest": [
+	{ "Type": "CastDef", "Path": "cast" },
+	{ "Type": "ChassisDef", "Path": "newChassis" },
+	{ "Type": "MechDef", "Path": "NewMech" },
+	{ "Type": "ContractOverride", "Path": "contracts" }, 
+	{ "Type": "LanceDef" , "Path": "lances", "AddToDB": true },
+	{ "Type": "SimGameEventDef", "Path": "events" },
+	{ "Type": "FactionDef",  "Path": "factions/BW" },
+	{ "Type": "ConversationContent", "Path": "dialogue_buckets" },
+	{ "Type": "DialogBucketDef", "Path": "conversationBuckets" },
+	{ "Type": "SimGameStatDescDef", "Path": "simGameStatDesc", "AddToDB": true },
+	{ "Type": "HeraldryDef", "Path": "heraldry" },
+	{ "Type": "PilotDef", "Path": "pilot", "AddToDB": true },
+	{ "Type": "BaseDescriptionDef", "Path": "lore" },
+	{ "Type": "ItemCollectionDef", "Path": "itemCollections" },
+	{ "Type": "SimGameConversations", "Path": "simGameConversations" },
+	{ "Type": "Sprite", "Path": "sprites" },
+	{ "Type": "Texture2D",  "Path": "textures", "AddToAddendum": "ConversationTexture" }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "ID" : "faction_irukjandiCompany",
+    "Name" : "IrukjandiCompany",
+    "ShortName" : "IC",
+    "Description" : "No better than the pirates they were supposed to be hunting. This company also has ties to the Indri Consortium. Started as a frontier mercenary unit that was offered exclusive and highly lucrative contracts with the Aurigan government.",
+    "Demonym" : "IC",
+    "Government" : "",
+    "Allies" :  [
+        "Locals",
+        "AuriganRestoration",
+        "SilentChapter"
+                ],
+    "Enemies" : [
+		"Liao",
+		"Davion",
+		"Steiner",
+		"Marik",
+		"Kurita",
+        "boneyardWranglers",
+        "AuriganPirates",
+        "hookwormsHighwaymen"
+    ],
+	"Presence": 0.1,
+    "ReputationStatements" : [
+        "Are you after a pat on the head?"
+    ],
+    "MissionSuccessStatements" : [ 
+		"You did your job"
+    ], 
+	"GoodFaithFailureStatements" : [ 
+		"You did your job - just"
+    ],
+	"BadFaithFailureStatements" : [ 
+		"You didn't do your job. I hope you never darken my doorway again."
+    ],
+	"DefaultCombatLeaderCastDefId" : "castDef_medusaC",
+    "DefaultRepresentativeCastDefId" : "castDef_medusaC",
+    "DataManager" : null,
+    "factionID" : "IrukjandiCompany",
+  	"icon" : "uixTxrIcon_Irukjandi",
+    "heraldryDefId" : "heraldrydef_irukjandiCompany",
+    "storePanelImage" : null,
+    "factionStoreColor" : null,
+    "StartingReputationValues" : [
+        -15,
+        -15,
+        0
+    ],
+    "StartingReputationModes" : [
+        "KAMEA_CAMPAIGN",
+        "CAREER",
+        "NONE"
+    ]
+}

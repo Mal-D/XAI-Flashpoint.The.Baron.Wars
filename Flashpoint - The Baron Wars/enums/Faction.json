@@ -1,0 +1,52 @@
+{
+	"travelContractFactionID":"AuriganRestoration",
+	"blackMarketFactionID":"AuriganPirates",
+	"enumerationValueList":[
+	   {
+		  "ID":7009,
+		  "Name":"IndriConsortium",
+		  "FriendlyName":"Indri Consortium",
+		  "Description":"Indri Consortium Description in faction.json",
+		  "FactionDefID":"faction_indriConsortium",
+		  "IsRealFaction":false,
+		  "IsGreatHouse":false,
+		  "IsClan":false,
+		  "IsMercenary":false,
+		  "IsPirate":false,
+		  "DoesGainReputation":false,
+		  "CanAlly":false,
+		  "IsPossibleNeutralToAllFaction":true,
+		  "IsPossibleHostileToAllFaction":true,
+		  "IsPossibleAllyFallbackFaction":true,
+		  "IsProceduralContractFaction":false,
+		  "IsCareerScoringFaction":false,
+		  "IsCareerIgnoredContractTarget":true,
+		  "IsCareerStartingDisplayFaction":false,
+		  "IsStoryStartingDisplayFaction":false,
+		  "HasAIBehaviorVariableScope":false
+	   },
+	   {
+		  "ID":7010,
+		  "Name":"IrukjandiCompany",
+		  "FriendlyName":"Irukjandi Company",
+		  "Description":"Irukjandi Company Description in faction.json",
+		  "FactionDefID":"faction_irukjandiCompany",
+		  "IsRealFaction":false,
+		  "IsGreatHouse":false,
+		  "IsClan":false,
+		  "IsMercenary":false,
+		  "IsPirate":false,
+		  "DoesGainReputation":false,
+		  "CanAlly":false,
+		  "IsPossibleNeutralToAllFaction":true,
+		  "IsPossibleHostileToAllFaction":true,
+		  "IsPossibleAllyFallbackFaction":true,
+		  "IsProceduralContractFaction":false,
+		  "IsCareerScoringFaction":false,
+		  "IsCareerIgnoredContractTarget":true,
+		  "IsCareerStartingDisplayFaction":false,
+		  "IsStoryStartingDisplayFaction":false,
+		  "HasAIBehaviorVariableScope":false
+	   }
+	]
+ }
