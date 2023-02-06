@@ -1,2 +1,10 @@
-/__*
+# Build and Release Folders
+bin-debug/
+bin-release/
+**/__TestObjects
 *.code-workspace
+__*.*
+
+# Other files and folders
+.settings/
+
