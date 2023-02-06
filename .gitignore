@@ -1,9 +1,10 @@
 # Build and Release Folders
 *.code-workspace
 __*.*
+*.xlsx
 # Other files and folders
 .settings/
 /__TestObjects
-/*.xlsx*
+
 
 
