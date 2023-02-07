@@ -1,0 +1,23 @@
+{
+    "id" : "castDef_CabalD",
+    "internalName" : "CabalD",
+    "firstName" : "Mr",
+    "lastName" : "Smith",
+    "callsign" : null,
+    "rank" : null,
+    "gender" : "Male",
+    "faction" : "",
+    "sgCharType" : "UNSET",
+    "showRank" : false,
+    "showFirstName" : true,
+    "showCallsign" : false,
+    "showLastName" : true,
+    "localizeName" : false,
+    "defaultEmotePortrait" : {
+        "emote" : "Default",
+        "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_realSmith.png"
+    },
+    "emotePotraitList" : [
+        
+    ]
+}

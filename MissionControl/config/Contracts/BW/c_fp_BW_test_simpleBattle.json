@@ -1,0 +1,47 @@
+{
+	"ID": "c_fp_BW_test_simpleBattle",
+	"RandomSpawns": {
+		"Enable": false
+	},
+	"HotDropProtection": {
+		"Enable": false
+	},
+	"AdditionalLances": {
+		"Enable": true,
+		"UseDialogue": true,
+		"DialogueCastDefId": "castDef_medusaC",
+		"Dialogue": "I'm really certain you have not seen what a bunch of light 'Mechs can do to ruin your day.",
+		"EnemyLanceCount": 2,
+		"EnemyLances": [
+			"OPFOR_LANCE_simpleBattle",
+			"OPFOR_LANCE_simpleBattle"
+		],
+		"EnemyLanceObjectiveNames": [
+			"Destroy Pest Lance 1",
+			"Destroy Pest Lance 2"
+		],
+		"AllyLanceCount": 1,
+		"AllyLances": [
+			"ALLY_LANCE_simpleBattle"
+		]
+	},
+	"ExtendedLances": {
+		"Enable": false,
+		"TargetLanceSize": 6,
+		"EmployerLanceSize": 5,
+		"TargetAllyLanceSize": 5,
+		"EmployerAllyLanceSize": 5,
+		"HostileToAllLanceSize": 5,
+		"NeutralToAllLanceSize": 5
+	},
+	"ExtendedBoundaries": {
+		"Enable": true,
+		"IncreaseBoundarySizeByPercentage": 0.2
+	},
+	"DynamicWithdraw": {
+		"Enable": false
+	},
+	"AdditionalPlayerMechs": {
+		"Enable": false
+	}
+}

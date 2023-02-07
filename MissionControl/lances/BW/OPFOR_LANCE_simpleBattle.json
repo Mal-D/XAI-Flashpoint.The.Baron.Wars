@@ -1,0 +1,48 @@
+{
+	"lanceKey": "OPFOR_LANCE_simpleBattle",
+	"lanceDefId": "lancedef_mech_d3_AL_LightScout",
+	"lanceTagSet": {
+		"items": []
+	},
+	"lanceExcludedTagSet": {
+		"items": []
+	},
+	"spawnEffectTags": {
+		"items": []
+	},
+	"lanceDifficultyAdjustment": 0,
+	"unitSpawnPointOverrideList": [
+		{
+			"unitDefId": "UseLance",
+			"spawnEffectTags": {
+				"items": [
+					"spawn_poorly_maintained_25"
+				]
+			}
+		},
+		{
+			"unitDefId": "UseLance",
+			"spawnEffectTags": {
+				"items": [
+					"spawn_poorly_maintained_25"
+				]
+			}
+		},
+		{
+			"unitDefId": "UseLance",
+			"spawnEffectTags": {
+				"items": [
+					"spawn_poorly_maintained_25"
+				]
+			}
+		},
+		{
+			"unitDefId": "UseLance",
+			"spawnEffectTags": {
+				"items": [
+					"spawn_poorly_maintained_25"
+				]
+			}
+		}
+	]
+}
