@@ -32,7 +32,7 @@
 			"cameraDistance" : "Far",
 			"cameraHeight" : "Default",
 			"revealRadius" : -1
-			},
+		},
 		{
 			"words" : "Pay them no mind. We're a job to do.",
 			"wordsColor" : {

@@ -1,5 +1,5 @@
 {
-   "identifier" : "ConvBuck_simpleBattle_missionStart",
+   "identifier" : "ConvBucketDef_simpleBattle_missionStart",
    "DialogueContentIDs" : [
 		"DialogBkt_simpleBattle_missionStart" 
    ]
