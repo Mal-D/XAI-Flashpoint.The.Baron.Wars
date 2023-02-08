@@ -6,7 +6,8 @@
 	
     "Author": "Mal-D",
 
-	"DependsOn": ["Mission Control"],
+	"DependsOn": [ "XAI", "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ,"FlashPoint_KOTU"],
+	"OptionallyDependsOn": [ "ColourfulFlashPoints" ],
     "ConflictsWith": [],
 	
 	"DataAddendumEntries":[ 
@@ -19,7 +20,7 @@
 	{ "Type": "ContractOverride", "Path": "contracts" }, 
 	{ "Type": "LanceDef" , "Path": "lances", "AddToDB": true },
 	{ "Type": "SimGameEventDef", "Path": "events" },
-	{ "Type": "FactionDef",  "Path": "factions/BW" },
+	{ "Type": "FactionDef",  "Path": "factions/bw" },
 	{ "Type": "ConversationContent", "Path": "conversationBuckets"},
 	{ "Type": "DialogBucketDef", "Path":  "dialogue_buckets"  },
 	{ "Type": "SimGameStatDescDef", "Path": "simGameStatDesc", "AddToDB": true },

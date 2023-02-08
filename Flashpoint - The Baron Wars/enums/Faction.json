@@ -4,11 +4,11 @@
 	"enumerationValueList":[
 	   {
 		  "ID":7009,
-		  "Name":"IndriConsortium",
+		  "Name":"indriConsortium",
 		  "FriendlyName":"Indri Consortium",
 		  "Description":"Indri Consortium Description in faction.json",
 		  "FactionDefID":"faction_indriConsortium",
-		  "IsRealFaction":false,
+		  "IsRealFaction":false, 
 		  "IsGreatHouse":false,
 		  "IsClan":false,
 		  "IsMercenary":false,
