@@ -2,7 +2,7 @@
     "identifier" : "DialogBkt_simpleBattle_missionStart",
     "contents" : [
 		{
-            "words" : "/// CONNECTION HANDSHAKE ESTABLISHED - Mission Start - simpleBattle///",
+            "words" : "/// CONNECTION HANDSHAKE ESTABLISHED - Mission Start - simpleBattle.///",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,

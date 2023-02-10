@@ -224,7 +224,7 @@
                 "EncounterObjectGuid" : "73df8d9c-a274-48fd-98c9-2bd0d7860e83"
             },
             "name" : "Dialogue_MissionStart",
-            "overrideDialogueBucketId" : "ConvBuck_simpleBattle_missionStart",
+            "overrideDialogueBucketId" : "ConvBucketDef_simpleBattle_missionStart",
             "dialogueContent" : [
                 {
                     "words" : "PLACEHOLDR - Mission Start",

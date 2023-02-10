@@ -27,7 +27,7 @@
 	   },
 	   {
 		  "ID":7010,
-		  "Name":"IrukjandiCompany",
+		  "Name":"irukjandiCompany",
 		  "FriendlyName":"Irukjandi Company",
 		  "Description":"Irukjandi Company Description in faction.json",
 		  "FactionDefID":"faction_irukjandiCompany",
