@@ -1,5 +1,5 @@
 {
-    "ID" : "c_fp_BW_test_simpleBattle",
+    "ID" : "c_fp_TBW_test_simpleBattle",
     "contractName" : "TEST Simple Battle",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 3,
@@ -252,7 +252,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Ssshhhiiittt... Commander. Locusts man, LOCUSTS... Really...!",
+                    "words" : "Ssshhhiiittt... Commander. Lights man, LIGHTS... Really...!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

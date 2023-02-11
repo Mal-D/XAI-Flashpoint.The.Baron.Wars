@@ -1,0 +1,185 @@
+{
+    "Description" : {
+        "Id" : "ev_TBW_introNews",
+        "Name" : "MercNet News Announcement",
+        "Details" : "An exciting brand-new News service. Bringing you all the gossip from the far reaches of the Inner Sphere. Sanctioned by ComStar, we have exclusive rights to breaking News no mater where it happens.\r\n\r\nGuaranteed to bring you the latest and the fastest News possible.\r\n\r\nNo Need to register as this free service has been added to your ComStar HPG account.",
+        "Icon" : "uix_TxrSpot_MercNews.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "ODS_1_bloodyInsects_complete"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "fe_ODS_NewsFeed_on",
+                "ev_ODS2_introNews"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Alright - something for free. fe_ODS_NewsFeed_on",
+                "Details" : "Registration is free",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "What's one more NewsFeed?",
+                        "Details" : "MercNet is an independant News Service that uses only reputable sources and verified by ComStar to ensure you get only the facts. \r\n\r\nYour first feed will take 3 to 7 days to reach you. Delivery frequency is dependent on where your nearest HPG uplink is located.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "fe_ODS_NewsFeed_on",
+                                    "ev_ODS2_introNews"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "NewsfeedCount",
+                                    "value" : "0",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS_newsfeed_1",
+                                "MinDaysWait" : 7,
+                                "MaxDaysWait" : 10,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Just More Junk",
+                "Details" : "Just More Junk - FE_NewsFeed_off",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "FE_NewsFeed_off",
+                        "Details" : "We're sorry to see you leave. You will miss out on intelligence and mission insights as this is this the only guaranteed Newfeed sactioned by ComStar and the MRB.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "FE_NewsFeed_off"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "FE_NewsFeed_on",
+                                    "force_event_no",
+                                    "chain_to_bloodyInsects",
+                                    "ev_ODS_val_yes",
+                                    "co_release_ODS",
+                                    "ODS_thaddeusEscaped",
+                                    "ODS_pickup_asset_yes",
+                                    "ODS_pickup_asset_no",
+                                    "ODS_pickup_obj_yes",
+                                    "ODS_pickup_obj_no",
+                                    "ODS_partsForMoney",
+                                    "ODS_moneyForParts"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" :  [],
+                            "Actions" : null,
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS2_sanlucarsThreat",
+                                "MinDaysWait" : 40,
+                                "MaxDaysWait" : 60,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

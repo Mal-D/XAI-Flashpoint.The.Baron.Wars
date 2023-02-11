@@ -1,0 +1,118 @@
+{
+    "Description" : {
+        "Id" : "fe_ODS2_sanlucarsThreat",
+        "Name" : "Sanlucar's Threat",
+        "Details" : "Sumire was distracted from the Newsfeeds she was reading by the incomming message alarm.\r\n\r\n\"Darius, you need to see this and the rest of the Command Crew as well. We have a bit of a cluster frack building here and, we are going to be in the centre of it all.\"\r\n\r\nDarius's voice cracked in the overhead speakers.\"Record it so we can review it later,?\"\r\n\r\nSumire paused and reviewed the transmission.\r\n\r\n\"Affermative XO, this is streaming live.\"\r\n\r\nDarius's voice echoed through out the DropShip.\r\n\r\n\"Command crew to the Command Deck, Repeat. Command crew to the Command Deck.\"",
+        "Icon" : "uixTxrSpot_Sanlucar_Transmission.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "fe_ODS2_sanlucarsThreat"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Summon the Command Crew",
+                "Details" : "Summon the Command Crew.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Command crew Summoned",
+                        "Details" : "Commander {Commander.LastName} clumpled in to the command deck, with Magboots ringing out with a methodical <i>click-snick</i>, <i>click-snick</i> of someone very comfortable in microgravity.\r\n\r\n\"Ok, Sumire, pipe it though to the main holodesk and we'll see what the ruckus is all about. \r\n\r\n \"Seems that a representative of the 'Blackguards' is rather insistent we are to blame for his situation.\"\r\n\r\n\"Thought it was too quiet. Farah, get the evidence loaded as I'm sure he feels butt-hurt and wanting to blame someone other than himself.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "fe_ODS2_sanlucarsThreat"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_StartConversation",
+                                    "value" : "9c08676703977fbfa10cafd3",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Unwelcome Transmission",
+                                        "Sanlucar's Threat",
+                                        "Ship",
+                                        null
+                                    ]
+                                },
+                                {
+                                    "Type" : "System_ForceDropshipRoom",
+                                    "value" : "Ship",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        null
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS2_CallforHelp",
+                                "MinDaysWait" : 20,
+                                "MaxDaysWait" : 30,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "UNPUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "UNSELECTABLE",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : ["BLACKLISTED"],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

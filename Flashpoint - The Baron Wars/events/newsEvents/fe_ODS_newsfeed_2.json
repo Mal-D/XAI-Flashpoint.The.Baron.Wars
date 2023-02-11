@@ -1,0 +1,111 @@
+{
+    "Description" : {
+        "Id" : "fe_ODS_newsfeed_2",
+        "Name" : "AURIGAN EMBARRASSMENT CONTINUES",
+        "Details" : "First session of the Tribunal hearing regarding the unsanctioned civilian extermination carried out under the authority of [[DM.BaseDescriptionDefs[LoreRestoredHope],RESTORED HOPE]] has named names in the open Tribunal hearing with the presentation of personal evidence, by proxy, from the Commander of the [[DM.BaseDescriptionDefs[LoreBoneyardWranglers],Boneyard Wranglers]].\r\n\r\nEvidence from certifiy untampered BattleROMS and verified voice transcripts, exposes the duplicity of the Aurigan High Council and of the Rampart Company\u2019s methods and Charter.",
+        "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "FE_NewsFeed_on"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "FE_NewsFeed_off",
+                "fe_ODS_newsfeed_2"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Names are Named",
+                "Details" : "Names are Named",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue_1",
+                        "Details" : "Evidence has been presented that while under command of Captain Andress, one of their contracted Mercenary Companies \u2013 Barrameda\u2019s Blackguards \u2013 carried out unsanctioned operations resulting in the wanton slaughter of civilians and destruction of habitation environments not covered within the Charter of recovery operations.\r\n\r\nWhile the materiel under dispute \u201Cmay\u201D have been once part of the Aurigan [[DM.BaseDescriptionDefs[LoreTOE],TO&E]] there was no evidence that this equipment was housed in nor present the area under investigation.\r\n\r\nThe evidence presented was however, severe enough to have the Rampart Company and Barrameda\u2019s Blackguards censured.\r\n\r\nAll previously sanctioned contracts between the MRB and Rampart Company, and by association, those units employed by the Rampart Company are hereby terminated.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : ["fe_ODS_newsfeed_2"
+                                    
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "NewsfeedCount",
+                                    "value" : "2",
+                                    "set" : true,
+                                    "valueConstant" : 2
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS_newsfeed_3",
+                                "MinDaysWait" : 10,
+                                "MaxDaysWait" : 20,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

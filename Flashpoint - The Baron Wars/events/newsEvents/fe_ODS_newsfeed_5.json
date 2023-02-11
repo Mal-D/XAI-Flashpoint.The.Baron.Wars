@@ -1,0 +1,111 @@
+{
+    "Description" : {
+        "Id" : "fe_ODS_newsfeed_5",
+        "Name" : "TRIBUNAL BUILDINGS BOMBED - 1 INJURED - 2 MISSING",
+        "Details" : "OUTRAGE\r\n\r\nAdept Sharilar Mori injured.\r\n\r\nTWO MISSING. \r\n\r\nRecovering in a Comstar Medical facility, Precentor Mori later spoke via HPG conference link.\r\n\r\n\"This attack is a blatent attempt to pervert the course of justice. Henceforth, The members of the unit called Barrameda's Blackguards are 'persona non grata' and Sanlucar Barrameda branded 'PRIATE' for this atrocious and barbarous act.",
+        "Icon" : "uix_TxrSpot_TribunalBombed.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "FE_NewsFeed_on"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "FE_NewsFeed_off",
+                "fe_ODS_newsfeed_5"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Bodies missing.",
+                "Details" : "Bodies missing.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Bodies missing.",
+                        "Details" : "Clearance of the rubble failed to locate either Carson Dau'Trive or, the now pirate, Sanlucar Barrameda, or their bodies. A <i>Union</i> class dropship of unknown origin was detected blasting off from the spaceport and before Comstar security forces could be activated, rendezvoused at a pirate point previously unknown to planetary officials and jumped system to locations unknown.\r\n\r\nComStar have placed a \u00A25,000,000 (5 Million) Bounty on Sanlucar Barrameda to stand trial for the attempted murder of Adept Sharilar Mori, his capture condition negotiable.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "fe_ODS_newsfeed_5"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "NewsfeedCount",
+                                    "value" : "5",
+                                    "set" : true,
+                                    "valueConstant" : 5
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS2_sanlucarsThreat",
+                                "MinDaysWait" : 20,
+                                "MaxDaysWait" : 30,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

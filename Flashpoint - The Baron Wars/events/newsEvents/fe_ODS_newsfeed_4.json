@@ -1,0 +1,111 @@
+{
+    "Description" : {
+        "Id" : "fe_ODS_newsfeed_4",
+        "Name" : "REPARATIONS FOR VICTIMS",
+        "Details" : "The Tribual voted 6 to 5 to hold Barrameda's Blackguards in contempt and guilty of 'Crimes against humanity'\r\n\r\nThe Comstar representative - Precentor Sharilar Mori - spoke at length of this need for arbitration to separate humanity from the animals. The [[DM.BaseDescriptionDefs[LoreHonorsOfWar],Honors of War]], while only loosely binding was universally agreed upon to recover some semblance of the spirit of the [[DM.BaseDescriptionDefs[LoreAresConventions],Ares Conventions]] to prevent the further irreplaceable infrastructure losses and untold and needless civilian deaths.",
+        "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "FE_NewsFeed_on"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "FE_NewsFeed_off",
+                "fe_ODS_newsfeed_4"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Tribunal's verdict",
+                "Details" : "Tribunal's verdict",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue_1",
+                        "Details" : "The tribunal passed a ruling in two parts.\r\n\r\n1.The Aurgian Coalition was ordered to hold - in escrow - the reparation sum of \u00A2200 Million for the reconstruction effort of Habitation Domes destroyed and replacement of supporting infrastructure on Bellerophon.\r\n\r\n2. Barrameda's Blackguards are hereby stripped of any access MRB Contracts or services for a period no shorter that 5 Terran years and ordered to surrender their entire TO&E to Comstar and Captain Sanlucar Barrameda be held in custody on Weldry for the term of 5 Terran years.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : ["fe_ODS_newsfeed_4"
+                                    
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "NewsfeedCount",
+                                    "value" : "4",
+                                    "set" : true,
+                                    "valueConstant" : 4
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS_newsfeed_5",
+                                "MinDaysWait" : 10,
+                                "MaxDaysWait" : 20,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}
