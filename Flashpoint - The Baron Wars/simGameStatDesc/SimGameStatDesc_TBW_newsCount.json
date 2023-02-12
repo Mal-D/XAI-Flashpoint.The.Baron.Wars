@@ -1,0 +1,17 @@
+{
+    "Description" : {
+        "Id" : "SimGameStatDesc_TBW_newsCount",
+        "Name" : "newsCount",
+        "Details" : "Newsfeed Count",
+        "Icon" : null
+    },
+    "setResult" : "You have {RES_VALUE.ToCommaSeparatedString} Newsfeeds received as part of your free Subscription.",
+    "positiveResult" : "This Newsfeed article is part of your free Subscription.",
+    "negativeResult" : "",
+    "temporalSetResult" : "You have received {RES_VALUE.ToCommaSeparatedString} free articles as part of your Newfeed Subscription.",
+    "temporalPositiveResult" : "",
+    "temporalNegativeResult" : "",
+    "infinitiveSetResult" : "",
+    "infinitivePositiveResult" : "",
+    "infinitiveNegativeResult" : ""
+}

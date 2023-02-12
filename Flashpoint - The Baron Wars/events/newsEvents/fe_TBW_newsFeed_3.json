@@ -1,0 +1,109 @@
+{
+    "Description" : {
+        "Id" : "fe_TBW_newsFeed_3",
+        "Name" : "In Other News - The Beef Barons kill Supply.",
+        "Details" : "The Beef Shortage is being felt across the Magistracy of Canopus. Favourite cuts of the the rare, marbled flesh of the genetically modified Terran Bovine species is being threatened by the continued theft of necessary grain, feed stocks and even indiscriminate slaughter of precious livestock.",
+        "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 1,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "TBW_newsFeed_on",
+                "fe_TBW_newsFeed_3"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "TBW_newsFeed_off"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Rump Steak is at an all time high.",
+                "Details" : "Rump at \u20AC300 a kg.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue_1",
+                        "Details" : "Clashes between the Wagu Barons and the members of the Livestock Conglometate have brought live and prepared carcass shipments to a standstill. Representation has been made to the Magestrix through the Canopian Central Committee to resolve this situation. Are you between jobs at the moment?",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : ["fe_TBW_newsFeed_3"],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "NewsfeedCount",
+                                    "value" : "3",
+                                    "set" : true,
+                                    "valueConstant" : 3
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : [
+                                {
+                                "Scope" : "Company",
+                                "EventID" : "fe_ODS_newsfeed_4",
+                                "MinDaysWait" : 10,
+                                "MaxDaysWait" : 20,
+                                "Probability" : 100,
+                                "RetainPilot" : false
+                                }
+                            ],
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : true,
+    "Tags" : {
+        "items" : [
+            "BLACKLISTED"
+        ],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}
