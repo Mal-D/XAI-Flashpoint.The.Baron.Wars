@@ -10,15 +10,12 @@
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
-            "items" : [
-                "ODS_1_bloodyInsects_complete"
-            ],
+            "items" : [],
             "tagSetSourceFile" : ""
         },
         "ExclusionTags" : {
             "items" : [
-                "fe_ODS_NewsFeed_on",
-                "ev_ODS2_introNews"
+                "ev_TBW_introNews"
             ],
             "tagSetSourceFile" : ""
         },
@@ -30,7 +27,7 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Alright - something for free. fe_ODS_NewsFeed_on",
+                "Name" : "Alright - something for free.",
                 "Details" : "Registration is free",
                 "Icon" : null
             },
@@ -50,8 +47,8 @@
                             "Requirements" : null,
                             "AddedTags" : {
                                 "items" : [
-                                    "fe_ODS_NewsFeed_on",
-                                    "ev_ODS2_introNews"
+                                    "TBW_newsFeed_on",
+                                    "ev_TBW_introNews"
                                 ],
                                 "tagSetSourceFile" : ""
                             },
@@ -62,17 +59,28 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "NewsfeedCount",
+                                    "name" : "newsCount",
                                     "value" : "0",
                                     "set" : false,
                                     "valueConstant" : null
                                 }
                             ],
-                            "Actions" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_PauseNotification",
+                                    "value" : "Newsfeed is On",
+                                    "valueConstant" : null,
+                                    "additionalValues" : 
+                                    [
+                                    "I think we'll keep an eye on that one. REMOVE-Next newsevent in 7-10 days.",
+                                    "castDef_FarahDefault"
+                                    ]
+                                }
+                            ],
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_ODS_newsfeed_1",
+                                "EventID" : "fe_TBW_newsfeed_1",
                                 "MinDaysWait" : 7,
                                 "MaxDaysWait" : 10,
                                 "Probability" : 100,
@@ -102,7 +110,7 @@
             "Description" : {
                 "Id" : "outcome_1",
                 "Name" : "Just More Junk",
-                "Details" : "Just More Junk - FE_NewsFeed_off",
+                "Details" : "Just More Junk - TBW_newsFeed_off",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -110,7 +118,7 @@
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "FE_NewsFeed_off",
+                        "Name" : "TBW_newsFeed_off",
                         "Details" : "We're sorry to see you leave. You will miss out on intelligence and mission insights as this is this the only guaranteed Newfeed sactioned by ComStar and the MRB.",
                         "Icon" : null
                     },
@@ -120,34 +128,33 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [
-                                    "FE_NewsFeed_off"
-                                ],
+                                "items" : ["TBW_newsFeed_off","ev_TBW_introNews"],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {
                                 "items" : [
-                                    "FE_NewsFeed_on",
-                                    "force_event_no",
-                                    "chain_to_bloodyInsects",
-                                    "ev_ODS_val_yes",
-                                    "co_release_ODS",
-                                    "ODS_thaddeusEscaped",
-                                    "ODS_pickup_asset_yes",
-                                    "ODS_pickup_asset_no",
-                                    "ODS_pickup_obj_yes",
-                                    "ODS_pickup_obj_no",
-                                    "ODS_partsForMoney",
-                                    "ODS_moneyForParts"
+                                    "TBW_newsFeed_on"
                                 ],
                                 "tagSetSourceFile" : ""
                             },
                             "Stats" :  [],
-                            "Actions" : null,
+                            "Actions" : 
+                            [
+                                {
+                                    "Type" : "System_PauseNotification",
+                                    "value" : "Newsfeed is off",
+                                    "valueConstant" : null,
+                                    "additionalValues" : 
+                                    [
+                                    "Thats on less spam filter I need to adjust. REMOVE-The initating event will still fire in 40 to 60 days.",
+                                    "castDef_FarahDefault"
+                                    ]
+                                }
+                            ],
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_ODS2_sanlucarsThreat",
+                                "EventID" : "",
                                 "MinDaysWait" : 40,
                                 "MaxDaysWait" : 60,
                                 "Probability" : 100,

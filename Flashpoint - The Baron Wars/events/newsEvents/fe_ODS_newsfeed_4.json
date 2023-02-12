@@ -11,13 +11,13 @@
         "Scope" : "Company",
         "RequirementTags" : {
             "items" : [
-                "FE_NewsFeed_on"
+                "TBW_newsFeed_on"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
         "ExclusionTags" : {
             "items" : [
-                "FE_NewsFeed_off",
+                "TBW_newsFeed_off",
                 "fe_ODS_newsfeed_4"
             ],
             "tagSetSourceFile" : ""
