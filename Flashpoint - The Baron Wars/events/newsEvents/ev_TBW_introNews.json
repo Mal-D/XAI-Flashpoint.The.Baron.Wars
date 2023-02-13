@@ -146,7 +146,7 @@
                                     "valueConstant" : null,
                                     "additionalValues" : 
                                     [
-                                    "Thats on less spam filter I need to adjust. REMOVE-The initating event will still fire in 40 to 60 days.",
+                                    "Thats on less spam filter I need to adjust. REMOVE-The AnaMarie's Broadcast will still fire in 40 to 60 days.",
                                     "castDef_FarahDefault"
                                     ]
                                 }
@@ -154,7 +154,7 @@
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "",
+                                "EventID" : "fe_TBW_anaMarieBroadcast",
                                 "MinDaysWait" : 40,
                                 "MaxDaysWait" : 60,
                                 "Probability" : 100,

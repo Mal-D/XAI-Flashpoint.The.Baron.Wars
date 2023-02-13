@@ -11,14 +11,15 @@
         "Scope" : "Company",
         "RequirementTags" : {
             "items" : [
-                "TBW_newsFeed_on",
-                "fe_TBW_newsFeed_3"
+                "TBW_newsFeed_on"
             ],
             "tagSetSourceFile" : "Tags/CompanyTags"
         },
         "ExclusionTags" : {
-            "items" : [
-                "TBW_newsFeed_off"
+            "items" : 
+            [
+                "TBW_newsFeed_off",
+                "fe_TBW_newsFeed_3"
             ],
             "tagSetSourceFile" : ""
         },
@@ -30,8 +31,8 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Rump Steak is at an all time high.",
-                "Details" : "Rump at \u20AC300 a kg.",
+                "Name" : "Meat prices skyrocket.",
+                "Details" : "Angry queues are forming in major population centers of the Magistracy in response to the outrageous prices for butchered meat products, especially the famed Terran 'Wagyu' cattle. Wagyu Rump at \u20AC3000 a kilogram.",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -40,7 +41,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Continue_1",
-                        "Details" : "Clashes between the Wagu Barons and the members of the Livestock Conglometate have brought live and prepared carcass shipments to a standstill. Representation has been made to the Magestrix through the Canopian Central Committee to resolve this situation. Are you between jobs at the moment?",
+                        "Details" : "Clashes between the Wagu Barons and the members of the Livestock Conglomerate on New Abalene have brought live animal and prepared carcass shipments to a standstill. Representation has been made to the Magestrix through the Canopian Central Committee to resolve this situation. \r\n\r\nAre you between jobs at the moment?",
                         "Icon" : null
                     },
                     "Weight" : 100,

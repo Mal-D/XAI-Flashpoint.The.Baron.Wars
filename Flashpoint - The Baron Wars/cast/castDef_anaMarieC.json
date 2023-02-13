@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_anaMarieC",
+   "internalName" : "anaMarieC",
+   "firstName" : "Ana Marie",
+   "lastName" : "Centrella",
+   "callsign" : null,
+   "rank" : "Lady",
+   "gender" : "Female",
+   "factionID" : "MagistracyOfCanopus",
+   "sgCharType" : "UNSET",
+   "showRank" : true,
+   "showFirstName" : true,
+   "showCallsign" : false,
+   "showLastName" : true,
+   "localizeName" : true,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_Centrella_default_utr.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}

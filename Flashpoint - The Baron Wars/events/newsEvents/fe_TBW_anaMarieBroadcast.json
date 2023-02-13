@@ -1,9 +1,9 @@
 {
     "Description" : {
-        "Id" : "fe_ODS2_sanlucarsThreat",
-        "Name" : "Sanlucar's Threat",
-        "Details" : "Sumire was distracted from the Newsfeeds she was reading by the incomming message alarm.\r\n\r\n\"Darius, you need to see this and the rest of the Command Crew as well. We have a bit of a cluster frack building here and, we are going to be in the centre of it all.\"\r\n\r\nDarius's voice cracked in the overhead speakers.\"Record it so we can review it later,?\"\r\n\r\nSumire paused and reviewed the transmission.\r\n\r\n\"Affermative XO, this is streaming live.\"\r\n\r\nDarius's voice echoed through out the DropShip.\r\n\r\n\"Command crew to the Command Deck, Repeat. Command crew to the Command Deck.\"",
-        "Icon" : "uixTxrSpot_Sanlucar_Transmission.png"
+        "Id" : "fe_TBW_anaMarieBroadcast",
+        "Name" : "Centrella Broadcast",
+        "Details" : "Sumire was distracted from the Newsfeeds she was reading by the incomming message alarm.\r\n\r\n\"Darius, you need to see this and the rest of the Command Crew as well. Seems someone has a bit of a cluster frack building and, maybe we should have a deep look.\"\r\n\r\nDarius's voice cracked in the overhead speakers.\"Can you record it so we can review it later?\"\r\n\r\nSumire paused and reviewed the transmission.\r\n\r\n\"Affermative XO, though its a looped stream. They do seem to be quite agitated.\"\r\n\r\nDarius's voice echoed through out the DropShip.\r\n\r\n\"Command crew to the Command Deck, Repeat. Command crew to the Command Deck.\"",
+        "Icon" : "uixTxrSpot_anaMarieTransmission.png"
     },
     "Scope" : "Company",
     "Weight" : 1,
@@ -15,7 +15,7 @@
         },
         "ExclusionTags" : {
             "items" : [
-                "fe_ODS2_sanlucarsThreat"
+                "fe_TBW_anaMarieBroadcast"
             ],
             "tagSetSourceFile" : ""
         },
@@ -37,7 +37,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Command crew Summoned",
-                        "Details" : "Commander {Commander.LastName} clumpled in to the command deck, with Magboots ringing out with a methodical <i>click-snick</i>, <i>click-snick</i> of someone very comfortable in microgravity.\r\n\r\n\"Ok, Sumire, pipe it though to the main holodesk and we'll see what the ruckus is all about. \r\n\r\n \"Seems that a representative of the 'Blackguards' is rather insistent we are to blame for his situation.\"\r\n\r\n\"Thought it was too quiet. Farah, get the evidence loaded as I'm sure he feels butt-hurt and wanting to blame someone other than himself.\"",
+                        "Details" : "Commander {Commander.LastName} clumpled in to the command deck, with Magboots ringing out with a methodical <i>click-snick</i>, <i>click-snick</i> of someone very comfortable in microgravity.\r\n\r\n\"Ok, Sumire, pipe it though to the main holodesk and we'll see what the ruckus is all about. \r\n\r\n \"Seems that a representative of the the Centrellian Family is rather anxious to elicit some help outside the MRB.\"\r\n\r\n\"Thought it was too quiet. Farah, can you start a search on keywords in the conversation and see if we can't get some more inforamtion.\"",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -47,7 +47,7 @@
                             "Requirements" : null,
                             "AddedTags" : {
                                 "items" : [
-                                    "fe_ODS2_sanlucarsThreat"
+                                    "fe_TBW_anaMarieBroadcast"
                                 ],
                                 "tagSetSourceFile" : ""
                             },
@@ -61,9 +61,10 @@
                                     "Type" : "System_StartConversation",
                                     "value" : "9c08676703977fbfa10cafd3",
                                     "valueConstant" : null,
-                                    "additionalValues" : [
-                                        "Unwelcome Transmission",
-                                        "Sanlucar's Threat",
+                                    "additionalValues" : 
+                                    [
+                                        "Canopian Transmission",
+                                        "Call for Help",
                                         "Ship",
                                         null
                                     ]
@@ -72,9 +73,7 @@
                                     "Type" : "System_ForceDropshipRoom",
                                     "value" : "Ship",
                                     "valueConstant" : null,
-                                    "additionalValues" : [
-                                        null
-                                    ]
+                                    "additionalValues" : null
                                 }
                             ],
                             "ForceEvents" : [
