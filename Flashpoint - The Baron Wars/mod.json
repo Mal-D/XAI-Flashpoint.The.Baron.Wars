@@ -6,7 +6,7 @@
 	
     "Author": "Mal-D",
 
-	"DependsOn": [ "XAI", "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ,"FlashPoint_KOTU"],
+	"DependsOn": [ "XAI", "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ],
 	"OptionallyDependsOn": [ "ColourfulFlashPoints" ],
     "ConflictsWith": [],
 	
