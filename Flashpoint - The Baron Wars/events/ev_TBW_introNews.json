@@ -59,7 +59,7 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "newsCount",
+                                    "name" : "TBW_newsCount",
                                     "value" : "0",
                                     "set" : true,
                                     "valueConstant" : "0"
@@ -142,11 +142,11 @@
                             [
                                 {
                                     "Type" : "System_PauseNotification",
-                                    "value" : "Newsfeed is off",
+                                    "value" : "Successfully Unsubscribed.",
                                     "valueConstant" : null,
                                     "additionalValues" : 
                                     [
-                                    "Thats on less spam filter I need to adjust. REMOVE-The AnaMarie's Broadcast will still fire in 40 to 60 days.",
+                                    "Thats on less spam filter I need to adjust.",
                                     "castDef_FarahDefault"
                                     ]
                                 }

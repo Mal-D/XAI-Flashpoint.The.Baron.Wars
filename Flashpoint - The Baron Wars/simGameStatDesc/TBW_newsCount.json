@@ -1,7 +1,7 @@
 {
     "Description" : {
         "Id" : "TBW_newsCount",
-        "Name" : "newsCount",
+        "Name" : "TBW_newsCount",
         "Details" : "Newsfeed Count",
         "Icon" : null
     },
