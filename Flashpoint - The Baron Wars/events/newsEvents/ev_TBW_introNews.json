@@ -61,8 +61,8 @@
                                     "typeString" : "System.Int32",
                                     "name" : "newsCount",
                                     "value" : "0",
-                                    "set" : false,
-                                    "valueConstant" : null
+                                    "set" : true,
+                                    "valueConstant" : "0"
                                 }
                             ],
                             "Actions" : [
@@ -80,7 +80,7 @@
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_TBW_newsfeed_1",
+                                "EventID" : "fe_TBW_newsFeed_1",
                                 "MinDaysWait" : 7,
                                 "MaxDaysWait" : 10,
                                 "Probability" : 100,

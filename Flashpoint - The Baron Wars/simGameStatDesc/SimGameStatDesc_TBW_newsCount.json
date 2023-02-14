@@ -12,6 +12,6 @@
     "temporalPositiveResult" : "",
     "temporalNegativeResult" : "",
     "infinitiveSetResult" : "",
-    "infinitivePositiveResult" : "",
+    "infinitivePositiveResult" : "+{RES_VALUE.ToCommaSeparatedString} Newsfeeds recieved.",
     "infinitiveNegativeResult" : ""
 }

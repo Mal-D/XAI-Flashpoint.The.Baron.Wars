@@ -61,10 +61,10 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "NewsfeedCount",
-                                    "value" : "4",
-                                    "set" : true,
-                                    "valueConstant" : 4
+                                    "name" : "newsCount",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "1"
                                 }
                             ],
                             "Actions" : null,

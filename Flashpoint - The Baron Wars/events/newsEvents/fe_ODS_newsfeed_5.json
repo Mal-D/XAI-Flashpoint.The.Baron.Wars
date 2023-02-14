@@ -61,17 +61,17 @@
                             "Stats" : [
                                 {
                                     "typeString" : "System.Int32",
-                                    "name" : "NewsfeedCount",
-                                    "value" : "5",
-                                    "set" : true,
-                                    "valueConstant" : 5
+                                    "name" : "newsCount",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "1"
                                 }
                             ],
                             "Actions" : null,
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_ODS2_sanlucarsThreat",
+                                "EventID" : "fe_TBW_anaMarieBroadcast",
                                 "MinDaysWait" : 20,
                                 "MaxDaysWait" : 30,
                                 "Probability" : 100,

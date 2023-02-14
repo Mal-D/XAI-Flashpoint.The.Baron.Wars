@@ -57,9 +57,9 @@
                                 {
                                     "typeString" : "System.Int32",
                                     "name" : "newsCount",
-                                    "value" : "2",
-                                    "set" : true,
-                                    "valueConstant" : 2
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : "1"
                                 }
                             ],
                             "Actions" : null,
