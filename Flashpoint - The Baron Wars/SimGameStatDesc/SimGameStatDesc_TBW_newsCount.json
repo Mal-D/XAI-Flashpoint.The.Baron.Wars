@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "TBW_newsCount",
+        "Id" : "SimGameStatDesc_TBW_newsCount",
         "Name" : "TBW_newsCount",
         "Details" : "Newsfeed Count",
         "Icon" : null

@@ -23,7 +23,7 @@
 	{ "Type": "FactionDef",  "Path": "factions/tbw" },
 	{ "Type": "ConversationContent", "Path": "dialogue_buckets"},
 	{ "Type": "DialogBucketDef", "Path":  "conversationBuckets"  },
-	{ "Type": "SimGameStatDescDef", "Path": "simGameStatDesc", "AddToDB": true },
+	{ "Type": "SimGameStatDescDef", "Path": "SimGameStatDesc", "AddToDB": true },
 	{ "Type": "HeraldryDef", "Path": "heraldry" },
 	{ "Type": "PilotDef", "Path": "pilot", "AddToDB": true },
 	{ "Type": "BaseDescriptionDef", "Path": "lore" },

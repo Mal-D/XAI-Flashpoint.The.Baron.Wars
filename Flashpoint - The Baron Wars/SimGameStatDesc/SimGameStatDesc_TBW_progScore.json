@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "TBW_progScore",
+        "Id" : "SimGameStatDesc_TBW_progScore",
         "Name" : "progScore",
         "Details" : "The Progress Score",
         "Icon" : null
