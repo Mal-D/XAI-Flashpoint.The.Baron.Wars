@@ -68,11 +68,11 @@
                             "Actions" : [
                                 {
                                     "Type" : "System_PauseNotification",
-                                    "value" : "Newsfeed is On",
+                                    "value" : "Next news in 7-10 days",
                                     "valueConstant" : null,
                                     "additionalValues" : 
                                     [
-                                    "I think we'll keep an eye on that one. REMOVE-Next newsevent in 7-10 days.",
+                                    "I think we'll keep an eye on that one.",
                                     "castDef_FarahDefault"
                                     ]
                                 }
