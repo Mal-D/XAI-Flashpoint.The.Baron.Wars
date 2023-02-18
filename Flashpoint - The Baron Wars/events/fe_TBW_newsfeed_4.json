@@ -1,9 +1,9 @@
 {
     "Description" : {
-        "Id" : "fe_ODS_newsfeed_5",
-        "Name" : "TRIBUNAL BUILDINGS BOMBED - 1 INJURED - 2 MISSING",
-        "Details" : "OUTRAGE\r\n\r\nAdept Sharilar Mori injured.\r\n\r\nTWO MISSING. \r\n\r\nRecovering in a Comstar Medical facility, Precentor Mori later spoke via HPG conference link.\r\n\r\n\"This attack is a blatent attempt to pervert the course of justice. Henceforth, The members of the unit called Barrameda's Blackguards are 'persona non grata' and Sanlucar Barrameda branded 'PRIATE' for this atrocious and barbarous act.",
-        "Icon" : "uix_TxrSpot_TribunalBombed.png"
+        "Id" : "fe_TBW_newsfeed_4",
+        "Name" : "GOVERNOR RATHBOTTOM KIDNAPPED",
+        "Details" : "Rumors have been spreading like wildfire that the Governor, August Rathbottom, has been kidnapped.",
+        "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
     },
     "Scope" : "Company",
     "Weight" : 1,
@@ -18,7 +18,7 @@
         "ExclusionTags" : {
             "items" : [
                 "TBW_newsFeed_off",
-                "fe_ODS_newsfeed_5"
+                "fe_TBW_newsfeed_4"
             ],
             "tagSetSourceFile" : ""
         },
@@ -30,8 +30,8 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Bodies missing.",
-                "Details" : "Bodies missing.",
+                "Name" : "Kidnappers Make Demands.",
+                "Details" : "A Vid from someone called 'The Baron' has made the following demands has been received by the Office of the Interior. Dire consequences are threatened if the listed demands are not met.",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -39,8 +39,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "Bodies missing.",
-                        "Details" : "Clearance of the rubble failed to locate either Carson Dau'Trive or, the now pirate, Sanlucar Barrameda, or their bodies. A <i>Union</i> class dropship of unknown origin was detected blasting off from the spaceport and before Comstar security forces could be activated, rendezvoused at a pirate point previously unknown to planetary officials and jumped system to locations unknown.\r\n\r\nComStar have placed a \u00A25,000,000 (5 Million) Bounty on Sanlucar Barrameda to stand trial for the attempted murder of Adept Sharilar Mori, his capture condition negotiable.",
+                        "Name" : "The demands detailed.",
+                        "Details" : "1.August Rathbottom be removed as Planetary Governor.\r\n\r\n2. The Beef Collective be recognised as the fully independant planetary Governing Authority.\r\n\r\n3. All Livestock Conglomerate assets be resumed to be managed by the new Governing Authority.\r\n\r\nIn the event of the demands not being met, all resource infrastrusture services will be annexed, by force if necessary.",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -49,9 +49,7 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [
-                                    "fe_ODS_newsfeed_5"
-                                ],
+                                "items" : ["fe_TBW_newsfeed_4"],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {
@@ -71,9 +69,9 @@
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_TBW_anaMarieBroadcast",
-                                "MinDaysWait" : 20,
-                                "MaxDaysWait" : 30,
+                                "EventID" : "fe_TBW_newsfeed_5",
+                                "MinDaysWait" : 10,
+                                "MaxDaysWait" : 20,
                                 "Probability" : 100,
                                 "RetainPilot" : false
                                 }
