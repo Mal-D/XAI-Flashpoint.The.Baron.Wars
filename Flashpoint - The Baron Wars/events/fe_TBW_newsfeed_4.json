@@ -101,9 +101,7 @@
     "EventType" : "NORMAL",
     "OneTimeEvent" : true,
     "Tags" : {
-        "items" : [
-            "BLACKLISTED"
-        ],
+        "items" : ["BLACKLISTED"],
         "tagSetSourceFile" : "tags/EventTags"
     }
 }
