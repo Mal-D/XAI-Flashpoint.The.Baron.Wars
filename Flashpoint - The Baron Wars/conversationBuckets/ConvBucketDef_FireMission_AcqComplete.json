@@ -1,0 +1,6 @@
+{
+   "identifier" : "ConvBucketDef_FireMission_AcqComplete",
+   "DialogueContentIDs" : [
+		"DialogBkt_FireMission_AcqComplete" 
+   ]
+}

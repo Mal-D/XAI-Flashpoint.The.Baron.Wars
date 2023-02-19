@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_mechLeader",
+   "internalName" : "MechLeader",
+   "firstName" : "Sarge",
+   "lastName" : "",
+   "callsign" : "Leader One",
+   "rank" : "Master Sergeant",
+   "gender" : "Male",
+   "faction" : "",
+   "sgCharType" : "UNSET",
+   "showRank" : true,
+   "showFirstName" : true,
+   "showCallsign" : true,
+   "showLastName" : false,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_mechLeader.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}

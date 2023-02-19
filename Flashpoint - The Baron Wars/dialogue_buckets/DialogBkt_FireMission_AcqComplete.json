@@ -1,0 +1,53 @@
+{
+    "identifier" : "DialogBkt_FireMission_AcqComplete",
+    "contents" : [
+        {
+            "words": "I'm getting a signal verification from the scanners and it's still attached to a heartbeat, Commander. We've located Governor.",
+            "wordsColor": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+            },
+            "selectedCastDefId": "castDef_FarahDefault",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words": "BEGINNING DATA TRANSMISSION.",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_Computer",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words": "Okay, Farah, give me a heads-up when they're done, and I'll move in for the pickup.",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_SumireDefault",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        }
+    ]
+}

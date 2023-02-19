@@ -1,0 +1,18 @@
+{
+    "Description" : {
+        "Id" : "SimGameStatDesc_TBW_scannerCount",
+        "Name" : "scannerCount",
+        "Details" : "Scanner Count",
+        "Icon" : null
+    },
+    "setResult" : "You have a Scanner Count of {RES_VALUE.ToCommaSeparatedString}.",
+    "positiveResult" : "That's {RES_VALUE.ToCommaSeparatedString} one more scanner set.",
+    "negativeResult" : "",
+    "temporalSetResult" : "",
+    "temporalPositiveResult" : "",
+    "temporalNegativeResult" : "",
+    "infinitiveSetResult" : "",
+    "infinitivePositiveResult" : "+{RES_VALUE.ToCommaSeparatedString} Scanner Count.",
+    "infinitiveNegativeResult" : ""
+}
+
