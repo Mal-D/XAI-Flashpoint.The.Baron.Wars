@@ -1,7 +1,7 @@
 {
     "Description" : {
         "Id" : "SimGameStatDesc_TBW_scannerCount",
-        "Name" : "scannerCount",
+        "Name" : "scanCount",
         "Details" : "Scanner Count",
         "Icon" : null
     },
