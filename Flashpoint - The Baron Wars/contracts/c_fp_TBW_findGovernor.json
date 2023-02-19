@@ -82,7 +82,7 @@
                 "Stats": [
                     {
                         "typeString": "System.Int32",
-                        "name": "scannerCount",
+                        "name": "scanCount",
                         "value": "1",
                         "set": false,
                         "valueConstant": "1"
@@ -120,7 +120,7 @@
                 "Stats": [
                     {
                         "typeString": "System.Int32",
-                        "name": "scannerCount",
+                        "name": "scanCount",
                         "value": "1",
                         "set": false,
                         "valueConstant": "1"
@@ -157,7 +157,7 @@
                 "Stats": [
                     {
                         "typeString": "System.Int32",
-                        "name": "scannerCount",
+                        "name": "scanCount",
                         "value": "1",
                         "set": false,
                         "valueConstant": "1"
