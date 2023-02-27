@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_theBaron",
+   "internalName" : "theBaron",
+   "firstName" : "Jebadiah",
+   "lastName" : "Tombstone",
+   "callsign" : "Tombstone",
+   "rank" : "",
+   "gender" : "Male",
+   "faction" : "",
+   "sgCharType" : "UNSET",
+   "showRank" : true,
+   "showFirstName" : true,
+   "showCallsign" : true,
+   "showLastName" : false,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theBaron.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}
