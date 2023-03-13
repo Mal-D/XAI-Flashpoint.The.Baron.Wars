@@ -2,7 +2,7 @@
     "Description": {
         "Id": "starsystemdef_NewAbilene",
         "Name": "New Abilene",
-        "Details": "New Abilene is a grassy world dedicated to raising livestock. The pastureland is mostly owned by a few wealthy 'barons' who are prone to violent squabbles over water rights and shipping privileges. MechWarrior Marshals try to keep the peace.",
+        "Details": "M. New Abilene is a grassy world dedicated to raising livestock. The pastureland is mostly owned by a few wealthy 'barons' who are prone to violent squabbles over water rights and shipping privileges. MechWarrior Marshals try to keep the peace.",
         "Icon": ""
     },
     "Position": {
@@ -25,12 +25,11 @@
         ],
         "tagSetSourceFile": ""
     },
-    "SupportedBiomes": [
+    "SupportedBiomes": 
+    [
         "highlandsSpring",
-        "highlandsFall",
         "tundraFrozen",
-        "lowlandsSpring",
-        "lowlandsFall"
+        "lowlandsSpring"
     ],
     "MapRequiredTags": {
         "items": [],

@@ -1,11 +1,11 @@
 {
-   "id" : "castDef_theBaron",
-   "internalName" : "theBaron",
-   "firstName" : "Jebadiah",
+   "id" : "castDef_theCountess",
+   "internalName" : "theCountess",
+   "firstName" : "Leanora",
    "lastName" : "Tombstone",
-   "callsign" : "Tombstone",
-   "rank" : "Baron",
-   "gender" : "Male",
+   "callsign" : "",
+   "rank" : "Countess",
+   "gender" : "Female",
    "faction" : "",
    "sgCharType" : "UNSET",
    "showRank" : true,
@@ -15,7 +15,7 @@
    "localizeName" : false,
    "defaultEmotePortrait" : {
       "emote" : "Default",
-      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theBaron.png"
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theCountess.png"
    },
    "emotePotraitList" : [
       

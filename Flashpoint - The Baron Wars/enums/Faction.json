@@ -47,6 +47,52 @@
 		  "IsCareerStartingDisplayFaction":false,
 		  "IsStoryStartingDisplayFaction":false,
 		  "HasAIBehaviorVariableScope":false
-	   }
+	   },
+	   {
+		"ID":7011,
+		"Name":"wagyuBarons",
+		"FriendlyName":"Wagyu Barons",
+		"Description":"The Selfprofessed majority landholder on New Abilene.",
+		"FactionDefID":"faction_wagyuBarons",
+		"IsRealFaction":false,
+		"IsGreatHouse":false,
+		"IsClan":false,
+		"IsMercenary":false,
+		"IsPirate":false,
+		"DoesGainReputation":false,
+		"CanAlly":false,
+		"IsPossibleNeutralToAllFaction":true,
+		"IsPossibleHostileToAllFaction":true,
+		"IsPossibleAllyFallbackFaction":true,
+		"IsProceduralContractFaction":false,
+		"IsCareerScoringFaction":false,
+		"IsCareerIgnoredContractTarget":true,
+		"IsCareerStartingDisplayFaction":false,
+		"IsStoryStartingDisplayFaction":false,
+		"HasAIBehaviorVariableScope":false
+	 },
+	 {
+		"ID":7012,
+		"Name":"agrarianCollective",
+		"FriendlyName":"Agrarian Collective",
+		"Description":"There are always family offshoots that disagree - this is one.",
+		"FactionDefID":"faction_agrarianCollective",
+		"IsRealFaction":false,
+		"IsGreatHouse":false,
+		"IsClan":false,
+		"IsMercenary":false,
+		"IsPirate":false,
+		"DoesGainReputation":false,
+		"CanAlly":false,
+		"IsPossibleNeutralToAllFaction":true,
+		"IsPossibleHostileToAllFaction":true,
+		"IsPossibleAllyFallbackFaction":true,
+		"IsProceduralContractFaction":false,
+		"IsCareerScoringFaction":false,
+		"IsCareerIgnoredContractTarget":true,
+		"IsCareerStartingDisplayFaction":false,
+		"IsStoryStartingDisplayFaction":false,
+		"HasAIBehaviorVariableScope":false
+	 }
 	]
  }

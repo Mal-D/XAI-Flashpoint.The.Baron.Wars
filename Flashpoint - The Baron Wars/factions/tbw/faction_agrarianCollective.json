@@ -1,0 +1,56 @@
+{
+    "ID" : "faction_agrarianCollective",
+    "Name" : "Agrarian Collective",
+    "ShortName" : "Collective",
+    "Description" : "The Agrarian Collective upholds that there should be balance between landed property and free range raising of livestock. They are constantly at odds with the Beef Growers over free access to grazing pastures and water for their less popular sheep and other livestock.",
+    "Demonym" : "AG",
+    "Government" : "",
+    "Allies" :  [
+        "MagistracyOfCanopus"
+                ],
+    "Enemies" : [
+		"Liao",
+		"Davion",
+		"Steiner",
+		"Marik",
+		"Kurita",
+        "AuriganPirates",
+        "wagyuBarons"
+    ],
+	"Presence": 0.1,
+    "ReputationStatements" : [
+        "1.",
+        "2.",
+        "3.",
+        "4.",
+        "5.",
+        "6."
+    ],
+    "MissionSuccessStatements" : [ 
+		"You have helped us immeasurably."
+    ], 
+	"GoodFaithFailureStatements" : [ 
+		"Ok, useful I suppose. Next time, do all that we are paying you for."
+    ],
+	"BadFaithFailureStatements" : [ 
+		"As yo usure you are working for us and not the Baron?"
+    ],
+	"DefaultCombatLeaderCastDefId" : "castDef_theCountess",
+    "DefaultRepresentativeCastDefId" : "castDef_theCountess",
+    "DataManager" : null,
+    "factionID" : "agrarianCollective",
+  	"icon" : "uixTxrIcon_agrarianCollective",
+    "heraldryDefId" : "heraldrydef_agrarianCollective",
+    "storePanelImage" : null,
+    "factionStoreColor" : null,
+    "StartingReputationValues" : [
+        -15,
+        -15,
+        0
+    ],
+    "StartingReputationModes" : [
+        "KAMEA_CAMPAIGN",
+        "CAREER",
+        "NONE"
+    ]
+}

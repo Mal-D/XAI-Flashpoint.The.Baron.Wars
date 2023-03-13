@@ -1,7 +1,7 @@
 {
     "ID" : "faction_wagyuBarons",
     "Name" : "Wagyu Barons",
-    "ShortName" : "Barons",
+    "ShortName" : "The Barons",
     "Description" : "A collection of landholders on New Abilene the are the Beef Growers of the famed species commonly known as 'Wagyu'.",
     "Demonym" : "WB",
     "Government" : "",
@@ -15,7 +15,7 @@
 		"Marik",
 		"Kurita",
         "AuriganPirates",
-        "LivestockCollective"
+        "livestockCollective"
     ],
 	"Presence": 0.1,
     "ReputationStatements" : [
@@ -35,8 +35,8 @@
 	"BadFaithFailureStatements" : [ 
 		"What...! Do this again and you're history."
     ],
-	"DefaultCombatLeaderCastDefId" : "castDef_medusaC",
-    "DefaultRepresentativeCastDefId" : "castDef_medusaC",
+	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
+    "DefaultRepresentativeCastDefId" : "castDef_theBaron",
     "DataManager" : null,
     "factionID" : "wagyuBarons",
   	"icon" : "uixTxrIcon_wagyuBarons",
