@@ -1,0 +1,18 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 1,
+        "Purchasable" : false,
+        "Manufacturer" : "null",
+        "Model" : "null",
+        "UIName" : "null",
+        "Id" : "heraldrydef_agrarianCollective",
+        "Name" : "Agrarian Collective",
+        "Details" : "The collective of alternative farmers on New Abilene.",    
+        "Icon" : ""
+    },
+    "textureLogoID" : "uixTxrIcon_agCollective",
+    "primaryMechColorID" : "Blue_04",
+    "secondaryMechColorID" : "Metallic_Silver",
+    "tertiaryMechColorID" : "BrightRed_03"
+}
