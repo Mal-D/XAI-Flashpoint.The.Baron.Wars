@@ -1,12 +1,12 @@
 {
     "Description" : {
-        "Id" : "fp_TBW_1",
+        "Id" : "fp_TBW",
         "Name" : "The Baron Wars",
-        "Details" : "This is not what we wanted but, the popular media title seems to have stuck. ",
+        "Details" : "This is not what we wanted but, the popular media title seems to have stuck.",
         "Icon" : "uix_TxrSpot_CommerceCentreBombed.png"
     },
     "Weight" : 100,
-    "InternalName" : "TBW_1",
+    "InternalName" : "TBW",
     "PublishState" : "PUBLISHED",
     "Difficulty" : 4,
     "Requirements" : [],
@@ -27,11 +27,11 @@
     "PotentialEmployers" : [
         "MagistracyCentrella"
     ],
-    "TargetFaction" : "indriConsortium",
+    "TargetFaction" : "INVALID_UNSET",
     "AllowRefitTime" : true,
-    "FlashpointLength" : "Long",
+    "FlashpointLength" : "LONG",
     "Repeatable" : false,
-    "MilestoneSetID" : "ms_fp_TBW_1",
+    "MilestoneSetID" : "ms_fp_TBW",
     "UseAvailableTimeoutOverride" : false,
     "AvailableTimeout" : 0,
     "UseInProgressTimeoutOverride" : false,
@@ -40,7 +40,7 @@
     "UnitDropTonnageHint" : "None",
     "LanceDropTonnageHint" : "None",
     "FlashpointShortDescription" : "",
-    "FlashpointDescriberCastDefId" : "castDef_anaMariaC",
+    "FlashpointDescriberCastDefId" : "castDef_DariusDefault",
     "Tags" : {
         "items" : [],
         "tagSetSourceFile" : "tags/FlashpointTags"

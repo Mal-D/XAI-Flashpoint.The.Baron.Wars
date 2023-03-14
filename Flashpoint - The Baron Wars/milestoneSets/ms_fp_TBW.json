@@ -1,9 +1,7 @@
 {
-    "StartingMilestoneID" : "ms_fp_TBW_1_001_Start",
+    "StartingMilestoneID" : "ms_fp_TBW_001_Start",
     "Milestones" : [
-        {
-            "Description" : {
-                "Id" : "ms_fp_TBW_1_001_Start",
+        { "Description" : {"Id" : "ms_fp_TBW_001_Start",
                 "Name" : "Start",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -11,8 +9,7 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Flashpoint",
+                {"Scope" : "Flashpoint",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -31,8 +28,7 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -46,7 +42,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_002_Talk",
+                            "value" : "ms_fp_TBW_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -61,8 +57,7 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {
-                "Id" : "ms_fp_TBW_1_002_Talk",
+            "Description" : {"Id" : "ms_fp_TBW_002_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -70,8 +65,7 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -96,7 +90,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_003_MissionSim",
+                            "value" : "ms_fp_TBW_003_Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -111,17 +105,15 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {
-                "Id" : "ms_fp_TBW_1_003_MissionSim",
-                "Name" : "Mission Sim",
+            "Description" : {"Id" : "ms_fp_TBW_003_Mission",
+                "Name" : "Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -144,7 +136,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_1_004_TalkChoice",
+                                "ms_fp_TBW_004_TalkChoice",
                                 null,
                                 null
                             ]
@@ -167,9 +159,7 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {
-                "Id" : "ms_fp_TBW_1_004_TalkChoice",
+        { "Description" : {"Id" : "ms_fp_TBW_004_TalkChoice",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -203,7 +193,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_005_Branch",
+                            "value" : "ms_fp_TBW_005_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -217,9 +207,7 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {
-                "Id" : "ms_fp_TBW_1_005_Branch",
+        { "Description" : {"Id" : "ms_fp_TBW_005_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -227,8 +215,7 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
@@ -255,7 +242,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_100_A-Mission",
+                            "value" : "ms_fp_TBW_100_A-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -264,8 +251,7 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
@@ -292,7 +278,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_200_B-Mission",
+                            "value" : "ms_fp_TBW_200_B-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -301,8 +287,7 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
@@ -329,7 +314,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_300_C-Mission",
+                            "value" : "ms_fp_TBW_300_C-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -338,8 +323,7 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
@@ -366,7 +350,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_400_Cancel-Complete",
+                            "value" : "ms_fp_TBW_400_Cancel-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -381,8 +365,7 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {
-                "Id" : "ms_fp_TBW_1_100_A-Mission",
+            "Description" : {"Id" : "ms_fp_TBW_100_A-Mission",
                 "Name" : "A-Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -414,7 +397,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_1_101_A-Talk",
+                                "ms_fp_TBW_101_A-Talk",
                                 null,
                                 null
                             ]
@@ -439,7 +422,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_101_A-Talk",
+                "Id" : "ms_fp_TBW_101_A-Talk",
                 "Name" : "A-Talk",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -471,7 +454,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_102_A-Complete",
+                            "value" : "ms_fp_TBW_102_A-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -487,7 +470,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_102_A-Complete",
+                "Id" : "ms_fp_TBW_102_A-Complete",
                 "Name" : "A-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -500,8 +483,8 @@
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_TBW_1_complete",
-                            "flashpoint_TBW_1_a"
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_a"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -513,7 +496,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_1_103_A-Reward",
+                            "value" : "ms_fp_TBW_103_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -529,7 +512,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_103_A-Reward",
+                "Id" : "ms_fp_TBW_103_A-Reward",
                 "Name" : "A-Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -561,7 +544,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_200_B-Mission",
+                "Id" : "ms_fp_TBW_200_B-Mission",
                 "Name" : "B-Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -593,7 +576,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_1_201_B-Talk",
+                                "ms_fp_TBW_201_B-Talk",
                                 null,
                                 null
                             ]
@@ -618,7 +601,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_201_B-Talk",
+                "Id" : "ms_fp_TBW_201_B-Talk",
                 "Name" : "B-Talk",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -650,7 +633,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_202_B-Complete",
+                            "value" : "ms_fp_TBW_202_B-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -666,7 +649,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_202_B-Complete",
+                "Id" : "ms_fp_TBW_202_B-Complete",
                 "Name" : "B-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -679,8 +662,8 @@
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_TBW_1_complete",
-                            "flashpoint_TBW_1_b"
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_b"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -692,7 +675,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_1_203_B-Reward",
+                            "value" : "ms_fp_TBW_203_B-Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -708,7 +691,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_203_B-Reward",
+                "Id" : "ms_fp_TBW_203_B-Reward",
                 "Name" : "B-Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -740,7 +723,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_300_C-Mission",
+                "Id" : "ms_fp_TBW_300_C-Mission",
                 "Name" : "C-Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -772,7 +755,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_1_301_C-Talk",
+                                "ms_fp_TBW_301_C-Talk",
                                 null,
                                 null
                             ]
@@ -797,7 +780,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_301_C-Talk",
+                "Id" : "ms_fp_TBW_301_C-Talk",
                 "Name" : "C-Talk",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -829,7 +812,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_1_302_C-Complete",
+                            "value" : "ms_fp_TBW_302_C-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -845,7 +828,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_302_C-Complete",
+                "Id" : "ms_fp_TBW_302_C-Complete",
                 "Name" : "C-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -858,8 +841,8 @@
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_TBW_1_complete",
-                            "flashpoint_TBW_1_c"
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_c"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -871,7 +854,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_1_303_C-Reward",
+                            "value" : "ms_fp_TBW_303_C-Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -887,7 +870,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_303_C-Reward",
+                "Id" : "ms_fp_TBW_303_C-Reward",
                 "Name" : "C-Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -919,7 +902,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_400_Cancel-Complete",
+                "Id" : "ms_fp_TBW_400_Cancel-Complete",
                 "Name" : "Cancel-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -932,8 +915,8 @@
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [
-                            "flashpoint_TBW_1_complete",
-                            "flashpoint_TBW_1_cancel"
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_cancel"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -951,7 +934,7 @@
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_1_401_Cancel-Reward",
+                            "value" : "ms_fp_TBW_401_Cancel-Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -967,7 +950,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_1_401_Cancel-Reward",
+                "Id" : "ms_fp_TBW_401_Cancel-Reward",
                 "Name" : "Cancel-Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
