@@ -12,7 +12,7 @@
         "Icon" : ""
     },
     "textureLogoID" : "uixTxrIcon_wagyuBarons",
-    "primaryMechColorID" : "Red_04",
-    "secondaryMechColorID" : "Metallic_Gold",
-    "tertiaryMechColorID" : "BrightYellow_02"
+    "primaryMechColorID" : "Metallic_Chrome",
+    "secondaryMechColorID" : "Metallic_Chrome",
+    "tertiaryMechColorID" : "Metallic_Chrome"
 }

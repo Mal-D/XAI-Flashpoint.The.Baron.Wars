@@ -3,7 +3,7 @@
     "Name" : "Wagyu Barons",
     "ShortName" : "The Barons",
     "Description" : "A collection of landholders on New Abilene the are the Beef Growers of the famed species commonly known as 'Wagyu'.",
-    "Demonym" : "WB",
+    "Demonym" : "Barons",
     "Government" : "",
     "Allies" :  [
         "MagistracyOfCanopus"
@@ -15,7 +15,7 @@
 		"Marik",
 		"Kurita",
         "AuriganPirates",
-        "livestockCollective"
+        "agrarianCollective"
     ],
 	"Presence": 0.1,
     "ReputationStatements" : [

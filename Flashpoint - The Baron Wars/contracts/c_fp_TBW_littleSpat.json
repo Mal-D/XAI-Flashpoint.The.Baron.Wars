@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settleing a little Spat",
+    "contractName" : "Settling a little Spat",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -12,7 +12,7 @@
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
     "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get the Ag.C 'Mech to safety. If the Wagyu Baron hired guns get in the way make sure they understand that we are the law around here, not them.",
-    "longDescription" : "Bloody self-appointed militia... nothing but getting in the way.",
+    "longDescription" : "Bloody self-appointed militia... cause nothing but trouble by getting in the way.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -66,7 +66,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Eliminate Luthendorff and Her Forces",
+            "title" : "Eliminate the Wagyu Baron threat",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -728,7 +728,7 @@
             },
             "title" : "Empty_EmployerAlly_IsActiveFlag_Primary",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -2946,6 +2946,7 @@
                 "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : "InstantlyAtSpawnPoint",
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
@@ -5392,6 +5393,6 @@
             }
         ]
     },
-    "contractType" : "INVALID_UNSET",
+    "contractType" : "ThreeWayBattle",
     "contractTypeID" : "ThreeWayBattle"
 }
