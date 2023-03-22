@@ -33,7 +33,7 @@
 	"BadFaithFailureStatements" : [ 
 		"You didn't do your job. I hope you never darken my doorway again."
     ],
-	"DefaultCombatLeaderCastDefId" : "castDef_medusaC",
+	"DefaultCombatLeaderCastDefId" : "castDef_theFixer",
     "DefaultRepresentativeCastDefId" : "castDef_medusaC",
     "DataManager" : null,
     "factionID" : "irukjandiCompany",

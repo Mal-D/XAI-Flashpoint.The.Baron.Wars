@@ -6,7 +6,8 @@
     "Demonym" : "Barons",
     "Government" : "",
     "Allies" :  [
-        "MagistracyOfCanopus"
+        "MagistracyOfCanopus",
+        "AuriganPirates"
                 ],
     "Enemies" : [
 		"Liao",
@@ -14,7 +15,6 @@
 		"Steiner",
 		"Marik",
 		"Kurita",
-        "AuriganPirates",
         "agrarianCollective"
     ],
 	"Presence": 0.1,

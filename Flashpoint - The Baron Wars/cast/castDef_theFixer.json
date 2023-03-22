@@ -1,0 +1,23 @@
+{
+    "id" : "castDef_theFixer",
+    "internalName" : "theFixer",
+    "firstName" : "Sancho",
+    "lastName" : "Falcone",
+    "callsign" : "Fixer",
+    "rank" : "Mechwarrior",
+    "gender" : "Male",
+    "faction" : "",
+    "sgCharType" : "UNSET",
+    "showRank" : true,
+    "showFirstName" : true,
+    "showCallsign" : true,
+    "showLastName" : true,
+    "localizeName" : false,
+    "defaultEmotePortrait" : {
+        "emote" : "Default",
+        "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_medusaC.png"
+    },
+    "emotePotraitList" : [
+        
+    ]
+}

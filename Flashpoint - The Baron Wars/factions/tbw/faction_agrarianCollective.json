@@ -15,14 +15,15 @@
 		"Marik",
 		"Kurita",
         "AuriganPirates",
-        "wagyuBarons"
+        "wagyuBarons",
+        "irukjandiCompany"
     ],
 	"Presence": 0.1,
     "ReputationStatements" : [
         "1.",
         "2.",
         "3.",
-        "4.",
+        "Our money spends the same as the others - just do your job 'Marshal'.",
         "5.",
         "6."
     ],
@@ -30,16 +31,16 @@
 		"You have helped us immeasurably."
     ], 
 	"GoodFaithFailureStatements" : [ 
-		"Ok, useful I suppose. Next time, do all that we are paying you for."
+		"Ok, useful I suppose. Next time, Next time, do all that we are paying you for."
     ],
 	"BadFaithFailureStatements" : [ 
-		"As yo usure you are working for us and not the Baron?"
+		"Are you sure you are working for us and not my EX?"
     ],
 	"DefaultCombatLeaderCastDefId" : "castDef_theCountess",
     "DefaultRepresentativeCastDefId" : "castDef_theCountess",
     "DataManager" : null,
     "factionID" : "agrarianCollective",
-  	"icon" : "uixTxrIcon_agrarianCollective",
+  	"icon" : "uixTxrIcon_agCollective",
     "heraldryDefId" : "heraldrydef_agrarianCollective",
     "storePanelImage" : null,
     "factionStoreColor" : null,

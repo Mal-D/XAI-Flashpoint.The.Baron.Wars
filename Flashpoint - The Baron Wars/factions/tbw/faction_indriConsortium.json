@@ -6,8 +6,7 @@
     "Demonym" : "ICo",
     "Government" : "",
     "Allies" :  [
-        "Locals",
-        "SilentChapter"
+               "SilentChapter"
                 ],
     "Enemies" : [
 		"Liao",
@@ -15,9 +14,8 @@
 		"Steiner",
 		"Marik",
 		"Kurita",
-        "boneyardWranglers",
         "AuriganPirates",
-        "hookwormsHighwaymen"
+        "MagistracyOfCanopus"
     ],
 	"Presence": 0.1,
     "ReputationStatements" : [

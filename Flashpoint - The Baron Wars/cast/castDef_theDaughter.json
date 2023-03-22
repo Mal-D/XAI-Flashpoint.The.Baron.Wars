@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_theDaughter",
+   "internalName" : "theDaughter",
+   "firstName" : "Eleonore",
+   "lastName" : "Tombstone",
+   "callsign" : "",
+   "rank" : "",
+   "gender" : "Female",
+   "faction" : "",
+   "sgCharType" : "UNSET",
+   "showRank" : false,
+   "showFirstName" : true,
+   "showCallsign" : false,
+   "showLastName" : true,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theCountess.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}
