@@ -1,5 +1,5 @@
 {
-   "id" : "castDef_mechLeader",
+   "id" : "castDef_ICmechLeader",
    "internalName" : "MechLeader",
    "firstName" : "",
    "lastName" : "",
@@ -15,7 +15,7 @@
    "localizeName" : false,
    "defaultEmotePortrait" : {
       "emote" : "Default",
-      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_mechLeader.png"
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_ICmechLeader.png"
    },
    "emotePotraitList" : [
       

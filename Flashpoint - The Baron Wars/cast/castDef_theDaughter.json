@@ -15,7 +15,7 @@
    "localizeName" : false,
    "defaultEmotePortrait" : {
       "emote" : "Default",
-      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theCountess.png"
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theDaughter.png"
    },
    "emotePotraitList" : [
       

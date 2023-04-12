@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get Eleonore Tombstone to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
+    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get Leanora Tombstone to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
     "longDescription" : "Bloody self-appointed militia... cause nothing but trouble by getting in the way.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -66,7 +66,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Eliminate the {TEAM_HOST.FactionDef.Demonym} threat",
+            "title" : "Defuse this situation Commander.",
             "description" : "b0a73be466e4",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -606,11 +606,47 @@
             "objective" : {
                 "EncounterObjectGuid" : "51aa5837-b540-42be-b8be-26b37bfcf976"
             },
-            "title" : "Ensure Eleonore Tombstone Survives",
+            "title" : "Ensure Leanora Tombstone Survives",
             "description" : "26b37bfcf976",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
+            "OnSuccessResults" : [
+                {
+                    "Scope": "Company",
+                    "Requirements": null,
+                    "AddedTags": {
+                        "items": ["TBW_LeanoraSurvives"],
+                        "tagSetSourceFile": ""
+                    },
+                    "RemovedTags": {
+                        "items": [],
+                        "tagSetSourceFile": ""
+                    },
+                    "Stats": [],
+                    "Actions": [],
+                    "ForceEvents": [],
+                    "TemporaryResult": false,
+                    "ResultDuration": 0
+                }
+            ],
+            "OnFailureResults" : [
+                {
+                    "Scope": "Company",
+                    "Requirements": null,
+                    "AddedTags": {
+                        "items": ["TBW_LeanoraDies"],
+                        "tagSetSourceFile": ""
+                    },
+                    "RemovedTags": {
+                        "items": [],
+                        "tagSetSourceFile": ""
+                    },
+                    "Stats": [],
+                    "Actions": [],
+                    "ForceEvents": [],
+                    "TemporaryResult": false,
+                    "ResultDuration": 0
+                }
+            ],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
         },
@@ -1324,6 +1360,22 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
+                },
+                {
+                    "words" : "I have the Countess's location marker. Sending you her location details now.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Farah",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
                 }
             ]
         },
@@ -1335,7 +1387,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "It's done, and House Nakano's honor remains untarnished.",
+                    "words" : "Thank you Commander. It could have been a lot worse.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1343,6 +1395,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_theCountess",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I think you all need some counciling. Daruis... I think we need to go over the Battle Comm transcripts, there is some fishy about this whole mess.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes Boss! I'll have them ready for you ASAP.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1360,14 +1444,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We've lost. This seals House Nakano's fate! Luthendorff will stain our good name forever.",
+                    "words" : "What a Senseless waste.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_LadyNakanoDefault",
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We'll send a rescue party to see  if there is anything that can be done.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1649,14 +1749,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER The Hostile to All {TEAM_HOST.FactionDef.Demonym} lance has arrived! This is the Primary Version.",
+                    "words" : "Right my little stingers, let's clean this mess up. The Boss is none to happy about the attention this is getting. Leave no witnesses.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_theFixer",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
@@ -1665,14 +1765,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to the contract. If we want to get paid we need to take them out.",
+                    "words" : "What all of them...? The I.C's, Mr Smith dude, didn't mention any others just the ex-wife and brat.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_ICmechLeader",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Quiet you idiot... you'll follow orders or I'll drop you myself.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theFixer",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
@@ -1690,7 +1806,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER The Hostile to All {TEAM_HOST.FactionDef.Demonym} lance has arrived! This is the Secondary Version.",
+                    "words" : "Well that was an interesting conversation - Do you think they remembered that we can here them?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We still have our work cut out for us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1706,7 +1838,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER Our Employer has kindly added taking this group to contract as a bonus. If we want to make some extra C-bills we can take them out if we want.",
+                    "words" : "Let's move through the Baron's forces and engage these other forces to take a bit of heat off the Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1731,14 +1863,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER All our objectives are complete, cover our withdraw Commander.",
+                    "words" : "I agree Commander, someone is playing us. Please help Leanora get clear. We'll continue this conversation where it's safe.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_anaMariaC",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You heard the Lady, let's clear this field and go home.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2222,8 +2370,89 @@
                 "EncounterObjectGuid" : "1fd0307f-fcf5-4046-8c37-b93474af9f68"
             },
             "name" : "Dialogue_Async_DariusAllPrimaryTargetsDestroyedBucket",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_PriTarDestroyed-All",
-            "dialogueContent" : []
+            "overrideDialogueBucketId" : "",
+            "dialogueContent" : [
+                {
+                "words" : "Do you think that had made any difference? We were just trying to head these raiders off. Dispite appearances, they are not working for me.",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_theBaron",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+            },
+            {
+                "words" : "They have the same markings as those 'Mechs that have been ambushing my supplies and destroying our livestock.",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_theCountess",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+            },
+            {
+                "words" : "Mother, listen what he is trying to tell you instead of blaming Dad for event he had nothing to do with.",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_theDaughter",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+            },
+            {
+                "words" : "And what about the Vid evidence I have of our feedlots being poisioned and export shipments ambushed? Not you I suppose...?",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_theBaron",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+            },
+            {
+                "words" : "This is a pointless discussions. Just in case you missed it, we are still under attack. Either leave the field or shutup and help.",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_Commander",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+            }
+        ]
         },
         {
             "dialogue" : {
@@ -2233,7 +2462,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACHEHOLDER (Hostile to All Primary). In bound hostile Dropship detected, drop zone marked.",
+                    "words" : "(Hostile to All Primary) Looks like we're here just in time Commander. Unknown DropPod plotted trajectory terminius is here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2258,14 +2487,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACHEHOLDER (Hostile to All Secondary). In bound hostile Dropship detected, drop zone marked.",
+                    "words" : "(Hostile to All Secondary 0 Might be better to put the taunt in here). There's more coming Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_Sumire",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "143910b7-d02e-4381-9ec4-571286ce7707",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },  
+                {
+                    "words" : "Let's not overreact. But keep your heads on a swivel, it's going to get mighty crowded real quick.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "143910b7-d02e-4381-9ec4-571286ce7707",
@@ -2433,14 +2678,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All units stand by; I'm opening the comms. Attention, Corina Luthendorff. This is Lady Suiko Nakano, Matriarch of House Nakano and former Tai-i of the 177th Yorii Lancers. I will not allow your foul stench to pollute my ancestral home. Prepare to die.",
+                    "words" : "All units stand by; I'm opening the comms. Attention, 'scumbag'... I know you are listening. I and the Agrarian Collective have had enough of your attempts to drive us away from the resources we need to survive. Your hired guns have gone too far this time. If you won't stop them we will.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_LadyNakanoDefault",
+                    "selectedCastDefId" : "castDef_theCountess",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
@@ -2449,14 +2694,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Lady Suiko, your daughter warned me that you might be \"visiting.\" Please, we're not enemies. Surely we can come to a mutually beneficial arrangement.",
+                    "words" : "Leanora, I don't have any idea what you are talking about. Eleonore, you know... our daughter... warned me that you might be \"visiting.\" Please, we're not enemies. Surely there is some mistake.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_LuthendorffDefault",
+                    "selectedCastDefId" : "castDef_theBaron",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2465,14 +2710,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You may have seduced my daughter with your money, pig, but my loyalties can't be bought.",
+                    "words" : "So, you have finally crawled out from under your rock! You may have seduced my daughter with your money but, I'll not have you drag our home into another war. I mean to put an end to this.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_LadyNakanoDefault",
+                    "selectedCastDefId" : "castDef_theCountess",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2481,14 +2726,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Mom… don't do this. Please, you're going to get yourself killed. Or you're going to kill the one person who can save us from bankruptcy.",
+                    "words" : "Mother! Don't do this! You're going to get yourself killed. I only contacted Dad to warn him of the bombing... he knows nothing about apart from the news. He's only here to stop the others.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_MariDefault",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2497,14 +2742,46 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Kill the comms. Enough talk.",
+                    "words" : "What...? Thats rubbish, I saw him at the trade conference with the Taurian trade delegation.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_LadyNakanoDefault",
+                    "selectedCastDefId" : "castDef_theCountess",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "PLEASE MOTHER! He's only just arrived back from three months on Taurus. He couldn't be in two places at once.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theDaughter",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What...? Thats rubbish! I don't know what lies he is telling you. Enough talk, we're using the only language you seem to understand.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theCountess",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2944,7 +3221,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "805d4192-850e-446e-afe4-cdb8a30685b4"
                         },
-                        "customUnitName" : "Eleonore Tombstone",
+                        "customUnitName" : "Leanora Tombstone",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_clint_CLNT-2-3T",
@@ -3240,8 +3517,8 @@
     "targetTeam" : {"encounterLayerData" : {"EncounterObjectGuid" : "964883ec-5a9c-49fa-8268-9f2d4c047dd9"},
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "TargetTeam",
-        "faction" : "wagyuBarons",
-        "teamLeaderCastDefId" : "castDef_mechLeader",
+        "faction" : "irukjandiCompany",
+        "teamLeaderCastDefId" : "castDef_ICmechLeader",
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
@@ -3262,17 +3539,17 @@
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : "",
+                "selectedLanceDefId" : "lancedef_mech_d3_AL_LightScout",
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "00c4ad37-d0f5-45e4-b54e-ab29d1646935"
                         },
-                        "customUnitName" : "WB Leader",
+                        "customUnitName" : "The Baron",
                         "customHeraldryDefId" : "heraldrydef_wagyuBarons",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_blackjack_BJ-1",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3285,7 +3562,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_defender",
+                        "pilotDefId" : "pilot_BW_theBaron",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -4051,7 +4328,7 @@
     },
     "targetsAllyTeam" : {"encounterLayerData" : {"EncounterObjectGuid" : "964883ec-5a9c-49fa-8268-9f2d4c047dd9"},
         "teamGuid" : "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
-        "teamName" : "Sting Lance",
+        "teamName" : "Sting Lance Alpha",
         "faction" : "irukjandiCompany",
         "teamLeaderCastDefId" : "castDef_theFixer",
         "lanceOverrideList" : [
@@ -4221,10 +4498,10 @@
                     "EncounterObjectGuid" : "af277092-16fb-4e01-80b8-9be5052c8caf"
                 },
                 "name" : "DestroyLanceSpawner_Tarqet_AdditionalForces_EnemyAlly_Secondary (Optional)",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_mech_d3_IC_LightScout",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_notallvehicles"
+                        "lance_type_mech"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -4247,8 +4524,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "785f8449-8866-4428-b21d-d5bb8948b898"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Sting 5",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -4280,8 +4557,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "50f7c4f6-f1b1-4812-a429-c9a28ea3e235"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Sting 6",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -4313,8 +4590,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "19f04425-43d4-4803-be9e-2d1d9bfc180e"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Sting 6",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -4346,8 +4623,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "973788e1-b3a8-4e39-8c9c-a93fad9465a6"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Sting 8",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -4743,7 +5020,7 @@
                         "customUnitName" : "The Fixer",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_crab_CRB-27",
+                        "unitDefId" : "mechdef_crab_CRB-27b",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

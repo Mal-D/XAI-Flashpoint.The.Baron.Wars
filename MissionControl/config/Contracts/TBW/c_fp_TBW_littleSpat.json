@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_littleSpat",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 0,
+    "EnemyLanceObjectiveNames": [],
+    "EnemyLances": [],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theDaughter",
+    "Dialogue": "Commander {Commander.LastName}, we have to protect my parents. Mother's a hothead and Father's as stubborn as his bloody cattle. I just hope we are not too late.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lancedef_eleonoreT_AL_LightScout"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.2
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}
