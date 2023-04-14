@@ -3192,7 +3192,7 @@
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "EmployerTeam",
         "faction" : "agrarianCollective",
-        "teamLeaderCastDefId" : "castDef_theDaughter",
+        "teamLeaderCastDefId" : "castDef_theCountess",
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
@@ -3323,7 +3323,7 @@
                         "customUnitName" : "Tombstone 3",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_flea_FLE-15",
+                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3516,9 +3516,9 @@
     },
     "targetTeam" : {"encounterLayerData" : {"EncounterObjectGuid" : "964883ec-5a9c-49fa-8268-9f2d4c047dd9"},
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
-        "teamName" : "TargetTeam",
-        "faction" : "irukjandiCompany",
-        "teamLeaderCastDefId" : "castDef_ICmechLeader",
+        "teamName" : "Hired Guns",
+        "faction" : "wagyuBarons",
+        "teamLeaderCastDefId" : "castDef_theBaron",
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
@@ -3546,10 +3546,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "00c4ad37-d0f5-45e4-b54e-ab29d1646935"
                         },
-                        "customUnitName" : "The Baron",
+                        "customUnitName" : "Hired Gun Leader",
                         "customHeraldryDefId" : "heraldrydef_wagyuBarons",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_blackjack_BJ-1",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3562,7 +3562,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_BW_theBaron",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3579,8 +3579,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "fb517114-a960-4d21-ac59-7af694107ab1"
                         },
-                        "customUnitName" : "WB One",
-                        "customHeraldryDefId" : "heraldrydef_wagyuBarons",
+                        "customUnitName" : "Hired Gun One",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -3612,8 +3612,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4c74c107-23a4-4648-b758-11f8a8917d64"
                         },
-                        "customUnitName" : "WB Two",
-                        "customHeraldryDefId" : "heraldrydef_wagyuBarons",
+                        "customUnitName" : "Hired Gun Two",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -3647,8 +3647,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "666fff26-8734-4d15-858d-12ed74f036d2"
                         },
-                        "customUnitName" : "WB Three",
-                        "customHeraldryDefId" : "heraldrydef_wagyuBarons",
+                        "customUnitName" : "Hired Gun Three",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
@@ -4358,6 +4358,7 @@
                 "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "lancedef_mech_d3_IC_LightScout",
                 "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : "DropPod",
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
@@ -4519,6 +4520,7 @@
                 "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : "DropPod",
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
@@ -5050,10 +5052,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "1a280012-d74d-4e36-85d6-04dce752706c"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "",
-                        "unitDefId" : "",
+                        "customUnitName" : "Fix 1",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_wasp_WSP-1W",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -5083,10 +5085,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "398f78c8-1784-46b8-9737-042073711950"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "",
-                        "unitDefId" : "",
+                        "customUnitName" : "Fix 2",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_wasp_WSP-1W",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

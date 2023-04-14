@@ -1,0 +1,67 @@
+{
+	"Description": {
+		"Id": "lancedef_theBaron_AL_Escort",
+		"Name": "Dynamic Dif 3 Escort",
+		"Details": "",
+		"Icon": "",
+		"Cost": 0,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"Difficulty": 3,
+	"LanceTags": {
+		"items": [
+			"lance_bracket_low",
+			"lance_type_light",
+			"lance_type_recon",
+			"lance_type_dynamic",
+			"lance_type_mech",
+			"lance_type_notallvehicles"
+		],
+		"tagSetSourceFile": "Tags/LanceTags"
+	},
+	"LanceUnits": [
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_blackjack_BJ-1",
+			"pilotId": "pilot_BW_theBaron",
+			"unitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "name_theBaron" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_mech", "unit_light", "unit_speed_high"  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_noncombatant", "unit_speed_low" ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_recon", "pilot_npc_d3" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		}
+	]
+}

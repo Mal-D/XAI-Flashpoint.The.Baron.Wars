@@ -8,9 +8,9 @@
   },
   "AdditionalLances": {
     "Enable": true,
-    "EnemyLanceCount": 0,
-    "EnemyLanceObjectiveNames": [],
-    "EnemyLances": [],
+    "EnemyLanceCount": 1,
+    "EnemyLanceObjectiveNames": ["The Baron and Escort"],
+    "EnemyLances": ["lancedef_theBaron_AL_Escort"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theDaughter",
     "Dialogue": "Commander {Commander.LastName}, we have to protect my parents. Mother's a hothead and Father's as stubborn as his bloody cattle. I just hope we are not too late.",
