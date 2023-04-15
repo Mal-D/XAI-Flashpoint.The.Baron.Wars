@@ -1,7 +1,7 @@
 {
 	"Description": {
 		"Id": "lancedef_eleonoreT_AL_LightScout",
-		"Name": "Dynamic Dif 3 Light Scout",
+		"Name": "Dynamic Dif 4 Light Scout",
 		"Details": "",
 		"Icon": "",
 		"Cost": 0,
@@ -26,7 +26,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_light", "unit_speed_high"  ],
+				"items": [ "MagistracyOfCanopus", "unit_mech", "unit_light", "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -34,7 +34,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_recon", "pilot_npc_d3" ],
+				"items": [ "pilot_npc_recon", "pilot_npc_d4" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

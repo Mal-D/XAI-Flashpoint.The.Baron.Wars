@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat...",
+    "contractName" : "Settling a little Spat. v4.0",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -544,7 +544,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef1d7752-73cf-40bc-9382-d398e80d1e49"
             },
-            "title" : "Unit one of {COMPANY.CompanyName} must survive",
+            "title" : "Keep <i>Badger</i> alive",
             "description" : "Keep <i>Badger</i> alive",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -654,7 +654,7 @@
             },
             "title" : "The {TEAM_EMP.FactionDef.Demonym} lance must reach the evac zone",
             "description" : "5e4550c94c67",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -1081,7 +1081,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "3bca4c6f-4cd7-42aa-a95e-6414fa1983f8"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Ensure Player Unit in Slot One Surivives Chunk Group"
             ],
@@ -1103,7 +1103,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "1c3ad7ab-e81f-46af-a926-96b42fd171bd"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Employer Forces Chunk Group"
             ],
@@ -1367,7 +1367,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Farah",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -3348,10 +3348,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "6ae5d3ea-3c9d-4d76-b1c7-76abe1b298ff"
                         },
-                        "customUnitName" : "Tombstone 1",
-                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3364,7 +3364,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3381,10 +3381,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c4b4e072-864a-4158-8daf-2d35deee61ec"
                         },
-                        "customUnitName" : "Tombstone 2",
-                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3397,7 +3397,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3414,10 +3414,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "83c28f4a-e44d-4d82-8c0f-f66dbe5abbe9"
                         },
-                        "customUnitName" : "Tombstone 3",
-                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3430,7 +3430,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -3476,10 +3476,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4886c566-b263-412f-939e-e9b77e9e9c11"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Tombstone 1",
+                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3509,10 +3509,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ca9adbcf-caf7-47bb-b7d5-88a8980fb92e"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Tombstone 2",
+                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3542,10 +3542,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ef369b82-0d23-4300-907c-a820e1064251"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Tombstone 3",
+                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3575,10 +3575,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "97c7fb7a-6e9d-46b5-b1e2-795177ec115b"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Tombstone 4",
+                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechdef_valkyrie_VLK-QL",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
