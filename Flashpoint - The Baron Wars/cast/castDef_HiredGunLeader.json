@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_HiredGunLeader",
+   "internalName" : "HiredGunLeader",
+   "firstName" : "Hank",
+   "lastName" : "Klien",
+   "callsign" : "WB One",
+   "rank" : "",
+   "gender" : "Male",
+   "faction" : "wagyuBarons",
+   "sgCharType" : "UNSET",
+   "showRank" : false,
+   "showFirstName" : false,
+   "showCallsign" : true,
+   "showLastName" : false,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_hiredGun.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}

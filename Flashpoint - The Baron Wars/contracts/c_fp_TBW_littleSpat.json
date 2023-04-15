@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat",
+    "contractName" : "Settling a little Spat...",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get Leanora Tombstone to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
-    "longDescription" : "Bloody self-appointed militia... cause nothing but trouble by getting in the way.",
+    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get Leanora Tombstone and Daughter to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
+    "longDescription" : "Bloody self-appointed militias... cause nothing but trouble by getting in the way.",
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -66,7 +66,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Defuse this situation Commander.",
+            "title" : "Terminate the Hired Guns",
             "description" : "b0a73be466e4",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -218,13 +218,11 @@
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
         },
-        {
-            "objective" : {
-                "EncounterObjectGuid" : "4becbae5-72de-451f-8b9b-028e2188fa89"
+        {"objective" : {"EncounterObjectGuid" : "4becbae5-72de-451f-8b9b-028e2188fa89"
             },
             "title" : "Destroy Additional Enemy Forces",
-            "description" : "",
-            "isPrimary" : false,
+            "description" : "Destroy Additional Enemy Forces",
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -547,8 +545,8 @@
                 "EncounterObjectGuid" : "ef1d7752-73cf-40bc-9382-d398e80d1e49"
             },
             "title" : "Unit one of {COMPANY.CompanyName} must survive",
-            "description" : "",
-            "isPrimary" : false,
+            "description" : "Keep <i>Badger</i> alive",
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -560,7 +558,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "b38e990005ae",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -656,7 +654,7 @@
             },
             "title" : "The {TEAM_EMP.FactionDef.Demonym} lance must reach the evac zone",
             "description" : "5e4550c94c67",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -668,7 +666,7 @@
             },
             "title" : "Empty_Employer_IsActiveFlag_Primary",
             "description" : "cdb2c0d5396b",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -692,7 +690,7 @@
             },
             "title" : "Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
             "description" : "cf10f7dfcf8a",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -704,7 +702,7 @@
             },
             "title" : "The {TEAM_EMP.FactionDef.Demonym} lance must reach the evac zone",
             "description" : "cb13ba99a573",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -716,7 +714,7 @@
             },
             "title" : "Empty_Employer_IsActiveFlag_Secondary",
             "description" : "d3d54f132d26",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -752,7 +750,7 @@
             },
             "title" : "Escort friendlies to evac point",
             "description" : "f6d3a83a0b06",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -836,7 +834,7 @@
             },
             "title" : "TimerObjective_HostileToAll_Primary",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -1094,7 +1092,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "32a5c141-e23f-4587-a884-5955a1a63a36"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Ensure Player Unit in Slot One Surivives Chunk Group"
             ],
@@ -1105,7 +1103,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "1c3ad7ab-e81f-46af-a926-96b42fd171bd"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Employer Forces Chunk Group"
             ],
@@ -1346,14 +1344,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "They'll be here. The Countess say's her EX is one determined SOB. In the meantime, The Baron's 'Hired Guns' are here, center stage.",
+                    "words" : "There're ready when you are. In the meantime, The Baron's 'Hired Guns' are here, center stage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
@@ -1362,7 +1360,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I have the Countess's location marker. Sending you her location details now.",
+                    "words" : "I have the Mother's location marker. Sending you her location details now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1373,6 +1371,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3f899376-6d15-413c-a260-a5f0aecff9bd",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Keep <i>Badger</i> from getting herself killed.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1765,7 +1779,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What all of them...? The I.C's, Mr Smith dude, didn't mention any others just the ex-wife and brat.",
+                    "words" : "[.... different garbled voice...]",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1781,7 +1795,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Quiet you idiot... you'll follow orders or I'll drop you myself.",
+                    "words" : "[....the first garbled voice...]",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theFixer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Hey What the...? Wait, we're on your side. We are on assignment for the I.C.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HiredGunLeader",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "[....the first Garbled voice...]",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1792,6 +1838,22 @@
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Shit! Ok. Looks like we've been screwed, shoot everything or we'll die on on the damned planet.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_HiredGun",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1806,7 +1868,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well that was an interesting conversation - Do you think they remembered that we can here them?",
+                    "words" : "Well that was an interesting conversation - Pity we only got one side of the conversation.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1822,7 +1884,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We still have our work cut out for us.",
+                    "words" : "But I think we can guess who's the target. The mission still stands... we've just got our work cut out for us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1845,7 +1907,39 @@
                         "b" : 1,
                         "a" : 1
                     },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+{
+                    "words" : "Just remember to keep <i>Badger</i> safe.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "If she follows orders, then she will be fine.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
@@ -2774,7 +2868,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What...? Thats rubbish! I don't know what lies he is telling you. Enough talk, we're using the only language you seem to understand.",
+                    "words" : "What...? Thats rubbish! I don't know what lies he is telling you. I saw him at the trade conference with the Taurian trade delegation. Enough talk, I'm using the only language he seems to understand.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3046,10 +3140,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "UNDEFINED",
-                        "unitDefId" : "",
+                        "customUnitName" : "Badger",
+                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_assassin_ASN-21",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -3062,18 +3156,18 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "pilot_BW_eleonoreT",
                         "pilotTagSet" : {
-                            "items" : [],
+                            "items" : ["name_eleonoreT", "pilot_npc_vanguard", "pilot_npc_d6"],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : "",
-                        "selectedPilotDefId" : ""
+                        "selectedUnitType" : "Mech",
+                        "selectedUnitDefId" : "mechdef_assassin_ASN-21",
+                        "selectedPilotDefId" : "pilot_BW_eleonoreT"
                     },
                     {
                         "unitSpawnPoint" : {
@@ -4682,6 +4776,7 @@
                 "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : "DropPod",
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
@@ -5014,6 +5109,7 @@
                 "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : "DropPod",
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
@@ -5167,6 +5263,7 @@
                 "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : "DropPod",
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {

@@ -23,18 +23,18 @@
 	"LanceUnits": [
 		{
 			"unitType": "Mech",
-			"unitId": "mechdef_assassin_ASN-21",
-			"pilotId": "pilot_BW_eleonoreT",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [],
+				"items": [ "unit_mech", "unit_light", "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [],
+				"items": [ "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "name_eleonoreT" ],
+				"items": [ "pilot_npc_recon", "pilot_npc_d3" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

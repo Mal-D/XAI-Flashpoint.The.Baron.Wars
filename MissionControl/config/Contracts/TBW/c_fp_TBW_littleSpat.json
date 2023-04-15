@@ -9,7 +9,7 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["The Baron and Escort"],
+    "EnemyLanceObjectiveNames": ["Neutralize the Baron"],
     "EnemyLances": ["lancedef_theBaron_AL_Escort"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theDaughter",
