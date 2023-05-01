@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat. v4.0",
+    "contractName" : "Settling a little Spat. v4.3",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -78,8 +78,20 @@
             "objective" : {
                 "EncounterObjectGuid" : "cb9c173c-89b3-4447-b3a0-26193cbeb601"
             },
-            "title" : "Destroy Opposing {TEAM_HOST.FactionDef.Demonym} Forces",
+            "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} 'Fixer's Lance.",
             "description" : "26193cbeb601",
+            "isPrimary" : true,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : "",
+            "OnFailureDialogueGUID" : ""
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "49d5a311-1507-4c2b-8485-46ba1ea99d43"
+            },
+            "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} Stinger Lance.",
+            "description" : "46ba1ea99d43",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -124,23 +136,11 @@
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "49d5a311-1507-4c2b-8485-46ba1ea99d43"
-            },
-            "title" : "Destroy Opposing {TEAM_HOST.FactionDef.Demonym} Forces",
-            "description" : "46ba1ea99d43",
-            "isPrimary" : true,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
-            "OnSuccessDialogueGUID" : "",
-            "OnFailureDialogueGUID" : ""
-        },
-        {
-            "objective" : {
                 "EncounterObjectGuid" : "cbee541c-3104-4bc4-829a-dc396601f4c8"
             },
             "title" : "Objective_Empty_HostileToAll_Flag_Secondary",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -532,9 +532,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "699fc05a-9514-4058-ba39-7a366a09acbf"
             },
-            "title" : "Unit one of {COMPANY.CompanyName} must survive",
+            "title" : "Keep <i>Badger</i> alive",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -544,9 +544,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "ef1d7752-73cf-40bc-9382-d398e80d1e49"
             },
-            "title" : "Keep <i>Badger</i> alive",
-            "description" : "Keep <i>Badger</i> alive",
-            "isPrimary" : true,
+            "title" : "",
+            "description" : "d398e80d1e49(3).Keep <i>Badger</i> alive",
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -1092,7 +1092,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "32a5c141-e23f-4587-a884-5955a1a63a36"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [
                 "Ensure Player Unit in Slot One Surivives Chunk Group"
             ],
@@ -1440,7 +1440,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Commander",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1763,7 +1763,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Right my little stingers, let's clean this mess up. The Boss is none to happy about the attention this is getting. Leave no witnesses.",
+                    "words" : "Switching to I.C BattleCom... (...the rest of the transmission is garbled...)",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1811,7 +1811,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Hey What the...? Wait, we're on your side. We are on assignment for the I.C.",
+                    "words" : "Hey What the...? What freq is that? Wait... we're on your side! We are on assignment for the I.C.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1843,14 +1843,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Shit! Ok. Looks like we've been screwed, shoot everything or we'll die on on the damned planet.",
+                    "words" : "Shit, SHIT <i>SHIT!</i> Looks like we've been right royally screwed, All WB 'Mechs...shoot everything or we'll die on on this damned planet.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_HiredGun",
+                    "selectedCastDefId" : "castDef_HiredGunLeader",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1884,7 +1884,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "But I think we can guess who's the target. The mission still stands... we've just got our work cut out for us.",
+                    "words" : "I have it recorded. Just need the scrambling algorithm and I can de-code what they are saying.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "facf893c-7ed1-48ac-8e9d-1fda02a9c059",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I'll see what I can arrange. But I think we can guess who's the target. The mission still stands... we've just got our work cut out for us.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2556,7 +2572,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "(Hostile to All Primary) Looks like we're here just in time Commander. Unknown DropPod plotted trajectory terminius is here.",
+                    "words" : "Looks like we're here just in time Commander. Unknown DropPod plotted trajectory terminius is here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2581,14 +2597,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "(Hostile to All Secondary 0 Might be better to put the taunt in here). There's more coming Commander.",
+                    "words" : "There's more coming Commander and they are going to between our forces and the Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Sumire",
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "143910b7-d02e-4381-9ec4-571286ce7707",
@@ -2597,7 +2613,7 @@
                     "revealRadius" : -1
                 },  
                 {
-                    "words" : "Let's not overreact. But keep your heads on a swivel, it's going to get mighty crowded real quick.",
+                    "words" : "Roger that Sumire. All {Company.CompanyName} units; disengage and push through to cover the Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2611,7 +2627,66 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                }
+                },
+                {
+                    "words": "Okay {MC.Commander.DisplayName}... Mother... hang on we're coming to help.",
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
+                    "selectedCastDefId": "castDef_theDaughter",
+                    "emote": "Default",
+                    "audioName": "NONE",
+                    "cameraFocusGuid": "",
+                    "cameraDistance": "Far",
+                    "cameraHeight": "Default",
+                    "revealRadius": -1
+                  },  
+                  {
+                      "words" : "Commander {Commander.LastName}, you had better keep my daughter safe.",
+                      "wordsColor" : {
+                          "r" : 1,
+                          "g" : 1,
+                          "b" : 1,
+                          "a" : 1
+                      },
+                      "selectedCastDefId" : "castDef_theCountess",
+                      "emote" : "Default",
+                      "audioName" : "NONE",
+                      "cameraFocusGuid" : "143910b7-d02e-4381-9ec4-571286ce7707",
+                      "cameraDistance" : "Far",
+                      "cameraHeight" : "Default",
+                      "revealRadius" : -1
+                  },  
+                  {
+                      "words" : "No guarantees Countess it was she who insisted to join us. If she does as ordered she will be fine.",
+                      "wordsColor" : {
+                          "r" : 1,
+                          "g" : 1,
+                          "b" : 1,
+                          "a" : 1
+                      },
+                      "selectedCastDefId" : "castDef_Commander",
+                      "emote" : "Default",
+                      "audioName" : "NONE",
+                      "cameraFocusGuid" : "143910b7-d02e-4381-9ec4-571286ce7707",
+                      "cameraDistance" : "Far",
+                      "cameraHeight" : "Default",
+                      "revealRadius" : -1
+                  },  
+                  {
+                      "words" : "Good luck with that...!",
+                      "wordsColor" : {
+                          "r" : 1,
+                          "g" : 1,
+                          "b" : 1,
+                          "a" : 1
+                      },
+                      "selectedCastDefId" : "castDef_theCountess",
+                      "emote" : "Default",
+                      "audioName" : "NONE",
+                      "cameraFocusGuid" : "143910b7-d02e-4381-9ec4-571286ce7707",
+                      "cameraDistance" : "Far",
+                      "cameraHeight" : "Default",
+                      "revealRadius" : -1
+                  }
             ]
         },
         {

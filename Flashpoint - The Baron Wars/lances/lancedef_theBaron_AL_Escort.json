@@ -26,7 +26,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_light", "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_medium", "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {

@@ -141,49 +141,61 @@
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "3.Convo Check",
-                        "Details" : "3.Convo Check",
+                        "Name" : "3.Convo Check - TBW1_002_Talk",
+                        "Details" : "3.Convo Check - TBW1_002_Talk",
                         "Icon" : null
                     },
                     "Weight" : 100,
                     "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : [],
-                            "Actions" : [
-                                {
-                                    "Type" : "System_StartConversation",
-                                    "value" : "5b63783c6230352416000095",
-                                    "valueConstant" : null,
-                                    "additionalValues" : [
-                                        "Conversation Checker",
-                                        "HeadHunting 2 - Chatter Checker",
-                                        null,
-                                        null
-                                    ]
+                        
+                            {
+                                "Scope" : "Company",
+                                "Requirements" : null,
+                                "AddedTags" : {
+                                    "items" : [],
+                                    "tagSetSourceFile" : ""
                                 },
-                                {
-                                    "Type" : "System_ForceDropshipRoom",
-                                    "value" : "Ship",
-                                    "valueConstant" : null,
-                                    "additionalValues" : [
-                                        null
-                                    ]
-                                }
-                            ],
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
+                                "RemovedTags" : {
+                                    "items" : [],
+                                    "tagSetSourceFile" : ""
+                                },
+                                "Stats" : [],
+                                "Actions" : [
+                                    {
+                                        "Type" : "System_SimGameCharacterVisible",
+                                        "value" : true,
+                                        "additionalValues" : [
+                                            "Farah",
+                                            "Yang",
+                                            "Darius",
+                                            "Sumire"
+                                        ]
+                                    },
+                                    {
+                                        "Type" : "System_StartConversation",
+                                        "value" : "9c960ae4ba2954c8d3648fae",
+                                        "valueConstant" : null,
+                                        "additionalValues" : [
+                                            "TBW1_002_Talk - Conversation",
+                                            "Holodesk Chatter Checker",
+                                            null,
+                                            null
+                                        ]
+                                    },
+                                    {
+                                        "Type" : "System_ForceDropshipRoom",
+                                        "value" : "Ship",
+                                        "valueConstant" : null,
+                                        "additionalValues" : [
+                                            null
+                                        ]
+                                    }
+                                ],
+                                "ForceEvents" : null,
+                                "TemporaryResult" : false,
+                                "ResultDuration" : 0
+                            }
+                        
                     ]
                 }
             ],
