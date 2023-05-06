@@ -23,7 +23,7 @@
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [ "unit_mech", "unit_range_long" , "unit_medium", "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
@@ -33,7 +33,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d3" ],
+				"items": [],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -44,7 +44,7 @@
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [ "unit_mech", "unit_medium", "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
@@ -54,7 +54,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_recon", "pilot_npc_d3" ],
+				"items": [],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -65,7 +65,7 @@
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [ "unit_mech", "unit_light" , "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
@@ -79,7 +79,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d3" ],
+				"items": [],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -90,7 +90,7 @@
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
 				"tagSetSourceFile": "Tags/UnitTags"
@@ -100,7 +100,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d3", "pilot_npc_striker" ],
+				"items": [],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

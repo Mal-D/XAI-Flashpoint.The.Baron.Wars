@@ -1,23 +1,23 @@
 {
     "Description": {
-        "Id": "pilot_d4_gunner",
-        "Name": "Gunner",
+        "Id": "pilot_Ico5_gunner",
+        "Name": "ICo Gunner",
         "FirstName": "Gunner",
         "LastName": "NONE",
         "Callsign": "Gunner",
-        "Gender": "Female",
-        "factionID": "Davion",
+        "Gender": "",
+        "factionID": "",
         "Age": 30,
-        "Details": "NONE",
-        "Icon": "Wildfire"
+        "Details": "",
+        "Icon": ""
     },
     "BaseGunnery": "5",
     "BonusGunnery": 0,
     "BasePiloting": "3",
     "BonusPiloting": 0,
-    "BaseGuts": "3",
+    "BaseGuts": "4",
     "BonusGuts": 0,
-    "BaseTactics": "2",
+    "BaseTactics": "3",
     "BonusTactics": 0,
     "ExperienceUnspent": 0,
     "ExperienceSpent": 0,
@@ -28,15 +28,19 @@
     "Morale": 0,
     "Voice": "f_overload01",
     "abilityDefNames": [
-        "AbilityDefG5"
+        "AbilityDefG5",
+        "TraitDefWeaponHit5",
+        "TraitDefBallisticLvl01",
+        "TraitDefEnergyLvl01",
+        "TraitDefMeleeHit3",
+        "TraitDefHealthAddOne",
+        "TraitDefOverheatAddFive",
+        "TraitDefUnsteadySet50",
+        "TraitDefVisualRange2"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {
-        "items": [
-            "pilot_npc_gunner",
-            "pilot_npc_dynamic",
-            "pilot_npc_d4"
-        ],
+        "items": ["BLACKLISTED"],
         "tagSetSourceFile": ""
     },
     "PilotCost": 0

@@ -1,12 +1,12 @@
 {
     "Description": {
-        "Id": "pilot_Ico4_defender",
-        "Name": "Defender",
-        "FirstName": "Defender",
+        "Id": "pilot_Ico5_tactician",
+        "Name": "Ico Tactician",
+        "FirstName": "Tactician",
         "LastName": "NONE",
-        "Callsign": "Defender",
-        "Gender": "",
-        "factionID": "",
+        "Callsign": "Tactician",
+        "Gender": "Female",
+        "factionID": "Davion",
         "Age": 30,
         "Details": "NONE",
         "Icon": "Wildfire"
@@ -15,9 +15,9 @@
     "BonusGunnery": 0,
     "BasePiloting": "3",
     "BonusPiloting": 0,
-    "BaseGuts": "5",
+    "BaseGuts": "2",
     "BonusGuts": 0,
-    "BaseTactics": "2",
+    "BaseTactics": "5",
     "BonusTactics": 0,
     "ExperienceUnspent": 0,
     "ExperienceSpent": 0,
@@ -26,16 +26,16 @@
     "LethalInjury": false,
     "Incapacitated": false,
     "Morale": 0,
-    "Voice": "",
+    "Voice": "f_overload01",
     "abilityDefNames": [
-		"TraitDefHealthAddOne",
-		"TraitDefRefireReduceOne",
-		"AbilityDefGu5"
+		"TraitDefIndirectReduceOne",
+		"TraitDefMinRangeReduce45",
+		"AbilityDefT5A"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_npc_defender",
+            "pilot_npc_tactician",
             "pilot_npc_dynamic",
             "pilot_npc_d4"
         ],
