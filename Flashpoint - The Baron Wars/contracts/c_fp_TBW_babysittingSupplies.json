@@ -1132,7 +1132,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "fd5f61a5-e486-4fc3-9ee2-a67dc92fd4cc"
                         },
-                        "customUnitName" : "AgCo 1",
+                        "customUnitName" : "Ag.Co 1",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1165,7 +1165,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d06e441e-ff0e-4501-91e5-d1ec62626de4"
                         },
-                        "customUnitName" : "AgCo 2",
+                        "customUnitName" : "Ag.Co 2",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1198,7 +1198,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "0ebae4a1-02d0-4b1d-b38b-1f4b10ad9d9d"
                         },
-                        "customUnitName" : "AgCo 3",
+                        "customUnitName" : "Ag.Co 3",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1231,7 +1231,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "8420632e-4e7a-48f8-a03f-3495e5df31da"
                         },
-                        "customUnitName" : "AgCo 4",
+                        "customUnitName" : "Ag.Co 4",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1267,7 +1267,7 @@
                     "EncounterObjectGuid" : "b6f407f2-2cfc-4c3a-8545-2dbf2c50f61a"
                 },
                 "name" : "Lance_Enemy_Reinforcement",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_Irukjandi_Scout",
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_battle",
@@ -1283,8 +1283,8 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -2,
-                "selectedLanceDefId" : null,
+                "lanceDifficultyAdjustment" : -1,
+                "selectedLanceDefId" : "lancedef_Irukjandi_Scout",
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
@@ -1426,7 +1426,7 @@
                     "EncounterObjectGuid" : "8a365fc5-d25b-4d64-afbb-4ebf423721a9"
                 },
                 "name" : "Lance_Enemy_Hunter",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_Irukjandi_Scout",
                 "lanceTagSet" : {
                     "items" : [
                         "lance_type_fire",
@@ -1443,7 +1443,7 @@
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
+                "selectedLanceDefId" : "lancedef_Irukjandi_Scout",
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
