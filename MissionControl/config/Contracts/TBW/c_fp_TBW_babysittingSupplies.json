@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_babysittingSupplies",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 1,
+    "EnemyLanceObjectiveNames": ["Neutralize AgCo's Hired Guns"],
+    "EnemyLances": ["lancedef_eleonoreT_AL_LightScout"],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theBaron",
+    "Dialogue": "Commander {Commander.LastName}, I don't know why my Ex is so adament in destroying me. She's a bit of hothead but, she's not stupid. I just hope she isn't here.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lancedef_theBaron_AL_Escort"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.2
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}

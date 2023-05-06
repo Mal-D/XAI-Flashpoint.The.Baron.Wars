@@ -2,8 +2,8 @@
 	"Description": {
 		"Id": "lancedef_Irukjandi_Scout",
 		"Name": "Dynamic Irukjandi Scout",
-		"Details": "",
-		"Icon": "",
+		"Details": "Irukjandi Scout",
+		"Icon": "uixTxrIcon_Irukjandi",
 		"Cost": 0,
 		"Rarity": 0,
 		"Purchasable": false
@@ -67,7 +67,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_meduim" , "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_light" , "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -92,7 +92,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_meduim"],
+				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {

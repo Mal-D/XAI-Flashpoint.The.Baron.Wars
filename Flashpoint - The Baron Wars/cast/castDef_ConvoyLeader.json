@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_ConvoyLeader",
+   "internalName" : "ConvoyLeader",
+   "firstName" : "",
+   "lastName" : "",
+   "callsign" : "Convoy One",
+   "rank" : "",
+   "gender" : "Male",
+   "faction" : "",
+   "sgCharType" : "UNSET",
+   "showRank" : false,
+   "showFirstName" : false,
+   "showCallsign" : true,
+   "showLastName" : false,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_MoC_Tanker_1.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}
