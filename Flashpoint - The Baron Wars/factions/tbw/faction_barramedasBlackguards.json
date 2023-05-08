@@ -1,0 +1,54 @@
+{
+    "ID" : "faction_barramedasBlackguards",
+    "Name" : "barramedasBlackguards",
+    "ShortName" : "Blackguards",
+    "Description" : "No better than the pirates they were supposed to be hunting, Sanlucar Barrameda saw opportunity in conflict. He and his Blackguards operate on the fringes of Rimward systems though one would hardly call them Mercenaries. His nefarious activites have so far escaped notice and currently is part of the cohort of independant units used by the Aurigan Coalition's Rampart Company.",
+    "Demonym" : "Blackguards",
+    "Government" : "",
+    "Allies" :  [
+        "AuriganPirates",
+        "Locals",
+        "AuriganRestoration"
+                ],
+    "Enemies" : [
+		"Liao",
+		"Davion",
+		"Steiner",
+		"Marik",
+		"Kurita",
+        "AuriganDirectorate",
+        "boneyardWranglers",
+        "hookwormsHighwaymen"
+    ],
+	"Presence": 0.1,
+    "ReputationStatements" : [
+        "Are you after a pat on the head?"
+    ],
+    "MissionSuccessStatements" : [ 
+		"You did your job"
+    ], 
+	"GoodFaithFailureStatements" : [ 
+		"You did your job - just"
+    ],
+	"BadFaithFailureStatements" : [ 
+		"You didn't do your job. I hope you never darken my doorway again."
+    ],
+	"DefaultCombatLeaderCastDefId" : "castDef_SanlucarB",
+    "DefaultRepresentativeCastDefId" : "castDef_SanlucarB",
+    "DataManager" : null,
+    "factionID" : "barramedasBlackguards",
+  	"icon" : "uixTxrIcon_blackguardsBull",
+    "heraldryDefId" : "heraldrydef_barramedasBlackguards",
+    "storePanelImage" : null,
+    "factionStoreColor" : null,
+    "StartingReputationValues" : [
+        -15,
+        -15,
+        0
+    ],
+    "StartingReputationModes" : [
+        "KAMEA_CAMPAIGN",
+        "CAREER",
+        "NONE"
+    ]
+}

@@ -2,7 +2,30 @@
 	"travelContractFactionID":"AuriganRestoration",
 	"blackMarketFactionID":"AuriganPirates",
 	"enumerationValueList":[
-	   {
+		{
+			"ID":7007,
+			"Name":"barramedasBlackguards",
+			"FriendlyName":"Barramedas Blackguards",
+			"Description":"",
+			"FactionDefID":"faction_barramedasBlackguards",
+			"IsRealFaction":false,
+			"IsGreatHouse":false,
+			"IsClan":false,
+			"IsMercenary":true,
+			"IsPirate":false,
+			"DoesGainReputation":false,
+			"CanAlly":false,
+			"IsPossibleNeutralToAllFaction":true,
+			"IsPossibleHostileToAllFaction":true,
+			"IsPossibleAllyFallbackFaction":false,
+			"IsProceduralContractFaction":false,
+			"IsCareerScoringFaction":false,
+			"IsCareerIgnoredContractTarget":true,
+			"IsCareerStartingDisplayFaction":false,
+			"IsStoryStartingDisplayFaction":false,
+			"HasAIBehaviorVariableScope":false
+		},
+		{
 		  "ID":7009,
 		  "Name":"indriConsortium",
 		  "FriendlyName":"Indri Consortium",

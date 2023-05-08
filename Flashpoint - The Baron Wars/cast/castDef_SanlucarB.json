@@ -1,0 +1,23 @@
+{
+    "id" : "castDef_SanlucarB",
+    "internalName" : "SanlucarB",
+    "firstName" : "Sanlucar",
+    "lastName" : "Barrameda",
+    "callsign" : "Bull",
+    "rank" : "Commander",
+    "gender" : "Male",
+    "faction" : "",
+    "sgCharType" : "UNSET",
+    "showRank" : true,
+    "showFirstName" : true,
+    "showCallsign" : true,
+    "showLastName" : true,
+    "localizeName" : false,
+    "defaultEmotePortrait" : {
+        "emote" : "Default",
+        "portraitAssetPath" : "../../mods/Campaign - Operation Deep Strike/sprites/Portraits/guiTxrPort_Sanlucar.png"
+    },
+    "emotePotraitList" : [
+        
+    ]
+}

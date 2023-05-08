@@ -1,0 +1,124 @@
+{
+	"Description": {
+		"Id": "lancedef_Irukjandi_Decoy",
+		"Name": "Dynamic Irukjandi Decoy",
+		"Details": "Irukjandi Decoy",
+		"Icon": "uixTxrIcon_Irukjandi",
+		"Cost": 0,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"Difficulty": 3,
+	"LanceTags": {
+		"items": [
+			"lance_bracket_low",
+			"lance_type_medium",
+			"lance_type_dynamic",
+			"lance_type_mech",
+			"lance_type_notallvehicles"
+		],
+		"tagSetSourceFile": "Tags/LanceTags"
+	},
+	"LanceUnits": [
+		{
+			"unitType": "Vehicle",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_vehicle",
+				"unit_light",
+				"unit_wheels",
+				"unit_weaponless",
+				"unit_noncombatant"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Vehicle",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_vehicle",
+				"unit_light",
+				"unit_wheels",
+				"unit_weaponless",
+				"unit_noncombatant"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Vehicle",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_vehicle",
+				"unit_light",
+				"unit_wheels",
+				"unit_weaponless",
+				"unit_noncombatant"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Vehicle",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_vehicle",
+				"unit_light",
+				"unit_wheels",
+				"unit_weaponless",
+				"unit_noncombatant"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		}
+	]
+}
