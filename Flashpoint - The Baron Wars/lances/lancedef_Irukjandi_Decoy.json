@@ -1,8 +1,8 @@
 {
 	"Description": {
 		"Id": "lancedef_Irukjandi_Decoy",
-		"Name": "Dynamic Irukjandi Decoy",
-		"Details": "Irukjandi Decoy",
+		"Name": "Irukjandi Decoy Lance",
+		"Details": "Irukjandi Decoy Lance",
 		"Icon": "uixTxrIcon_Irukjandi",
 		"Cost": 0,
 		"Rarity": 0,
@@ -10,30 +10,20 @@
 	},
 	"Difficulty": 3,
 	"LanceTags": {
-		"items": [
-			"lance_bracket_low",
-			"lance_type_medium",
-			"lance_type_dynamic",
-			"lance_type_mech",
-			"lance_type_notallvehicles"
-		],
+		"items": [],
 		"tagSetSourceFile": "Tags/LanceTags"
 	},
 	"LanceUnits": [
 		{
 			"unitType": "Vehicle",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitId": "vehicledef_HARASSERF",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_vehicle",
-				"unit_light",
-				"unit_wheels",
-				"unit_weaponless",
-				"unit_noncombatant"],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"items": [ ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
@@ -47,18 +37,14 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitId": "vehicledef_HARASSERF",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_vehicle",
-				"unit_light",
-				"unit_wheels",
-				"unit_weaponless",
-				"unit_noncombatant"],
+				"items": [ ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"items": [ ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
@@ -72,18 +58,14 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitId": "vehicledef_HARASSERF",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_vehicle",
-				"unit_light",
-				"unit_wheels",
-				"unit_weaponless",
-				"unit_noncombatant"],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
@@ -97,18 +79,14 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitId": "vehicledef_HARASSERF",
+			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_vehicle",
-				"unit_light",
-				"unit_wheels",
-				"unit_weaponless",
-				"unit_noncombatant"],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {

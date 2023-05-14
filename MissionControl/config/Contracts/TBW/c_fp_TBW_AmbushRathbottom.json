@@ -8,14 +8,14 @@
   },
   "AdditionalLances": {
     "Enable": true,
-    "EnemyLanceCount": 2,
-    "EnemyLanceObjectiveNames": ["Catch me if you can","Now you see me, now you don't"],
-    "EnemyLances": ["lancedef_Irukjandi_Decoy","lancedef_Irukjandi_Decoy"],
+    "EnemyLanceCount": 1,
+    "EnemyLanceObjectiveNames": ["Negate Rathbottom's Protection"],
+    "EnemyLances": ["lancedef_Irukjandi_Decoy"],
     "UseDialogue": true,
-    "DialogueCastDefId": "castDef_theGov",
-    "Dialogue": "Commander {Commander.LastName}, You really shouldn't have gotten involved in this. ",
-    "AllyLanceCount": 0,
-    "AllyLances": []
+    "DialogueCastDefId": "castDef_theBaron",
+    "Dialogue": "Don't get in my way Commander {Commander.LastName}, I want this bastard dead! The damage and carnage he has brought down on us is beyond forgiveness.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lanceDef_TBW_BaronSingle"]
   },
   "ExtendedLances": {
     "Enable": false,
