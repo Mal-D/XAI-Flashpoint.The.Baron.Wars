@@ -2,7 +2,7 @@
     "Name": "FlashPoint_TheBaronWars",
     "Enabled": true,
 
-    "Version": "BW-1.0.2-PreRelease",
+    "Version": "BW-1.0.3-PreRelease",
 	
     "Author": "Mal-D",
 
@@ -22,7 +22,7 @@
 	{ "Type": "SimGameEventDef", "Path": "events" },
 	{ "Type": "FactionDef",  "Path": "factions/tbw" },
 	{ "Type": "ConversationContent", "Path": "dialogue_buckets"},
-	{ "Type": "DialogBucketDef", "Path":  "conversationBuckets"  },
+	{ "Type": "DialogBucketDef", "Path":  "sconversationBuckets"  },
 	{ "Type": "SimGameStatDescDef", "Path": "SimGameStatDesc", "AddToDB": true },
 	{ "Type": "HeraldryDef", "Path": "heraldry" },
 	{ "Type": "PilotDef", "Path": "newPilot", "AddToDB": true },
