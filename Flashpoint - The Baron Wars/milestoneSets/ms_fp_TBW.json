@@ -1,34 +1,14 @@
 {
     "StartingMilestoneID" : "ms_fp_TBW_001_Start",
     "Milestones" : [
-        { "Description" : {"Id" : "ms_fp_TBW_001_Start",
+        {"Description" : {"Id" : "ms_fp_TBW_001_Start",
                 "Name" : "Start",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [
-                {"Scope" : "Flashpoint",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [
-                            "fp_choice_a",
-                            "fp_choice_b"
-                        ],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
+            "Results" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -56,16 +36,14 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {"Id" : "ms_fp_TBW_002_Talk",
+        {"Description" : {"Id" : "ms_fp_TBW_002_Talk",
                 "Name" : "Talk",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [
-                {"Scope" : "Company",
+            "Results" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -104,17 +82,28 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {"Id" : "ms_fp_TBW_003_Mission",
+        {"Description" : {"Id" : "ms_fp_TBW_003_Mission",
                 "Name" : "Mission",
                 "Details" : "flashpoint",
-                "Icon" : ""
+                "Icon" : null
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {"Scope" : "Company",
-                    "Requirements" : null,
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -123,26 +112,27 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : null,
                     "Actions" : [
-                        {
-                            "Type" : "Flashpoint_AddContract",
-                            "value" : "",
+                        {"Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                                "Assets/Level Design/Maps/mapGeneral_frigidSteppes_iTnd/mapGeneral_frigidSteppes_iTnd.unity",
+                                "24d51614-1a7b-4818-a492-96935e0c3d55",
+                                "c_fp_TBW_littleSpat",
+                                "MagistracyOfCanopus",
+                                "wagyuBarons",
+                                "5",
                                 "ms_fp_TBW_004_TalkChoice",
+                                "agrarianCollective",
+                                "irukjandiCompany",
+                                "ms_fp_TBW_TalkChoice",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
+                        {"Type" : "System_ForceDropshipRoom",
                             "value" : "Contract",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -150,7 +140,7 @@
                             ]
                         }
                     ],
-                    "ForceEvents" : [],
+                    "ForceEvents" : null,
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
@@ -159,7 +149,7 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        { "Description" : {"Id" : "ms_fp_TBW_004_TalkChoice",
+        {"Description" : {"Id" : "ms_fp_TBW_004_TalkChoice",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -167,8 +157,7 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -207,7 +196,8 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        { "Description" : {"Id" : "ms_fp_TBW_005_Branch",
+        {
+            "Description" : {"Id" : "ms_fp_TBW_005_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -365,7 +355,8 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_100_A-Mission",
+            "Description" : {
+                "Id" : "ms_fp_TBW_100_A-Mission",
                 "Name" : "A-Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
