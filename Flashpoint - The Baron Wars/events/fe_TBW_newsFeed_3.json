@@ -70,7 +70,7 @@
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_TBW_newsfeed_4",
+                                "EventID" : "fe_TBW_newsFeed_4",
                                 "MinDaysWait" : 10,
                                 "MaxDaysWait" : 20,
                                 "Probability" : 100,

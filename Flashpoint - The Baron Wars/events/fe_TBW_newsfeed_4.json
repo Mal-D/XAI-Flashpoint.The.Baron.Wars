@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "fe_TBW_newsfeed_4",
+        "Id" : "fe_TBW_newsFeed_4",
         "Name" : "GOVERNOR RATHBOTTOM KIDNAPPED",
         "Details" : "Rumors have been spreading like wildfire that the Governor, August Rathbottom, has been kidnapped.",
         "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
@@ -49,7 +49,7 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : ["fe_TBW_newsfeed_4"],
+                                "items" : ["fe_TBW_newsFeed_4"],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {
@@ -69,7 +69,7 @@
                             "ForceEvents" : [
                                 {
                                 "Scope" : "Company",
-                                "EventID" : "fe_TBW_newsfeed_5",
+                                "EventID" : "fe_TBW_newsFeed_5",
                                 "MinDaysWait" : 10,
                                 "MaxDaysWait" : 20,
                                 "Probability" : 100,

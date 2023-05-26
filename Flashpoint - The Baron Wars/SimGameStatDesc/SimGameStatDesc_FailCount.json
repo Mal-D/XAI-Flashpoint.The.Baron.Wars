@@ -1,0 +1,18 @@
+{
+    "Description" : {
+        "Id" : "SimGameStatDesc_TBW_FailCount",
+        "Name" : "TBW_FailCount",
+        "Details" : "The Fail Count",
+        "Icon" : null
+    },
+    "setResult" : "You have a Failure Count of {RES_VALUE.ToCommaSeparatedString}.",
+    "positiveResult" : "Adding {RES_VALUE.ToCommaSeparatedString} to your Failure Count.",
+    "negativeResult" : "",
+    "temporalSetResult" : "",
+    "temporalPositiveResult" : "",
+    "temporalNegativeResult" : "",
+    "infinitiveSetResult" : "",
+    "infinitivePositiveResult" : "+{RES_VALUE.ToCommaSeparatedString} Failure Count.",
+    "infinitiveNegativeResult" : ""
+}
+

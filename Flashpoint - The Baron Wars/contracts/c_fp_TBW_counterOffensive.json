@@ -15,7 +15,38 @@
     "longDescription" : "We should have hit him harder. Now we have to keep him alive.",
     "salvagePotential" : 20,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
+    "OnContractSuccessResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+            {
+                "typeString" : "System.Single",
+                "name" : "ContractBonusRewardPct",
+                "value" : "0.1",
+                "set" : false,
+                "valueConstant" : null
+            },
+            {
+                "typeString": "System.Int32",
+                "name": "progScore",
+                "value": "1",
+                "set": false,
+                "valueConstant": "1"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "OnContractFailureResults" : [],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
@@ -211,7 +242,7 @@
                 "EncounterObjectGuid" : "0529f39a-3356-4333-9e98-da04c4cce535"
             },
             "title" : "Keep all friendly structures standing",
-            "description" : "",
+            "description" : "Or miss out on a nice fat bonus",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -1542,7 +1573,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All right, Commander; we're already behind the competition here, so we'll need to move fast.",
+                    "words" : "Really... first we find him and get told to eliminate him and now... keep him alive.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Oh, stop your bitching Yang. be thankful it's not you our there.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1558,23 +1605,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "The opfor is already on their way to the {TEAM_EMP.FactionDef.Demonym} facility; we've landed just in time.",
+                    "words" : "No, but I'm the poor sod who's got to find the parts to fix your 'Mechs. (...heavy sigh ...)",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a4f2f476-5c52-4835-9842-024c55d1a09f",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once they're in range they're going to start leveling friendly structures, so you'll have to get their attention. I suggest shooting them.",
+                    "words" : "Commander {Commander.LastName}, once they're in range they're going to start leveling buildings. I'd suggest shooting at range.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1590,7 +1637,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "As long as they think they have a chance, they'll keep landing more 'Mechs. Once the {TEAM_TAR.FactionDef.Demonym} base is destroyed, though, they should give up. So make that your priority.",
+                    "words" : "They really must want Rathbottom either back - or make sure he's not going to talk. As he's alive, they'll keep chasing him down. Once the {TEAM_TAR.FactionDef.Demonym} base is destroyed it will buy us more time. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1606,14 +1653,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Once you're done, boss, I'll be on station to pick you up here.",
+                    "words" : "As long as we have power we can keep Rathbottom in stasis but, don't dawdle Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "selectedCastDefId" : "castDef_MagRep",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We'll make for these coordinates when finished, Don't be late Sumire.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -1621,6 +1684,8 @@
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 }
+
+
             ]
         },
         {
@@ -2626,7 +2691,7 @@
         }
     ],
     "overwriteMissionCompleteWhenAutoComplete" : true,
-    "overrideAutoCompleteDialogueId" : "",
+    "overrideAutoCompleteDialogueId" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
@@ -3350,7 +3415,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "7aab22ef-1467-4618-98c4-df5808354b64"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "FT-1",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3386,7 +3451,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "48ba82fd-8b0f-423a-8d73-e63ec8ef815e"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "FT-2",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3422,7 +3487,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "22a57453-f8e9-41bb-b47f-4f898ff89b03"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "FT-3",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3458,7 +3523,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "cf06508e-8865-4fd4-916a-f52b8ebcc1fa"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "FT-4",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3883,7 +3948,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c50d5c58-de61-403c-8ca2-24d8b5bd3372"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "ET-1",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3919,7 +3984,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4cdc92e8-a6b2-44b7-adc0-0deaa580aa4f"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "ET-2",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3955,7 +4020,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3ea8c3a8-4bf1-47c4-beb4-d6dea7aa3767"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "ET-3",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
@@ -3991,7 +4056,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "f12f36c6-3ca5-4a70-af0e-219994bace51"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "ET-4",
                         "customHeraldryDefId" : "",
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",

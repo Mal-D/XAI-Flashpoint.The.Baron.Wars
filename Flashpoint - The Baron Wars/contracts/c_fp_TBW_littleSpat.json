@@ -16,7 +16,31 @@
     "salvagePotential" : 12,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "OnContractFailureResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+                        {
+                "typeString": "System.Int32",
+                "name": "TBW_FailCount",
+                "value": "1",
+                "set": false,
+                "valueConstant": "1"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
@@ -3169,8 +3193,8 @@
             }
         }
     ],
-    "overwriteMissionCompleteWhenAutoComplete" : false,
-    "overrideAutoCompleteDialogueId" : "",
+    "overwriteMissionCompleteWhenAutoComplete" : true,
+    "overrideAutoCompleteDialogueId" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9",
     "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,

@@ -1,6 +1,6 @@
 {
     "Description" : {
-        "Id" : "fe_TBW_newsfeed_5",
+        "Id" : "fe_TBW_newsFeed_5",
         "Name" : "ADMINISTRATIVE BUILDINGS BOMBED - 1 INJURED - 2 MISSING presumed dead.",
         "Details" : "OUTRAGE\r\n\r\nVarious Trade delegation offices destroyed.\r\n\r\nTWO MISSING. \r\n\r\nOther Trade envoy employees are recovering in a Canopian Medical facility.\r\n\r\nThe Chief Justice of the Magistracy Judicial Branch is on record \"This attack is a blatent attempt to force the hand of the Crimson Council. Henceforth and until further notice, New Abilene is now under Marshall Law. The Marshall Force is being activated immediately to deliver swift retribution to those responsible for this atrocious and barbarous act.\"",
         "Icon" : "uix_TxrSpot_TribunalBombed.png"
@@ -49,7 +49,7 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [ "fe_TBW_newsfeed_5","chainto_TBW_2"],
+                                "items" : [ "fe_TBW_newsFeed_5","chainto_TBW_2"],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {

@@ -5,7 +5,7 @@
         "Details" : "This is not what we wanted but, the popular media title seems to have stuck.",
         "Icon" : "uix_TxrSpot_CommerceCentreBombed.dds"
     },
-    "Weight" : 100,
+    "Weight" : 1,
     "InternalName" : "TBW",
     "PublishState" : "PUBLISHED",
     "Difficulty" : 5,
@@ -39,10 +39,10 @@
     "RewardCollectionID" : "itemCollection_loot_Item_rare",
     "UnitDropTonnageHint" : "Mixed",
     "LanceDropTonnageHint" : "Mixed",
-    "FlashpointShortDescription" : "Commander {Commander.LastName} You have agreed to assume the office of 'Marshall' until this situation is resolved. There are other parties involved but as to who they are, we are still investigating. you will earn the earn the eternal gratitude of the Crimson Council should you bring this to a successful conclusion.",
+    "FlashpointShortDescription" : "Commander {Commander.LastName} You have agreed to assume the office of 'Marshall' until this situation is resolved. There are other parties involved but as to who they are, we are still investigating. you the earn the eternal gratitude of the Crimson Council should you bring this to a successful conclusion.",
     "FlashpointDescriberCastDefId" : "castDef_MagRep",
     "Tags" : {
-        "items" : [],
+        "items" : ["BLACKLISTED"],
         "tagSetSourceFile" : "tags/FlashpointTags"
     }
 }

@@ -18,7 +18,23 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : 
+                                [
+                        {
+                        "typeString": "System.Int32",
+                        "name": "progScore",
+                        "value": "0",
+                        "set": true,
+                        "valueConstant": "0"
+                        },
+                        {
+                        "typeString": "System.Int32",
+                        "name": "TBW_FailCount",
+                        "value": "0",
+                        "set": true,
+                        "valueConstant": "0"
+                        }
+                                ],
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
@@ -26,7 +42,7 @@
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
-                    ],
+                                ],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -57,10 +73,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "(required)",
+                            "value" : "9c960ae4ba2954c8d3648fae",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} - Getting the Details",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -149,7 +165,7 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_TBW_004_TalkChoice",
+        {"Description" : {"Id" : "ms_fp_TBW_004_Talk",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -818,8 +834,7 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {
-                "Id" : "ms_fp_TBW_302_C-Complete",
+            "Description" : {"Id" : "ms_fp_TBW_302_C-Complete",
                 "Name" : "C-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""

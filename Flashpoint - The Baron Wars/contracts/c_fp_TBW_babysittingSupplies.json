@@ -15,8 +15,63 @@
     "longDescription" : "As soon as {TEAM_TAR.FactionDef.Demonym} leadership realizes what we're doing, Commander, they're going to send others to destroy the convoy, so expect {TEAM_TAR.FactionDef.Demonym} reinforcements to target the vehicles.",
     "salvagePotential" : 12,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "OnContractSuccessResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+            {
+                "typeString" : "System.Single",
+                "name" : "ContractBonusRewardPct",
+                "value" : "0.1",
+                "set" : false,
+                "valueConstant" : null
+            },
+            {
+                "typeString": "System.Int32",
+                "name": "progScore",
+                "value": "1",
+                "set": false,
+                "valueConstant": "1"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+    "OnContractFailureResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+                        {
+                "typeString": "System.Int32",
+                "name": "TBW_FailCount",
+                "value": "1",
+                "set": false,
+                "valueConstant": "1"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,

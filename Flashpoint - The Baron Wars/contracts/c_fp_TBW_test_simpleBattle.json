@@ -302,7 +302,7 @@
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
-    "contractRewardOverride" : -1,
+    "contractRewardOverride" : 200000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : true,

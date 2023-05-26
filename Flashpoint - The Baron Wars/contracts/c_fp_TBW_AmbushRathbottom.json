@@ -78,11 +78,11 @@
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["BTW_govCaptured"],
+                        "items" : ["TBW_govCaptured"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [],
+                        "items" : ["TBW_govEscapes"],
                         "tagSetSourceFile" : ""
                     },
                     "Stats" : [
@@ -105,11 +105,11 @@
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["BTW_govEscapes"],
+                        "items" : ["TBW_govEscapes"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : [],
+                        "items" : ["TBW_govCaptured"],
                         "tagSetSourceFile" : ""
                     },
                     "Stats" : [],
@@ -193,8 +193,40 @@
             "title" : "Don't let Rathbottom escape",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["TBW_govCaptured"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : ["TBW_govEscapes"],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
+            "OnFailureResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["TBW_govEscapes"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : ["TBW_govCaptured"],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
         },
@@ -647,7 +679,7 @@
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
-    "contractRewardOverride" : 500000,
+    "contractRewardOverride" : 200000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
