@@ -1,0 +1,18 @@
+{
+    "Description" : {
+        "Cost" : 0,
+        "Rarity" : 1,
+        "Purchasable" : false,
+        "Manufacturer" : "null",
+        "Model" : "null",
+        "UIName" : "null",
+        "Id" : "heraldrydef_antianLanciarii",
+        "Name" : "IndriConsortium",
+        "Details" : "As of 3026, the Antian Lanciarii were in the employment of the Aurigan Coalition, and considered a reliable unit though their experience level was merely rated 'green'.",    
+        "Icon" : ""
+    },
+    "textureLogoID" : "uixTxrIcon_antianLanciarii",
+    "primaryMechColorID" : "Green_04",
+    "secondaryMechColorID" : "Metallic_Gold",
+    "tertiaryMechColorID" : "Metallic_Gold"
+}

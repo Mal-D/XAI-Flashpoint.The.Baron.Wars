@@ -15,9 +15,31 @@
     "longDescription" : "Bloody self-appointed militias... cause nothing but trouble by getting in the way.",
     "salvagePotential" : 12,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [{
-        "Scope" : "Company",
+    "OnContractSuccessResults" : [{"Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+                        {
+                "typeString": "System.Int32",
+                "name": "TBW_FailCount",
+                "value": "0",
+                "set": true,
+                "valueConstant": "0"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+    "OnContractFailureResults" : [{"Scope" : "Company",
         "Requirements" : null,
         "AddedTags" : {
             "items" : [],

@@ -1,0 +1,54 @@
+{
+    "ID" : "faction_antianLanciarii",
+    "Name" : "Antian Lanciarii",
+    "ShortName" : "Lanciarii",
+    "Description" : "As of 3026, the Antian Lanciarii were in the employment of the Aurigan Coalition, and considered a reliable unit though their experience level was merely rated 'green'.",
+    "Demonym" : "Lanciarii",
+    "Government" : "",
+    "Allies" :  [
+        "MagistracyOfCanopus",
+        "AuriganPirates",
+        "Locals",
+        "AuriganRestoration"
+                ],
+    "Enemies" : [
+		"Marik",
+		"Kurita"
+    ],
+	"Presence": 0.1,
+    "ReputationStatements" : [
+        "1.Ok, you are of some use to us.",
+        "2.Ok, you are of some use to us.",
+        "3.Ok, you are of some use to us.",
+        "4.Ok, you are of some use to us.",
+        "5.Ok, you are of some use to us.",
+        "6.Ok, you are of some use to us."
+    ],
+    "MissionSuccessStatements" : [ 
+		"You are really getting the hang of it."
+    ], 
+	"GoodFaithFailureStatements" : [ 
+		"You did your job - just"
+    ],
+	"BadFaithFailureStatements" : [ 
+		"What...! Do this again and you're history."
+    ],
+	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
+    "DefaultRepresentativeCastDefId" : "castDef_theBaron",
+    "DataManager" : null,
+    "factionID" : "antianLanciarii",
+  	"icon" : "uixTxrIcon_antianLanciarii",
+    "heraldryDefId" : "heraldrydef_antianLanciarii",
+    "storePanelImage" : null,
+    "factionStoreColor" : null,
+    "StartingReputationValues" : [
+        -15,
+        -15,
+        0
+    ],
+    "StartingReputationModes" : [
+        "KAMEA_CAMPAIGN",
+        "CAREER",
+        "NONE"
+    ]
+}

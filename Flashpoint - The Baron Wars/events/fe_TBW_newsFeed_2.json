@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fe_TBW_newsFeed_2",
         "Name" : "AURIGAN EMBARRASSMENT CONTINUES",
-        "Details" : "First session of the Tribunal hearing regarding the unsanctioned civilian extermination carried out under the authority of [[DM.BaseDescriptionDefs[LoreRestoredHope],RESTORED HOPE]] has named names in the open Tribunal hearing with the presentation of personal evidence, by proxy, from the Commander of the [[DM.BaseDescriptionDefs[LoreBoneyardWranglers],Boneyard Wranglers]].\r\n\r\nEvidence from certified untampered BattleROMS and verified voice transcripts, exposes the duplicity of the Aurigan High Council and of the Rampart Company\u2019s methods and their Charter.",
+        "Details" : "First session of the Tribunal hearing regarding the unsanctioned civilian extermination carried out under the authority of [[DM.BaseDescriptionDefs[LoreRestoredHope],RESTORED HOPE]] has named names in the open Tribunal hearing with the presentation of personal evidence, by proxy, from the Commander of the [[DM.BaseDescriptionDefs[LoreAntianLanciarii],Antian Lanciarii]].\r\n\r\nEvidence from certified untampered BattleROMS and verified voice transcripts, exposes the duplicity of the Aurigan High Council and of the Rampart Company\u2019s methods and their Charter.",
         "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
     },
     "Scope" : "Company",
