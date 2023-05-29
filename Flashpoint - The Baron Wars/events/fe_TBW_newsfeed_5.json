@@ -70,8 +70,8 @@
                                 {
                                 "Scope" : "Company",
                                 "EventID" : "fe_TBW_anaMarieBroadcast",
-                                "MinDaysWait" : 20,
-                                "MaxDaysWait" : 30,
+                                "MinDaysWait" : 10,
+                                "MaxDaysWait" : 20,
                                 "Probability" : 100,
                                 "RetainPilot" : false
                                 }

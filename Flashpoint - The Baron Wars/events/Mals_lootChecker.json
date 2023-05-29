@@ -25,7 +25,7 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Checking itemCollection_KOTU_MuseumPieces",
+                "Name" : "Checking itemCollection_TBW_Salvage",
                 "Details" : "Mal's Loot Checker",
                 "Icon" : null
             },
@@ -47,8 +47,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "1-itemCollection_KOTU_MuseumPieces",
-                        "Details" : "Checking itemCollection_KOTU_MuseumPieces",
+                        "Name" : "1-itemCollection_TBW_Salvage",
+                        "Details" : "Checking itemCollection_TBW_Salvage",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -67,8 +67,18 @@
                             "Stats" : null,
                             "Actions" : [
                                 {
+                                    "Type" : "System_PauseNotification",
+                                    "value" : "Unexpected Loot",
+                                    "valueConstant" : null,
+                                    "additionalValues" : 
+                                    [
+                                    "Aye Cap'n this will go well in the stable.",
+                                    "castDef_YangDefault"
+                                    ]
+                                },
+                                {
                                     "Type" : "System_ShowRewards",
-                                    "value" : "itemCollection_KOTU_MuseumPieces",
+                                    "value" : "itemCollection_TBW_Salvage",
                                     "valueConstant" : null,
                                     "additionalValues" : null
                                 }

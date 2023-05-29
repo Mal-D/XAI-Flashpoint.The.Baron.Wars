@@ -1,9 +1,10 @@
 {
     "StartingMilestoneID" : "ms_fp_TBW_001_Start",
     "Milestones" : [
-        {"Description" : {"Id" : "ms_fp_TBW_001_Start",
+        {
+            "Description" : {"Id" : "ms_fp_TBW_001_Start",
                 "Name" : "Start",
-                "Details" : "flashpoint",
+                "Details" : "001_Start",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -18,31 +19,26 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : 
-                                [
-                        {
-                        "typeString": "System.Int32",
-                        "name": "progScore",
-                        "value": "0",
-                        "set": true,
-                        "valueConstant": "0"
+                    "Stats" : [
+                        {"typeString" : "System.Int32",
+                            "name" : "progScore",
+                            "value" : "0",
+                            "set" : true,
+                            "valueConstant" : "0"
                         },
-                        {
-                        "typeString": "System.Int32",
-                        "name": "TBW_FailCount",
-                        "value": "0",
-                        "set": true,
-                        "valueConstant": "0"
+                        {"typeString" : "System.Int32",
+                            "name" : "TBW_FailCount",
+                            "value" : "0",
+                            "set" : true,
+                            "valueConstant" : "0"
                         }
-                                ],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
+                    ],
+                    "Actions" : [{"Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
-                                ],
+                    ],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
@@ -54,7 +50,7 @@
         },
         {"Description" : {"Id" : "ms_fp_TBW_002_Talk",
                 "Name" : "Talk",
-                "Details" : "flashpoint",
+                "Details" : "002_Talk",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -98,16 +94,16 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_TBW_003_Mission",
+        {
+            "Description" : {"Id" : "ms_fp_TBW_003_Mission",
                 "Name" : "Mission",
-                "Details" : "flashpoint",
+                "Details" : "003_Mission",
                 "Icon" : null
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
@@ -130,7 +126,8 @@
                     },
                     "Stats" : null,
                     "Actions" : [
-                        {"Type" : "Flashpoint_AddContract",
+                        {
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -148,7 +145,8 @@
                                 "irukjandiCompany"
                             ]
                         },
-                        {"Type" : "System_ForceDropshipRoom",
+                        {
+                            "Type" : "System_ForceDropshipRoom",
                             "value" : "Contract",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -165,7 +163,9 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_TBW_004_Talk",
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_004_Talk",
                 "Name" : "Talk Choice",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -173,7 +173,8 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -213,7 +214,110 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_005_Branch",
+            "Description" : {
+                "Id" : "ms_fp_TBW_004_Switch",
+                "Name" : "earlyReward",
+                "Details" : "A little early Reward.",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["TBW_passOnClintParts"],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_005_Branch",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["TBW_takeClintParts"],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : null,
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Unexpected Loot",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Aye Cap'n this will go well in the stable.",
+                            "castDef_YangDefault"
+                            ]
+                        },
+                        {
+                            "Type" : "System_ShowRewards",
+                            "value" : "itemCollection_TBW_Salvage",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_005_Branch",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : null,
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_005_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -221,13 +325,12 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_a"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -257,13 +360,12 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_b"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -293,7 +395,8 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
@@ -329,7 +432,8 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Flashpoint",
                         "RequirementTags" : {
@@ -834,7 +938,8 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_302_C-Complete",
+            "Description" : {
+                "Id" : "ms_fp_TBW_302_C-Complete",
                 "Name" : "C-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
