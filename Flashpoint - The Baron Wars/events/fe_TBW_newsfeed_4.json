@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fe_TBW_newsFeed_4",
         "Name" : "GOVERNOR RATHBOTTOM KIDNAPPED",
-        "Details" : "Rumors have been spreading like wildfire that the Governor, August Rathbottom, has been kidnapped.",
+        "Details" : "Civil unrest has degraded into localised violence, centered at the moment in over the lack of meat and basic food items. Reports that even water and personal toilet hygene products are being horded. \r\n\r\nAllison Mambalay, ruler of New Abilene has called for calm and has petitioned the Crimson Council for additional security forces. Dispite this, rumors have been spreading like wildfire that her appointed Governor, August Rathbottom, has been kidnapped. The rulers' office has not responded.",
         "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
     },
     "Scope" : "Company",
@@ -31,7 +31,7 @@
             "Description" : {
                 "Id" : "outcome_0",
                 "Name" : "Kidnappers Make Demands.",
-                "Details" : "A Vid from someone called 'The Baron' has made the following demands has been received by the Office of the Interior. Dire consequences are threatened if the listed demands are not met.",
+                "Details" : "A Vid from someone on behalf of the 'Wagyu Barons' has made the following demands has been received by the Office of the Interior. Dire consequences are threatened if the listed demands are not met.",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -39,8 +39,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "The demands detailed.",
-                        "Details" : "1.August Rathbottom be removed as Planetary Governor.\r\n\r\n2. The Wagyu Beef Collective be recognised as the fully independant planetary Governing Authority.\r\n\r\n3. All Agrarian Collective assets be resumed to be managed by the new Governing Authority.\r\n\r\nIn the event of the demands not being met, all resource infrastrusture services will be annexed, by force if necessary.",
+                        "Name" : "The demands detailed",
+                        "Details" : "1. Allison Mambalay step aside and appoint Baron Jebadiah Tombstone as ruler of New Abilene.\r\n\r\n2. That the new 'Council of Barons' be recognised as the planetary Governing Authority.\r\n\r\n3. All Agrarian Collective assets be resumed to be managed by the new Governing Authority.\r\n\r\n4. The surrender of all Canopian and allied forces.\r\n\r\nIn the event of the demands not being met, all resource infrastrusture services and business centres will be annexed, by force if necessary.",
                         "Icon" : null
                     },
                     "Weight" : 100,

@@ -1,8 +1,8 @@
 {
     "Description" : {
         "Id" : "fe_TBW_newsFeed_3",
-        "Name" : "In Other News - The Beef Barons kill Supply.",
-        "Details" : "The Beef Shortage is being felt across the Magistracy of Canopus. Favourite cuts of the the rare, marbled flesh of the genetically modified Terran Bovine species is being threatened by the continued theft of necessary grain, feed stocks and even indiscriminate slaughter of precious livestock.",
+        "Name" : "In Other News - The Beef Baron kills Supply.",
+        "Details" : "The Beef Shortage is being felt across the Magistracy of Canopus. Favourite cuts of the the rare, marbled flesh of the genetically modified Terran Bovine species, on New Abilene, is being threatened by the continued theft of necessary grain, feed stocks and even indiscriminate slaughter of precious livestock.",
         "Icon" : "uix_TxrSpot_MercNews_BreakingStory.png"
     },
     "Scope" : "Company",

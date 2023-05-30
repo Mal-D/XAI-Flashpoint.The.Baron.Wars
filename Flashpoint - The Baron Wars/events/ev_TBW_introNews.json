@@ -27,7 +27,7 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Alright - something for free.",
+                "Name" : "<color=#6DF240FF>[Alright - something for free.]</color>",
                 "Details" : "Registration is free",
                 "Icon" : null
             },
@@ -109,7 +109,7 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "Just More Junk",
+                "Name" : "<color=#FF0000FF>[Just More Junk]</color>",
                 "Details" : "Just More Junk - TBW_newsFeed_off",
                 "Icon" : null
             },
