@@ -22,6 +22,7 @@
 	{ "Type": "SimGameEventDef", "Path": "events" },
 	{ "Type": "FactionDef",  "Path": "factions/tbw" },
 	{ "Type": "FlashpointDef", "Path": "flashpoints" },
+	{ "Type": "SimGameMilestoneSet", "Path": "milestoneSets" },
 	{ "Type": "ConversationContent", "Path": "dialogue_buckets"},
 	{ "Type": "DialogBucketDef", "Path":  "conversationBuckets"  },
 	{ "Type": "SimGameStatDescDef", "Path": "SimGameStatDesc", "AddToDB": true },

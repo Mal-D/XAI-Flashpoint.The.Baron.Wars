@@ -1515,7 +1515,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a Senseless waste.",
+                    "words" : "What a senseless waste.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1531,7 +1531,23 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We'll send a rescue party to see  if there is anything that can be done.",
+                    "words" : "You are considered and Enemy of the Magestry of Canopus and by the Authority of the Crimon Council I am placing you under arrest.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "I don't know what you have been told but I am just as confused as you are. I have no idea who these other forces are.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1663,7 +1679,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Lady Suiko and her old war buddies are down, Commander. It's all on us now.",
+                    "words" : "The Agrarian Collective's forces have be taken out. It's all on us now.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1671,6 +1687,38 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Baron Tombstone, this is on you. Surrender now or we will be forced to use deadly force.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "This is outragous. This is not my doing, I was called here by my daughter.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1988,7 +2036,7 @@
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
-{
+                {
                     "words" : "Just remember to keep <i>Badger</i> safe.",
                     "wordsColor" : {
                         "r" : 1,
@@ -2030,7 +2078,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "I agree Commander, someone is playing us. Please help Leanora get clear. We'll continue this conversation where it's safe.",
+                    "words" : "I agree Commander, it seems we have indeed an other player but for now, help Leanora get clear. We'll continue this conversation where it's safe.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2952,7 +3000,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Mother! Don't do this! You're going to get yourself killed. I only contacted Dad to warn him of the bombing... he knows nothing about apart from the news. He's only here to stop the others.",
+                    "words" : "Mother! Don't do this! You're going to get yourself killed. I've only just contacted Dad to warn him of the bombing... he knows nothing about apart from the news. He's only here to stop the others.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2968,7 +3016,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What...? Thats rubbish, I saw him at the trade conference with the Taurian trade delegation.",
+                    "words" : "I saw him at the Deptment of Trade cozying up to that traitor Rathbottom just before the bombing.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

@@ -1,9 +1,9 @@
 {
     "ID" : "faction_agrarianCollective",
     "Name" : "Agrarian Collective",
-    "ShortName" : "Collective",
+    "ShortName" : "AG. Collective",
     "Description" : "The Agrarian Collective upholds that there should be balance between landed property and free range raising of livestock. They are constantly at odds with the Beef Growers over free access to grazing pastures and water for their less popular sheep and other livestock.",
-    "Demonym" : "AgCo",
+    "Demonym" : "Ag.Co",
     "Government" : "",
     "Allies" :  [
         "MagistracyOfCanopus"
@@ -20,12 +20,12 @@
     ],
 	"Presence": 0.1,
     "ReputationStatements" : [
-        "1.",
-        "2.",
-        "3.",
+        "Are you sure you are working for us and not my husband?",
+        "Ok, useful I suppose. Next time, Next time, do all that we are paying you for.",
+        "Ok, useful I suppose. Next time, Next time, do all that we are paying you for.",
         "Our money spends the same as the others - just do your job 'Marshal'.",
-        "5.",
-        "6."
+        "You have helped us immeasurably.",
+        "You have helped us immeasurably."
     ],
     "MissionSuccessStatements" : [ 
 		"You have helped us immeasurably."
@@ -34,7 +34,7 @@
 		"Ok, useful I suppose. Next time, Next time, do all that we are paying you for."
     ],
 	"BadFaithFailureStatements" : [ 
-		"Are you sure you are working for us and not my EX?"
+		"Are you sure you are working for us and not my husband?"
     ],
 	"DefaultCombatLeaderCastDefId" : "castDef_theCountess",
     "DefaultRepresentativeCastDefId" : "castDef_theCountess",

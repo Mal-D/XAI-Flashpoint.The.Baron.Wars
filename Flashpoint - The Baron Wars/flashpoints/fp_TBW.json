@@ -3,7 +3,7 @@
         "Id" : "fp_TBW",
         "Name" : "The Baron Wars",
         "Details" : "This is not what we wanted but, the popular media title seems to have stuck.",
-        "Icon" : "uix_TxrSpot_CommerceCentreBombed.dds"
+        "Icon" : "uix_TxrSpot_TribunalBombed.png"
     },
     "Weight" : 1,
     "InternalName" : "TBW",
@@ -34,9 +34,9 @@
     "MilestoneSetID" : "ms_fp_TBW",
     "UseAvailableTimeoutOverride" : true,
     "AvailableTimeout" : 180,
-    "UseInProgressTimeoutOverride" : false,
-    "InProgressTimeout" : 0,
-    "RewardCollectionID" : "itemCollection_loot_Item_rare",
+    "UseInProgressTimeoutOverride" : true,
+    "InProgressTimeout" : 180,
+    "RewardCollectionID" : "itemCollection_MoC_MuseumPieces",
     "UnitDropTonnageHint" : "Mixed",
     "LanceDropTonnageHint" : "Mixed",
     "FlashpointShortDescription" : "Commander {Commander.LastName} You have agreed to assume the office of 'Marshall' until this situation is resolved. There are other parties involved but as to who they are, we are still investigating. you the earn the eternal gratitude of the Crimson Council should you bring this to a successful conclusion.",
