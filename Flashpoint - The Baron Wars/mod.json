@@ -29,7 +29,6 @@
 	{ "Type": "HeraldryDef", "Path": "heraldry" },
 	{ "Type": "PilotDef", "Path": "newPilot", "AddToDB": true },
 	{ "Type": "PilotDef", "Path": "newPilot/tbw", "AddToDB": true },
-	{ "Type": "PilotDef", "Path": "pilot", "AddToDB": true },
 	{ "Type": "BaseDescriptionDef", "Path": "lore" },
 	{ "Type": "ItemCollectionDef", "Path": "itemCollections" },
 	{ "Type": "SimGameConversations", "Path": "simGameConversations" },

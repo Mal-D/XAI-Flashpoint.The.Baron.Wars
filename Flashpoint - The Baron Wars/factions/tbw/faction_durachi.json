@@ -1,12 +1,13 @@
 {
-    "ID" : "faction_agrarianCollective",
-    "Name" : "Agrarian Collective",
-    "ShortName" : "AG. Collective",
-    "Description" : "The Agrarian Collective upholds that there should be balance between landed property and free range raising of livestock. They are constantly at odds with the Beef Growers over free access to grazing pastures and water for their less popular sheep and other livestock.",
-    "Demonym" : "Ag.Co",
+    "ID" : "faction_durachi",
+    "Name" : "Durachi",
+    "ShortName" : "Durachi",
+    "Description" : "The Durachi are the corporate titans, whose enterprises developed trade with the Periphery and Inner Sphere, thereby enriching the nation and the offi ce of successive Magestrixes. These families are the big-money players, and they often have an outsized influence in who becomes an Elector on the planets where they live.",
+    "Demonym" : "Durachi",
     "Government" : "",
     "Allies" :  [
-        "MagistracyOfCanopus"
+        "MagistracyOfCanopus",
+        "wagyuBarons"
                 ],
     "Enemies" : [
 		"Liao",
@@ -15,7 +16,6 @@
 		"Marik",
 		"Kurita",
         "AuriganPirates",
-        "wagyuBarons",
         "irukjandiCompany"
     ],
 	"Presence": 0.1,
@@ -36,12 +36,12 @@
 	"BadFaithFailureStatements" : [ 
 		"Are you sure you are working for us, or just watching things burn?"
     ],
-	"DefaultCombatLeaderCastDefId" : "castDef_theCountess",
-    "DefaultRepresentativeCastDefId" : "castDef_theCountess",
+	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
+    "DefaultRepresentativeCastDefId" : "castDef_theBaron",
     "DataManager" : null,
-    "factionID" : "agrarianCollective",
-  	"icon" : "uixTxrIcon_agCollective",
-    "heraldryDefId" : "heraldrydef_agrarianCollective",
+    "factionID" : "durachi",
+  	"icon" : "",
+    "heraldryDefId" : "",
     "storePanelImage" : null,
     "factionStoreColor" : null,
     "StartingReputationValues" : [

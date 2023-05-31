@@ -1,0 +1,58 @@
+{
+    "ID" : "faction_girin",
+    "Name" : "girin",
+    "ShortName" : "Girin",
+    "Description" : "The Girin, the last and most recent of the noble factions, are those rare individuals whose personal services to the state—civil or military—warrant special recognition.",
+    "Demonym" : "Girin",
+    "Government" : "",
+    "Allies" :  [
+        "MagistracyOfCanopus",
+        "wagyuBarons",
+        "agrarianCollective"
+                ],
+    "Enemies" : [
+		"Liao",
+		"Davion",
+		"Steiner",
+		"Marik",
+		"Kurita",
+        "AuriganPirates",
+        "irukjandiCompany"
+    ],
+	"Presence": 0.1,
+    "ReputationStatements" : [
+        "We have scrambled to the top. We expect you to strive just as hard.",
+        "We maybe Girin but we will not be ignored. Do your job properly or you won't get paid.",
+        "Ok, useful I suppose. Next time, Next time, do all that we are paying you for.",
+        "Our money spends the same as the others - just continue to do your job 'Marshal'.",
+        "We Girin have built on hard works and it looks like your made of the same stuff.",
+        "If you stay arond long enough and perform as well as you have - we will welcome such as you into our ranks."
+    ],
+    "MissionSuccessStatements" : [ 
+		"You have helped us immeasurably."
+    ], 
+	"GoodFaithFailureStatements" : [ 
+		"Ok, useful I suppose. Next time, Next time, do all that we are paying you for."
+    ],
+	"BadFaithFailureStatements" : [ 
+		"Are you sure you are working for us, or just watching things burn?"
+    ],
+	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
+    "DefaultRepresentativeCastDefId" : "castDef_theBaron",
+    "DataManager" : null,
+    "factionID" : "faction_girin",
+  	"icon" : "",
+    "heraldryDefId" : "",
+    "storePanelImage" : null,
+    "factionStoreColor" : null,
+    "StartingReputationValues" : [
+        -15,
+        -15,
+        0
+    ],
+    "StartingReputationModes" : [
+        "KAMEA_CAMPAIGN",
+        "CAREER",
+        "NONE"
+    ]
+}

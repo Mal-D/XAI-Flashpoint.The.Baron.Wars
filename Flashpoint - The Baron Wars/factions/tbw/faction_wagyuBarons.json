@@ -19,12 +19,12 @@
     ],
 	"Presence": 0.1,
     "ReputationStatements" : [
-        "1.Ok, you are of some use to us.",
-        "2.Ok, you are of some use to us.",
-        "3.Ok, you are of some use to us.",
-        "4.Ok, you are of some use to us.",
-        "5.Ok, you are of some use to us.",
-        "6.Ok, you are of some use to us."
+        "What...! Do that again and you're history.",
+        "Half a job is better than nothing - nearly!",
+        "You did your job - just",
+        "You did your job - just",
+        "Okay, you are of some use to us.",
+        "You are really getting the hang of it."
     ],
     "MissionSuccessStatements" : [ 
 		"You are really getting the hang of it."
@@ -33,7 +33,7 @@
 		"You did your job - just"
     ],
 	"BadFaithFailureStatements" : [ 
-		"What...! Do this again and you're history."
+		"What...! Do that again and you're history."
     ],
 	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
     "DefaultRepresentativeCastDefId" : "castDef_theBaron",

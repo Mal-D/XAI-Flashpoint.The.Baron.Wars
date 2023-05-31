@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fe_TBW_newsFeed_5",
         "Name" : "ADMINISTRATIVE BUILDINGS BOMBED",
-        "Details" : "1 INJURED - 2 MISSING presumed dead.\r\n\r\nOUTRAGE\r\n\r\nGovernor Rathbottom offices destroyed.\r\n\r\nTWO MISSING.\r\n\r\nSeveral Magistracy employees are recovering in a Canopian Medical facility.\r\n\r\nThe Chief Justice of the Magistracy Judicial Branch is on record \"This attack is a blatent attempt to force the hand of the Crimson Council. Henceforth and until further notice, New Abilene is now under Marshall Law. The Marshall Force is being activated immediately to deliver swift retribution to those responsible for this atrocious and barbarous act.\"",
+        "Details" : "2 MISSING presumed dead.\r\n\r\nOUTRAGE!\r\n\r\nGovernor Rathbottom offices destroyed.\r\n\r\nTWO MISSING.\r\n\r\nSeveral Magistracy employees and Taurian Trade Delegation members are recovering in a Canopian Medical facility.\r\n\r\nThe Chief Justice of the Magistracy Judicial Branch is on record \"This attack is a blatent attempt to force the hand of the Crimson Council. Henceforth and until further notice, New Abilene is now under Marshall Law. The Marshall Force is being activated immediately to deliver swift retribution to those responsible for this atrocious and barbarous act.\"",
         "Icon" : "uix_TxrSpot_TribunalBombed.png"
     },
     "Scope" : "Company",
@@ -31,7 +31,7 @@
             "Description" : {
                 "Id" : "outcome_0",
                 "Name" : "Bodies missing.",
-                "Details" : "The injured Deptment of Trade delegates' conditions are considered minor and non life-threatening. However, Baron Jebadiah Tombstone and the Governor are reported still missing.",
+                "Details" : "The injured members of the Department of Trade's conditions are considered minor and non life-threatening. However, Baron Jebadiah Tombstone and Governor Rathbottom are reported still missing.",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -40,7 +40,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Bodies missing.",
-                        "Details" : "Clearance of the rubble failed to locate either Baron Tombstone, Governor Rathbottom... or their bodies. Several vehicles were seen leaving the meeting precinct before any security forces could be activated.\r\n\r\nThe Minister of the Treasury have placed a \u00A25,000,000 (5 Million) reward for information leading to the arrest of either. The [[DM.BaseDescriptionDefs[LoreMIM],MIM]] consider the missing Chairman of the 'Wagyu Barons' a person of interest and considered responsible for the bombing.",
+                        "Details" : "Clearance of the rubble failed to locate either Baron Tombstone, Governor Rathbottom... or their bodies. Several vehicles were seen leaving the meeting precinct before any security forces could be activated.\r\n\r\nThe Minister of the Treasury have placed a \u00A25,000,000 (5 Million) reward for information leading to the arrest of the perpetrators. The [[DM.BaseDescriptionDefs[LoreMIM],MIM]] consider the missing Chairman of the 'Wagyu Barons' a person of interest and considered possibly responsible for the bombing.",
                         "Icon" : null
                     },
                     "Weight" : 100,
