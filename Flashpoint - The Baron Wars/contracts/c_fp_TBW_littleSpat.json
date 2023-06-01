@@ -27,12 +27,12 @@
         },
         "Stats" : 
         [
-            {"typeString": "System.Int32",
-                "name": "TBW_FailCount",
-                "value": "0",
-                "set": true,
-                "valueConstant": "0"
-            },
+        {"typeString" : "System.Int32",
+            "name" : "TBW_FailCount",
+            "value" : "99",
+            "set" : true,
+            "valueConstant" : "99"
+        },
             {"typeString": "System.Int32",
                 "name": "progScore",
                 "value": "1",
@@ -55,13 +55,12 @@
             "items" : [],
             "tagSetSourceFile" : ""
         },
-        "Stats" : [
-            {"typeString": "System.Int32",
-                "name": "TBW_FailCount",
-                "value": "1",
-                "set": true,
-                "valueConstant": "1"
-            },
+        "Stats" : [{"typeString" : "System.Int32",
+        "name" : "TBW_FailCount",
+        "value" : "99",
+        "set" : true,
+        "valueConstant" : "99"
+        },
             {"typeString": "System.Int32",
                 "name": "progScore",
                 "value": "0",
