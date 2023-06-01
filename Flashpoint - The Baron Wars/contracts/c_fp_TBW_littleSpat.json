@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get Leanora Tombstone and her daughter to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
+    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get The Countess and her daughter to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
     "longDescription" : "Bloody self-appointed militias... cause nothing but trouble by getting in the way.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -687,7 +687,7 @@
                     "Scope": "Company",
                     "Requirements": null,
                     "AddedTags": {
-                        "items": ["TBW_LeanoraDies"],
+                        "items": ["TBW_LeanoraDisabled"],
                         "tagSetSourceFile": ""
                     },
                     "RemovedTags": {
