@@ -6,7 +6,7 @@
    "callsign" : "Badger",
    "rank" : "Froness Hier",
    "gender" : "Female",
-   "faction" : "faction_froness",
+   "factionID" : "faction_froness",
    "sgCharType" : "UNSET",
    "showRank" : true,
    "showFirstName" : true,

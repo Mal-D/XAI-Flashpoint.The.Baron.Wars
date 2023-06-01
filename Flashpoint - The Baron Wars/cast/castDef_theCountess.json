@@ -6,7 +6,7 @@
    "callsign" : "Trigger",
    "rank" : "Countess D'Froness",
    "gender" : "Female",
-   "faction" : "",
+   "factionID" : "faction_froness",
    "sgCharType" : "UNSET",
    "showRank" : true,
    "showFirstName" : true,
