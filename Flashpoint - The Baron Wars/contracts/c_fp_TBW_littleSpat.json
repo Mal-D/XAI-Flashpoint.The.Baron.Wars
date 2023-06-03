@@ -2951,7 +2951,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "All units stand by; I'm opening the comms. Attention, 'scumbag'... I know you are listening. I and the Agrarian Collective have had enough of your attempts to drive us away from the resources we need to survive. Your hired guns have gone too far this time. If you won't stop them we will.",
+                    "words" : "All units stand by... I'm opening the comms. Attention, Girim interloper... I know you are listening. I and the Agrarian Collective have had enough of your attempts to absorb our resources we need to survive. Your Contractors have gone too far this time. If you won't stop them we will.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2967,7 +2967,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Leanora, I don't have any idea what you are talking about. Eleonore, you know... our daughter... warned me that you might be \"visiting.\" Please, we're not enemies. Surely there is some mistake.",
+                    "words" : "Leanora, I don't have any idea what you are talking about. Eleonore, you know... your daughter... warned me that you might be \"visiting.\" Please, we're not enemies. You are being duped and not by me.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2983,7 +2983,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "So, you have finally crawled out from under your rock! You may have seduced my daughter with your money but, I'll not have you drag our home into another war. I mean to put an end to this.",
+                    "words" : "So, you have finally crawled out from under your rock! You may have seduced my daughter but, I'll not have you drag our home into another war. I mean to put an end to this.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2999,7 +2999,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Mother! Don't do this! You're going to get yourself killed. I've only just contacted Dad to warn him of the bombing... he knows nothing about apart from the news. He's only here to stop the others.",
+                    "words" : "Mother! Don't do this! You're going to get yourself killed. I've only just contacted Jeb to warn him of the bombing... he knows nothing about apart from the news. He's only here to stop the others.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3015,7 +3015,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I saw him at the Deptment of Trade cozying up to that traitor Rathbottom just before the bombing.",
+                    "words" : "I saw him at the Department of Trade cozying up to that traitor Rathbottom just before the bombing.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3047,7 +3047,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "What...? Thats rubbish! I don't know what lies he is telling you. I saw him at the trade conference with the Taurian trade delegation. Enough talk, I'm using the only language he seems to understand.",
+                    "words" : "What...? Thats rubbish! I don't know what lies he is telling you. I saw him at the trade conference with the Taurian trade delegation. Enough talk, I'm using the only language people like him seems to understand.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

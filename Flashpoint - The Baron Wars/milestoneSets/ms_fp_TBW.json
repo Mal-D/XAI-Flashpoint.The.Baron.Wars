@@ -102,8 +102,7 @@
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [
-                {"Scope" : "Company",
+            "Results" : [{"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
@@ -188,11 +187,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "(required)",
+                            "value" : "9cf2c38bf44b6a3152f0aa98",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
+                                "{TGT_FLASHPOINT.Def.Description.Name} More Details revealed.",
+                                "Stationary Orbit over the Capital \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
                             ]
@@ -328,9 +327,9 @@
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Flashpoint",
+                        "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [],
+                            "items" : ["TBW_OpOne"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -363,9 +362,9 @@
                 {
                     "Scope" : "Company",
                     "Requirements" : {
-                        "Scope" : "Flashpoint",
+                        "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [],
+                            "items" : ["TBW_OpTwo"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -387,80 +386,6 @@
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_200_B-Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Flashpoint",
-                        "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_c"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_300_C-Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {
-                    "Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Flashpoint",
-                        "RequirementTags" : {
-                            "items" : [
-                                "fp_choice_cancel"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_400_Cancel-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }

@@ -13,7 +13,7 @@
     "EnemyLances": ["lancedef_theBaron_AL_Escort"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theDaughter",
-    "Dialogue": "Commander {Commander.LastName}, we have to protect Mother. She's a hothead and just as stubborn as my Father. I just hope we are not too late.",
+    "Dialogue": "Commander {Commander.LastName}, we have to protect Mother. She's a hothead and just as stubborn as my fianc...uhh.. the Baron. I just hope we are not too late.",
     "AllyLanceCount": 1,
     "AllyLances": ["lancedef_eleonoreT_AL_LightScout"]
   },
