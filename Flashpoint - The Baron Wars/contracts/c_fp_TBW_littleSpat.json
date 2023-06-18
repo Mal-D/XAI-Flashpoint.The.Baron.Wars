@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat. v4.3",
+    "contractName" : "Settling a little Spat....",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : "",
     "badFaithStatementOverride" : "",
     "goodFaithStatementOverride" : "",
-    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get The Countess and her daughter to safety. If the Wagyu Baron 'Hired guns' get in the way make sure they understand that we are the law around here, not them.",
+    "shortDescription" : "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get The Countess and her daughter to safety. If the Wagyu Baron 'Contractors' get in the way make sure they understand that you are the law around here, not them.",
     "longDescription" : "Bloody self-appointed militias... cause nothing but trouble by getting in the way.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -57,9 +57,9 @@
         },
         "Stats" : [{"typeString" : "System.Int32",
         "name" : "TBW_FailCount",
-        "value" : "99",
+        "value" : "98",
         "set" : true,
-        "valueConstant" : "99"
+        "valueConstant" : "98"
         },
             {"typeString": "System.Int32",
                 "name": "progScore",
@@ -122,10 +122,30 @@
             "objective" : {
                 "EncounterObjectGuid" : "d5ee674b-8993-4804-9fa2-b0a73be466e4"
             },
-            "title" : "Terminate the Hired Guns",
+            "title" : "Terminate the WB Contractors",
             "description" : "b0a73be466e4",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [
+                
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["_TBW_contractorsTerminated"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -134,10 +154,26 @@
             "objective" : {
                 "EncounterObjectGuid" : "cb9c173c-89b3-4447-b3a0-26193cbeb601"
             },
-            "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} 'Fixer's Lance.",
+            "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} 'The Fixer's' Lance.",
             "description" : "26193cbeb601",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["_TBW_FixerLanceTerminated"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -149,7 +185,23 @@
             "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} Stinger Lance.",
             "description" : "46ba1ea99d43",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["_TBWStingerLanceTerminated"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -160,7 +212,7 @@
             },
             "title" : "Objective_Empty_HiddenFlag_HostileToAllChunkActive",
             "description" : "ae2638ab753f",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -172,7 +224,7 @@
             },
             "title" : "Hidden Hostile to All Drop Timer",
             "description" : "103e525d91f0",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -184,7 +236,7 @@
             },
             "title" : "Hidden Hostile to ALL AI Timer",
             "description" : "245bf436a4aa",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -196,7 +248,7 @@
             },
             "title" : "Objective_Empty_HostileToAll_Flag_Secondary",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -232,8 +284,24 @@
             },
             "title" : "Destroy Additional Enemy Forces",
             "description" : "",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "isPrimary" : true,
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["__f9af713a466f"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -279,7 +347,33 @@
             "title" : "Destroy Additional Enemy Forces",
             "description" : "Destroy Additional Enemy Forces",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["__028e2188fa89"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.1",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -326,8 +420,35 @@
             },
             "title" : "Destroy Additional Enemy Reinforcements",
             "description" : "",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "isPrimary" : true,
+            "OnSuccessResults" : [
+
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["__1919f3b4f11d"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.1",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -518,8 +639,32 @@
             },
             "title" : "Destroy the Enemy Allied Forces",
             "description" : "",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "isPrimary" : true,
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["__3bf90ef951fb"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [
+                    {
+                        "typeString" : "System.Single",
+                        "name" : "ContractBonusRewardPct",
+                        "value" : "0.1",
+                        "set" : false,
+                        "valueConstant" : null
+                    }
+                ],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -566,8 +711,32 @@
             },
             "title" : "All of {COMPANY.CompanyName} Lance must survive",
             "description" : "",
-            "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "isPrimary" : true,
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["__6f18b878782b"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [
+                    {
+                        "typeString" : "System.Single",
+                        "name" : "ContractBonusRewardPct",
+                        "value" : "0.1",
+                        "set" : false,
+                        "valueConstant" : null
+                    }
+                ],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -579,7 +748,33 @@
             "title" : "All of {COMPANY.CompanyName} Lance must survive",
             "description" : "",
             "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["__d22abf5b91f9"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [
+                        {
+                            "typeString" : "System.Single",
+                            "name" : "ContractBonusRewardPct",
+                            "value" : "0.1",
+                            "set" : false,
+                            "valueConstant" : null
+                        }
+                    ],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -591,8 +786,28 @@
             "title" : "Keep <i>Badger</i> alive",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
-            "OnFailureResults" : [],
+            "OnSuccessResults" : 
+                [],
+            "OnFailureResults" : 
+            [
+                {
+                "Scope" : "Company",
+                "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["TBW_Badger_down"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : ["TBW_Badger_safe"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+                 }
+            ],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
         },
@@ -601,10 +816,26 @@
                 "EncounterObjectGuid" : "ef1d7752-73cf-40bc-9382-d398e80d1e49"
             },
             "title" : "",
-            "description" : "d398e80d1e49(3).Keep <i>Badger</i> alive",
+            "description" : "Not active(3).Keep <i>Badger</i> alive",
             "isPrimary" : false,
             "OnSuccessResults" : [],
-            "OnFailureResults" : [],
+            "OnFailureResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["__d398e80d1e49"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                        "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+             }],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
         },
@@ -613,7 +844,7 @@
                 "EncounterObjectGuid" : "48c4aa0a-8408-4549-a9ec-b38e990005ae"
             },
             "title" : "Get to the evac zone",
-            "description" : "b38e990005ae",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -711,7 +942,23 @@
             "title" : "The {TEAM_EMP.FactionDef.Demonym} lance must reach the evac zone",
             "description" : "5e4550c94c67",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["_TBW_EmpEvacReached"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+                 }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -879,7 +1126,23 @@
             "title" : "AllPrimaryTargetsDestroyedFlag",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : ["_TBW_AllPrimTerminated"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+                 }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -1473,7 +1736,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I think you all need some counciling. Daruis... I think we need to go over the Battle Comm transcripts, there is some fishy about this whole mess.",
+                    "words" : "I think you all need some counciling. Farah... I think we need to go over the Battle Comm transcripts, there is some fishy about this whole mess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1496,7 +1759,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1596,14 +1859,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we've taken our first major loss, but our will to fight is unyielding. There shall be no retreat. Death before dishonor!",
+                    "words" : "Commander, we've taken our first major loss but we have to press on as we need to definiely ID these Contractors - getting a few survivors would be helpful.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_UW_lastChance_LadyNakanoDefault",
+                    "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1612,7 +1875,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm glad you're not taking the loss too hard, Lady Suiko. But let's try to keep the death to minimum. We like having allies.",
+                    "words" : "I'm glad you're not taking the loss too hard, But, let's try to keep the death to minimum. We like having allies.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1842,7 +2105,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Threat eliminated. Proceed to the LZ. Let's scram.",
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Threat eliminated. Let's go find 'Badger'.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1850,6 +2113,118 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}////ssssttsss... cough...groan...Sooner than later would appreciated Darius. It's a bit tight in here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_thedaughter",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Hang on sweetheart they are on their way.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Well done 'Badger'. Not your first rodeo I see.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Maybe I've missed my calling... any spare slots Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_thedaughter",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here...but you're right.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_thedaughter",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Ewww! thats gross!",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2159,7 +2534,55 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER Thanks for the assist, we're clear. ATTN RYAN",
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Countess' Dusts Off successful Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Sumire",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Safe. You'd have better keep my daughter safe - she is more important than you realise.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Sumire",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Countess is safe. Any location on 'Badger's bio-signal.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}My Daughter! Where's my daughter? If she is hurt...!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2169,7 +2592,39 @@
                     "selectedCastDefId" : "castDef_TeamLeader_Employer",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's CarVas transponder signal - she's alive.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Calm down... <i>CALM DOWN</i>... I'll bloody calm down when my Daughter is safe.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -2587,7 +3042,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                "words" : "Do you think that had made any difference? We were just trying to head these raiders off. Dispite appearances, they are not working for me. Why would I put my fiancée at risk.",
+                "words" : "Dispite appearances, they are not working for me. What kind of man would I be to put my fiancée at risk.",
                 "wordsColor" : {
                     "r" : 1,
                     "g" : 1,

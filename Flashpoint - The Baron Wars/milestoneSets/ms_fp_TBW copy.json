@@ -2,17 +2,14 @@
     "StartingMilestoneID" : "ms_fp_TBW_001_Start",
     "Milestones" : [
         {
-            "Description" : {
-                "Id" : "ms_fp_TBW_001_Start",
+            "Description" : {"Id" : "ms_fp_TBW_001_Start",
                 "Name" : "Start",
                 "Details" : "001_Start",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
+            "Results" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -23,24 +20,20 @@
                         "tagSetSourceFile" : ""
                     },
                     "Stats" : [
-                        {
-                            "typeString" : "System.Int32",
+                        {"typeString" : "System.Int32",
                             "name" : "progScore",
                             "value" : "0",
                             "set" : true,
                             "valueConstant" : "0"
                         },
-                        {
-                            "typeString" : "System.Int32",
+                        {"typeString" : "System.Int32",
                             "name" : "TBW_FailCount",
                             "value" : "0",
                             "set" : true,
                             "valueConstant" : "0"
                         }
                     ],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
+                    "Actions" : [{"Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_002_Talk",
                             "valueConstant" : null,
                             "additionalValues" : null
@@ -55,18 +48,14 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {
-                "Id" : "ms_fp_TBW_002_Talk",
+        {"Description" : {"Id" : "ms_fp_TBW_002_Talk",
                 "Name" : "Talk",
                 "Details" : "002_Talk",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
+            "Results" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -83,7 +72,7 @@
                             "value" : "9c960ae4ba2954c8d3648fae",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} - I - Getting the Details",
+                                "{TGT_FLASHPOINT.Def.Description.Name} - Getting the Details",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -114,9 +103,7 @@
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [
-                {
-                    "Scope" : "Company",
+            "Results" : [{"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
@@ -150,10 +137,10 @@
                                 "MagistracyOfCanopus",
                                 "wagyuBarons",
                                 "5",
-                                "ms_fp_TBW_004_TalkChoice",
+                                "ms_fp_TBW_004_Talk",
                                 "agrarianCollective",
                                 "irukjandiCompany",
-                                "ms_fp_TBW_004_TalkChoice",
+                                "ms_fp_TBW_004_Talk",
                                 null,
                                 "irukjandiCompany"
                             ]
@@ -177,8 +164,7 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {
-                "Id" : "ms_fp_TBW_004_TalkChoice",
+            "Description" : {"Id" : "ms_fp_TBW_004_Talk",
                 "Name" : "Talk Choice",
                 "Details" : "TBW_004_Talk",
                 "Icon" : ""
@@ -204,7 +190,7 @@
                             "value" : "9cf2c38bf44b6a3152f0aa98",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II - More Details revealed.",
+                                "{TGT_FLASHPOINT.Def.Description.Name} More Details revealed.",
                                 "Stationary Orbit over the Capital \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -212,7 +198,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_005_earlyReward",
+                            "value" : "ms_fp_TBW_004_Switch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -227,7 +213,8 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_005_earlyReward",
+            "Description" : {
+                "Id" : "ms_fp_TBW_004_Switch",
                 "Name" : "earlyReward",
                 "Details" : "A little early Reward.",
                 "Icon" : null
@@ -240,9 +227,7 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "TBW_passOnClintParts"
-                            ],
+                            "items" : ["TBW_passOnClintParts"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -261,9 +246,10 @@
                     },
                     "Stats" : null,
                     "Actions" : [
+                        
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_100_Branch",
+                            "value" : "ms_fp_TBW_005_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -277,9 +263,7 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "TBW_takeClintParts"
-                            ],
+                            "items" : ["TBW_takeClintParts"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -302,9 +286,10 @@
                             "Type" : "System_PauseNotification",
                             "value" : "Unexpected Loot",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                "Aye Cap'n this will go well in the stable.",
-                                "castDef_YangDefault"
+                            "additionalValues" : 
+                            [
+                            "Aye Cap'n this will go well in the stable.",
+                            "castDef_YangDefault"
                             ]
                         },
                         {
@@ -315,7 +300,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_100_Branch",
+                            "value" : "ms_fp_TBW_005_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -329,7 +314,9 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_TBW_100_Branch",
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_005_Branch",
                 "Name" : "Branch",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -337,13 +324,12 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "TBW_OpOne"
-                            ],
+                            "items" : ["TBW_OpOne"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -364,7 +350,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_200_Mission",
+                            "value" : "ms_fp_TBW_100_A-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -373,13 +359,12 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
-                {"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "TBW_OpTwo"
-                            ],
+                            "items" : ["TBW_OpTwo"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -400,7 +385,7 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_300_Mission",
+                            "value" : "ms_fp_TBW_200_B-Mission",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -415,8 +400,9 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_200_Mission",
-                "Name" : "TBW_OpOne",
+            "Description" : {
+                "Id" : "ms_fp_TBW_100_A-Mission",
+                "Name" : "A-Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
@@ -447,7 +433,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_201_A-Talk",
+                                "ms_fp_TBW_101_A-Talk",
                                 null,
                                 null
                             ]
@@ -471,14 +457,17 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_300_Talk",
-                "Name" : "300_Talk",
-                "Details" : "300_Talk",
+            "Description" : {
+                "Id" : "ms_fp_TBW_101_A-Talk",
+                "Name" : "A-Talk",
+                "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+            "Results" : [
+                {
+                    "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -501,7 +490,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_400_Mission",
+                            "value" : "ms_fp_TBW_102_A-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -516,198 +505,23 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_400_Mission",
-                "Name" : "B-Mission",
-                "Details" : "flashpoint",
-                "Icon" : ""
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_AddContract",
-                            "value" : "",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "ms_fp_TBW_401_Talk",
-                                null,
-                                null
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {
-            "Description" : {"Id" : "ms_fp_TBW_401_Talk",
-                "Name" : "401_Talk",
-                "Details" : "401_Talk",
-                "Icon" : ""
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_StartConversation",
-                            "value" : "(required)",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_402_Branch",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {"Description" : {"Id" : "ms_fp_TBW_402_Branch",
-                "Name" : "Branch",
+            "Description" : {
+                "Id" : "ms_fp_TBW_102_A-Complete",
+                "Name" : "A-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [
-                                "TBW_AmbushFail"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_500_Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["TBW_AmbushSuccess"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_600_Mission",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {"Description" : {"Id" : "ms_fp_TBW_700_Talk",
-                "Name" : "700_Talk",
-                "Details" : "700_Talk",
-                "Icon" : ""
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+                {
+                    "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : [
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_a"
+                        ],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -717,17 +531,8 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "System_StartConversation",
-                            "value" : "(required)",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} V - Peripherial Justice.",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_701_Mission",
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_103_A-Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -742,14 +547,48 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_701_Mission",
-                "Name" : "Final Battle",
+            "Description" : {
+                "Id" : "ms_fp_TBW_103_A-Reward",
+                "Name" : "A-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_200_B-Mission",
+                "Name" : "B-Mission",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{
+            "Results" : [
+                {
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
@@ -773,7 +612,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_702_Epilogue",
+                                "ms_fp_TBW_201_B-Talk",
                                 null,
                                 null
                             ]
@@ -797,14 +636,17 @@
             "InvokeChance" : 0
         },
         {
-            "Description" : {"Id" : "ms_fp_TBW_702_Epilogue",
-                "Name" : "Epilogue",
+            "Description" : {
+                "Id" : "ms_fp_TBW_201_B-Talk",
+                "Name" : "B-Talk",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+            "Results" : [
+                {
+                    "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -821,194 +663,13 @@
                             "value" : "(required)",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} VI",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_800_BranchReward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {"Description" : {"Id" : "ms_fp_800_BranchReward",
-                "Name" : "800_BranchReward",
-                "Details" : "800_BranchReward",
-                "Icon" : ""
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [
-                                "Enter RequirementComparisons for reward One"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Reward One",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier One",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 2"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Reward Two",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier Two",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 3"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Reward One",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier Three",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for Failure"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_999_Fail-Complete",
+                            "value" : "ms_fp_TBW_202_B-Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1024,172 +685,21 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_801_Reward",
-                "Name" : "801_Reward",
-                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
-                "Icon" : null
-            },
-            "Scope" : "Company",
-            "Requirements" : [],
-            "Results" : [
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [
-                                "Enter RequirementComparisons for reward One"
-                            ],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Stats and Tag updates for Tier One",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier One",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 2"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Stats and Tag updates for Tier Two",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Stats and Tag updates for Tier Two",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 3"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Stats and Tag updates for Tier Three",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Stats and Tag updates for Tier Three",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Ship",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
-            "Repeatable" : false,
-            "UseRandomInvocation" : false,
-            "InvokeChance" : 0
-        },
-        {"Description" : {"Id" : "ms_fp_TBW_999_Fail-Complete",
-                "Name" : "Cancel-Complete",
+                "Id" : "ms_fp_TBW_202_B-Complete",
+                "Name" : "B-Complete",
                 "Details" : "flashpoint",
                 "Icon" : ""
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+            "Results" : [
+                {
+                    "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [
                             "flashpoint_TBW_complete",
-                            "flashpoint_TBW_failure"
+                            "flashpoint_TBW_b"
                         ],
                         "tagSetSourceFile" : ""
                     },
@@ -1200,18 +710,8 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Flashpoint Failure",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for Flashpoint Failure",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_999_Fail-Reward",
+                            "value" : "ms_fp_TBW_203_B-Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1225,14 +725,50 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        { "Description" : {"Id" : "ms_fp_TBW_999_Fail-Reward",
-                "Name" : "Cancel-Reward",
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_203_B-Reward",
+                "Name" : "B-Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_300_C-Mission",
+                "Name" : "C-Mission",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -1245,12 +781,232 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                        "Type" : "System_ForceDropshipRoom",
-                        "value" : "Ship",
-                        "valueConstant" : null,
-                        "additionalValues" : null
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "ms_fp_TBW_301_C-Talk",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
                         }
-                ],
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_301_C-Talk",
+                "Name" : "C-Talk",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "(required)",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_302_C-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_302_C-Complete",
+                "Name" : "C-Complete",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_c"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_303_C-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_303_C-Reward",
+                "Name" : "C-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_400_Cancel-Complete",
+                "Name" : "Cancel-Complete",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [
+                            "flashpoint_TBW_complete",
+                            "flashpoint_TBW_cancel"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_401_Cancel-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {
+                "Id" : "ms_fp_TBW_401_Cancel-Reward",
+                "Name" : "Cancel-Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
