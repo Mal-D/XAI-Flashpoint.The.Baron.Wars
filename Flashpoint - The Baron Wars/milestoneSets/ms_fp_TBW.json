@@ -414,8 +414,7 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {"Id" : "ms_fp_TBW_200_Mission",
+        {"Description" : {"Id" : "ms_fp_TBW_200_Mission",
                 "Name" : "TBW_OpOne",
                 "Details" : "flashpoint",
                 "Icon" : ""
@@ -447,7 +446,62 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_201_A-Talk",
+                                "ms_fp_TBW_300_Talk",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_300_Mission",
+                "Name" : "TBW_OpTwo",
+                "Details" : "flashpoint",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {
+                    "Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "ms_fp_TBW_300_Talk",
                                 null,
                                 null
                             ]
@@ -697,6 +751,114 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
+        {
+            "Description" : {"Id" : "ms_fp_TBW_500_Mission",
+                "Name" : "500_Mission",
+                "Details" : "500_Mission",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [{"Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "ms_fp_TBW_700_Talk",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {"Id" : "ms_fp_TBW_600_Mission",
+                "Name" : "600_Mission",
+                "Details" : "600_Mission",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [{"Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "ms_fp_TBW_700_Talk",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
         {"Description" : {"Id" : "ms_fp_TBW_700_Talk",
                 "Name" : "700_Talk",
                 "Details" : "700_Talk",
@@ -886,7 +1048,7 @@
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
+                            "value" : "ms_fp_TBW_801_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -930,7 +1092,7 @@
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
+                            "value" : "ms_fp_TBW_801_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -974,7 +1136,7 @@
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
+                            "value" : "ms_fp_TBW_801_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1024,7 +1186,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_801_Reward",
+                "Id" : "ms_fp_TBW_801_Complete",
                 "Name" : "801_Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -1066,6 +1228,12 @@
                             "Tags and stats for reward Tier One",
                             "castDef_MagRep"
                             ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_999_Fail-Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : null
                         },
                         {
                             "Type" : "System_ForceDropshipRoom",
