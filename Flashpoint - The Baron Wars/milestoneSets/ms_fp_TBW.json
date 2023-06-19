@@ -961,7 +961,7 @@
         {
             "Description" : {"Id" : "ms_fp_TBW_702_Epilogue",
                 "Name" : "Epilogue",
-                "Details" : "flashpoint",
+                "Details" : "Epilogue",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -989,7 +989,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_800_BranchReward",
+                            "value" : "ms_fp_800_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1003,9 +1003,9 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_800_BranchReward",
-                "Name" : "800_BranchReward",
-                "Details" : "800_BranchReward",
+        {"Description" : {"Id" : "ms_fp_800_Complete",
+                "Name" : "ms_fp_800_Complete",
+                "Details" : "ms_fp_800_Complete",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -1016,7 +1016,7 @@
                         "Scope" : "Company",
                         "RequirementTags" : {
                             "items" : [
-                                "Enter RequirementComparisons for reward One"
+                                "Enter RequirementComparisons for reward One "
                             ],
                             "tagSetSourceFile" : ""
                         },
@@ -1038,17 +1038,17 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Reward One",
+                            "value" : "Complete for Reward level One",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier One",
+                            "Tags and stats for reward Tier One - ms_fp_800_Complete",
                             "castDef_MagRep"
                             ]
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Complete",
+                            "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1082,19 +1082,19 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Reward Two",
+                            "value" : "Complete for Reward level Two",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier Two",
+                            "Tags and stats for reward Tier Two - ms_fp_800_Complete",
                             "castDef_MagRep"
                             ]
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Complete",
+                            "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : null
+                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1126,17 +1126,17 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Reward One",
+                            "value" : "Complete for Reward level three",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier Three",
+                            "Tags and stats for reward Tier three - ms_fp_800_Complete",
                             "castDef_MagRep"
                             ]
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Complete",
+                            "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1186,7 +1186,7 @@
         },
         {
             "Description" : {
-                "Id" : "ms_fp_TBW_801_Complete",
+                "Id" : "ms_fp_TBW_801_Reward",
                 "Name" : "801_Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
