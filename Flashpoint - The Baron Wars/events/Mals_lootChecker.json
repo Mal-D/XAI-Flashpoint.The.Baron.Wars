@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "Mals_lootChecker",
         "Name" : "Mal's Loot Checker",
-        "Details" : "Mals_convoChecker - Use to item Collections.",
+        "Details" : "Used to item Collections for Flashpoints.",
         "Icon" : "uixTxrSpot_YvonnesCrates.png"
     },
     "Scope" : "Company",
@@ -25,7 +25,7 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Checking itemCollection_TBW_Salvage",
+                "Name" : "Checking MuseumPieces Collection",
                 "Details" : "Mal's Loot Checker",
                 "Icon" : null
             },
@@ -47,8 +47,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "1-itemCollection_TBW_Salvage",
-                        "Details" : "Checking itemCollection_TBW_Salvage",
+                        "Name" : "1-itemCollection_MoC_MuseumPieces1",
+                        "Details" : "Checking itemCollection_MoC_MuseumPieces1",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -68,17 +68,17 @@
                             "Actions" : [
                                 {
                                     "Type" : "System_PauseNotification",
-                                    "value" : "Unexpected Loot",
+                                    "value" : "Unexpected Loot MuseumPieces 1",
                                     "valueConstant" : null,
                                     "additionalValues" : 
                                     [
-                                    "Aye Cap'n this will go well in the stable.",
+                                    "Ohhh some lovely bitn'n'bobs.",
                                     "castDef_YangDefault"
                                     ]
                                 },
                                 {
                                     "Type" : "System_ShowRewards",
-                                    "value" : "itemCollection_TBW_Salvage",
+                                    "value" : "itemCollection_MoC_MuseumPieces1",
                                     "valueConstant" : null,
                                     "additionalValues" : null
                                 }
@@ -106,8 +106,8 @@
         {
             "Description" : {
                 "Id" : "outcome_1",
-                "Name" : "Checking Reward_1",
-                "Details" : "Checking Reward_1",
+                "Name" : "Unexpected Loot MuseumPieces 2",
+                "Details" : "Checking Reward_2",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -128,8 +128,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_1_0",
-                        "Name" : "1- Checking Reward_1",
-                        "Details" : "Checking Checking Reward_1",
+                        "Name" : "2- itemCollection_MoC_MuseumPieces2",
+                        "Details" : "Checking Checking Reward 2",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -148,8 +148,99 @@
                             "Stats" : null,
                             "Actions" : [
                                 {
+                                    "Type" : "System_PauseNotification",
+                                    "value" : "Unexpected Loot MuseumPieces 2",
+                                    "valueConstant" : null,
+                                    "additionalValues" : 
+                                    [
+                                    "Ohhh some lovely bitn'n'bobs.",
+                                    "castDef_YangDefault"
+                                    ]
+                                },
+                                {
                                     "Type" : "System_ShowRewards",
-                                    "value" : "itemCollection_KOTU_reward_1",
+                                    "value" : "itemCollection_MoC_MuseumPieces2",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_3",
+                "Name" : "Mal's Loot Checker",
+                "Details" : "3-Unexpected Loot MuseumPieces 3",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_3_0",
+                        "Name" : "3-Unexpected Loot MuseumPieces 3",
+                        "Details" : "Checking [itemCollection_MoC_MuseumPieces3]",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_PauseNotification",
+                                    "value" : "Unexpected Loot MuseumPieces 3",
+                                    "valueConstant" : null,
+                                    "additionalValues" : 
+                                    [
+                                    "Ohhh some lovely bitn'n'bobs.",
+                                    "castDef_YangDefault"
+                                    ]
+                                },
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_MoC_MuseumPieces3",
                                     "valueConstant" : null,
                                     "additionalValues" : null
                                 }
@@ -199,8 +290,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_3_0",
-                        "Name" : "1- [Itemcollection Name]",
-                        "Details" : "Checking [Itemcollection Name]",
+                        "Name" : "3- [Add Itemcollection Name]",
+                        "Details" : "[AddItemcollection Name]",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -220,78 +311,7 @@
                             "Actions" : [
                                 {
                                     "Type" : "System_ShowRewards",
-                                    "value" : "itemCollection_KOTU_MuseumPieces",
-                                    "valueConstant" : null,
-                                    "additionalValues" : null
-                                }
-                            ],
-                            "ForceEvents" : null,
-                            "TemporaryResult" : false,
-                            "ResultDuration" : 0
-                        }
-                    ]
-                }
-            ],
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : []
-            }
-        },
-        {
-            "Description" : {
-                "Id" : "outcome_3",
-                "Name" : "Mal's Loot Checker",
-                "Details" : "Mal's Loot Checker",
-                "Icon" : null
-            },
-            "RequirementList" : [
-                {
-                    "Scope" : "Company",
-                    "RequirementTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "ExclusionTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RequirementComparisons" : []
-                }
-            ],
-            "ResultSets" : [
-                {
-                    "Description" : {
-                        "Id" : "outcome_3_0",
-                        "Name" : "1- [Itemcollection Name]",
-                        "Details" : "Checking [Itemcollection Name]",
-                        "Icon" : null
-                    },
-                    "Weight" : 100,
-                    "Results" : [
-                        {
-                            "Scope" : "Company",
-                            "Requirements" : null,
-                            "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
-                            },
-                            "Stats" : null,
-                            "Actions" : [
-                                {
-                                    "Type" : "System_ShowRewards",
-                                    "value" : "itemCollection_KOTU_MuseumPieces",
+                                    "value" : "",
                                     "valueConstant" : null,
                                     "additionalValues" : null
                                 }
