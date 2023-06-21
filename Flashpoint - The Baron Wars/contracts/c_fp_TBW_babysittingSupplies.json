@@ -62,9 +62,9 @@
                         {
                 "typeString": "System.Int32",
                 "name": "TBW_FailCount",
-                "value": "1",
+                "value": "4",
                 "set": false,
-                "valueConstant": "1"
+                "valueConstant": "4"
             }
         ],
         "Actions" : [],
@@ -456,7 +456,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Looks like it's Steak Dinners all round. Damn thats going cost.",
+                    "words" : "Looks like it's Steak Dinners all round. Damn that's going cost.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

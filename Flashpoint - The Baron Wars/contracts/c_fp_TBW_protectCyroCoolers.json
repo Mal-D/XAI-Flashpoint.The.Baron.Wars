@@ -15,8 +15,63 @@
     "longDescription" : "It will take months to bring this facility back online if you don't protect it from damage.",
     "salvagePotential" : 12,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "OnContractSuccessResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+            {
+                "typeString" : "System.Single",
+                "name" : "ContractBonusRewardPct",
+                "value" : "0.1",
+                "set" : false,
+                "valueConstant" : null
+            },
+            {
+                "typeString": "System.Int32",
+                "name": "progScore",
+                "value": "1",
+                "set": false,
+                "valueConstant": "1"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+    "OnContractFailureResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+                        {
+                "typeString": "System.Int32",
+                "name": "TBW_FailCount",
+                "value": "2",
+                "set": false,
+                "valueConstant": "2"
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,

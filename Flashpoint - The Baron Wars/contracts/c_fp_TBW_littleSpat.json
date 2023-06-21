@@ -29,9 +29,9 @@
         [
         {"typeString" : "System.Int32",
             "name" : "TBW_FailCount",
-            "value" : "99",
+            "value" : "0",
             "set" : true,
-            "valueConstant" : "99"
+            "valueConstant" : "0"
         },
             {"typeString": "System.Int32",
                 "name": "progScore",
@@ -57,9 +57,9 @@
         },
         "Stats" : [{"typeString" : "System.Int32",
         "name" : "TBW_FailCount",
-        "value" : "98",
-        "set" : true,
-        "valueConstant" : "98"
+        "value" : "1",
+        "set" : false,
+        "valueConstant" : "1"
         },
             {"typeString": "System.Int32",
                 "name": "progScore",
