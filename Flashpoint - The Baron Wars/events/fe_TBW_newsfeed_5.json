@@ -18,7 +18,7 @@
         "ExclusionTags" : {
             "items" : [
                 "TBW_newsFeed_off",
-                "fe_TBW_newsfeed_5"
+                "fe_TBW_newsFeed_5"
             ],
             "tagSetSourceFile" : ""
         },

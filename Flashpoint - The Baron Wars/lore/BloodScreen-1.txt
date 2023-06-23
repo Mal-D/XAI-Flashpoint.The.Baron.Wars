@@ -1,0 +1,9 @@
+
+ MEDICAL PAPARMETERS    Blood Screen
+ BP          160/100    Therputic dose  Dralaxine
+ Pulse       150        Theruptic dose  KZ
+ Body Temp   38.9 DegC  Therputic dose  Niftra-K 
+
+
+
+

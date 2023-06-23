@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_AmbushRathbottom",
-    "contractName" : "Ambush Rathbottom v5",
+    "contractName" : "Ambush Rathbottom v6",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -15,8 +15,48 @@
     "longDescription" : "The Irukjandi Company have played their hand and are now assisting August Rathbottom to escape the Capitol. Let's get him before he disappears again.",
     "salvagePotential" : 8,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "OnContractSuccessResults" : [                {
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["TBW_govCaptured"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : ["TBW_govEscapes"],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [
+            {
+                "typeString" : "System.Single",
+                "name" : "ContractBonusRewardPct",
+                "value" : "0.1",
+                "set" : false,
+                "valueConstant" : null
+            }
+        ],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+    "OnContractFailureResults" : [                {
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["TBW_govEscapes"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : ["TBW_govCaptured"],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,

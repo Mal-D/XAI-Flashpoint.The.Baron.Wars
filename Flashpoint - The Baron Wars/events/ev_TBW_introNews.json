@@ -6,12 +6,12 @@
         "Icon" : "uix_TxrSpot_MercNews.png"
     },
     "Scope" : "Company",
-    "Weight" : 1000,
+    "Weight" : 100000,
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
             "items" : [],
-            "tagSetSourceFile" : ""
+            "tagSetSourceFile" : "Tags/CompanyTags"
         },
         "ExclusionTags" : {
             "items" : [
@@ -19,7 +19,14 @@
             ],
             "tagSetSourceFile" : ""
         },
-        "RequirementComparisons" : []
+        "RequirementComparisons" : [
+            {
+                "obj" : "Reputation.MercenaryReviewBoard",
+                "op" : "GreaterThanOrEqual",
+                "val" : 300,
+                "valueConstant" : "300"
+            }
+        ]
     },
     "AdditionalRequirements" : [],
     "AdditionalObjects" : [],
@@ -37,7 +44,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "What's one more NewsFeed?",
-                        "Details" : "MercNet is an independant News Service that uses only reputable sources and verified by ComStar to ensure you get only the facts. \r\n\r\nYour first feed will take 3 to 7 days to reach you. Delivery frequency is dependent on where your nearest HPG uplink is located.",
+                        "Details" : "MercNet is an independant news service that uses only reputable sources and verified by ComStar to ensure you get only the facts. \r\n\r\nYour first feed will take 7 to 10 days to reach you. Delivery frequency is dependent on where your nearest HPG uplink is located.",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -68,23 +75,22 @@
                             "Actions" : [
                                 {
                                     "Type" : "System_PauseNotification",
-                                    "value" : "Next news in 3-7 days",
+                                    "value" : "Next news in 7-10 days",
                                     "valueConstant" : null,
-                                    "additionalValues" : 
-                                    [
-                                    "I think we'll keep an eye on that one.",
-                                    "castDef_FarahDefault"
+                                    "additionalValues" : [
+                                        "I think we'll keep an eye on that one.",
+                                        "castDef_FarahDefault"
                                     ]
                                 }
                             ],
                             "ForceEvents" : [
                                 {
-                                "Scope" : "Company",
-                                "EventID" : "fe_TBW_newsFeed_1",
-                                "MinDaysWait" : 3,
-                                "MaxDaysWait" : 7,
-                                "Probability" : 100,
-                                "RetainPilot" : false
+                                    "Scope" : "Company",
+                                    "EventID" : "fe_TBW_newsFeed_1",
+                                    "MinDaysWait" : 7,
+                                    "MaxDaysWait" : 10,
+                                    "Probability" : 100,
+                                    "RetainPilot" : false
                                 }
                             ],
                             "TemporaryResult" : false,
@@ -128,7 +134,10 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : ["TBW_newsFeed_off","ev_TBW_introNews"],
+                                "items" : [
+                                    "TBW_newsFeed_off",
+                                    "ev_TBW_introNews"
+                                ],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {
@@ -137,28 +146,26 @@
                                 ],
                                 "tagSetSourceFile" : ""
                             },
-                            "Stats" :  [],
-                            "Actions" : 
-                            [
+                            "Stats" : [],
+                            "Actions" : [
                                 {
                                     "Type" : "System_PauseNotification",
                                     "value" : "Successfully Unsubscribed.",
                                     "valueConstant" : null,
-                                    "additionalValues" : 
-                                    [
-                                    "Thats on less spam filter I need to adjust.",
-                                    "castDef_FarahDefault"
+                                    "additionalValues" : [
+                                        "Thats on less spam filter I need to adjust.",
+                                        "castDef_FarahDefault"
                                     ]
                                 }
                             ],
                             "ForceEvents" : [
                                 {
-                                "Scope" : "Company",
-                                "EventID" : "fe_TBW_anaMarieBroadcast",
-                                "MinDaysWait" : 40,
-                                "MaxDaysWait" : 60,
-                                "Probability" : 100,
-                                "RetainPilot" : false
+                                    "Scope" : "Company",
+                                    "EventID" : "fe_TBW_anaMarieBroadcast",
+                                    "MinDaysWait" : 60,
+                                    "MaxDaysWait" : 80,
+                                    "Probability" : 100,
+                                    "RetainPilot" : false
                                 }
                             ],
                             "TemporaryResult" : false,

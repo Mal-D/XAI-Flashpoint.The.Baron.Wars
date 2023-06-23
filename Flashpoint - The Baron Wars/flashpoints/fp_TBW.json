@@ -52,7 +52,7 @@
     "RewardCollectionID" : "itemCollection_MoC_MuseumPieces",
     "UnitDropTonnageHint" : "Mixed",
     "LanceDropTonnageHint" : "Mixed",
-    "FlashpointShortDescription" : "Commander {Commander.LastName} You have agreed to assume the office of 'Marshall' until this situation is resolved. There are other parties involved but as to who they are, we are still investigating. you the earn the eternal gratitude of the Crimson Council should you bring this to a successful conclusion.",
+    "FlashpointShortDescription" : "Commander {Commander.LastName} You have agreed to assume the office of 'Marshall' until this situation is resolved. There are other parties involved but as to who they are, or their objectives, we are still investigating. You will the earn the eternal gratitude of the Crimson Council should you bring this to a successful conclusion.",
     "FlashpointDescriberCastDefId" : "castDef_MagRep",
     "Tags" : {
         "items" : ["BLACKLISTED"],

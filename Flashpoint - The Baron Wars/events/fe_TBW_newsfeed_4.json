@@ -18,7 +18,7 @@
         "ExclusionTags" : {
             "items" : [
                 "TBW_newsFeed_off",
-                "fe_TBW_newsfeed_4"
+                "fe_TBW_newsFeed_4"
             ],
             "tagSetSourceFile" : ""
         },
@@ -31,7 +31,7 @@
             "Description" : {
                 "Id" : "outcome_0",
                 "Name" : "Kidnappers Make Demands.",
-                "Details" : "A Vid from someone on behalf of the 'Wagyu Barons' has made the following demands has been received by the Office of the Interior. Dire consequences are threatened if the listed demands are not met.",
+                "Details" : "A Vidstream from someone on behalf of the 'Wagyu Barons' has made the following demands has been received by the Office of the Interior. Dire consequences are threatened if the listed demands are not met.",
                 "Icon" : null
             },
             "RequirementList" : [],
