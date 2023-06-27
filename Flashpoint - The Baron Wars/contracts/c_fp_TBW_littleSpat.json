@@ -1,8 +1,8 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat....",
+    "contractName" : "Settling a little Spat v6",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -76,7 +76,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : -1,
+    "lanceMaxTonnage" : 200,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -84,10 +84,10 @@
         -1
     ],
     "mechMaxTonnages" : [
-        55,
-        55,
-        55,
-        55
+        60,
+        60,
+        60,
+        60
     ],
     "mapMood" : "",
     "startingFogOfWarVisibility" : "Surveyed",
@@ -3777,7 +3777,7 @@
                         "customUnitName" : "Badger",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_assassin_ASN-21",
+                        "unitDefId" : "mechdef_phoenixhawk_PXH-1",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

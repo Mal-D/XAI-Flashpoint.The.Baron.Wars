@@ -1,9 +1,9 @@
 {
     "ID" : "c_fp_TBW_protectCyroCoolers",
-    "contractName" : "Protect Cyro Coolers",
+    "contractName" : "Protect Cyro Coolers v6",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
-    "difficultyUIModifier" : 0,
+    "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
