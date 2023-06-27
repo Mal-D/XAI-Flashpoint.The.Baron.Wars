@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Someone is making a big, a real <i>BIG</i> mistake. The Wagyu Barons only rent this facility. The Ag.Co must be prevented from destroying one of New Abilene's finest export industries.",
+    "shortDescription" : "Someone is making a big, a really <i>BIG</i> mistake. The Wagyu Barons only rent this facility. The Ag.Co must be prevented from destroying one of New Abilene's finest export industries.",
     "longDescription" : "It will take months to bring this facility back online if you don't protect it from damage.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -398,14 +398,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, we're tasked with defending this installation.",
+                    "words" : "Okay, we're tasked with defending this installation. But we still have no clear shot on the real targets, so stay mobile and keep your heads on a swivel.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -414,33 +414,49 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We have scattered reports of incoming hostiles. Multiple reports from nearby.",
+                    "words" : "So what do we do? Wait for them to shoot first?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "4d39e72c-4f99-4cc6-8fe0-d4d18cad0063",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Hold the base, keep the buildings upright, then we get paid. Good luck.",
+                    "words" : "If needs be... yes! {MC.PlayerLances.TeamPilot_Random_2.DisplayName} we are paid tp protect the base, keep the buildings upright, or you don't get paid. If you have a beef with that, then I can ask Darius to void your Contract.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "dafd0d98-c88a-4f90-b137-4fe5ed94ebbb",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Understood Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1856,6 +1872,6 @@
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : []
     },
-    "contractType" : "INVALID_UNSET",
+    "contractType" : "DefendBase",
     "contractTypeID" : "DefendBase"
 }

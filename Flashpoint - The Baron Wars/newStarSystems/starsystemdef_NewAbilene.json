@@ -29,7 +29,8 @@
     [
         "highlandsSpring",
         "tundraFrozen",
-        "lowlandsSpring"
+        "lowlandsSpring",
+        "lowlandsFall"
     ],
     "MapRequiredTags": {
         "items": [],

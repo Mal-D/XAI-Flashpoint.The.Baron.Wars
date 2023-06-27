@@ -3,7 +3,7 @@
     "contractName" : "Baby-sitting Supplies",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
-    "difficultyUIModifier" : 2,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
@@ -117,7 +117,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "acf88d1b-d09f-4db7-b7ea-9f48a426075c"
             },
-            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} units",
+            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Contractor units",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -269,7 +269,7 @@
             },
             "title" : "Get to the Evac Zone",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -399,7 +399,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Okay Mechwarriors, let do this by the numbers. Check your targets.",
+                    "words" : "Okay, we're tasked with defending this convoy. But we still have no clear shot on the real targets, so stay mobile and keep your heads on a swivel.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -415,33 +415,49 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Secure the vehicles and let's get them moving.",
+                    "words" : "So what do we do? Wait for them to shoot first?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "8020f476-1f81-4da9-956f-a797df693984",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Get them to the extraction point and <i>please</i> keep them intact.",
+                    "words" : "If needs be... yes! {MC.PlayerLances.TeamPilot_Random_2.DisplayName} we are paid tp protect the Meat Convoy, get them to the Dropship, or you don't eat. If you have a <i>beef</i> with that, then I can ask Darius to void your Contract.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "1a670982-15d5-44cf-b76b-32433c27749e",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>groan...</i> Understood Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -463,7 +479,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -471,7 +487,7 @@
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },{
-                    "words" : "Cost you, you mean!",
+                    "words" : "Cost Darius, you mean!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -485,8 +501,57 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                },{
-                    "words" : "Either way Commander, very well done. Daurius, I'll have mine Medium Rare",
+                },
+                {
+                    "words" : "The battlefield is getting very confusing. Is there anyway to clear it up?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_3",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "What do you suggest {MC.PlayerLances.TeamPilot_Random_3.DisplayName}? we all wear name tags?",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Leave {MC.PlayerLances.TeamPilot_Random_3.DisplayName} to me Commander. I'm sure I can find {MC.PlayerLances.TeamPilot_Random_3.Gender?Male:He's|Female:She's|NonBinary:it} something useful to do.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Hey man! I'll have mine Medium Rare and an ice cold [[DM.BaseDescriptionDefs[LorePharaohBeer],Pharaoh]].",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -508,7 +573,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_dariusDefault",
+                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -548,7 +613,7 @@
                 "EncounterObjectGuid" : "6c8a5135-f5b5-4c1f-b142-d3c20f51be67"
             },
             "name" : "Dialogue_ReinforcementWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
                     "words" : "Commander. The enemy had deployed reinforcements and they are inbound. Expect increased resistance. ",
@@ -559,6 +624,70 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "At least we know these are <i>NOT</i> friendly.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_3",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Well get in there and protect your Steak Dinner.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_1",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "<i>i'll never hear the end of this.</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Nope...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_1",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -631,7 +760,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Commander",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1019,7 +1148,7 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
+                        "unitType" : "Vehicle",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -1052,7 +1181,7 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
+                        "unitType" : "Vehicle",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -1085,7 +1214,7 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
+                        "unitType" : "Vehicle",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
@@ -1118,7 +1247,7 @@
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
+                        "unitType" : "Vehicle",
                         "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],

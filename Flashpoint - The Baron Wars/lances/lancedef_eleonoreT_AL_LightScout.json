@@ -27,7 +27,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "MagistracyOfCanopus", "unit_mech", "unit_meduim"],
+				"items": [ "unit_mech", "unit_medium" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -48,7 +48,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_light", "unit_speed_high"  ],
+				"items": [ "unit_medium", "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -69,7 +69,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_light" , "unit_speed_high"  ],
+				"items": [ "unit_light" , "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -94,7 +94,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_light", "unit_speed_high" ],
+				"items": [ "unit_light", "unit_speed_high" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {

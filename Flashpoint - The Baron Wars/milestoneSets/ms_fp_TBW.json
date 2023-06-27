@@ -137,7 +137,15 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : null,
+                    "Stats" : [
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "TBW_FailCount",
+                        "value" : "0",
+                        "set" : true,
+                        "valueConstant" : 0
+                    }
+                ],
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
@@ -240,13 +248,11 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "TBW_passOnClintParts"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
-                            "items" : [],
+                            "items" : ["TBW_takeClintParts"],
                             "tagSetSourceFile" : ""
                         },
                         "RequirementComparisons" : []
@@ -330,8 +336,8 @@
             "InvokeChance" : 0
         },
         {"Description" : {"Id" : "ms_fp_TBW_100_Branch",
-                "Name" : "Branch",
-                "Details" : "flashpoint",
+                "Name" : "100_Branch",
+                "Details" : "100_Branch",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -415,8 +421,8 @@
             "InvokeChance" : 0
         },
         {"Description" : {"Id" : "ms_fp_TBW_200_Mission",
-                "Name" : "TBW_OpOne",
-                "Details" : "flashpoint",
+                "Name" : "200_Mission",
+                "Details" : "200_Mission-OpOne",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -437,18 +443,21 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                                "Assets/Level Design/Maps/mapGeneral_frigidSteppes_iTnd/mapGeneral_frigidSteppes_iTnd.unity",
+                                "823b2a53-1b88-43bc-9d4a-5668f58fbe79",
+                                "c_fp_TBW_babysittingSupplies",
+                                "MagistracyOfCanopus",
+                                "agrarianCollective",
+                                "5",
+                                "ms_fp_TBW_300_Talk",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_300_Talk",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
                         {
@@ -471,7 +480,7 @@
         },
         {"Description" : {"Id" : "ms_fp_TBW_300_Mission",
                 "Name" : "TBW_OpTwo",
-                "Details" : "flashpoint",
+                "Details" : "300_Mission - OpTwo",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -492,18 +501,21 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "",
+                            "value" : "mapGeneral_frigidSteppes_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                                "Assets/Level Design/Maps/mapGeneral_frigidSteppes_iTnd/mapGeneral_frigidSteppes_iTnd.unity",
+                                "8c72cf13-9bb0-4e70-b582-4536316763a7",
+                                "c_fp_TBW_protectCyroCoolers",
+                                "MagistracyOfCanopus",
+                                "agrarianCollective",
+                                "5",
+                                "ms_fp_TBW_300_Talk",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_300_Talk",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
                         {
@@ -546,10 +558,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "(required)",
+                            "value" : "9cead891647debd383adaaa5",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} III",
+                                "{TGT_FLASHPOINT.Def.Description.Name} III- Into the Meat and Potatoes",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
