@@ -1,9 +1,9 @@
 {
     "ID" : "c_fp_TBW_protectCyroCoolers",
-    "contractName" : "Protect Cyro Coolers v6",
+    "contractName" : "Protect Cyro Coolers v6.2",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
-    "difficultyUIModifier" : 1,
+    "difficulty" : 6,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Someone is making a big, a really <i>BIG</i> mistake. The Wagyu Barons only rent this facility. The Ag.Co must be prevented from destroying one of New Abilene's finest export industries.",
+    "shortDescription" : "Someone is making a big, a really <i>BIG</i> mistake. The Wagyu Barons only rent this facility. The Ag.Co's Contractors must be prevented from destroying one of New Abilene's finest export industries.",
     "longDescription" : "It will take months to bring this facility back online if you don't protect it from damage.",
     "salvagePotential" : 12,
     "requirementList" : [],
@@ -75,7 +75,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : -1,
+    "lanceMaxTonnage" : 220,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -88,14 +88,14 @@
         -1,
         -1
     ],
-    "mapMood" : null,
-    "startingFogOfWarVisibility" : "Surveyed",
+    "mapMood" : "ArcticSunsetFoggy",
+    "startingFogOfWarVisibility" : "Unknown",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Defend the {TEAM_EMP.FactionDef.Demonym}Cryo Facility",
+            "title" : "Defend the {TEAM_EMP.FactionDef.Demonym} Cryo Facility",
             "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -114,7 +114,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "ca677a4d-19c8-4d0c-9c5e-3ed712081336"
             },
-            "title" : "Protect the Cyro Coolers",
+            "title" : "Protect the Cyro Facilities",
             "description" : "Protect Cyro Coolers Structures from Attackers",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -126,7 +126,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "0e4ac925-d95a-4019-aeb0-0aa553830f46"
             },
-            "title" : "Neutrualize the Ag.Co attack",
+            "title" : "Neutrualize the Contractor's attack",
             "description" : "Neutrualize the Ag.Co attack, the first wave.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -194,7 +194,23 @@
                     "ResultDuration" : 0
                 }
             ],
-            "OnFailureResults" : [],
+            "OnFailureResults" : [{
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["_TBW_buildingLoss"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
         },
@@ -398,6 +414,22 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
+                    "words" : "Good Luck Commander {Commander.LastName}. This facility is extremely important. Please keep it intact.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MagRep",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
                     "words" : "Okay, we're tasked with defending this installation. But we still have no clear shot on the real targets, so stay mobile and keep your heads on a swivel.",
                     "wordsColor" : {
                         "r" : 1,
@@ -471,14 +503,78 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work commander. (TODO - Finailize default success) Consider madlibs and randomization of default things.",
+                    "words" : "Excellent work commander. I'll see that we keep some choice Wagyu available for you.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_None",
+                    "selectedCastDefId" : "castDef_MagRep",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Oh, I would love to use your Wagyu to create a better burger than a Triple F one.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Please no... {MC.PlayerLances.TeamPilot_Random_2.DisplayName} spent two days on the dunny the last time. I always knew which 'Mech was his last ride for weeks afterwards.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_1",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Noone's making anything until we clear up this mess. Takes us home Sumire.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Aye Commander. \r\n\r\n<i>////...breathes under her breath...//// yeah! I agree with {MC.PlayerLances.TeamPilot_Random_1.DisplayName}</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -486,6 +582,7 @@
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 }
+
             ]
         },
         {
@@ -535,6 +632,38 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
+                },
+                {
+                    "words" : "Finally... some breathing room. Concentrate on those shooting at the buildings.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Finally... some breathing room. Concentrate on those shooting at the buildings  ",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
                 }
             ]
         },
@@ -568,7 +697,7 @@
                 "EncounterObjectGuid" : "d382339d-0cc4-483f-b64d-4a93f3009f7e"
             },
             "name" : "Dialogue_BuildingDamaged",
-            "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyStruct-Damaged",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
                     "words" : "Be advised, some of the target buildings are sustaining damage. Your mission is to keep them standing. ",
@@ -578,7 +707,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -603,7 +732,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -646,14 +775,14 @@
             "overrideDialogueBucketId" : "DialogBucketDef_DefendBase_AllyReinforcements",
             "dialogueContent" : [
                 {
-                    "words" : "Mercenary Commander, we've received word of the assault on your position. Reinforcements are incoming, they are about halfway there. Maintain position and you will be relieved and reinforced shortly. ",
+                    "words" : "Hang tight Commander {Commander.LastName}, we've received word of the assault on your position. Reinforcements are incoming, they are about halfway there. Maintain position and you will be relieved and reinforced shortly. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_KuritaDefault",
+                    "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
