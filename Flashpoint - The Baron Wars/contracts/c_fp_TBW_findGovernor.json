@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-	"shortDescription": "The last subdermal signal was recorded in the area surrounding the old SLDF Garrision Fort. We can only assume he is being held there. We need to get three network nodes as close as possible create a scan powerful enough to penetrate the structure to be sure.",
-	"longDescription": "Commander {Commander.LastName} we only have one shot at this. We don't have a lot of time as we expect him to be quickly transferred off-world. It appears the {TEAM_TAR.FactionDef.Demonym} Techs have managed to bring the base defenses on-line so take out the Turret generator otherwise won't be able to land any support.",
+	"shortDescription": "The CARVAS signal was recorded in the area surrounding the old SLDF Garrision Fort. We need to precisely determine his location to plan for an extraction.  We need to get three network nodes as close as possible create a scan powerful enough to penetrate the structure.",
+	"longDescription": "Commander {Commander.LastName} we only have one shot at this. We don't have a lot of time as we expect him to be quickly transferred off-world. It appears the {TEAM_TAR.FactionDef.Demonym} Techs have managed to bring the base defenses on-line so move fast, plant the Network nodes and bug out.",
 	"salvagePotential": 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [],
@@ -191,7 +191,7 @@
             },
             "title" : "Dropship on Approach",
             "description" : "Dropship on Approach",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -870,7 +870,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "The {TEAM_TAR.FactionDef.Demonym} know we're coming. They'll try to prevent this so, move fast.",
+                    "words": "The {TEAM_TAR.FactionDef.Demonym} don't know we're coming, so, move fast.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -886,7 +886,7 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "They will try to destroy the scanners. Once they connect to Governor Rathbottom's sub-dermal signal, it will signal the rescue dropship. All uplinks are required for the hack. No data, and no Gonernor.",
+					"words": "Once the nodes connect to Governor Rathbottom's CARVAS signal, the uplink will transmit the signals' location in Tri-D. All Nodes are required for the hack. No data, no Governor.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -902,7 +902,7 @@
 					"revealRadius": -1
 				},
                 {
-                    "words": "After the sub-dermal signal has been verified, you'll get confirmation and you can make for the evac point. Sumire will be on station to pull you out of there.",
+                    "words": "After the CARVAS signal has been verified, you'll get confirmation and you can make for the evac point. Sumire will be on station to pull you out of there.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -943,7 +943,7 @@
             "overrideDialogueBucketId": "",
 			"dialogueContent": [
                 {
-                    "words" : "WHat the hell just happened? Are we complicit now in the murder of an properly appointed Planetary Governor?",
+                    "words" : "What the f...hell just happened? Are we complicit now in the murder of an properly appointed Planetary Governor?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1038,7 +1038,7 @@
                 "EncounterObjectGuid" : "85cee54b-7e27-4a77-af52-95d7fd856597"
             },
             "name" : "Dialogue_Interrupt_Acquistion_Complete",
-            "overrideDialogueBucketId" : "ConvBucketDef_FireMission_AcqComplete",
+            "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
                     "words": "PLACEHOLDR - Acquistion_Complete",

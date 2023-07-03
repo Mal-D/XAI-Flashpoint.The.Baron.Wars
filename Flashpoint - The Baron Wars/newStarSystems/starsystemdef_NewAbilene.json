@@ -28,6 +28,7 @@
     "SupportedBiomes": 
     [
         "highlandsSpring",
+        "highlandsFall",
         "tundraFrozen",
         "lowlandsSpring",
         "lowlandsFall"

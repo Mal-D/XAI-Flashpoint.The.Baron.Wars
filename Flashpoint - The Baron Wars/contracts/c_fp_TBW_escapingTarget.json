@@ -1,8 +1,8 @@
 {
-    "ID" : "c_fp_TBW_AmbushRathbottom",
-    "contractName" : "Ambush Rathbottom ... 5",
+    "ID" : "c_fp_TBW_escapingTarget",
+    "contractName" : "Escaping Target 6.0",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 5,
+    "difficulty" : 6,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -11,53 +11,12 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from the Capitol. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
-    "longDescription" : "Let's get him before he disappears again.",
-    "salvagePotential" : 8,
+    "shortDescription" : "The {TEAM_TAR.FactionDef.Demonym} forces have assembled quite a force to extract the Governor. He really is being kidnapped this time, but not by those we were orginally told. Our assessment is that they are going to use the 'ole shell game tactics to mask the real vehicle the Governor is being transported in. Cut through their lines, diable the vehilces and head for evac.",
+    "longDescription" : "The {TEAM_TAR.FactionDef.Demonym} leadership seem to be very anxious to secure Governor Rathbottom. I hope that a single errant shot doesn't kill him.",
+    "salvagePotential" : 16,
     "requirementList" : [],
-    "OnContractSuccessResults" : [                
-        {
-        "Scope" : "Company",
-        "Requirements" : null,
-        "AddedTags" : {
-            "items" : ["TBW_govCaptured"],
-            "tagSetSourceFile" : ""
-        },
-        "RemovedTags" : {
-            "items" : ["TBW_govEscapes"],
-            "tagSetSourceFile" : ""
-        },
-        "Stats" : [
-            {
-                "typeString" : "System.Single",
-                "name" : "ContractBonusRewardPct",
-                "value" : "0.1",
-                "set" : false,
-                "valueConstant" : null
-            }
-        ],
-        "Actions" : [],
-        "ForceEvents" : [],
-        "TemporaryResult" : false,
-        "ResultDuration" : 0
-    }],
-    "OnContractFailureResults" : [                {
-        "Scope" : "Company",
-        "Requirements" : null,
-        "AddedTags" : {
-            "items" : ["TBW_govEscapes"],
-            "tagSetSourceFile" : ""
-        },
-        "RemovedTags" : {
-            "items" : ["TBW_govCaptured"],
-            "tagSetSourceFile" : ""
-        },
-        "Stats" : [],
-        "Actions" : [],
-        "ForceEvents" : [],
-        "TemporaryResult" : false,
-        "ResultDuration" : 0
-    }],
+    "OnContractSuccessResults" : [],
+    "OnContractFailureResults" : [],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
@@ -74,63 +33,51 @@
         -1,
         -1
     ],
-    "mapMood" : null,
+    "mapMood" : "",
     "startingFogOfWarVisibility" : "Surveyed",
     "contractObjectiveList" : [
         {
             "contractObjective" : {
-                "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
+                "EncounterObjectGuid" : "edafecaf-4d24-4304-98b1-9e645898c6ee"
             },
-            "title" : "Ambush Rathbottom's vehicle.",
-            "description" : "The I.Co. must really want him.",
+            "title" : "Disable the vehicles and escape",
+            "description" : "",
             "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
-                "aa529050-2feb-4fbf-8838-afa2849caca6",
-                "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375",
-                "3a4192be-2a53-4383-94ac-19c08883ea5f",
-                "9b0f9fdd-2033-469c-8327-4e519ef6c683",
-                "4da99cf7-4950-4447-b55b-fcc2986adf75"
-            ]
-        },
-        {
-            "contractObjective" : {
-                "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
-            },
-            "title" : "Destroy the Convoy Guards.",
-            "description" : "Send a message by not only destroy the convoy, but eliminte their escorts as well.",
-            "isPrimary" : false,
-            "forPlayer" : "Player1",
-            "objectiveGuids" : [
-                "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
+                "504a1169-8858-4f3d-be89-48eb39f54e4d",
+                "cc0880d2-2c42-40ef-98ed-33fe754c96e6",
+                "650245ff-89b6-4c0f-9b72-31db69cf109c",
+                "ef887928-31f2-4001-a1d8-44f8dc5f5bf8",
+                "3a4192be-2a53-4383-94ac-19c08883ea5f"
             ]
         }
     ],
     "objectiveList" : [
         {
             "objective" : {
-                "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
+                "EncounterObjectGuid" : "650245ff-89b6-4c0f-9b72-31db69cf109c"
             },
-            "title" : "Ambush Rathbottom's vehicle.",
+            "title" : "Destroy Supporting {TEAM_TAR.FactionDef.Demonym} Forces",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["TBW_govCaptured"],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : ["TBW_govEscapes"],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "Stats" : [
                         {
                             "typeString" : "System.Single",
                             "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
+                            "value" : "0.25",
                             "set" : false,
                             "valueConstant" : null
                         }
@@ -141,33 +88,15 @@
                     "ResultDuration" : 0
                 }
             ],
-            "OnFailureResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : ["TBW_govEscapes"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : ["TBW_govCaptured"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
+                "EncounterObjectGuid" : "ef887928-31f2-4001-a1d8-44f8dc5f5bf8"
             },
-            "title" : "Destroy the Irukjandi Escort.",
+            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Reinforcements",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -197,87 +126,41 @@
                     "ResultDuration" : 0
                 }
             ],
-            "OnFailureResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "4da99cf7-4950-4447-b55b-fcc2986adf75"
+                "EncounterObjectGuid" : "504a1169-8858-4f3d-be89-48eb39f54e4d"
             },
-            "title" : "Don't let Rathbottom be captured",
+            "title" : "Disable the {TEAM_TAR.FactionDef.Demonym} kidnapper's vehilces.",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [{
-                "Scope" : "Company",
-                "Requirements" : null,
-                "AddedTags" : {
-                    "items" : ["TBW_govCaptured"],
-                    "tagSetSourceFile" : ""
-                },
-                "RemovedTags" : {
-                    "items" : ["TBW_govEscapes"],
-                    "tagSetSourceFile" : ""
-                },
-                "Stats" : [],
-                "Actions" : [],
-                "ForceEvents" : [],
-                "TemporaryResult" : false,
-                "ResultDuration" : 0
-            }],
-            "OnFailureResults" : [{
-                "Scope" : "Company",
-                "Requirements" : null,
-                "AddedTags" : {
-                    "items" : ["TBW_govEscapes"],
-                    "tagSetSourceFile" : ""
-                },
-                "RemovedTags" : {
-                    "items" : ["TBW_govCaptured"],
-                    "tagSetSourceFile" : ""
-                },
-                "Stats" : [],
-                "Actions" : [],
-                "ForceEvents" : [],
-                "TemporaryResult" : false,
-                "ResultDuration" : 0
-            }],
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "aa529050-2feb-4fbf-8838-afa2849caca6"
+                "EncounterObjectGuid" : "c12ee829-2a99-4ed4-be8a-5f16407a2361"
             },
-            "title" : "Recon the escape Route",
-            "description" : "",
+            "title" : "Destroy Kidnapping Lance Hidden Objective",
+            "description" : "Hidden Objective for AutoComplete, Destroy Assassination Lance",
             "isPrimary" : false,
+            "OnSuccessResults" : [],
+            "OnFailureResults" : [],
+            "OnSuccessDialogueGUID" : null,
+            "OnFailureDialogueGUID" : null
+        },
+        {
+            "objective" : {
+                "EncounterObjectGuid" : "cc0880d2-2c42-40ef-98ed-33fe754c96e6"
+            },
+            "title" : "Reach the Evac Zone",
+            "description" : "",
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -287,8 +170,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a4192be-2a53-4383-94ac-19c08883ea5f"
             },
-            "title" : "Get to the evac zone",
-            "description" : "The objective for the player units escaping and finishing the mission.",
+            "title" : "Stop the Target from Escaping",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -297,10 +180,10 @@
         },
         {
             "objective" : {
-                "EncounterObjectGuid" : "9b0f9fdd-2033-469c-8327-4e519ef6c683"
+                "EncounterObjectGuid" : "1bd16613-2bbe-4bd7-bb7a-240ddb055ac0"
             },
-            "title" : "Destroy Enemy Reinforcement Units",
-            "description" : "",
+            "title" : "Armor Breached",
+            "description" : "Armor of the Target is breached.",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -312,9 +195,18 @@
     "buildingList" : [],
     "chunkList" : [
         {
-            "name" : "Chunk_AmbushByNumKilled (Bonus)",
+            "name" : "Chunk_Ambush (Bonus)",
             "encounterChunk" : {
-                "EncounterObjectGuid" : "2e0d2e69-6335-49ae-b2bb-61ff3185306b"
+                "EncounterObjectGuid" : "19e8fa2a-f850-42f0-a067-15fcafcc8123"
+            },
+            "enableChunkFromContract" : true,
+            "controlledByContractChunkGroupList" : [],
+            "requirementList" : []
+        },
+        {
+            "name" : "Chunk_TargetEscape (Bonus)",
+            "encounterChunk" : {
+                "EncounterObjectGuid" : "9a27ee75-f33f-45ac-b0d3-ebc321ae7ffc"
             },
             "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
@@ -325,41 +217,35 @@
         {
             "name" : "Spawner_PlayerLance",
             "encounterObject" : {
-                "EncounterObjectGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe"
+                "EncounterObjectGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691"
             }
         },
         {
-            "name" : "Lance_Enemy_Convoy",
+            "name" : "Lance_Enemy_OpposingForce",
             "encounterObject" : {
-                "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
+                "EncounterObjectGuid" : "72773efa-5537-4273-89f8-5fcf1a06f7ff"
             }
         },
         {
-            "name" : "Lance_Enemy_Bodyguard",
+            "name" : "Lance_Enemy_Ambushers",
             "encounterObject" : {
-                "EncounterObjectGuid" : "10e8686f-8d19-4058-9541-119c4dff041c"
+                "EncounterObjectGuid" : "a40b7be1-0b20-445f-a31d-b2b2ff228eda"
             }
         },
         {
-            "name" : "Ambush Lance Spawner",
+            "name" : "Lance_Enemy_AssassinationTarget",
             "encounterObject" : {
-                "EncounterObjectGuid" : "f96ff774-d7ee-4486-b513-ce77357d1867"
-            }
-        },
-        {
-            "name" : "Region_ConvoyTarget",
-            "encounterObject" : {
-                "EncounterObjectGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce"
-            }
-        },
-        {
-            "name" : "Region_GoTo",
-            "encounterObject" : {
-                "EncounterObjectGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5"
+                "EncounterObjectGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64"
             }
         },
         {
             "name" : "Region_Escape",
+            "encounterObject" : {
+                "EncounterObjectGuid" : "a25a4728-0069-41cc-ac38-19b1f49023e7"
+            }
+        },
+        {
+            "name" : "Region_TargetEscapeZone",
             "encounterObject" : {
                 "EncounterObjectGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1"
             }
@@ -374,23 +260,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Okay Commander, our goal is to disable his vehicle - which one? Well just shoot them all.",
+                    "words" : "Commander, intel says the target and their escorts will be moving through this area.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
-                    "audioName" : "audioevent_universal_hostilesInbound",
-                    "cameraFocusGuid" : "",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "...Alright Mechwarriors, Lets get the vehicle and bug out before the guards get too frisky.",
+                    "words" : "Farah's Orbital recon shows a group of small signatures in the vicinity; the Govwernor is being hidden amongst that lot.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -400,55 +286,23 @@
                     "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5",
+                    "cameraFocusGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm getting a more small vehilce readings. Concentrate on the primary target and don't be distracted.",
+                    "words" : "The locals have them heading for an old Star League landing zone. Sorry I have nothing more definitive.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "These 'Shell games' are a pain. Get in, disable the convoy, then we will extract at our designated location.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Commander",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "ready up....",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Commander",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+                    "cameraFocusGuid" : "a25a4728-0069-41cc-ac38-19b1f49023e7",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -463,7 +317,39 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Excellent work Commander. While the Magastry Judicial System is as accomodating as possible but, Treason is still treason and it still brings the severest of punishment.",
+                    "words" : "Tell me he is still alive.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_anaMaria",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The CARVAS signal is still being transmitted.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The Governor survived... Well done, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -479,14 +365,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We have caught the perpetrator of the bombing but, someone has been organizing this from the shadows.",
+                    "words" : "He is alive but only just.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Commander",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -495,7 +381,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Agree Commander. Let's discuss this in detail somewhere more secure. In the meantime get some rest and ready up, you are not done yet.",
+                    "words" : "The local militia is securing the area. Let's review in mode comfortable surroundings.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -520,14 +406,46 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well. That just happened.",
+                    "words" : "Damn it to hell! Commander. This has complicated things.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_anaMaria",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The CARVAS signal is still being transmitted and the Dropship is not making any attempt to leave - well not the planet at least.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "a25a4728-0069-41cc-ac38-19b1f49023e7",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The Governor is not the only thing they want it seems. We may still salvage this...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_anaMaria",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -539,13 +457,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "2bc99c34-b9a1-4e6d-ad33-a64162819bd0"
+                "EncounterObjectGuid" : "dafa63cd-96e8-4a03-8383-6abfd360bde8"
             },
-            "name" : "Dialogue_GoToComplete",
+            "name" : "Dialogue_Interrupt_KillConfirmedEscapeInstruction",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicle. He should be to your front. Engage and destroy, Commander.",
+                    "words" : "Target down. Head for the evac zone and let's go home.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -564,13 +482,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "7cd7f943-20e7-4b74-9a3c-e1d0cfc30fd9"
+                "EncounterObjectGuid" : "cbb7a848-5367-478a-82f2-256bb94080e6"
             },
-            "name" : "Dialogue_ConvoyDamaged",
-            "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
+            "name" : "Dialogue_AmbushDestroyed",
+            "overrideDialogueBucketId" : "DialogBucketDef_Universal_KillConfirmed",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "Readings indicate the ambushing units are out of commission. The employer will be pleased. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -589,13 +507,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "a50ad243-225a-4beb-9317-d7aeffa2bcdc"
+                "EncounterObjectGuid" : "cc82de54-d0b5-4227-bb23-dc845ea88833"
             },
-            "name" : "Dialogue_Interrupt_GuardsDestroyed",
-            "overrideDialogueBucketId" : "",
+            "name" : "Dialogue_TargetDamaged",
+            "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "The guard units are dealt with, focus all fire on the convoy targets.",
+                    "words" : "That is our target, sustain fire on that unit!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -614,38 +532,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "793629ec-2233-4559-988b-460c5fdf6d58"
+                "EncounterObjectGuid" : "4a6a16e6-15ea-4c14-8075-a77089825af7"
             },
-            "name" : "Dialogue_Interrupt_ConvoyReachedExtraction",
-            "overrideDialogueBucketId" : "",
+            "name" : "Dialogue_AmbushWarning",
+            "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_AmbushWarning",
             "dialogueContent" : [
                 {
-                    "words" : "Warning, Commander! The Governor's vehicle has arrived at the estimated extraction point, if he escapes we .",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "366443c6-7895-4b4c-aea9-544f1a88c43e"
-            },
-            "name" : "Dialogue_ConvoyTargetDestroyed",
-            "overrideDialogueBucketId" : "",
-            "dialogueContent" : [
-                {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "Sensors are showing enemy movement beyond our initial count. Be advised you might meet with increased resistance.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -664,38 +557,13 @@
         },
         {
             "dialogue" : {
-                "EncounterObjectGuid" : "865db024-27b0-4c03-90d6-f257329c5d69"
+                "EncounterObjectGuid" : "9fb497e2-e3cf-410a-92c6-8943c6e09533"
             },
-            "name" : "Dialogue_EscapeInstruction",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
+            "name" : "Dialogue_TargetFleeing",
+            "overrideDialogueBucketId" : "DialogBucketDef_Assassinate_TargetFleeing",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                }
-            ]
-        },
-        {
-            "dialogue" : {
-                "EncounterObjectGuid" : "22fbc109-89c1-4590-bd94-f2f58e53504f"
-            },
-            "name" : "Dialogue_ReinforcementWarning",
-            "overrideDialogueBucketId" : "DialogBucketDef_Universal_HostilesInbound",
-            "dialogueContent" : [
-                {
-                    "words" : "Enemy Reinforcements, get ready for contact.",
+                    "words" : "Commander, the target is bugging out! Eliminate them before they escape.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -715,12 +583,12 @@
     ],
     "extractionOverrideList" : [],
     "overwriteMissionCompleteWhenAutoComplete" : true,
-    "overrideAutoCompleteDialogueId" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9",
-    "disableNegotations" : true,
+    "overrideAutoCompleteDialogueId" : "",
+    "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
-    "contractRewardOverride" : 200000,
+    "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
@@ -730,7 +598,7 @@
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "bf40fd39-ccf9-47c4-94a6-061809681140",
         "teamName" : "Player 1",
@@ -739,7 +607,7 @@
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe"
+                    "EncounterObjectGuid" : "49c80ae9-df2d-4788-a56e-3b21cf381691"
                 },
                 "name" : "Spawner_PlayerLance",
                 "lanceDefId" : "Manual",
@@ -756,13 +624,13 @@
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
+                "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
-                "overrideSpawnMethod" : "DropPod",
+                "overrideSpawnMethod" : null,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ec9d2280-ca9a-4d90-8a20-963d8a4c0a39"
+                            "EncounterObjectGuid" : "d7b3b2a0-a5ea-449b-8f20-e75ec9593a8b"
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
@@ -790,12 +658,12 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ebc06b6a-c5a8-4165-95ce-480bcf335570"
+                            "EncounterObjectGuid" : "9c2cae94-8f3a-46ab-ad5b-574051e6ad07"
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
@@ -823,12 +691,12 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "d50f1e9d-0a0b-4dc8-9a06-a33233aaa8a1"
+                            "EncounterObjectGuid" : "f2e3b2cf-b22e-4355-b990-fbcee4021c8d"
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
@@ -856,12 +724,12 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "461141c2-f956-49a5-b2c6-6f951b957a94"
+                            "EncounterObjectGuid" : "ba11e63f-b04a-475c-a01d-915686e3669a"
                         },
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
@@ -889,8 +757,8 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     }
                 ]
             }
@@ -898,7 +766,7 @@
     },
     "player2Team" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "757173dd-b4e1-4bb5-9bee-d78e623cc867",
         "teamName" : "Player 2",
@@ -908,7 +776,7 @@
     },
     "employerTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "Employer",
@@ -918,23 +786,188 @@
     },
     "targetTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
-        "teamName" : "Govs' Convoy",
-        "faction" : "irukjandiCompany",
-        "teamLeaderCastDefId" : "castDef_theFixer",
+        "teamName" : "Target",
+        "faction" : "INVALID_UNSET",
+        "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
+                    "EncounterObjectGuid" : "72773efa-5537-4273-89f8-5fcf1a06f7ff"
                 },
-                "name" : "Lance_Enemy_Convoy",
-                "lanceDefId" : "Manual",
+                "name" : "Lance_Enemy_OpposingForce",
+                "lanceDefId" : "lancedef_Irukjandi_Decoy",
+                "lanceTagSet" : {
+                    "items" : [],
+                    "tagSetSourceFile" : "tags/LanceTags"
+                },
+                "lanceExcludedTagSet" : {
+                    "items" : [],
+                    "tagSetSourceFile" : "tags/LanceTags"
+                },
+                "spawnEffectTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : "tags/SpawnEffectTags"
+                },
+                "lanceDifficultyAdjustment" : 0,
+                "selectedLanceDefId" : "",
+                "selectedLanceDifficulty" : 0,
+                "overrideSpawnMethod" : null,
+                "unitSpawnPointOverrideList" : [
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "dd1b3129-0f5d-4e93-b87d-42ab13c68e7d"
+                        },
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
+                    },
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "2d62bfad-c89a-488e-94a4-25cb748f0423"
+                        },
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
+                    },
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229"
+                        },
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
+                    },
+                    {
+                        "unitSpawnPoint" : {
+                            "EncounterObjectGuid" : "a2920539-8765-4260-ba55-1f155ae0bda8"
+                        },
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
+                        "unitTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "unitExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/UnitTags"
+                        },
+                        "spawnEffectTags" : {
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
+                            "tagSetSourceFile" : "tags/SpawnEffectTags"
+                        },
+                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "pilotExcludedTagSet" : {
+                            "items" : [],
+                            "tagSetSourceFile" : "tags/PilotTags"
+                        },
+                        "selectedUnitType" : "UNDEFINED",
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
+                    }
+                ]
+            },
+            {
+                "lanceSpawner" : {
+                    "EncounterObjectGuid" : "a40b7be1-0b20-445f-a31d-b2b2ff228eda"
+                },
+                "name" : "Lance_Enemy_Ambushers",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_vehicle",
-                        "lance_type_light"
+                        "lance_type_support",
+                        "lance_type_notallvehicles"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -947,18 +980,18 @@
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
+                "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
+                            "EncounterObjectGuid" : "8e0a56bb-8b5a-49e7-98da-5abbb2c36f8f"
                         },
-                        "customUnitName" : "Extraction Vehicle 1",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -968,12 +1001,14 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -981,17 +1016,17 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "bdb37cd1-dff5-4740-b361-d5d1aebfd452"
+                            "EncounterObjectGuid" : "32f2da7d-0c4d-474d-9917-6963eca1b3d9"
                         },
-                        "customUnitName" : "Extraction Vehicle 2",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1001,12 +1036,14 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -1014,17 +1051,17 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "0aed6f9b-c51e-4e76-9c21-b9820620ddb2"
+                            "EncounterObjectGuid" : "121ef017-a2af-41f2-b135-7c17bea334c7"
                         },
-                        "customUnitName" : "Extraction Vehicle 3",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1034,12 +1071,14 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -1047,17 +1086,17 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "d6a9ca5b-40e3-4392-bb03-87512cc30a77"
+                            "EncounterObjectGuid" : "c47cb632-8b27-46b7-a53a-4320736216ae"
                         },
-                        "customUnitName" : "Extraction Vehicle 4",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1067,12 +1106,14 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : [
+                                "spawn_poorly_maintained_50"
+                            ],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -1080,17 +1121,17 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     }
                 ]
             },
             {
                 "lanceSpawner" : {
-                    "EncounterObjectGuid" : "10e8686f-8d19-4058-9541-119c4dff041c"
+                    "EncounterObjectGuid" : "9d973fb5-9b7e-4c49-969a-6bb3e60caa64"
                 },
-                "name" : "Lance_Enemy_Bodyguard",
-                "lanceDefId" : "Tagged",
+                "name" : "Lance_Enemy_AssassinationTarget",
+                "lanceDefId" : "Manual",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1103,29 +1144,25 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
+                "lanceDifficultyAdjustment" : 1,
+                "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "f6a5d450-d3af-47f0-80d1-c5e53a4d8e45"
+                            "EncounterObjectGuid" : "6cd3107e-0f9d-4809-ab8c-fb30faf4cd80"
                         },
-                        "customUnitName" : "B1",
+                        "customUnitName" : "Kidnap One",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "vehicledef_HARASSER",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_light"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy","unit_medium"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1142,27 +1179,23 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ae11ab47-d0ce-4980-b3b3-39c957c34a99"
+                            "EncounterObjectGuid" : "32a78eeb-e3ee-4f2c-96ce-3f2aa6aefa6b"
                         },
-                        "customUnitName" : "B2",
+                        "customUnitName" : "Kidnap Two",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "vehicledef_HARASSER",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1179,27 +1212,23 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "3ad4f797-b397-44cf-9eaf-32e95383f288"
+                            "EncounterObjectGuid" : "fd6cffb3-edef-4892-8495-d1a5943869cf"
                         },
-                        "customUnitName" : "B3",
+                        "customUnitName" : "Kidnap Three",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "vehicledef_HARASSER",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1216,27 +1245,23 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "58ca1b45-de34-4c7d-8482-145742b34a0f"
+                            "EncounterObjectGuid" : "f9d76bd8-5c43-41c2-85d6-be237d2ca505"
                         },
-                        "customUnitName" : "B4",
+                        "customUnitName" : "Kidnap Four",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "vehicledef_HARASSER",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1253,185 +1278,8 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
-                    }
-                ]
-            },
-            {
-                "lanceSpawner" : {
-                    "EncounterObjectGuid" : "f96ff774-d7ee-4486-b513-ce77357d1867"
-                },
-                "name" : "Ambush Lance Spawner",
-                "lanceDefId" : "Tagged",
-                "lanceTagSet" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/LanceTags"
-                },
-                "lanceExcludedTagSet" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/LanceTags"
-                },
-                "spawnEffectTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/SpawnEffectTags"
-                },
-                "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
-                "selectedLanceDifficulty" : 0,
-                "overrideSpawnMethod" : null,
-                "unitSpawnPointOverrideList" : [
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "ab47e469-5887-4a9e-89f2-055d174462c1"
-                        },
-                        "customUnitName" : "A1",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
-                        "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "923f0c0d-8266-480a-8d34-8e7c8b12e1d6"
-                        },
-                        "customUnitName" : "A2",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
-                        "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "f7fcc4f1-3f3f-4da3-909d-54098143cef1"
-                        },
-                        "customUnitName" : "A3",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
-                        "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
-                    },
-                    {
-                        "unitSpawnPoint" : {
-                            "EncounterObjectGuid" : "4db659d0-49a5-4b7a-88aa-561538730982"
-                        },
-                        "customUnitName" : "A4",
-                        "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
-                        "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
-                            "tagSetSourceFile" : "tags/UnitTags"
-                        },
-                        "spawnEffectTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/SpawnEffectTags"
-                        },
-                        "pilotDefId" : "pilotDef_InheritLance",
-                        "pilotTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "pilotExcludedTagSet" : {
-                            "items" : [],
-                            "tagSetSourceFile" : "tags/PilotTags"
-                        },
-                        "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     }
                 ]
             }
@@ -1439,7 +1287,7 @@
     },
     "targetsAllyTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
         "teamName" : "Target's Ally",
@@ -1449,7 +1297,7 @@
     },
     "neutralToAllTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "61612bb3-abf9-4586-952a-0559fa9dcd75",
         "teamName" : "Neutral to All",
@@ -1459,7 +1307,7 @@
     },
     "hostileToAllTeam" : {
         "encounterLayerData" : {
-            "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
+            "EncounterObjectGuid" : ""
         },
         "teamGuid" : "3c9f3a20-ab03-4bcb-8ab6-b1ef0442bbf0",
         "teamName" : "Hostile to All",
@@ -1475,6 +1323,6 @@
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : []
     },
-    "contractType" : "AmbushConvoy",
-    "contractTypeID" : "AmbushConvoy"
+    "contractType" : "Assassinate",
+    "contractTypeID" : "Assassinate"
 }

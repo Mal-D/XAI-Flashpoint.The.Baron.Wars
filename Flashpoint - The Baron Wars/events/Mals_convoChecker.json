@@ -215,8 +215,8 @@
         {
             "Description" : {
                 "Id" : "outcome_2",
-                "Name" : "Blank Convo Check",
-                "Details" : "Convo Check",
+                "Name" : "TBW_300_Talk",
+                "Details" : "SL Convo Check - TBW_300_Talk",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -237,8 +237,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_2_0",
-                        "Name" : "Blank Convo Check",
-                        "Details" : "Blank Convo Check",
+                        "Name" : "SL Convo Check",
+                        "Details" : "SL Convo Check - TBW_300_Talk",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -258,11 +258,11 @@
                             "Actions" : [
                                 {
                                     "Type" : "System_StartConversation",
-                                    "value" : "ENTER CONVO GUID HERE",
+                                    "value" : "9cead891647debd383adaaa5",
                                     "valueConstant" : null,
                                     "additionalValues" : [
-                                        "Conversation Checker",
-                                        "Chatter Checker",
+                                        "TBW_300_Talk Conversation Checker",
+                                        "Sideloaded convo Checker",
                                         null,
                                         null
                                     ]
