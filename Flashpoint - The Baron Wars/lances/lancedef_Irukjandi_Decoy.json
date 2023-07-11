@@ -16,7 +16,7 @@
 	"LanceUnits": [
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_HARASSER",
+			"unitId": "vehicledef_PEGASUS",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [],
@@ -37,7 +37,7 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_HARASSER",
+			"unitId": "vehicledef_PEGASUS",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [ ],
@@ -58,8 +58,8 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_HARASSER",
-			"pilotId": "pilot_Ico5_gunner",
+			"unitId": "vehicledef_PEGASUS",
+			"pilotId": "pilot_Ico5_tactician",
 			"unitTagSet": {
 				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
@@ -79,7 +79,7 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_HARASSER",
+			"unitId": "vehicledef_PEGASUS",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
 				"items": [],

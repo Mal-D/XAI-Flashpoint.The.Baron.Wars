@@ -25,8 +25,8 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "Chatter Checker - anaMariaC_intro_1",
-                "Details" : "anaMariaC_intro_1",
+                "Name" : "(White Text Details) Chatter Checker - [Enter Name Here]}",
+                "Details" : "(Blue Text Details) #1 CT Test",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -47,8 +47,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "1- Holodesk Chatter Checker",
-                        "Details" : "anaMariaC_intro_1 Chatter Checker",
+                        "Name" : "#1- Holodesk Chatter Checker",
+                        "Details" : "Chatter Checker - CT Test",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -78,10 +78,10 @@
                                 },
                                 {
                                     "Type" : "System_StartConversation",
-                                    "value" : "9cdde9d2f39febc59625cbb8",
+                                    "value" : "9c9d1c16d0effb81345a9728",
                                     "valueConstant" : null,
                                     "additionalValues" : [
-                                        "anaMariaC_intro_1 - Conversation",
+                                        "Chatter Checker - CT Test Conversation",
                                         "Holodesk Chatter Checker",
                                         null,
                                         null

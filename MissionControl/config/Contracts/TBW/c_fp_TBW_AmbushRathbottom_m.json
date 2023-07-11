@@ -1,5 +1,5 @@
 {
-  "ID": "c_fp_TBW_escapingTarget",
+  "ID": "c_fp_TBW_AmbushRathbottom_m",
   "RandomSpawns": {
     "Enable": true
   },
@@ -9,13 +9,13 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Negate Rathbottom's Escorts"],
+    "EnemyLanceObjectiveNames": ["Negate the Kidnapper's Escorts"],
     "EnemyLances": ["lancedef_Irukjandi_Decoy"],
     "UseDialogue": true,
-    "DialogueCastDefId": "castDef_theBaron",
-    "Dialogue": "{Commander.LastName}, I have managed to <i>rustle</i> up some help. We'll engage the 'Mechs, you just get the Governor.",
-    "AllyLanceCount": 2,
-    "AllyLances": ["lancedef_theBaron_AL_Escort","lanceDef_TBW_BaronSingle"]
+    "DialogueCastDefId": "castDef_MagRep",
+    "Dialogue": "{Commander.LastName}, I have managed to get a helping hand from the local forces. We'll engage the other forces, you just get the Governor.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lancedef_theBaron_AL_Escort"]
   },
   "ExtendedLances": {
     "Enable": false,
