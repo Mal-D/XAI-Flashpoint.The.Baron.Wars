@@ -24,7 +24,7 @@
         "UIName": "Jenner JR7-FER", 
         "Id": "mechdef_jenner_JR7-FER", 
         "Name": "Jenner", 
-        "Details": "The Jenner FER is the natural progression of the venerable Jenner. By removing the Martel Medium Lasers and replacing them with a pair of Magna Galium VIs Extended Range Medium Lasers, there was room for an additional jump jet and nearly 3 tons of armour. Sadly, it still runs hot but, boy can it <i>run!</i>   ", 
+        "Details": "The Jenner FER is the natural progression of the venerable Jenner. By removing the Martel Medium Lasers and replacing them with a pair of Magna Galium VIs Extended Range Medium Lasers, there was room for an additional jump jet and nearly 3 tons of armour. Sadly, it still runs hot but, boy can it <i>run!</i>", 
         "Icon": "uixTxrIcon_jenner"
     }, 
     "simGameMechPartCost": 390528, 
