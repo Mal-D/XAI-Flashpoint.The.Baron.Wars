@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_AmbushRathbottom",
-    "contractName" : "Ambush Rathbottom ... 5",
+    "contractName" : "Ambush Kidnapping 'Mech.",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -11,45 +11,43 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from the Capitol. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
-    "longDescription" : "Let's get him before he disappears again.",
+    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
+    "longDescription" : "Let's get him before they make him disappear again.",
     "salvagePotential" : 8,
     "requirementList" : [],
-    "OnContractSuccessResults" : [                
-        {
-        "Scope" : "Company",
+    "OnContractSuccessResults" : [{"Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : ["_TBW_govRecovered"],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : ["_TBW_govKidnapped"],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [
+                {
+                    "typeString" : "System.Single",
+                    "name" : "ContractBonusRewardPct",
+                    "value" : "0.1",
+                    "set" : false,
+                    "valueConstant" : null
+                }
+            ],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "OnContractFailureResults" : [{"Scope" : "Company",
         "Requirements" : null,
         "AddedTags" : {
-            "items" : ["TBW_govCaptured"],
+            "items" : ["_TBW_govKidnapped"],
             "tagSetSourceFile" : ""
         },
         "RemovedTags" : {
-            "items" : ["TBW_govEscapes"],
-            "tagSetSourceFile" : ""
-        },
-        "Stats" : [
-            {
-                "typeString" : "System.Single",
-                "name" : "ContractBonusRewardPct",
-                "value" : "0.1",
-                "set" : false,
-                "valueConstant" : null
-            }
-        ],
-        "Actions" : [],
-        "ForceEvents" : [],
-        "TemporaryResult" : false,
-        "ResultDuration" : 0
-    }],
-    "OnContractFailureResults" : [                {
-        "Scope" : "Company",
-        "Requirements" : null,
-        "AddedTags" : {
-            "items" : ["TBW_govEscapes"],
-            "tagSetSourceFile" : ""
-        },
-        "RemovedTags" : {
-            "items" : ["TBW_govCaptured"],
+            "items" : ["_TBW_govRecovered"],
             "tagSetSourceFile" : ""
         },
         "Stats" : [],
@@ -81,7 +79,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Ambush Rathbottom's vehicle.",
+            "title" : "Ambush Rathbottom's 'Mech.",
             "description" : "The I.Co. must really want him.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -98,7 +96,7 @@
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
             "title" : "Destroy the Convoy Guards.",
-            "description" : "Send a message by not only destroy the convoy, but eliminte their escorts as well.",
+            "description" : "Send a message by not only disabling the carrying 'Mech, but eliminte its escorts as well.",
             "isPrimary" : false,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
@@ -111,19 +109,17 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Ambush Rathbottom's vehicle.",
+            "title" : "Ambush Rathbottom's Kidnapper",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
+            "OnSuccessResults" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["TBW_govCaptured"],
+                        "items" : ["_TBW_govRecovered"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : ["TBW_govEscapes"],
+                        "items" : ["_TBW_govKidnapped"],
                         "tagSetSourceFile" : ""
                     },
                     "Stats" : [
@@ -141,16 +137,14 @@
                     "ResultDuration" : 0
                 }
             ],
-            "OnFailureResults" : [
-                {
-                    "Scope" : "Company",
+            "OnFailureResults" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["TBW_govEscapes"],
+                        "items" : ["_TBW_govKidnapped"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
-                        "items" : ["TBW_govCaptured"],
+                        "items" : ["_TBW_govRecovered"],
                         "tagSetSourceFile" : ""
                     },
                     "Stats" : [],
@@ -170,9 +164,7 @@
             "title" : "Destroy the Irukjandi Escort.",
             "description" : "",
             "isPrimary" : false,
-            "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
+            "OnSuccessResults" : [{"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -197,33 +189,7 @@
                     "ResultDuration" : 0
                 }
             ],
-            "OnFailureResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
         },
@@ -234,15 +200,14 @@
             "title" : "Don't let Rathbottom be captured",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [{
-                "Scope" : "Company",
+            "OnSuccessResults" : [{"Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["TBW_govCaptured"],
+                    "items" : ["_TBW_govRecovered"],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
-                    "items" : ["TBW_govEscapes"],
+                    "items" : ["_TBW_govKidnapped"],
                     "tagSetSourceFile" : ""
                 },
                 "Stats" : [],
@@ -251,15 +216,14 @@
                 "TemporaryResult" : false,
                 "ResultDuration" : 0
             }],
-            "OnFailureResults" : [{
-                "Scope" : "Company",
+            "OnFailureResults" : [{"Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["TBW_govEscapes"],
+                    "items" : ["_TBW_govKidnapped"],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
-                    "items" : ["TBW_govCaptured"],
+                    "items" : ["_TBW_govRecovered"],
                     "tagSetSourceFile" : ""
                 },
                 "Stats" : [],
@@ -277,7 +241,7 @@
             },
             "title" : "Recon the escape Route",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -289,7 +253,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "The objective for the player units escaping and finishing the mission.",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -316,7 +280,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "2e0d2e69-6335-49ae-b2bb-61ff3185306b"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         }
@@ -374,23 +338,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Okay Commander, our goal is to disable his vehicle - which one? Well just shoot them all.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "audioevent_universal_hostilesInbound",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "...Alright Mechwarriors, Lets get the vehicle and bug out before the guards get too frisky.",
+                    "words" : "Okay, our goal is to disable 'Mech carrying the Governor.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -398,6 +346,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "...Alright Mechwarriors, Lets get that 'Mech' and bug out before the guards get too frisky.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5",
@@ -406,14 +370,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I'm getting a more small vehilce readings. Concentrate on the primary target and don't be distracted.",
+                    "words" : "I'm getting a lot more fusion readings. Concentrate on the primary target and don't be distracted.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
@@ -422,7 +386,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "These 'Shell games' are a pain. Get in, disable the convoy, then we will extract at our designated location.",
+                    "words" : "These 'Shell games' are a pain. Get in, disable the 'Mech', then we will extract at our designated location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -438,14 +402,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "ready up....",
+                    "words" : "Ok...ready up....",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Commander",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
@@ -463,6 +427,86 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
+                    "words" : "Tell me he is still alive.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_anaMaria",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The CARVAS signal is still being transmitted.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The Governor survived... Well done, Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MagRep",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "He is alive but only just.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The local militia is securing the area. Let's review this in more comfortable surroundings.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_MagRep",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
                     "words" : "Excellent work Commander. While the Magastry Judicial System is as accomodating as possible but, Treason is still treason and it still brings the severest of punishment.",
                     "wordsColor" : {
                         "r" : 1,
@@ -479,7 +523,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "We have caught the perpetrator of the bombing but, someone has been organizing this from the shadows.",
+                    "words" : "Even here he is innocent until proven complicit. We might have the supposed perpetrator of the bombing but, someone has been organizing this from the shadows.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -495,7 +539,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Agree Commander. Let's discuss this in detail somewhere more secure. In the meantime get some rest and ready up, you are not done yet.",
+                    "words" : "You are correct Commander {Commander.LastName}. Let's carry on this discussion somewhere more secure. In the meantime get some rest and ready up, you are not done yet.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -520,14 +564,46 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Well. That just happened.",
+                    "words" : "Damn it to hell! Commander. This has complicated things.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_anaMaria",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The CARVAS signal is still being transmitted and the Dropship is not making any attempt to leave - well not the planet at least.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "The Governor is not the only thing they want it seems. We may still salvage this...",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_anaMaria",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -545,7 +621,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We have a lock on the target vehicle. He should be to your front. Engage and destroy, Commander.",
+                    "words" : "We have a lock on the target. He should be to your front. Engage and destroy, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -570,7 +646,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_AmbushConvoy_PriTarDamaged",
             "dialogueContent" : [
                 {
-                    "words" : "That's got it, keep firing on those targets until they are neutralized. ",
+                    "words" : "That's got it, keep firing on that target until it is neutralized.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -595,7 +671,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "The guard units are dealt with, focus all fire on the convoy targets.",
+                    "words" : "The guard units are dealt with, focus all fire on the carrying 'Mech.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -620,7 +696,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Warning, Commander! The Governor's vehicle has arrived at the estimated extraction point, if he escapes we .",
+                    "words" : "Warning, Commander! The Governor's 'Mech' has arrived at the estimated extraction point, if he escapes we...",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -628,6 +704,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "... Yeah I get it",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
@@ -644,15 +736,32 @@
             "name" : "Dialogue_ConvoyTargetDestroyed",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
+                
                 {
-                    "words" : "One down. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "Boom...! Did you see that... got him. Keep engaging those threats and we'll be out of here. ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_1",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Keep your head in the game {MC.PlayerLances.TeamPilot_Random_1.DisplayName}. Keep engaging those threats and track to EXFIL, and you just might survive.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -670,7 +779,7 @@
             "overrideDialogueBucketId" : "DialogBucketDef_Universal_Escape",
             "dialogueContent" : [
                 {
-                    "words" : "The convoy is finished, now get what mechs you have to the extraction point and we'll pull you out. Move quickly.",
+                    "words" : "That was a good one Commander. Now get what 'Mechs you have to the extraction point. Move quickly.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -678,6 +787,22 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_DariusDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We're going Darius",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -720,7 +845,7 @@
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
-    "contractRewardOverride" : 200000,
+    "contractRewardOverride" : 500000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
@@ -921,7 +1046,7 @@
             "EncounterObjectGuid" : "e1e9093f-5cb2-4ece-889d-49aa6357e731"
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
-        "teamName" : "Govs' Convoy",
+        "teamName" : "Govs' Kidnapper",
         "faction" : "irukjandiCompany",
         "teamLeaderCastDefId" : "castDef_theFixer",
         "lanceOverrideList" : [
@@ -933,8 +1058,8 @@
                 "lanceDefId" : "Manual",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_vehicle",
-                        "lance_type_light"
+                        "lance_type_solo"
+                        
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -955,10 +1080,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
                         },
-                        "customUnitName" : "Extraction Vehicle 1",
+                        "customUnitName" : "Extraction",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechdef_jenner_JR7-FER",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -971,9 +1096,9 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "pilot_BW_theFixer",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -988,10 +1113,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "bdb37cd1-dff5-4740-b361-d5d1aebfd452"
                         },
-                        "customUnitName" : "Extraction Vehicle 2",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1004,9 +1129,9 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -1021,10 +1146,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "0aed6f9b-c51e-4e76-9c21-b9820620ddb2"
                         },
-                        "customUnitName" : "Extraction Vehicle 3",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "customUnitName" : "",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1037,9 +1162,9 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -1054,10 +1179,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d6a9ca5b-40e3-4392-bb03-87512cc30a77"
                         },
-                        "customUnitName" : "Extraction Vehicle 4",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicledef_HARASSER",
+                        "unitType" : "Mech",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1070,9 +1195,9 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d6_recon",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
-                            "items" : ["pilot_npc_recon", "pilot_npc_dynamic", "pilot_npc_d6" ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
