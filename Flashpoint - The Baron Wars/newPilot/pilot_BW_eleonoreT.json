@@ -7,8 +7,8 @@
 		"Callsign": "Badger",
 		"Gender": "Female",
 		"factionID": "agrarianCollective",
-		"Age": 22,
-		"Details": "She maybe young but she has been in a 'Mech cockpit since being able to wear a NeuroHelmet.",
+		"Age": 31,
+		"Details": "A Canopian defender through and through and has been in a 'Mech cockpit ever since being able to fit a NeuroHelmet.",
 		"Icon": "guiTxrPort_theDaughter"
 	},
 	"BaseGunnery": "6",

@@ -7,9 +7,9 @@
 		"Callsign": "Baron",
 		"Gender": "Male",
 		"factionID": "wagyuBarons",
-		"Age": 56,
+		"Age": 36,
 		"Details": "Only pilots his family 'Mech very occasionally.",
-		"Icon": "guiTxrPort_theBaron"
+		"Icon": "guiTxrPort_theBaron_pilot"
 	},
 	"BaseGunnery": "5",
 	"BonusGunnery": 0,

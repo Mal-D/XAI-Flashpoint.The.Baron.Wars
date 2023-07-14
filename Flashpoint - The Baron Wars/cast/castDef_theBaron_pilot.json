@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_theBaron_pilot",
+   "internalName" : "theBaron_pilot",
+   "firstName" : "Jebadiah",
+   "lastName" : "Tombstone",
+   "callsign" : "Bull",
+   "rank" : "Baron",
+   "gender" : "Male",
+   "factionID" : "faction_girin",
+   "sgCharType" : "UNSET",
+   "showRank" : true,
+   "showFirstName" : true,
+   "showCallsign" : false,
+   "showLastName" : true,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_theBaron_pilot.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}
