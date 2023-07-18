@@ -50,7 +50,13 @@
             "items" : ["_TBW_govRecovered"],
             "tagSetSourceFile" : ""
         },
-        "Stats" : [],
+        "Stats" : [{
+            "typeString": "System.Int32",
+            "name": "TBW_FailCount",
+            "value": "8",
+            "set": false,
+            "valueConstant": "8"
+        }],
         "Actions" : [],
         "ForceEvents" : [],
         "TemporaryResult" : false,

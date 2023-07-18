@@ -658,13 +658,33 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "(required)",
+                            "value" : "9c96392b1071fd5869693bcc",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} IV",
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV - Time is of the essence.",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "--Several hours Later--",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Commander {Commander.LastName}, the Governor has recovered sufficiently to enable us to better define our next move. Sending you the mission parameters. Rest up, you have three days.",
+                            "castDef_anaMaria"
+                            ]
+                        },
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c46729b029ba9da74b59ff2",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.Def.Description.Name} IV - Bring your Guns to Town",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                            ]
+                        },
+
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_402_Branch",
