@@ -3,7 +3,7 @@
     "contractName" : "Counter Offensive v7",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
-    "difficultyUIModifier" : 2,
+    "difficultyUIModifier" : 1,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
@@ -11,15 +11,15 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "Looks like those who are running the ICo want their boy back or need to finish the job you started. Unfortunately, we can't move Rathbottom due to his injuries and the Crimson council wants him alive - at least until they have extracted a few details - like who and why. You will have to destroy their FOB while protecting the Medical facilities.",
-    "longDescription" : "We should have hit him harder. Now we have to keep him alive.",
+    "shortDescription" : "Looks like those who are running the ICo want their boy back or need to finish the job. Unfortunately, the recovery team was forced to shelter not far from their FOB still and we can't move Rathbottom due to his injuries. The Crimson council wants him alive - at least until they have extracted a few details - like who and why. You will have to destroy their FOB while protecting the Medical facilities.",
+    "longDescription" : "I hope this is all worth it. Now we have to keep him alive. I wish they'd make up their minds.",
     "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [{
         "Scope" : "Company",
         "Requirements" : null,
         "AddedTags" : {
-            "items" : [],
+            "items" : ["_TBW_600_missionSuccess"],
             "tagSetSourceFile" : ""
         },
         "RemovedTags" : {
@@ -47,7 +47,29 @@
         "TemporaryResult" : false,
         "ResultDuration" : 0
     }],
-    "OnContractFailureResults" : [],
+    "OnContractFailureResults" : [{
+        "Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["_TBW_600_missionFailed"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [{
+            "typeString": "System.Int32",
+            "name": "TBW_FailCount",
+            "value": "32",
+            "set": false,
+            "valueConstant": "32"
+            }],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
@@ -1162,11 +1184,27 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "17b93e08-dbd8-40fd-8f51-1ab09ec188d7"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Destroy Lance Attackers Chunk Group"
             ],
-            "requirementList" : []
+            "requirementList" : [{
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : [{
+                    "obj" : "TBW_FailCount",
+                    "op" : "LessThan",
+                    "val" : 8,
+                    "valueConstant" : "8"
+                }]
+            }]
         },
         {
             "name" : "Chunk_DestroyLance_Attackers_Secondary",
@@ -1177,7 +1215,23 @@
             "controlledByContractChunkGroupList" : [
                 "Destroy Lance Attackers Chunk Group"
             ],
-            "requirementList" : []
+            "requirementList" : [{
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : [{
+                    "obj" : "TBW_FailCount",
+                    "op" : "GreaterThan",
+                    "val" : 8,
+                    "valueConstant" : "8"
+                }]
+            }]
         },
         {
             "name" : "Chunk_Lance_Employer (Optional)",
@@ -2701,8 +2755,8 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0.75,
-    "negotiatedSalvage" : 0.25,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : false,
     "player1Team" : {
         "encounterLayerData" : {
@@ -6027,6 +6081,6 @@
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : []
     },
-    "contractType" : "INVALID_UNSET",
+    "contractType" : "AttackDefend",
     "contractTypeID" : "AttackDefend"
 }

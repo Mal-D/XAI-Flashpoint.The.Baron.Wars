@@ -11,16 +11,64 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-	"shortDescription": "The CARVAS signal was recorded in the area surrounding the old SLDF Garrision Fort. We need to precisely determine his location to plan for an extraction.  We need to get three network nodes as close as possible create a scan powerful enough to penetrate the structure.",
-	"longDescription": "Commander {Commander.LastName} we only have one shot at this. We don't have a lot of time as we expect him to be quickly transferred off-world. It appears the {TEAM_TAR.FactionDef.Demonym} Techs have managed to bring the base defenses on-line so move fast, plant the Network nodes and bug out.",
+	"shortDescription": "The CARVAS signal was recorded in the area surrounding the old SLDF Garrision Fort. We need to precisely determine his location to plan for an extraction.  We need to get three Accoustic nodes as close as possible create a scan powerful enough to penetrate the structure.",
+	"longDescription": "Commander {Commander.LastName} we only have one shot at this. We don't have a lot of time as we expect him to be quickly transferred off-world. It appears the {TEAM_TAR.FactionDef.Demonym} Techs have managed to bring the base defenses on-line so move fast, plant the Accoustic nodes and bug out.",
 	"salvagePotential": 16,
-    "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "requirementList" :[
+        {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : ["TBW_Cancel_findGovernor"],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "RequirementComparisons" : []
+        }],
+    "OnContractSuccessResults" : [{"Scope": "Company",
+                "Requirements": null,
+                "AddedTags": {
+                    "items": ["_TBW_500_missionSuccess"],
+                    "tagSetSourceFile": ""
+                },
+                "RemovedTags": {
+                    "items": [],
+                    "tagSetSourceFile": ""
+                },
+                "Stats": [],
+                "Actions": [],
+                "ForceEvents": [],
+                "TemporaryResult": false,
+                "ResultDuration": 0
+                }],
+    "OnContractFailureResults" : [{"Scope": "Company",
+                "Requirements": null,
+                "AddedTags": {
+                    "items": ["_TBW_500_missionFailed"],
+                    "tagSetSourceFile": ""
+                },
+                "RemovedTags": {
+                    "items": [],
+                    "tagSetSourceFile": ""
+                },
+                "Stats": [{
+                    "typeString": "System.Int32",
+                    "name": "TBW_FailCount",
+                    "value": "16",
+                    "set": false,
+                    "valueConstant": "16"
+                    }],
+                "Actions": [],
+                "ForceEvents": [],
+                "TemporaryResult": false,
+                "ResultDuration": 0
+                }],
     "encounterPlayStyle" : "SinglePlayer",
-    "maxNumberOfPlayerUnits" : 2,
+    "maxNumberOfPlayerUnits" : 3,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : 120,
+    "lanceMaxTonnage" : 150,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -28,9 +76,9 @@
         -1
     ],
     "mechMaxTonnages" : [
-        55,
-        55,
-        -1,
+        60,
+        60,
+        60,
         -1
     ],
     "mapMood" : null,
@@ -64,8 +112,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "b666957c-c0f2-4ea2-959b-33165d490ba5"
             },
-			"title": "Place Scanner Alpha",
-			"description": "Place Scanner Alpha.",
+			"title": "ELF Antenna Alpha",
+			"description": "Place ELF Antenna Alpha.",
             "isPrimary" : true,
             "OnSuccessResults" : 
             [
@@ -79,15 +127,7 @@
                     "items": [],
                     "tagSetSourceFile": ""
                 },
-                "Stats": [
-                    {
-                        "typeString": "System.Int32",
-                        "name": "scanCount",
-                        "value": "1",
-                        "set": false,
-                        "valueConstant": "1"
-                    }
-                ],
+                "Stats": [],
                 "Actions": [],
                 "ForceEvents": [],
                 "TemporaryResult": false,
@@ -102,8 +142,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "82e56617-5098-4baf-bbb9-ce5dc4ce470f"
             },
-			"title": "Place Scanner Bravo",
-			"description": "Place Scanner Bravo",
+			"title": "Place ELF Antenna Bravo",
+			"description": "Place ELF Antennar Bravo",
             "isPrimary" : true,
             "OnSuccessResults" : 
             [
@@ -117,15 +157,7 @@
                     "items": [],
                     "tagSetSourceFile": ""
                 },
-                "Stats": [
-                    {
-                        "typeString": "System.Int32",
-                        "name": "scanCount",
-                        "value": "1",
-                        "set": false,
-                        "valueConstant": "1"
-                    }
-                ],
+                "Stats": [],
                 "Actions": [],
                 "ForceEvents": [],
                 "TemporaryResult": false,
@@ -140,8 +172,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "92415cd8-d751-455b-8496-b11a09c8d7cd"
             },
-			"title": "Place scanner Charlie",
-			"description": "Place scanner Charlie",
+			"title": "Place ELF Antenna Charlie",
+			"description": "Place ELF Antenna Charlie",
             "isPrimary" : true,
             "OnSuccessResults" : [
                 {"Scope": "Company",
@@ -154,15 +186,7 @@
                     "items": [],
                     "tagSetSourceFile": ""
                 },
-                "Stats": [
-                    {
-                        "typeString": "System.Int32",
-                        "name": "scanCount",
-                        "value": "1",
-                        "set": false,
-                        "valueConstant": "1"
-                    }
-                ],
+                "Stats": [],
                 "Actions": [],
                 "ForceEvents": [],
                 "TemporaryResult": false,
@@ -351,7 +375,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-			"title": "Destroy Protectorate Special Unit.",
+			"title": "Destroy the enemy Special Unit.",
 			"description": "This is getting crowded people, take them out.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -401,7 +425,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "da38a572-828a-441a-9d5b-bef67e728f4d"
             },
-			"title": "Elimiate the Turret Defenses",
+			"title": "Elimiate the Air Defenses",
 			"description": "Shut these down Commander. They will cause you never ending pain otherwise.",
             "isPrimary" : false,
             "OnSuccessResults" : [
@@ -613,9 +637,25 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "efb53005-cf39-4754-9ff1-8b0c81ee8760"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
-            "requirementList" : []
+            "requirementList" : [{
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : [{
+                    "obj" : "TBW_FailCount",
+                    "op" : "LessThan",
+                    "val" : 8,
+                    "valueConstant" : "8"
+                }]
+            }]
         },
         {
             "name" : "Chunk_Enemy_Supplemental_2 (Bonus)",
@@ -943,7 +983,7 @@
             "overrideDialogueBucketId": "",
 			"dialogueContent": [
                 {
-                    "words" : "What the f...hell just happened? Are we complicit now in the murder of an properly appointed Planetary Governor?",
+                    "words" : "What the flippin' hell just happened? Are we complicit now in the murder of an properly appointed Planetary Governor?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -991,7 +1031,7 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "Where the MIM is concerned, I don't ask questions. Let's discuss this in orbit. But for now, you performed admirably.",
+					"words": "I know this is distastfull but we'll talk about it when your forces get back to the ship. But for now it was a job well done.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1041,14 +1081,30 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "PLACEHOLDR - Acquistion_Complete",
+                    "words": "Acquistion Complete - Demolition charge pattern transmitted.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
 						"b": 1,
 						"a": 1
 					},
-					"selectedCastDefId": "castDef_FarahDefault",
+					"selectedCastDefId": "castDef_Computer",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words": "Demolition... What Demolition? Oh.. ou've got to be kidding.",
+					"wordsColor": {
+						"r": 1,
+						"g": 1,
+						"b": 1,
+						"a": 1
+					},
+					"selectedCastDefId": "castDef_Farah",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -1066,7 +1122,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Alpha Scanner deployed, Commander. Good work.",
+                    "words": "Alpha ELF deployed, Commander. Good work.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1082,7 +1138,7 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "Detecting signal boost.",
+					"words": "ELF signal functional.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1107,7 +1163,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Bravo Scanner deployed, Commander.",
+                    "words": "Bravo ELF deployed, Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1123,7 +1179,7 @@
                     "revealRadius" : -1
                 },
 				{
-					"words": "Initial Network uplink Connection established. We're almost there.",
+					"words": "Initial scan parameters set. We're almost there.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1148,7 +1204,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Charlie Scanner deployed and active.",
+                    "words": "Charlie ELF deployed and active.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1164,7 +1220,7 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "Active network ping. It shouldn't be long now Commander.",
+					"words": "It shouldn't be long now Commander.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1189,7 +1245,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Attention! All {TEAM_TAR.FactionDef.Demonym} forces, focus fire on the 'Mechs placing Uplink Scanners. Fire at will and bring them down!",
+                    "words" : "Attention! All {TEAM_TAR.FactionDef.Demonym} forces, attack pattern determined 'Mechs are placing ELF Scanners. Fire at will and bring them down!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1329,7 +1385,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Another batch for our Master to assimilate.",
+                    "words" : "/// Incoming Contacts ////",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1413,7 +1469,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Geeez touchy....<Click>",
+                    "words" : "Geeez touchy....///-Click-///",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1463,7 +1519,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, long range sensors are picking up an enemy bogey. They'll be landing any minute.",
+                    "words" : "Commander, long range sensors are picking up an enemy DropShip. They'll be landing any minute.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1504,23 +1560,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, they are deploying vehicles and tanks from their motorpool.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "It appears to be subterranian, and hardened. We can't take it out, they will keep comng until the artillery lands. So move quickly.",
+                    "words" : "PLACEHOLDR - MotorPoolWarning",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1746,10 +1786,31 @@
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
-    "usesExpiration" : false,
-    "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 50,
-    "negotiatedSalvage" : 50,
+
+    "usesExpiration" : true,
+    "expirationTimeOverride" : 5,
+    "ForceStartOnExpiration" : true,
+    "ResultsOnExpiration": [                
+        {"Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["_TBW_forcedLaunch"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+    "UniversalContractEffects" : [],
+
+    "negotiatedSalary" : 0.50,
+    "negotiatedSalvage" : 0.50,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -3437,6 +3498,6 @@
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : []
     },
-    "contractType" : "INVALID_UNSET",
+    "contractType" : "FireMission",
     "contractTypeID" : "FireMission"
 }
