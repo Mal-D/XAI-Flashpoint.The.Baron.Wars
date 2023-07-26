@@ -671,7 +671,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Good news Commander {Commander.LastName}, the MIM have made significant discoveries to enable us to better define our next move. Sending you the mission parameters.",
+                            "<Stats.Company.[TBW_FailCount]> Good news Commander {Commander.LastName}, the MIM have made significant discoveries to enable us to better define our next move. Sending you the mission parameters.",
                             "castDef_anaMaria"
                             ]
                         },
@@ -916,7 +916,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
+                            "<Stats.Company.[TB_FailCount]> Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
                             "castDef_anaMaria"
                             ]
                         },
@@ -1039,111 +1039,117 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_TBW_601_Branch",
+        {"Description" :  {"Id" : "ms_fp_TBW_601_Branch",
         "Name" : "601_Branch",
         "Details" : "601_Branch",
-        "Icon" : ""},
-    "Scope" : "Company",
-    "Requirements" : [],
-    "Results" : [
-        {"Scope" : "Company",
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+            "Icon" : ""},
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : 
+                [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [{
+                            "obj" : "TBW_FailCount",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : 40,
+                            "valueConstant" : "40"
+                        }]
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Employment Termination.",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
+                            "castDef_anaMaria"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_999_Fail-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
                 },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : [{
-                    "obj" : "TBW_FailCount",
-                    "op" : "GreaterThanOrEqual",
-                    "val" : 40,
-                    "valueConstant" : "40"
-                }]
-            },
-            "AddedTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "RemovedTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "Stats" : [],
-            "Actions" : [
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Employment Termination.",
-                    "valueConstant" : null,
-                    "additionalValues" : 
-                    [
-                    "Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
-                    "castDef_anaMaria"
-                    ]
-                },
-                {
-                    "Type" : "Flashpoint_SetNextMilestone",
-                    "value" : "ms_fp_TBW_999_Fail-Complete",
-                    "valueConstant" : null,
-                    "additionalValues" : null
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [{
+                        "obj" : "TBW_FailCount",
+                        "op" : "LessThanOrEqual",
+                        "val" : 32,
+                        "valueConstant" : "32"
+                    }],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Security Leak Contained",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Amazing work Commander {Commander.LastName}, I would not have believed it - if not for seeing it first hand.",
+                            "castDef_anaMaria"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_700_Talk",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
                 }
-            ],
-            "ForceEvents" : [],
-            "TemporaryResult" : false,
-            "ResultDuration" : 0
+                ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
         },
-        {"Scope" : "Company",
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : ["_TBW_600_missionSuccess"],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : []
-            },
-            "AddedTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "RemovedTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "Stats" : [],
-            "Actions" : [
-                {
-                    "Type" : "System_PauseNotification",
-                    "value" : "Security Leak Contained",
-                    "valueConstant" : null,
-                    "additionalValues" : 
-                    [
-                    "Commander {Commander.LastName}.",
-                    "castDef_anaMaria"
-                    ]
-                },
-                {
-                    "Type" : "Flashpoint_SetNextMilestone",
-                    "value" : "ms_fp_TBW_700_Talk",
-                    "valueConstant" : null,
-                    "additionalValues" : null
-                }
-            ],
-            "ForceEvents" : [],
-            "TemporaryResult" : false,
-            "ResultDuration" : 0
-        }
-    ],
-    "Repeatable" : false,
-    "UseRandomInvocation" : false,
-    "InvokeChance" : 0
-},
         {"Description" : {"Id" : "ms_fp_TBW_700_Talk",
                 "Name" : "700_Talk",
                 "Details" : "700_Talk",
@@ -1220,7 +1226,7 @@
                                 "(required)",
                                 "(required)",
                                 "(required)",
-                                "ms_fp_TBW_702_Epilogue",
+                                "ms_fp_TBW_702_Branch",
                                 null,
                                 null
                             ]
@@ -1243,8 +1249,123 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
+        {"Description" :  {"Id" : "ms_fp_TBW_702_Branch",
+        "Name" : "702_Branch",
+        "Details" : "702_Branch",
+            "Icon" : ""},
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : 
+                [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [
+                            {
+                            "obj" : "TBW_FailCount",
+                            "op" : "GreaterThanOrEqual",
+                            "val" : 64,
+                            "valueConstant" : "64"
+                            }
+                    ]
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Employment Termination.",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "<Stats.Company.[TBW_FailCount]> - Commander {Commander.LastName}, Sorry Commander - This is less that the stirling performance we were looking for.",
+                            "castDef_anaMaria"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_999_Fail-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [
+                            {
+                                "obj" : "TBW_FailCount",
+                                "op" : "LessThan",
+                                "val" : 64,
+                                "valueConstant" : "64"
+                            }
+                        ]
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Security Leak Contained",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "<Stats.Company.[TBW_FailCount]> Amazing work Commander {Commander.LastName}, I would not have believed it - if not for seeing it first hand.",
+                            "castDef_anaMaria"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_703_Epilogue",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+                ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
         {
-            "Description" : {"Id" : "ms_fp_TBW_702_Epilogue",
+            "Description" : {"Id" : "ms_fp_TBW_703_Epilogue",
                 "Name" : "Epilogue",
                 "Details" : "Epilogue",
                 "Icon" : ""
@@ -1274,7 +1395,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_800_Complete",
+                            "value" : "ms_fp_TBW_800_Complete",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1288,9 +1409,9 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_800_Complete",
-                "Name" : "ms_fp_800_Complete",
-                "Details" : "ms_fp_800_Complete",
+        {"Description" : {"Id" : "ms_fp_TBW_800_Complete",
+                "Name" : "ms_fp_TBW_800_Complete",
+                "Details" : "ms_fp_TBW_800_Complete",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -1301,7 +1422,7 @@
                         "Scope" : "Company",
                         "RequirementTags" : {
                             "items" : [
-                                "Enter RequirementComparisons for reward One "
+                                "Enter RequirementComparisons for reward Branching"
                             ],
                             "tagSetSourceFile" : ""
                         },

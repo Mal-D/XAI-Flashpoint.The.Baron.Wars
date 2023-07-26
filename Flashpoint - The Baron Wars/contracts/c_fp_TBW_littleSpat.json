@@ -60,13 +60,7 @@
         "value" : "1",
         "set" : false,
         "valueConstant" : "1"
-        },
-            {"typeString": "System.Int32",
-                "name": "progScore",
-                "value": "0",
-                "set": false,
-                "valueConstant": "0"
-            }
+        }
         ],
         "Actions" : [],
         "ForceEvents" : [],

@@ -37,7 +37,13 @@
                     "items": [],
                     "tagSetSourceFile": ""
                 },
-                "Stats": [],
+                "Stats": [{
+                    "typeString" : "System.Int32",
+                    "name" : "progScore",
+                    "value" : "1",
+                    "set" : false,
+                    "valueConstant" : "1"
+                }],
                 "Actions": [],
                 "ForceEvents": [],
                 "TemporaryResult": false,
