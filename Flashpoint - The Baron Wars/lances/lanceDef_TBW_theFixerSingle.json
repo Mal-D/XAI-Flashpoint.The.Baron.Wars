@@ -1,0 +1,46 @@
+{
+    "Description" : {
+        "Id" : "lanceDef_TBW_theFixerSingle",
+        "Name" : "FixerSingle",
+        "Details" : "Single Unit Lance",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Difficulty" : 1,
+    "LanceTags" : {
+        "items" : [
+            "lance_type_mech"
+        ],
+        "tagSetSourceFile" : "Tags/LanceTags"
+    },
+    "LanceUnits" : [
+        {
+            "unitType" : "Mech",
+            "unitId" : "mechdef_crab_CRB-27b",
+            "unitSimGameID" : null,
+            "pilotId" : "pilot_BW_theFixer",
+            "pilotSimGameID" : null,
+            "unitTagSet" : {
+                "items" : [
+                    "unit_mech"
+                ],
+                "tagSetSourceFile" : "Tags/UnitTags"
+            },
+            "excludedUnitTagSet" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/UnitTags"
+            },
+            "pilotTagSet" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/PilotTags"
+            },
+            "excludedPilotTagSet" : {
+                "items" : null,
+                "tagSetSourceFile" : "Tags/PilotTags"
+            },
+            "locked" : false
+        }
+    ]
+}

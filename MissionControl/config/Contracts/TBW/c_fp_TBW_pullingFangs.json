@@ -1,5 +1,5 @@
 {
-  "ID": "c_fp_TBW_AmbushRathbottom",
+  "ID": "c_fp_TBW_pullingFangs",
   "RandomSpawns": {
     "Enable": true
   },
@@ -9,13 +9,13 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Negate the Kidnapper's Escorts"],
-    "EnemyLances": ["lancedef_Irukjandi_Decoy"],
+    "EnemyLanceObjectiveNames": ["The Countess"], 
+    "EnemyLances": ["lanceDef_TBW_theCountessSingle"],
     "UseDialogue": true,
-    "DialogueCastDefId": "castDef_theBaron",
-    "Dialogue": "{Commander.LastName}, I have managed to get a helping hand from the local Lads and Lasses. We'll engage the other forces, you just get the Governor.",
+    "DialogueCastDefId": "castDef_theCountess",
+    "Dialogue": "Commander {Commander.LastName}, stay... and you will not survive... Flee the field before our DropShip arrives and you just might.",
     "AllyLanceCount": 1,
-    "AllyLances": ["lancedef_theBaron_AL_Escort2"]
+    "AllyLances": ["lanceDef_TBW_BaronSingle"]
   },
   "ExtendedLances": {
     "Enable": false,
@@ -24,7 +24,7 @@
   },
   "ExtendedBoundaries": {
     "Enable": true,
-    "IncreaseBoundarySizeByPercentage": 0.3
+    "IncreaseBoundarySizeByPercentage": 0.5
   },
   "DynamicWithdraw": {
     "Enable": false

@@ -1,8 +1,8 @@
 {
 	"Description": {
-		"Id": "lancedef_Irukjandi_Scout",
-		"Name": "Dynamic Irukjandi Scout",
-		"Details": "Irukjandi Scout",
+		"Id": "lancedef_Irukjandi_Battle",
+		"Name": "Dynamic Irukjandi Battle",
+		"Details": "Irukjandi Battle",
 		"Icon": "uixTxrIcon_Irukjandi",
 		"Cost": 0,
 		"Rarity": 0,
@@ -11,7 +11,7 @@
 	"Difficulty": 4,
 	"LanceTags": {
 		"items": [
-			"lance_bracket_low",
+			
 			"lance_type_medium",
 			"lance_type_dynamic",
 			"lance_type_mech",
@@ -25,11 +25,11 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_range_long" , "unit_medium", "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_range_long" , "unit_medium"],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_noncombatant", "unit_speed_low" ],
+				"items": [ "unit_type_vehicle","unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
@@ -46,11 +46,11 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_medium", "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_medium", "unit_speed_high"],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_noncombatant", "unit_speed_low" ],
+				"items": [ "unit_type_vehicle","unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
@@ -67,7 +67,7 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_light" , "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_heavy" , "unit_speed_high"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
