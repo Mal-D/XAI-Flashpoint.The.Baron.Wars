@@ -23,18 +23,26 @@
 	"LanceUnits": [
 		{
 			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitId": "mechdef_blackjack_BJ-1M",
+			"pilotId": "pilot_BW_theBaron",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_medium", "unit_speed_high"  ],
+				"items": 
+				[
+				"unit_medium",
+				"unit_lance_tank",
+				"unit_role_brawler",
+				"unit_range_medium",
+				"unit_hot",
+				"unit_armor_high"
+				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_noncombatant", "unit_speed_low" ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_recon", "pilot_npc_d3" ],
+				"items": ["name_theBaron"],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

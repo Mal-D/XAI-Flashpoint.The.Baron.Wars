@@ -377,7 +377,7 @@
                     "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "cb50e1e4-aa0c-49b2-bd2e-5339c78dafb5",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -393,7 +393,7 @@
                     "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -409,7 +409,7 @@
                     "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "a85da736-7a2e-4cc6-aff3-feb9d73fc7e1",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -425,7 +425,7 @@
                     "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "76b654a6-4f2c-4a6f-86e6-d4cf868335fe",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1

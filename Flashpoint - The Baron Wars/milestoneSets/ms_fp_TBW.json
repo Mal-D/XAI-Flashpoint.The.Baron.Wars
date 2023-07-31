@@ -566,6 +566,15 @@
                             ]
                         },
                         {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Unexpected Loot",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "Aye Cap'n this will go well in the stable.",
+                                "castDef_YangDefault"
+                            ]
+                        },
+                        {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_400_Mission",
                             "valueConstant" : null,
@@ -607,7 +616,7 @@
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "Assets/Level Design/Maps/mapGeneral_frigidSteppes_iTnd/mapGeneral_frigidSteppes_iTnd.unity",
-                                "8c72cf13-9bb0-4e70-b582-4536316763a7",
+                                "935e3dac-b0a4-400a-8a91-9103f650081f",
                                 "c_fp_TBW_AmbushRathbottom",
                                 "MagistracyOfCanopus",
                                 "irukjandiCompany",
