@@ -1,0 +1,6 @@
+{
+   "identifier" : "ConvBucketDef_GovConvoyTargetDestroyed",
+   "DialogueContentIDs" : [
+		"DialogBkt_GovConvoyTargetDestroyed" 
+   ]
+}

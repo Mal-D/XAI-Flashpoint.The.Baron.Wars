@@ -566,15 +566,6 @@
                             ]
                         },
                         {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Unexpected Loot",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "Aye Cap'n this will go well in the stable.",
-                                "castDef_YangDefault"
-                            ]
-                        },
-                        {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_400_Mission",
                             "valueConstant" : null,
@@ -598,8 +589,25 @@
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
-                    "Requirements" : null,
+            "Results" : [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [{
+                            "obj" : "TBW_FailCount",
+                            "op" : "GreaterThan",
+                            "val" : 1,
+                            "valueConstant" : "1"
+                        }]
+                    },
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -612,12 +620,12 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_frigidSteppes_iTnd",
+                            "value" : "mapGeneral_CentralMound_iTnd",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Assets/Level Design/Maps/mapGeneral_frigidSteppes_iTnd/mapGeneral_frigidSteppes_iTnd.unity",
-                                "935e3dac-b0a4-400a-8a91-9103f650081f",
-                                "c_fp_TBW_AmbushRathbottom",
+                                "Assets/Level Design/Maps/mapGeneral_CentralMound_iTnd/mapGeneral_CentralMound_iTnd.unity",
+                                "5326869a-0ad8-40a4-905c-c8c0d0cef16a",
+                                "c_fp_TBW_AmbushRathbottom_f",
                                 "MagistracyOfCanopus",
                                 "irukjandiCompany",
                                 "5",
@@ -639,6 +647,64 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                "Requirements" : {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : [{
+                        "obj" : "TBW_FailCount",
+                        "op" : "LessThanOrEqual",
+                        "val" : 1,
+                        "valueConstant" : "1"
+                    }]
+                },
+                "AddedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [
+                    {
+                        "Type" : "Flashpoint_AddContract",
+                        "value" : "mapGeneral_CentralMound_iTnd",
+                        "valueConstant" : null,
+                        "additionalValues" : [
+                            "Assets/Level Design/Maps/mapGeneral_CentralMound_iTnd/mapGeneral_CentralMound_iTnd.unity",
+                            "5326869a-0ad8-40a4-905c-c8c0d0cef16a",
+                            "c_fp_TBW_AmbushRathbottom",
+                            "MagistracyOfCanopus",
+                            "irukjandiCompany",
+                            "5",
+                            "ms_fp_TBW_401_Talk",
+                            "wagyuBarons",
+                            null,
+                            "ms_fp_TBW_401_Talk"
+                        ]
+                    },
+                    {
+                        "Type" : "System_ForceDropshipRoom",
+                        "value" : "Contract",
+                        "valueConstant" : null,
+                        "additionalValues" : [
+                            "BaseFlashpoint"
+                        ]
+                    }
+                ],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
                 }
             ],
             "Repeatable" : false,

@@ -72,7 +72,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : -1,
+    "lanceMaxTonnage" : 200,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -80,10 +80,10 @@
         -1
     ],
     "mechMaxTonnages" : [
-        -1,
-        -1,
-        -1,
-        -1
+        60,
+        60,
+        60,
+        60
     ],
     "mapMood" : null,
     "startingFogOfWarVisibility" : "Surveyed",
@@ -92,7 +92,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "bad503ac-4f47-47b0-a735-a5b13ff0e352"
             },
-            "title" : "Ambush Rathbottom's 'Mech.",
+            "title" : "Ambush Rathbottom's Abductor.",
             "description" : "The I.Co. must really want him.",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -749,32 +749,15 @@
             "name" : "Dialogue_ConvoyTargetDestroyed",
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
-                
                 {
-                    "words" : "Boom...! Did you see that... got him. Keep engaging those threats and we'll be out of here. ",
+                    "words" : "PLACEHOLDR: Side panel text",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamPilot_Random_1",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Keep your head in the game {MC.PlayerLances.TeamPilot_Random_1.DisplayName}. Keep engaging those threats and track to EXFIL, and you just might survive.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Commander",
+                    "selectedCastDefId" : "castDef_Computer",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -861,8 +844,29 @@
     "contractRewardOverride" : 500000,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
-    "usesExpiration" : false,
-    "expirationTimeOverride" : -1,
+
+    "usesExpiration" : true,
+    "expirationTimeOverride" : 5,
+    "ForceStartOnExpiration" : true,
+    "ResultsOnExpiration": [                
+        {"Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["_TBW_400_forcedLaunch_5"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+    "UniversalContractEffects" : [],
+
     "negotiatedSalary" : 1,
     "negotiatedSalvage" : 0,
     "excludedFromProceduralGeneration" : true,

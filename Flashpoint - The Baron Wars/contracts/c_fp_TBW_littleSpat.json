@@ -1,8 +1,8 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat v6",
+    "contractName" : "Settling a little Spat.",
     "contractDisplayStyle" : "BaseFlashpoint",
-    "difficulty" : 6,
+    "difficulty" : 5,
     "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
@@ -119,13 +119,13 @@
             "title" : "Terminate the WB Contractors",
             "description" : "b0a73be466e4",
             "isPrimary" : true,
+            
             "OnSuccessResults" : [
-                
                 {
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["_TBW_contractorsTerminated"],
+                        "items" : ["_TBW_ContractorsTerminated"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -138,7 +138,6 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
-            
             ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -183,7 +182,7 @@
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["_TBWStingerLanceTerminated"],
+                    "items" : ["_TBW_StingerLanceTerminated"],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
@@ -705,7 +704,7 @@
             },
             "title" : "All of {COMPANY.CompanyName} Lance must survive",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [{
                 "Scope" : "Company",
                 "Requirements" : null,
@@ -777,9 +776,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "699fc05a-9514-4058-ba39-7a366a09acbf"
             },
-            "title" : "Keep <i>Badger</i> alive",
+            "title" : "Keep <i>Badger</i> safe.",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : 
                 [],
             "OnFailureResults" : 
@@ -885,8 +884,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "51aa5837-b540-42be-b8be-26b37bfcf976"
             },
-            "title" : "Ensure Leanora Tombstone Survives",
-            "description" : "26b37bfcf976",
+            "title" : "Ensure Leanora Rothall Survives",
+            "description" : "B4: Ensure {TEAM_EMP.FactionDef.Demonym} Lance safely evacs.",
             "isPrimary" : true,
             "OnSuccessResults" : [
                 {
@@ -1657,7 +1656,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "There're ready when you are. In the meantime, The Baron's 'Hired Guns' are here, center stage.",
+                    "words" : "There're ready when you are. In the meantime, The 'Hired Guns' are here, center stage.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1771,6 +1770,86 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}<i>Eleonore</i> Hang on... we're are on our way to you.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}////ssssttsss////... cough...groan...Sooner than later would appreciated... It's a bit tight in here.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_thedaughter",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}<i>Leanora</i> Hang on...er... Countess we're are on our way to you.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}////ssssttsss////... cough...groan...I will make you pay <i>girin</i>...We have lost everything.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theCountess",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}We can discuss this later but know, I am <i>NOT</i> responsible.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theBaron",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
                     "words" : "What a senseless waste.",
                     "wordsColor" : {
                         "r" : 1,
@@ -1803,7 +1882,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I don't know what you have been told but I am just as confused as you are. I have no idea who these other forces are.",
+                    "words" : "I don't know what you have been told but you have <i>No Proof!</i> These forces are not here by my order.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1908,22 +1987,6 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                },
-                {
-                    "words" : "PLACEHODLER This is Quebec actual return fire and check your rear arc!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_TeamLeader_EmployersAlly",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
                 }
             ]
         },
@@ -1967,7 +2030,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "This is outragous. This is not my doing, I was called here by my daughter.",
+                    "words" : "This is outragous. This is not my doing, I was called here by the Froness Hier - her daughter.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2058,7 +2121,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, Hark {COMMANDER.Name} here are unexpected {TEAM_TAR_ALLY.FactionDef.Demonym} bad guys  are here too. Don't that beat it all. This is the secondary objective version.",
+                    "words" : "PLACEHOLDER, Hark {COMMANDER.Name}.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2099,7 +2162,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Threat eliminated. Let's go find 'Badger'.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Threat eliminated. Let's go find 'Badger'.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2115,7 +2178,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}////ssssttsss... cough...groan...Sooner than later would appreciated Darius. It's a bit tight in here.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}////ssssttsss... cough...groan...Sooner than later would appreciated Darius. It's a bit tight in here.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2131,7 +2194,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Hang on sweetheart they are on their way.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Hang on sweetheart they are on their way.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2147,7 +2210,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Well done 'Badger'. Not your first rodeo I see.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Well done 'Badger'. Not your first rodeo I see.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2163,7 +2226,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Maybe I've missed my calling... any spare slots Commander.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Maybe I've missed my calling... any spare slots Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2179,7 +2242,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2195,7 +2258,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here...but you're right.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here...but you're right.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2211,7 +2274,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Ewww! thats gross!",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Ewww! that's gross!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2528,7 +2591,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Countess' Dusts Off successful Commander.",
+                    "words" : "{MC.If.Company.HasTag.TBW_LeanoraSurvives}Countess' Dust Off successful Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2544,14 +2607,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Safe. You'd have better keep my daughter safe - she is more important than you realise.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Thank you for keeping my daughter safe - she is more important than you realise.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Sumire",
+                    "selectedCastDefId" : "castDef_theCountess",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -2560,7 +2623,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Countess is safe. Any location on 'Badger's bio-signal.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}The Heiress is safe. I have location on <i>Badger's</i> CARVAS signal.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2576,14 +2639,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}My Daughter! Where's my daughter? If she is hurt...!",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}<i>My Daughter!</i> Where's my daughter? If she is hurt...!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_theCountess",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2592,7 +2655,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's CarVas transponder signal - she's alive.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's CARVAS transponder signal - she's alive.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2608,14 +2671,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Calm down... <i>CALM DOWN</i>... I'll bloody calm down when my Daughter is safe.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Calm down... <i>CALM DOWN</i>... I'll bloody calm down when my Daughter is safe.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_TeamLeader_Employer",
+                    "selectedCastDefId" : "castDef_theCountess",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -3784,9 +3847,9 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_BW_eleonoreT",
+                        "pilotDefId" : "pilot_BW_eleonoreR",
                         "pilotTagSet" : {
-                            "items" : ["name_eleonoreT", "pilot_npc_vanguard", "pilot_npc_d6"],
+                            "items" : ["name_eleonoreR", "pilot_npc_vanguard", "pilot_npc_d6"],
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "pilotExcludedTagSet" : {
@@ -3795,7 +3858,7 @@
                         },
                         "selectedUnitType" : "Mech",
                         "selectedUnitDefId" : "mechdef_phoenixhawk_PXH-1",
-                        "selectedPilotDefId" : "pilot_BW_eleonoreT"
+                        "selectedPilotDefId" : "pilot_BW_eleonoreR"
                     },
                     {
                         "unitSpawnPoint" : {
@@ -3943,7 +4006,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "805d4192-850e-446e-afe4-cdb8a30685b4"
                         },
-                        "customUnitName" : "Leanora Tombstone",
+                        "customUnitName" : "Leanora Rothall",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_clint_CLNT-2-3T",
@@ -3959,7 +4022,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_skirmisher",
+                        "pilotDefId" : "pilot_theCountess",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
