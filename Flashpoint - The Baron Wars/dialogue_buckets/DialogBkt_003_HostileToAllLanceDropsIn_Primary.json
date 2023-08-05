@@ -1,0 +1,101 @@
+{
+    "identifier" : "DialogBkt_003_HostileToAllLanceDropsIn_Primary",
+    "contents" : [
+		{
+            "words" : "Switching to I.C BattleCom... (...the rest of the transmission is garbled...)",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_theFixer",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words" : "[.... different garbled voice...]",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_ICmechLeader",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words" : "[....the first garbled voice...]",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_theFixer",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words" : "Hey What the...? What freq is that? Wait... we're on your side! We are on assignment for the I.C.",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_HiredGunLeader",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words" : "[....the first Garbled voice...]",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_theFixer",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "9bd2f5be-f04f-4f2e-a25d-4295f59a0369",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        },
+        {
+            "words" : "Shit, SHIT <i>SHIT!</i> Looks like we've been right royally screwed, All WB 'Mechs...shoot everything or we'll die on on this damned planet.",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+                "b" : 1,
+                "a" : 1
+            },
+            "selectedCastDefId" : "castDef_HiredGunLeader",
+            "emote" : "Default",
+            "audioName" : "NONE",
+            "cameraFocusGuid" : "",
+            "cameraDistance" : "Far",
+            "cameraHeight" : "Default",
+            "revealRadius" : -1
+        }
+    ]
+}

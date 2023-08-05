@@ -1,0 +1,21 @@
+{
+    "identifier" : "DialogBkt_003_missionStart",
+    "contents" : [
+		{
+            "words" : "/// CONNECTION HANDSHAKE ESTABLISHED - DialogBkt_003_missionStart - Threeway. Complete this when the rest of the forces are added.///",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+				"b" : 1,
+				"a" : 1
+    	    },
+			"selectedCastDefId" : "castDef_Hal",
+			"emote" : "Default",
+			"audioName" : "NONE",
+			"cameraFocusGuid" : "",
+			"cameraDistance" : "Far",
+			"cameraHeight" : "Default",
+			"revealRadius" : -1
+		}
+    ]
+}

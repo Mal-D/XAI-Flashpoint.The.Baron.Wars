@@ -10,7 +10,9 @@
     },
     "Difficulty" : 1,
     "LanceTags" : {
-        "items" : [],
+        "items" : [
+            "lance_type_mech"
+        ],
         "tagSetSourceFile" : "Tags/LanceTags"
     },
     "LanceUnits" : [
