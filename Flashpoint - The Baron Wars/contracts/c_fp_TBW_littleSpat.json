@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_littleSpat",
-    "contractName" : "Settling a little Spat v7",
+    "contractName" : "Settling a little Spat.",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
@@ -125,9 +125,7 @@
             "title" : "Terminate the WB Contractors",
             "description" : "b0a73be466e4",
             "isPrimary" : true,
-            "OnSuccessResults" : [
-                
-                {
+            "OnSuccessResults" : [{
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
@@ -143,9 +141,7 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                }
-            
-            ],
+                }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -154,8 +150,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "cb9c173c-89b3-4447-b3a0-26193cbeb601"
             },
-            "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} 'The Fixer's' Lance.",
-            "description" : "26193cbeb601",
+            "title" : "Destroy 'The Fixer's' Lance.",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{
                 "Scope" : "Company",
@@ -183,13 +179,13 @@
                 "EncounterObjectGuid" : "49d5a311-1507-4c2b-8485-46ba1ea99d43"
             },
             "title" : "Destroy the {TEAM_HOST.FactionDef.Demonym} Stinger Lance.",
-            "description" : "46ba1ea99d43",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["_TBWStingerLanceTerminated"],
+                    "items" : ["_TBW_StingerLanceTerminated"],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
@@ -289,7 +285,7 @@
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["__f9af713a466f"],
+                    "items" : [],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
@@ -347,12 +343,11 @@
             "title" : "Destroy Additional Enemy Forces",
             "description" : "Destroy Additional Enemy Forces",
             "isPrimary" : true,
-            "OnSuccessResults" : [
-                {
+            "OnSuccessResults" : [{
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["__028e2188fa89"],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -372,8 +367,7 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                }
-            ],
+                }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -421,13 +415,11 @@
             "title" : "Destroy Additional Enemy Reinforcements",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [
-
-                {
+            "OnSuccessResults" : [{
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : ["__1919f3b4f11d"],
+                        "items" : [],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -447,8 +439,7 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                }
-            ],
+                }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -644,7 +635,7 @@
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["__3bf90ef951fb"],
+                    "items" : [],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
@@ -785,7 +776,7 @@
             },
             "title" : "Keep <i>Badger</i> alive",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : 
                 [],
             "OnFailureResults" : 
@@ -874,7 +865,7 @@
                 "EncounterObjectGuid" : "51aa5837-b540-42be-b8be-26b37bfcf976"
             },
             "title" : "Ensure Leanora Rothall Survives",
-            "description" : "26b37bfcf976",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [
                 {
@@ -922,7 +913,7 @@
                 "EncounterObjectGuid" : "233d3dd3-dd4d-4722-9d79-5e4550c94c67"
             },
             "title" : "The {TEAM_EMP.FactionDef.Demonym} lance must reach the evac zone",
-            "description" : "5e4550c94c67",
+            "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{
                 "Scope" : "Company",
@@ -950,7 +941,7 @@
                 "EncounterObjectGuid" : "2f1e0162-3ff4-4f73-99d5-cdb2c0d5396b"
             },
             "title" : "Empty_Employer_IsActiveFlag_Primary",
-            "description" : "cdb2c0d5396b",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -974,7 +965,7 @@
                 "EncounterObjectGuid" : "ac4199e4-c42e-4a41-ae0e-cf10f7dfcf8a"
             },
             "title" : "Ensure <i>Badger</i> gets out safely.",
-            "description" : "cf10f7dfcf8a",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -986,7 +977,7 @@
                 "EncounterObjectGuid" : "62fad70b-c2a9-478d-b6a2-cb13ba99a573"
             },
             "title" : "The {TEAM_EMP.FactionDef.Demonym} lance must reach the evac zone",
-            "description" : "cb13ba99a573",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -998,7 +989,7 @@
                 "EncounterObjectGuid" : "25093242-ea45-451c-a189-d3d54f132d26"
             },
             "title" : "Empty_Employer_IsActiveFlag_Secondary",
-            "description" : "d3d54f132d26",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
@@ -1021,7 +1012,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "658372a8-8e43-4f74-af9c-f4d60bb103ec"
             },
-            "title" : "Ensure {TEAM_EMP_ALLY.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure <i>Badger's</i> 'Mech safely evacs.",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [],
@@ -1069,7 +1060,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4222c6f6-975a-45aa-aa3e-cbfaf0c50026"
             },
-            "title" : "Ensure {TEAM_EMP_ALLY.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "2.Ensure {TEAM_EMP_ALLY.FactionDef.Demonym} Lance safely evacs.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -2705,7 +2696,23 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, That's it Commander we did what we came here to do.",
+                    "words" : "{MC.Modification.AddTo.CompanyTags.TBW_LeanoraSurvives} Primary L's TagAdded, That's it Commander we did what we came here to do.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamLeader_EmployersAlly",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Encounter.HasNoTag.TBW_Badger_down}{MC.Modification.AddTo.CompanyTags.TBW_Badger_safe}TagAdded dAnd Commander, I thank you for keeping my Daughter safe.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2730,7 +2737,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, That's it Commander we did what we came here to do.",
+                    "words" : "{MC.Modification.AddTo.CompanyTags.TBW_badger_safe} PLACEHOLDER, That's it Commander we did what we came here to do.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -4136,7 +4143,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4886c566-b263-412f-939e-e9b77e9e9c11"
                         },
-                        "customUnitName" : "Tombstone 1",
+                        "customUnitName" : "Ag Co 1",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_valkyrie_VLK-QL",
@@ -4169,7 +4176,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ca9adbcf-caf7-47bb-b7d5-88a8980fb92e"
                         },
-                        "customUnitName" : "Tombstone 2",
+                        "customUnitName" : "Ag Co 2",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_valkyrie_VLK-QL",
@@ -4202,7 +4209,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ef369b82-0d23-4300-907c-a820e1064251"
                         },
-                        "customUnitName" : "Tombstone 3",
+                        "customUnitName" : "Ag Co 3",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_valkyrie_VLK-QL",
@@ -4235,7 +4242,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "97c7fb7a-6e9d-46b5-b1e2-795177ec115b"
                         },
-                        "customUnitName" : "Tombstone 4",
+                        "customUnitName" : "Ag Co 4",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_valkyrie_VLK-QL",
