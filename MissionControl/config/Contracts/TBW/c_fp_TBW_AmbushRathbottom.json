@@ -24,7 +24,7 @@
   },
   "ExtendedBoundaries": {
     "Enable": true,
-    "IncreaseBoundarySizeByPercentage": 0.3
+    "IncreaseBoundarySizeByPercentage": 0.5
   },
   "DynamicWithdraw": {
     "Enable": false

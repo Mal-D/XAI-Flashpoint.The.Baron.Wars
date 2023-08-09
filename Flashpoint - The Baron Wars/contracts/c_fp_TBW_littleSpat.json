@@ -76,7 +76,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : 200,
+    "lanceMaxTonnage" : 190,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -1060,7 +1060,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4222c6f6-975a-45aa-aa3e-cbfaf0c50026"
             },
-            "title" : "2.Ensure {TEAM_EMP_ALLY.FactionDef.Demonym} Lance safely evacs.",
+            "title" : "Ensure {TEAM_EMP_ALLY.FactionDef.Demonym} Lance safely evacs.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -1074,7 +1074,7 @@
             },
             "title" : "Escort friendlies to evac point",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -1750,7 +1750,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "What a senseless waste.",
+                    "words" : "{{MC.If.Encounter.HasTag.TBW_Badger_down} AND {MC.If.Encounter.HasTag.TBW_LeanoraDisabled}}Both...Get to Elenora...Leanaora... <i>Get to them NOW!</i>.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1766,7 +1766,55 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "You are considered and Enemy of the Magestry of Canopus and by the Authority of the Crimon Council I am placing you under arrest.",
+                "words" : "{{MC.If.Encounter.HasTag.TBW_Badger_down} AND {MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled}}Badger...We're coming <i>El</i>. Commander, get her out <i>NOW!</i>",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_theBaron",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+                },
+                {
+                "words" : "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasTag.TBW_LeanoraDisabled}}Trigger...I know she is a pain but please Commander, get her out",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_theDaughter",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+                },
+                {
+                "words" : "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled}}At least Mother and Daughter are safe. But the rest of your performance was less than stirling.",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_anaMariaC",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
+                },
+                {
+                    "words" : "What?? With your people shooting each other, you expected us to keep the peace? That's a bit rough... Where's the 'Bloody' Baron in all this?",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1782,7 +1830,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I don't know what you have been told but I am just as confused as you are. I have no idea who these other forces are.",
+                    "words" : "I don't know what you have been told but I am just as confused as you are. I have no idea who these other forces are. I was just here for El.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1796,6 +1844,22 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
+                },
+                {
+                "words" : "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled}}You're lucky the Countess is speaking up in your defence. We'll continue this discussion in private.",
+                "wordsColor" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                },
+                "selectedCastDefId" : "castDef_anaMariaC",
+                "emote" : "Default",
+                "audioName" : "NONE",
+                "cameraFocusGuid" : "",
+                "cameraDistance" : "Far",
+                "cameraHeight" : "Default",
+                "revealRadius" : -1
                 }
             ]
         },
@@ -1832,7 +1896,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "{MC.Modification.AddTo.EncounterTags.TBW_LeanoraDisabled}Commander, We have lost 'Mech contact with the Countess. The MIM would appreciate a few Contractor <i>survivors</i> to umm... have a chat.",
+                    "words" : "{MC.Modification.AddTo.EncounterTags.TBW_LeanoraDisabled}Commander, We have lost 'Mech contact with the Countess.",
                     "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
@@ -1854,7 +1918,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "She a tough old bird; we are still getting her CARVAS signal.",
+                    "words" : "She a tough old bird; we are still getting her CARVAS signal. The <i>MIM</i> would appreciate a few 'Contractor' <i>survivors</i> to umm... have a chat.",
                     "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_MagRep",
                     "emote" : "Default",
@@ -1951,7 +2015,7 @@
                 {
                     "words" : "{MC.If.Encounter.HasNoTag.TBW_Badger_down}<i>MOTHER NO...</i>. Commander...?",
                     "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
-                    "selectedCastDefId" : "castDef_thedaughter",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2160,7 +2224,7 @@
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_thedaughter",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2185,7 +2249,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Well done 'Badger'. Not your first rodeo I see.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_safe}Well done 'Badger'. Not your first rodeo I see.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2201,14 +2265,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Maybe I've missed my calling... any spare slots Commander.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_safe}Maybe I've missed my calling... any spare slots Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_thedaughter",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2217,7 +2281,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2233,14 +2297,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here...but you're right.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here...but you're right.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_thedaughter",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2459,7 +2523,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "If she follows orders, then she will be fine.",
+                    "words" : "Hey, she decieded to go off on her own. <i>sigh! I'll see what I can do.</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3204,7 +3268,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "There's more coming Commander and they are going to between our forces and the Countess.",
+                    "words" : "There's another contact Commander and they are going to try and cut us off from the Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3220,7 +3284,7 @@
                     "revealRadius" : -1
                 },  
                 {
-                    "words" : "Roger that Sumire. All {Company.CompanyName} units; disengage and push through to cover the Countess.",
+                    "words" : "Roger that Sumire. All {Company.CompanyName} units; and push any opposition and cover the Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

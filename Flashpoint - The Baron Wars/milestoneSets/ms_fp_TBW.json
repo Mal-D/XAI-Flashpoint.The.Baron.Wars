@@ -212,7 +212,7 @@
                             "value" : "9cf2c38bf44b6a3152f0aa98",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} II - More Details revealed.",
+                                "{TGT_FLASHPOINT.Def.Description.Name} II - More Details Revealed.",
                                 "Stationary Orbit over the Capital \u2014 {TGT_FLASHPOINT.CurSystem.Name}",
                                 "Conference",
                                 null
@@ -620,17 +620,17 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_CentralMound_iTnd",
+                            "value" : "mapGeneral_rawCliffsides_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Assets/Level Design/Maps/mapGeneral_CentralMound_iTnd/mapGeneral_CentralMound_iTnd.unity",
-                                "5326869a-0ad8-40a4-905c-c8c0d0cef16a",
+                                "",
+                                "70c4cff1-76e4-47b2-8d8a-51327a0bcd99",
                                 "c_fp_TBW_AmbushRathbottom_f",
                                 "MagistracyOfCanopus",
                                 "irukjandiCompany",
                                 "5",
                                 "ms_fp_TBW_401_Talk",
-                                "wagyuBarons",
+                                null,
                                 null,
                                 "ms_fp_TBW_401_Talk"
                             ]
@@ -678,17 +678,17 @@
                 "Actions" : [
                     {
                         "Type" : "Flashpoint_AddContract",
-                        "value" : "mapGeneral_CentralMound_iTnd",
+                        "value" : "mapGeneral_rawCliffsides_vHigh",
                         "valueConstant" : null,
                         "additionalValues" : [
-                            "Assets/Level Design/Maps/mapGeneral_CentralMound_iTnd/mapGeneral_CentralMound_iTnd.unity",
-                            "5326869a-0ad8-40a4-905c-c8c0d0cef16a",
+                            "",
+                            "70c4cff1-76e4-47b2-8d8a-51327a0bcd99",
                             "c_fp_TBW_AmbushRathbottom",
                             "MagistracyOfCanopus",
                             "irukjandiCompany",
                             "5",
                             "ms_fp_TBW_401_Talk",
-                            "wagyuBarons",
+                            null,
                             null,
                             "ms_fp_TBW_401_Talk"
                         ]
@@ -742,12 +742,12 @@
                         },
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "--Several hours Later--",
+                            "value" : "<Stats.Company.[TBW_FailCount]> Good news Commander {Commander.LastName}, the MIM have made significant discoveries to enable us to better define our next move. Sending you the mission parameters.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "<Stats.Company.[TBW_FailCount]> Good news Commander {Commander.LastName}, the MIM have made significant discoveries to enable us to better define our next move. Sending you the mission parameters.",
-                            "castDef_anaMaria"
+                            "--Several hours Later--",
+                            "castDef_anaMariaC"
                             ]
                         },
                         {
@@ -809,22 +809,22 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "JumpPoint Emergence Warning.",
+                            "value" : "Commander JumpShip emergance detected and a DropShip is in-bound. Estimate 4 days to Planet Fall.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Commander {Commander.LastName}, JumpShip emergance detected and a DropShip is in-bound. Estimate 4 days to Planet Fall.",
+                            "JumpPoint Emergence Warning.",
                             "castDef_FarahDefault"
                             ]
                         },
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "FOB output re-evaluated.",
+                            "value" : "We have re-evaluated the FOB output and will have enough units to assult the compound within those four days. Re-Up as much as possible and sorry for the short notice Commander.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "We have re-evaluated the FOB output and will have enough units to assult the compound within those four days. Re-Up as much as possible and sorry for the short notice Commander {Commander.LastName}.",
-                            "castDef_anaMaria"
+                            "FOB output re-evaluated.",
+                            "castDef_anaMariaC"
                             ]
                         },
                         {
@@ -863,22 +863,22 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "JumpPoint Emergence Warning.",
+                            "value" : "Commander {Commander.LastName}, JumpShip emergance detected and a DropShip is in-bound. Estimate two days to Planet Fall.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Commander {Commander.LastName}, JumpShip emergance detected and a DropShip is in-bound. Estimate 4 days to Planet Fall.",
+                            "JumpPoint Emergence Warning.",
                             "castDef_FarahDefault"
                             ]
                         },
                         {
                         "Type" : "System_PauseNotification",
-                        "value" : "Short Deployment Notice.",
+                        "value" : "Last chance Commander... We have to go now. Don't fail this one.",
                         "valueConstant" : null,
                         "additionalValues" : 
                         [
-                        "Last chance Commander... Fail this one and we will thank you for your service and have to find another Mercenary Company to sort this mess out.",
-                        "castDef_anaMaria"
+                        "Short Deployment Notice.",
+                        "castDef_anaMariaC"
                         ]
                     },
                         {
@@ -916,7 +916,7 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddContract",
+                            "Type" : "Flashpoint_StartContract",
                             "value" : "",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -1036,12 +1036,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Security Leak Contained",
+                            "value" : "Commander {Commander.LastName}.",
                             "valueConstant" : null,
                             "additionalValues" : 
-                            [
-                            "Commander {Commander.LastName}.",
-                            "castDef_anaMaria"
+                            ["Security Leak Contained",
+                            "castDef_anaMariaC"
                             ]
                         },
                         {
