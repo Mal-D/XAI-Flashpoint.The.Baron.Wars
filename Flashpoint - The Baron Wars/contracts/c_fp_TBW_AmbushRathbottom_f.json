@@ -862,26 +862,10 @@
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
 
-    "usesExpiration" : true,
-    "expirationTimeOverride" : 3,
-    "ForceStartOnExpiration" : true,
-    "ResultsOnExpiration": [                
-        {"Scope" : "Company",
-        "Requirements" : null,
-        "AddedTags" : {
-            "items" : ["_TBW_400_forcedLaunch_2"],
-            "tagSetSourceFile" : ""
-        },
-        "RemovedTags" : {
-            "items" : [],
-            "tagSetSourceFile" : ""
-        },
-        "Stats" : [],
-        "Actions" : [],
-        "ForceEvents" : [],
-        "TemporaryResult" : false,
-        "ResultDuration" : 0
-    }],
+    "usesExpiration" : false,
+    "expirationTimeOverride" : -1,
+    "ForceStartOnExpiration" : false,
+    "ResultsOnExpiration": [],
     "UniversalContractEffects" : [],
 
     "negotiatedSalary" : 1,

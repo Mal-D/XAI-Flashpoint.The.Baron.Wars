@@ -917,18 +917,21 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "",
+                            "value" : "mapGeneral_bluffs_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                                "Assets/Level Design/Maps/mapGeneral_bluffs_vHigh/mapGeneral_bluffs_vHigh.unity",
+                                "0b3d47ce-4642-4211-8459-49b3bc5e9e83",
+                                "c_fp_TBW_findGovernor",
+                                "MagistracyOfCanopus",
+                                "irukjandiCompany",
+                                "5",
+                                "ms_fp_TBW_501_Branch",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_501_Branch",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
                         {
@@ -987,11 +990,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Employment Termination.",
+                            "value" : "<Stats.Company.[TB_FailCount]> Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "<Stats.Company.[TB_FailCount]> Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
+                            "Employment Termination.",
                             "castDef_anaMaria"
                             ]
                         },
@@ -1036,7 +1039,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Commander {Commander.LastName}.",
+                            "value" : "Well done Commander. Although this is not the outcome we were ultimately hoping for. His sacrifice will be remembered.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             ["Security Leak Contained",
@@ -1081,18 +1084,21 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_StartContract",
-                            "value" : "",
+                            "value" : "mapGeneral_theMound_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                                "Assets/Level Design/Maps/mapGeneral_theMound_vHigh/mapGeneral_theMound_vHigh.unity",
+                                "ea803221-aa3e-4ae7-ba6f-5b343c3f81e8",
+                                "c_fp_TBW_pullingFangs",
+                                "MagistracyOfCanopus",
+                                "irukjandiCompany",
+                                "5",
+                                "ms_fp_TBW_601_Branch",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_601_Branch",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
                         {
