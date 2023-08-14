@@ -7,7 +7,7 @@
     "Author": "Mal-D",
 
 	"DependsOn": [ "XAI", "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ],
-	"OptionallyDependsOn": [ "ColourfulFlashPoints" ],
+	"OptionallyDependsOn": [ "ColourfulFlashPoints" ,"MapRandomizer" , "IRBTModUtils"  ],
     "ConflictsWith": [],
 	
 	"DataAddendumEntries":[ 

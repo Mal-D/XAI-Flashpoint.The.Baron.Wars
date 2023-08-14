@@ -1794,13 +1794,13 @@
     "useTravelCostPenalty" : false,
 
     "usesExpiration" : true,
-    "expirationTimeOverride" : 5,
+    "expirationTimeOverride" : 2,
     "ForceStartOnExpiration" : true,
     "ResultsOnExpiration": [                
         {"Scope" : "Company",
         "Requirements" : null,
         "AddedTags" : {
-            "items" : ["_TBW_forcedLaunch"],
+            "items" : ["_TBW_findGov_2"],
             "tagSetSourceFile" : ""
         },
         "RemovedTags" : {

@@ -1,5 +1,5 @@
 {
-    "ID" : "c_fp_TBW_pullingFangs",
+    "ID" : "c_fp_TBW_pullingFangs_2",
     "contractName" : "Pulling Fangs",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
@@ -268,7 +268,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Fool girl! It's not just about <i>him</i>. Recovering from your father's lack of forethought and proclivity to indulge has drawn a heavy price.",
+                    "words" : "Fool girl! It's not just about <i>him</i>. Recovering from your father's lack of forethought and proclivity to indulge in various vices has drawn a heavy price.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -649,13 +649,13 @@
     "useTravelCostPenalty" : false,
 
     "usesExpiration" : true,
-    "expirationTimeOverride" : 5,
+    "expirationTimeOverride" : 2,
     "ForceStartOnExpiration" : true,
     "ResultsOnExpiration": [                
         {"Scope" : "Company",
         "Requirements" : null,
         "AddedTags" : {
-            "items" : ["_TBW_forcedLaunch"],
+            "items" : ["_TBW_pullingFangs_2"],
             "tagSetSourceFile" : ""
         },
         "RemovedTags" : {
@@ -902,7 +902,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "63ad3b03-b392-49b8-ac26-1ad827b010b4"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Op 1",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -915,7 +915,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -935,7 +935,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "74a1e790-8882-4e72-844f-26b1a3804231"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Op 2",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -948,7 +948,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -968,7 +968,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "b7eb8d4e-6b3d-4670-a48a-baf2757e024a"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Op 3",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -981,7 +981,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_25"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1001,7 +1001,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "74c2e448-9cc6-44bf-9c23-6442756067bf"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Op 4",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -1014,7 +1014,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_25"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1076,7 +1076,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1109,7 +1109,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1142,7 +1142,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1175,7 +1175,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",

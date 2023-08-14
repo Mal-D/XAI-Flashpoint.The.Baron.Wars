@@ -862,10 +862,26 @@
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
 
-    "usesExpiration" : false,
-    "expirationTimeOverride" : -1,
-    "ForceStartOnExpiration" : false,
-    "ResultsOnExpiration": [],
+    "usesExpiration" : true,
+    "expirationTimeOverride" : 2,
+    "ForceStartOnExpiration" : true,
+    "ResultsOnExpiration": [                
+        {"Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["_TBW_rathbottom_2"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "UniversalContractEffects" : [],
 
     "negotiatedSalary" : 1,

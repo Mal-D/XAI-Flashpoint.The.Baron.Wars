@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_pullingFangs_2",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 1,
+    "EnemyLanceObjectiveNames": ["The Countess"], 
+    "EnemyLances": ["lanceDef_TBW_theCountessSingle"],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theCountess",
+    "Dialogue": "Commander {Commander.LastName}, stay... and you will not survive... Flee the field before our DropShip arrives and you just might.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lanceDef_TBW_BaronSingle"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.5
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}

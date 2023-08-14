@@ -809,7 +809,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Commander JumpShip emergance detected and a DropShip is in-bound. Estimate 4 days to Planet Fall.",
+                            "value" : "Commander JumpShip emergance detected and a DropShip is in-bound. Estimate 5 days to Planet Fall.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
@@ -819,7 +819,7 @@
                         },
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "We have re-evaluated the FOB output and will have enough units to assult the compound within those four days. Re-Up as much as possible and sorry for the short notice Commander.",
+                            "value" : "We have re-evaluated the FOB output and will have enough units to assault the compound within those five days. Re-Up as much as possible and sorry for the short notice Commander.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
@@ -863,7 +863,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Commander {Commander.LastName}, JumpShip emergance detected and a DropShip is in-bound. Estimate two days to Planet Fall.",
+                            "value" : "Commander {Commander.LastName}, JumpShip emergance detected and a DropShip is in-bound. Estimate Five days to Planet Fall.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
@@ -873,7 +873,7 @@
                         },
                         {
                         "Type" : "System_PauseNotification",
-                        "value" : "Last chance Commander... We have to go now. Don't fail this one.",
+                        "value" : "We need to set the ELF sensors before they arrive... You have two days to re-up as best as possible. Don't fail this one.",
                         "valueConstant" : null,
                         "additionalValues" : 
                         [
@@ -916,7 +916,7 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_bluffs_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
@@ -1070,7 +1070,8 @@
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+            "Results" : [
+                {"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -1083,7 +1084,7 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_StartContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "mapGeneral_theMound_vHigh",
                             "valueConstant" : null,
                             "additionalValues" : [
