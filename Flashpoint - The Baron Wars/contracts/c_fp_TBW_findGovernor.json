@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_findGovernor",
-    "contractName" : "Locating the Governor V5+1",
+    "contractName" : "Locating the Governor.",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 1,

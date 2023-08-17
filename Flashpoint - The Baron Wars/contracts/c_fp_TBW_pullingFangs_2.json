@@ -11,12 +11,64 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "A routine sensor sweep has revealed something unexpected: power signatures coming from an expected abandoned facility. From the power readings we're getting, it could be they are using it for repairs. We're in a good strategic position to put a severe dent in the {TEAM_TAR.FactionDef.Demonym}'s forces. If we act quickly, we can deal with this before we have to face any more than necessary.",
-    "longDescription" : "If the incoming DropShip is {TEAM_TAR.FactionDef.ShortName}, this could be simple, or it could be terrifying. I wish I could be more specific, but local intel is sketchy at best.",
+    "shortDescription" : "A routine sensor sweep has revealed something unexpected: power signatures coming from an expected abandoned engineering facility. From the power readings we're getting, it could be they are using it for repairs. We're in a good strategic position to put a severe dent in the {TEAM_TAR.FactionDef.Demonym}'s forces. If we act quickly, we can deal with this before we have to face any more than necessary.",
+    "longDescription" : "If the incoming DropShip is {TEAM_TAR.FactionDef.ShortName}, this could be simple, or it could be terrifying. It's not broadcasting and Ident information so assume it's hostile.",
     "salvagePotential" : 20,
     "requirementList" : [],
-    "OnContractSuccessResults" : [],
-    "OnContractFailureResults" : [],
+    "OnContractSuccessResults" : [{"Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : ["_TBW_fangsPulled"],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [
+                {
+                    "typeString" : "System.Single",
+                    "name" : "ContractBonusRewardPct",
+                    "value" : "0.1",
+                    "set" : false,
+                    "valueConstant" : null
+                },
+                {
+                    "typeString" : "System.Int32",
+                    "name" : "progScore",
+                    "value" : "1",
+                    "set" : false,
+                    "valueConstant" : "1"
+                }
+            ],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }
+    ],
+    "OnContractFailureResults" : [{"Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [{
+            "typeString": "System.Int32",
+            "name": "TBW_FailCount",
+            "value": "32",
+            "set": false,
+            "valueConstant": "32"
+        }],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
@@ -40,7 +92,7 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "6f5f8d17-70ed-44a8-acc0-ccf9258925aa"
             },
-            "title" : "Level the Base and Extract Safely",
+            "title" : "Level the facility and Extract Safely",
             "description" : "Level the Base and Extract Safely",
             "isPrimary" : true,
             "forPlayer" : "Player1",
@@ -57,7 +109,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3ac1476d-5ab0-436b-aa68-e1a5436e796f"
             },
-            "title" : "Level the Base",
+            "title" : "Level the Facility",
             "description" : "The objective to destroy the targeted buildings.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -69,9 +121,9 @@
             "objective" : {
                 "EncounterObjectGuid" : "979864d1-7d84-4797-b032-696a157deed8"
             },
-            "title" : "Destroy Factory Defenders",
+            "title" : "Destroy {TEAM_TAR.FactionDef.Demonym} Defenders",
             "description" : "The primary objective to destroy the {TEAM_TAR.FactionDef.Demonym} units.",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -202,7 +254,18 @@
             },
             "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
-            "requirementList" : []
+            "requirementList" : [{
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : ["TBW_LeanoraDisabled"],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }]
         }
     ],
     "cameraFocusHelperList" : [
@@ -484,10 +547,10 @@
                 "EncounterObjectGuid" : "5e45a01d-01a2-40bf-b4ce-c963eb32f26d"
             },
             "name" : "Dialogue_Interrupt_AmbushWarning",
-            "overrideDialogueBucketId" : "",
+            "overrideDialogueBucketId" : "ConvBucketDef_600_Interrupt_AmbushWarning",
             "dialogueContent" : [
                 {
-                    "words" : "Hey, Yang? What's that engine signature?",
+                    "words" : "ConvBucketDef_600_Interrupt_AmbushWarning",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -495,38 +558,6 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_Commander",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "It's... shit. Boss, you're about to have company, of the Catapult variety. Looks like two 'Mechs.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_YangDefault",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Things just got more way more complicated. Duck and dodge Commander!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -1200,10 +1231,7 @@
                 "name" : "Lance_Enemy_Ambushers",
                 "lanceDefId" : "Manual",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_dynamic_difficulty",
-                        "lance_type_assault"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1223,10 +1251,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "6a902689-eca8-469b-9b45-32a1dcd904c6"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Leanora Rothall",
+                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_catapult_CPLT-C1",
+                        "unitDefId" : "mechdef_clint_CLNT-2-3T",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1239,7 +1267,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_gunner",
+                        "pilotDefId" : "pilot_d7_skirmisher",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1249,8 +1277,8 @@
                             "tagSetSourceFile" : "tags/PilotTags"
                         },
                         "selectedUnitType" : "UNDEFINED",
-                        "selectedUnitDefId" : null,
-                        "selectedPilotDefId" : null
+                        "selectedUnitDefId" : "",
+                        "selectedPilotDefId" : ""
                     },
                     {
                         "unitSpawnPoint" : {
@@ -1272,7 +1300,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_pilot",
+                        "pilotDefId" : "pilot_Ico5_gunner",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

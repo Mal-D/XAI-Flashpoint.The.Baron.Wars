@@ -1072,7 +1072,25 @@
             "Requirements" : [],
             "Results" : [
                 {"Scope" : "Company",
-                    "Requirements" : null,
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["_TBW_pullingFangs5"],
+                            "tagSetSourceFile" : "Tags/CompanyTags"
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [
+                            {
+                                "obj" : "Reputation.MercenaryReviewBoard",
+                                "op" : "GreaterThanOrEqual",
+                                "val" : 300,
+                                "valueConstant" : "300"
+                            }
+                        ]
+                    },
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -1090,7 +1108,7 @@
                             "additionalValues" : [
                                 "Assets/Level Design/Maps/mapGeneral_theMound_vHigh/mapGeneral_theMound_vHigh.unity",
                                 "ea803221-aa3e-4ae7-ba6f-5b343c3f81e8",
-                                "c_fp_TBW_pullingFangs",
+                                "c_fp_TBW_pullingFangs_5",
                                 "MagistracyOfCanopus",
                                 "irukjandiCompany",
                                 "5",
@@ -1114,7 +1132,62 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                }
+                },                
+                {"Scope" : "Company",
+                "Requirements" : {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : ["_TBW_pullingFangs5"],
+                        "tagSetSourceFile" : "Tags/CompanyTags"
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                },
+                "AddedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [
+                    {
+                        "Type" : "Flashpoint_AddContract",
+                        "value" : "mapGeneral_theMound_vHigh",
+                        "valueConstant" : null,
+                        "additionalValues" : [
+                            "Assets/Level Design/Maps/mapGeneral_theMound_vHigh/mapGeneral_theMound_vHigh.unity",
+                            "ea803221-aa3e-4ae7-ba6f-5b343c3f81e8",
+                            "c_fp_TBW_pullingFangs_2",
+                            "MagistracyOfCanopus",
+                            "irukjandiCompany",
+                            "5",
+                            "ms_fp_TBW_601_Branch",
+                            "wagyuBarons",
+                            "irukjandiCompany",
+                            "ms_fp_TBW_601_Branch",
+                            null,
+                            "irukjandiCompany"
+                        ]
+                    },
+                    {
+                        "Type" : "System_ForceDropshipRoom",
+                        "value" : "Contract",
+                        "valueConstant" : null,
+                        "additionalValues" : [
+                            "BaseFlashpoint"
+                        ]
+                    }
+                ],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }
             ],
             "Repeatable" : false,
             "UseRandomInvocation" : false,
@@ -1252,7 +1325,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "(required)",
+                            "value" : "9c10d618e682437bd34ee214",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} V - Peripherial Justice.",
@@ -1380,7 +1453,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_999_Fail-Complete",
+                            "value" : "ms_fp_TBW_901_Epilogue",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1467,7 +1540,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "(required)",
+                            "value" : "9ce95936dcbb9aca0fceccdc",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} VI",
@@ -1821,6 +1894,51 @@
                             "additionalValues" : [
                                 "BaseFlashpoint"
                             ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {
+            "Description" : {"Id" : "ms_fp_TBW_901_Epilogue",
+                "Name" : "901_Epilogue",
+                "Details" : "901_Epilogue",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [{"Scope" : "Company",
+                    "Requirements" : null,
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_StartConversation",
+                            "value" : "9c9eb0046f95ec58df911902",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "{TGT_FLASHPOINT.CurSystem.Name} Failure Epilogue.",
+                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_999_Fail-Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
                         }
                     ],
                     "ForceEvents" : [],

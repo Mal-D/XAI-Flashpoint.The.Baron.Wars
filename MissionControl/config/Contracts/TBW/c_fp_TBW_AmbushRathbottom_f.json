@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_AmbushRathbottom_f",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 1,
+    "EnemyLanceObjectiveNames": ["Negate the Kidnapper's Escorts"],
+    "EnemyLances": ["lancedef_Irukjandi_Decoy"],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theBaron_pilot",
+    "Dialogue": "{Commander.LastName}, I have managed to get a helping hand from the local Lads and Lasses. We'll engage the other forces, you just get the Governor.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lancedef_theBaron_AL_Escort2"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.5
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}

@@ -1117,7 +1117,7 @@
                         "customUnitName" : "Extraction",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-FER",
+                        "unitDefId" : "mechdef_jenner_JR7-FER-d",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

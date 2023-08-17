@@ -1,0 +1,6 @@
+{
+   "identifier" : "ConvBucketDef_600_Interrupt_AmbushWarning",
+   "DialogueContentIDs" : [
+		"DialogBkt_600_Interrupt_AmbushWarning" 
+   ]
+}
