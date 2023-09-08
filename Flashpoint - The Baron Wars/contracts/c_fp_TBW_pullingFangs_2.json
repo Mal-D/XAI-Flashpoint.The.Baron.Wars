@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "A routine sensor sweep has revealed something unexpected: power signatures coming from an expected abandoned engineering facility. From the power readings we're getting, it could be they are using it for repairs. We're in a good strategic position to put a severe dent in the {TEAM_TAR.FactionDef.Demonym}'s forces. If we act quickly, we can deal with this before we have to face any more than necessary.",
-    "longDescription" : "If the incoming DropShip is {TEAM_TAR.FactionDef.ShortName}, this could be simple, or it could be terrifying. It's not broadcasting and Ident information so assume it's hostile.",
+    "shortDescription" : "A routine sensor sweep has revealed something unexpected; power signatures coming from an expected abandoned engineering facility. From the power readings we're getting, it could be they are using it for repairs. We're in a good strategic position to put a severe dent in the {TEAM_TAR.FactionDef.Demonym}'s forces. If we act quickly, we can deal with this before we have to face any more than necessary.",
+    "longDescription" : "If the incoming DropShip is {TEAM_TAR.FactionDef.ShortName}, this could be simple, or it could be terrifying. It's not broadcasting Transponder Ident information so assume it's hostile.",
     "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [{"Scope" : "Company",
@@ -315,87 +315,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Mother, this is madness. Why are you still persecuting Jeb? He has done <i>nothing</i> but protect New Abilene... and <i>ME!</i>",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_theDaughter",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Fool girl! It's not just about <i>him</i>. Recovering from your father's lack of forethought and proclivity to indulge in various vices has drawn a heavy price.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_theCountess",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Commander {Commander.LastName} I'll try and distract Leonora the best I can. You concentrate on the Base.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_theBaron_pilot",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "<i>sob</i>Jeb... I don't want her... please don't...let her...",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_theDaughter",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "I'll do my best my Darling but, she chose to take the field... ",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_theBaron_pilot",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Oh, this is just too much! Farah, what's your read on that repair facility? Let's get this over with.",
+                    "words" : "Okay Farah, what's your read on that repair facility? Let's get this over with.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -411,14 +331,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Everything's powered up but I don't know if they've gotten anything servicable yet.",
+                    "words" : "The whole place is running hot but, I don't know if they've gotten anything servicable yet.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_YangDefault",
+                    "selectedCastDefId" : "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -459,7 +379,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "<i>bloody family ...<i/> okay, {MC.PlayerLances.TeamPilot_Random_2.DisplayName}, time to pull a few fangs. <i>...something more than beer...</i>",
+                    "words" : "<i>(just audible) bloody families ...it's why I became a merc...<i/> okay, {MC.PlayerLances.TeamPilot_Random_2.DisplayName}, time to pull a few fangs. <i>...better be more than just beer...</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1284,8 +1204,8 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4ad6002d-6d87-42c8-a99d-ffeb35d62723"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "ICo Support",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "mechdef_catapult_CPLT-C1",
                         "unitTagSet" : {

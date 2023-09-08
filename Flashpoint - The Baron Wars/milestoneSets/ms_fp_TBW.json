@@ -1082,14 +1082,7 @@
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : [
-                            {
-                                "obj" : "Reputation.MercenaryReviewBoard",
-                                "op" : "GreaterThanOrEqual",
-                                "val" : 300,
-                                "valueConstant" : "300"
-                            }
-                        ]
+                        "RequirementComparisons" : []
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1137,7 +1130,7 @@
                 "Requirements" : {
                     "Scope" : "Company",
                     "RequirementTags" : {
-                        "items" : ["_TBW_pullingFangs5"],
+                        "items" : ["_TBW_pullingFangs2"],
                         "tagSetSourceFile" : "Tags/CompanyTags"
                     },
                     "ExclusionTags" : {
@@ -1356,9 +1349,21 @@
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{
+            "Results" : [
+                {
                     "Scope" : "Company",
-                    "Requirements" : null,
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["_TBW_NormalContractLoad"],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
                     "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
@@ -1372,6 +1377,112 @@
                         {
                             "Type" : "Flashpoint_AddContract",
                             "value" : "",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "ms_fp_TBW_702_Branch",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },                
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["_TBW_ForceContractLoad"],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddForcedContract",
+                            "value" : "",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "",
+                                "",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "(required)",
+                                "ms_fp_TBW_702_Branch",
+                                null,
+                                null
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },                
+                {
+                    "Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["_TBW_NormalContractLoad2"],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "c_fp_TBW_counterOffensive_2",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "",
