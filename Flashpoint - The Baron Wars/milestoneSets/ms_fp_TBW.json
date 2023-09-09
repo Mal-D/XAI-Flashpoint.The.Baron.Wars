@@ -1304,7 +1304,8 @@
             },
             "Scope" : "Company",
             "Requirements" : [],
-            "Results" : [{"Scope" : "Company",
+            "Results" : [
+            {"Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
                         "items" : [],
@@ -1335,7 +1336,7 @@
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                }
+            }
             ],
             "Repeatable" : false,
             "UseRandomInvocation" : false,
@@ -1428,7 +1429,7 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_AddForcedContract",
+                            "Type" : "Flashpoint_AddContract",
                             "value" : "",
                             "valueConstant" : null,
                             "additionalValues" : [
