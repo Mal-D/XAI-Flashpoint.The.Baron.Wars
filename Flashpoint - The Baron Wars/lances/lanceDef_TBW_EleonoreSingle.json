@@ -18,7 +18,7 @@
     "LanceUnits" : [
         {
             "unitType" : "Mech",
-            "unitId" : "mechdef_vulcan_VL-5T",
+            "unitId" : "mechdef_assassin_ASN-21",
             "unitSimGameID" : null,
             "pilotId" : "pilot_BW_eleonoreR",
             "pilotSimGameID" : null,

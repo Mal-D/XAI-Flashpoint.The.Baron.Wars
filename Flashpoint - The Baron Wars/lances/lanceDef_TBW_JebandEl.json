@@ -1,0 +1,72 @@
+{
+    "Description" : {
+        "Id" : "lanceDef_TBW_JebandEl",
+        "Name" : "JebandEl",
+        "Details" : "Jeb and El",
+        "Icon" : "",
+        "Cost" : 0,
+        "Rarity" : 0,
+        "Purchasable" : false
+    },
+    "Difficulty" : 1,
+    "LanceTags" : {
+        "items" : [
+            "lance_type_mech"
+        ],
+        "tagSetSourceFile" : "Tags/LanceTags"
+    },
+    "LanceUnits" : [
+        {
+            "unitType" : "Mech",
+            "unitId" : "mechdef_assassin_ASN-21",
+            "unitSimGameID" : "mechdef_assassin_ASN-21",
+            "pilotId" : "pilot_BW_eleonoreR",
+            "pilotSimGameID" : "pilot_BW_eleonoreR",
+            "unitTagSet" : {
+                "items" : [
+                    "unit_mech"
+                ],
+                "tagSetSourceFile" : "Tags/UnitTags"
+            },
+            "excludedUnitTagSet" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/UnitTags"
+            },
+            "pilotTagSet" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/PilotTags"
+            },
+            "excludedPilotTagSet" : {
+                "items" : null,
+                "tagSetSourceFile" : "Tags/PilotTags"
+            },
+            "locked" : false
+        },
+        {
+            "unitType" : "Mech",
+            "unitId" : "mechdef_blackjack_BJ-1M",
+            "unitSimGameID" : "mechdef_blackjack_BJ-1M",
+            "pilotId" : "pilot_BW_theBaron",
+            "pilotSimGameID" : "pilot_BW_theBaron",
+            "unitTagSet" : {
+                "items" : [
+                    "unit_mech"
+                ],
+                "tagSetSourceFile" : "Tags/UnitTags"
+            },
+            "excludedUnitTagSet" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/UnitTags"
+            },
+            "pilotTagSet" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/PilotTags"
+            },
+            "excludedPilotTagSet" : {
+                "items" : null,
+                "tagSetSourceFile" : "Tags/PilotTags"
+            },
+            "locked" : false
+        }
+    ]
+}

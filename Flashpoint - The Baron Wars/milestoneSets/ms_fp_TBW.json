@@ -1377,15 +1377,19 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "",
+                            "value" : "mapGeneral_escarpmentValley_vLow",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                            "additionalValues" : 
+                            [
+                                "Assets/Level Design/Maps/mapGeneral_escarpmentValley_vLow/mapGeneral_escarpmentValley_vLow.unity",
+                                "65f01c56-027f-49bd-a8df-63b8ec032495",
+                                "c_fp_TBW_counterOffensive_1",
+                                "MagistracyOfCanopus",
+                                "irukjandiCompany",
+                                "6",
+                                "ms_fp_TBW_702_Branch",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_702_Branch",
                                 null,
                                 null
@@ -1430,18 +1434,22 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "",
+                            "value" : "mapGeneral_escarpmentValley_vLow",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                            "additionalValues" : 
+                            [
+                                "Assets/Level Design/Maps/mapGeneral_escarpmentValley_vLow/mapGeneral_escarpmentValley_vLow.unity",
+                                "65f01c56-027f-49bd-a8df-63b8ec032495",
+                                "c_fp_TBW_counterOffensive_2",
+                                "MagistracyOfCanopus",
+                                "irukjandiCompany",
+                                "6",
+                                "ms_fp_TBW_702_Branch",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_702_Branch",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
                         {
@@ -1483,18 +1491,22 @@
                     "Actions" : [
                         {
                             "Type" : "Flashpoint_AddContract",
-                            "value" : "c_fp_TBW_counterOffensive_2",
+                            "value" : "mapGeneral_escarpmentValley_vLow",
                             "valueConstant" : null,
-                            "additionalValues" : [
-                                "",
-                                "",
-                                "(required)",
-                                "(required)",
-                                "(required)",
-                                "(required)",
+                            "additionalValues" : 
+                            [
+                                "Assets/Level Design/Maps/mapGeneral_escarpmentValley_vLow/mapGeneral_escarpmentValley_vLow.unity",
+                                "65f01c56-027f-49bd-a8df-63b8ec032495",
+                                "c_fp_TBW_counterOffensive_3",
+                                "MagistracyOfCanopus",
+                                "irukjandiCompany",
+                                "6",
+                                "ms_fp_TBW_702_Branch",
+                                "wagyuBarons",
+                                "irukjandiCompany",
                                 "ms_fp_TBW_702_Branch",
                                 null,
-                                null
+                                "irukjandiCompany"
                             ]
                         },
                         {

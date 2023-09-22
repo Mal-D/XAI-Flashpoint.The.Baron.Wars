@@ -1,7 +1,7 @@
 {
     "Description" : {
-        "Id" : "lanceDef_TBW_EleonoreSingle",
-        "Name" : "EleonoreSingle",
+        "Id" : "lanceDef_TBW_BaronSingle",
+        "Name" : "BaronSingle",
         "Details" : "Single Unit Lance",
         "Icon" : "",
         "Cost" : 0,
@@ -16,9 +16,9 @@
     "LanceUnits" : [
         {
             "unitType" : "Mech",
-            "unitId" : "mechdef_vulcan_VL-5T",
+            "unitId" : "mechdef_blackjack_BJ-1M",
             "unitSimGameID" : null,
-            "pilotId" : "pilot_BW_eleonoreR",
+            "pilotId" : "pilot_BW_theBaron",
             "pilotSimGameID" : null,
             "unitTagSet" : {
                 "items" : [

@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_counterOffensive_1",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 1,
+    "EnemyLanceObjectiveNames": ["The Fixer"],
+    "EnemyLances": ["TBW_701_FixerSingle"],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theBaron_pilot",
+    "Dialogue": "Let's go my ferocious little <i>Badger</i>. We have a wedding to get to.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lanceDef_TBW_JebandEl"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.6
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}

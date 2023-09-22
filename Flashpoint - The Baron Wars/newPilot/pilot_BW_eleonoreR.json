@@ -45,7 +45,7 @@
 	],
 	"AIPersonality": "Undefined",
 	"PilotTags": {
-		"items": ["BLACKLISTED", "name_eleonoreR", "pilot_npc_vanguard", "pilot_npc_d6"],
+		"items": ["BLACKLISTED", "name_eleonoreR"],
 		"tagSetSourceFile": ""
 	},
 	"PilotCost": 0

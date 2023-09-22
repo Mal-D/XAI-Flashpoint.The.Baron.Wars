@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_counterOffensive_2",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 0,
+    "EnemyLanceObjectiveNames": [],
+    "EnemyLances": [],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theDaughter",
+    "Dialogue": "Come Husband-to-be, Let's not leave this to <i>off-worlders</i>. I say we take back our homes and broker no quarter otherwise.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lanceDef_TBW_JebandEl"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.6
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}

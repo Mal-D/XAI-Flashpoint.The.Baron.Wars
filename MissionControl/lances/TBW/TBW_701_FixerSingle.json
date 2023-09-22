@@ -1,0 +1,24 @@
+{
+	"lanceKey": "TBW_701_FixerSingle",
+	"lanceDefId": "lanceDef_TBW_theFixerSingle",
+	"lanceTagSet": {
+		"items": []
+	},
+	"lanceExcludedTagSet": {
+		"items": []
+	},
+	"spawnEffectTags": {
+		"items": []
+	},
+	"lanceDifficultyAdjustment": 0,
+	"unitSpawnPointOverrideList": [
+		{
+			"unitDefId": "UseLance",
+			"spawnEffectTags": {
+				"items": [
+					"spawn_poorly_maintained_50"
+				]
+			}
+		}
+	]
+}
