@@ -179,7 +179,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -215,7 +215,7 @@
             },
             "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -559,7 +559,7 @@
             },
             "title" : "Destroy Opposing {TEAM_HOST.FactionDef.Demonym} Forces",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",

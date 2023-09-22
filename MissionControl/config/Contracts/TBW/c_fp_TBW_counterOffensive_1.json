@@ -9,7 +9,7 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["The Fixer"],
+    "EnemyLanceObjectiveNames": ["Eliminate The Fixer"],
     "EnemyLances": ["TBW_701_FixerSingle"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
