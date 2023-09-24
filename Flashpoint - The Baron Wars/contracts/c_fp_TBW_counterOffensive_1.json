@@ -1641,7 +1641,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yes Countess...",
+                    "words" : "Yes Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1657,7 +1657,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "<i>Yes</i> Mother....",
+                    "words" : "<i>Yesss...Motherrr....</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1681,10 +1681,10 @@
                 "EncounterObjectGuid" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9"
             },
             "name" : "Dialog_MissionSuccess",
-            "overrideDialogueBucketId" : "",
+            "overrideDialogueBucketId" : "ConvBucketDef_701_MissionSuccess",
             "dialogueContent" : [
                 {
-                    "words" : "That's it, Commander; the {TEAM_EMP.FactionDef.Demonym} reinforcements can handle the rest. Let's go home.",
+                    "words" : "PLACEHOLDER: That's it, Commander; the {TEAM_EMP.FactionDef.Demonym} reinforcements can handle the rest. Let's go home.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

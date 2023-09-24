@@ -1571,7 +1571,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "<Stats.Company.[TBW_FailCount]> - Commander {Commander.LastName}, Sorry Commander - This is less that the stirling performance we were looking for.",
+                            "<Stats.Company.[TBW_FailCount]> - Commander {Commander.LastName}, Sorry Commander - This is less than the stirling performance we were looking for.",
                             "castDef_anaMaria"
                             ]
                         },
@@ -1667,7 +1667,7 @@
                             "value" : "9ce95936dcbb9aca0fceccdc",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} VI",
+                                "{TGT_FLASHPOINT.Def.Description.Name} CONCLUSION",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
@@ -1699,16 +1699,19 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "Enter RequirementComparisons for reward Branching"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : []
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 5,
+                            "valueConstant" : "5"
+                        }]
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1722,55 +1725,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward level One",
+                            "value" : "Complete for Reward level Five",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier One - ms_fp_800_Complete",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 2"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward level Two",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier Two - ms_fp_800_Complete",
+                            "Tags and stats for reward Tier Five - ms_fp_800_Complete",
                             "castDef_MagRep"
                             ]
                         },
@@ -1789,14 +1748,19 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 3"],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : []
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 4,
+                            "valueConstant" : "4"
+                        }]
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1810,11 +1774,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward level three",
+                            "value" : "Complete for Reward level Four",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier three - ms_fp_800_Complete",
+                            "Tags and stats for reward Tier Four - ms_fp_800_Complete",
                             "castDef_MagRep"
                             ]
                         },
@@ -1822,7 +1786,7 @@
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : null
+                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1833,14 +1797,19 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for Failure"],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : []
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 3,
+                            "valueConstant" : "3"
+                        }]
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1853,10 +1822,69 @@
                     "Stats" : [],
                     "Actions" : [
                         {
-                            "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_999_Fail-Complete",
+                            "Type" : "System_PauseNotification",
+                            "value" : "Complete for Reward Tier Three",
                             "valueConstant" : null,
-                            "additionalValues" : null
+                            "additionalValues" : 
+                            [
+                            "Tags and stats for reward Tier three - ms_fp_800_Complete",
+                            "castDef_MagRep"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_801_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 2,
+                            "valueConstant" : "2"
+                        }]
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Complete for Reward Tier Three",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Tags and stats for reward Tier three - ms_fp_800_Complete",
+                            "castDef_MagRep"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_801_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1882,16 +1910,19 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : [
-                                "Enter RequirementComparisons Stats and Tag updates for Failure"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : []
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 5,
+                            "valueConstant" : "5"
+                        }]
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1901,7 +1932,27 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : [{
+                        "typeString" : "System.Int32",
+                        "name" : "Funds",
+                        "value" : "5000000",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Morale",
+                        "value" : "5",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Reputation.MagistracyOfCanopus",
+                        "value" : "150",
+                        "set" : false,
+                        "valueConstant" : null
+                    }],
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
@@ -1936,14 +1987,19 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 2"],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : []
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 4,
+                            "valueConstant" : "4"
+                        }]
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1953,18 +2009,28 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : [{
+                        "typeString" : "System.Int32",
+                        "name" : "Funds",
+                        "value" : "5000000",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Morale",
+                        "value" : "4",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Reputation.MagistracyOfCanopus",
+                        "value" : "80",
+                        "set" : false,
+                        "valueConstant" : null
+                    }],
                     "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Stats and Tag updates for Tier Two",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Stats and Tag updates for Tier Two",
-                            "castDef_MagRep"
-                            ]
-                        },
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Ship",
@@ -1982,14 +2048,19 @@
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["Enter RequirementComparison for reward 3"],
+                            "items" : [],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : []
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 3,
+                            "valueConstant" : "3"
+                        }]
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1999,18 +2070,89 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [],
+                    "Stats" : [{
+                        "typeString" : "System.Int32",
+                        "name" : "Funds",
+                        "value" : "5000000",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Morale",
+                        "value" : "3",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Reputation.MagistracyOfCanopus",
+                        "value" : "50",
+                        "set" : false,
+                        "valueConstant" : null
+                    }],
                     "Actions" : [
                         {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Stats and Tag updates for Tier Three",
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Ship",
                             "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Stats and Tag updates for Tier Three",
-                            "castDef_MagRep"
+                            "additionalValues" : [
+                                "BaseFlashpoint"
                             ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
                         },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : [{
+                            "obj" : "progScore",
+                            "op" : "Equal",
+                            "val" : 2,
+                            "valueConstant" : "2"
+                        }]
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [{
+                        "typeString" : "System.Int32",
+                        "name" : "Funds",
+                        "value" : "5000000",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Morale",
+                        "value" : "2",
+                        "set" : false,
+                        "valueConstant" : null
+                    },
+                    {
+                        "typeString" : "System.Int32",
+                        "name" : "Reputation.MagistracyOfCanopus",
+                        "value" : "40",
+                        "set" : false,
+                        "valueConstant" : null
+                    }],
+                    "Actions" : [
                         {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Ship",

@@ -1,0 +1,6 @@
+{
+   "identifier" : "ConvBucketDef_701_MissionSuccess",
+   "DialogueContentIDs" : [
+		"DialogBkt_701_MissionSuccess" 
+   ]
+}
