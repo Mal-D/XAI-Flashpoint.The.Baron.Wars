@@ -1979,7 +1979,14 @@
                             ]
                         }
                     ],
-                    "ForceEvents" : [],
+                    "ForceEvents" : [{
+                        "Scope" : "Company",
+                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "MinDaysWait" : 10,
+                        "MaxDaysWait" : 20,
+                        "Probability" : 100,
+                        "RetainPilot" : false
+                        }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
@@ -2040,7 +2047,14 @@
                             ]
                         }
                     ],
-                    "ForceEvents" : [],
+                    "ForceEvents" : [{
+                        "Scope" : "Company",
+                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "MinDaysWait" : 10,
+                        "MaxDaysWait" : 20,
+                        "Probability" : 100,
+                        "RetainPilot" : false
+                        }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
@@ -2101,7 +2115,14 @@
                             ]
                         }
                     ],
-                    "ForceEvents" : [],
+                    "ForceEvents" : [{
+                        "Scope" : "Company",
+                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "MinDaysWait" : 10,
+                        "MaxDaysWait" : 20,
+                        "Probability" : 100,
+                        "RetainPilot" : false
+                        }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },
@@ -2162,7 +2183,14 @@
                             ]
                         }
                     ],
-                    "ForceEvents" : [],
+                    "ForceEvents" : [{
+                        "Scope" : "Company",
+                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "MinDaysWait" : 10,
+                        "MaxDaysWait" : 20,
+                        "Probability" : 100,
+                        "RetainPilot" : false
+                        }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 }
