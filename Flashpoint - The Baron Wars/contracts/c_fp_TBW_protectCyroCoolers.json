@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_protectCyroCoolers",
-    "contractName" : "Protect Cyro Coolers v7.0",
+    "contractName" : "Protect Cyro Coolers",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
@@ -635,22 +635,6 @@
                 },
                 {
                     "words" : "Finally... some breathing room. Concentrate on those shooting at the buildings.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
-                    "selectedCastDefId" : "castDef_Commander",
-                    "emote" : "Default",
-                    "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
-                    "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
-                    "revealRadius" : -1
-                },
-                {
-                    "words" : "Finally... some breathing room. Concentrate on those shooting at the buildings  ",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

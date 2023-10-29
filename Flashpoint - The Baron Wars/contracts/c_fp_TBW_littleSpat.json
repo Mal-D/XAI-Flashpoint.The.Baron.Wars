@@ -150,7 +150,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "cb9c173c-89b3-4447-b3a0-26193cbeb601"
             },
-            "title" : "Destroy 'The Fixer's' Lance.",
+            "title" : "Destroy the Fixer's Lance.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{
@@ -1096,7 +1096,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "b560361d-e4dd-4a94-b9b1-f8d8c283cfc3"
             },
-            "title" : "AllPrimaryTargetsDestroyedFlag",
+            "title" : "All Primary Targets Destroyed",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{
@@ -1709,7 +1709,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I think you all need some counciling. Farah... I think we need to go over the Battle Comm transcripts, there is some fishy about this whole mess.",
+                    "words" : "I think you all need some counciling. Farah... I think we need to go over the Battle Comm transcripts, there's something fishy about this whole mess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2630,7 +2630,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Countess' Dusts Off successful Commander.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_safe}Countess's Dust Off successful Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2646,7 +2646,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_safe}Safe. You'd have better keep my daughter safe - she is more important than you realise.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_safe}Safe. You'd have better keep my daughter safe - she is more important than you realise.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2662,7 +2662,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Countess is safe. Any location on 'Badger's bio-signal.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_down}Countess is safe. Any location on 'Badger's bio-signal.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2678,7 +2678,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}My Daughter! Where's my daughter? If she is hurt...!",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_down}My Daughter! Where's my daughter? If she is hurt...!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2694,7 +2694,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's CarVas transponder signal - she's alive.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's CarVas transponder signal - she's alive.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2710,7 +2710,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasAnyTags.TBW_Badger_down}Calm down... <i>CALM DOWN</i>... I'll bloody calm down when my Daughter is safe.",
+                    "words" : "{MC.If.Company.HasTags.TBW_Badger_down}Calm down... <i>CALM DOWN</i>... I'll bloody calm down when my Daughter is safe.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3284,7 +3284,7 @@
                     "revealRadius" : -1
                 },  
                 {
-                    "words" : "Roger that Sumire. All {Company.CompanyName} units; and push any opposition and cover the Countess.",
+                    "words" : "Roger that Sumire. All {Company.CompanyName} units; bypass the Baron's forces for now. Push through any opposition to cover the Countess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3327,7 +3327,7 @@
                       "revealRadius" : -1
                   },  
                   {
-                      "words" : "No guarantees Countess it was she who insisted to join us. If she does as ordered she will be fine.",
+                      "words" : "No guarantees Countess as it was she who insisted to join us. If she does as ordered she will be fine.",
                       "wordsColor" : {
                           "r" : 1,
                           "g" : 1,

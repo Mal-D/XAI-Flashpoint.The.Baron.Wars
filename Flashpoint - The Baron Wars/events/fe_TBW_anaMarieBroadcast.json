@@ -37,7 +37,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Command crew Summoned",
-                        "Details" : "Commander {Commander.LastName} clumpled in to the command deck, with Magboots ringing out with a methodical <i>click-snick</i>, <i>click-snick</i> of someone very comfortable in microgravity.\r\n\r\n\"Ok, Sumire, pipe it though to the main holodesk and we'll see what the ruckus is all about. \r\n\r\n \"Seems that a representative of the Centrellian first Family is rather anxious to elicit some help outside the MRB.\"\r\n\r\n\"Thought it was too quiet. Farah, can you start a search on keywords in the conversation and see if we can't get some more inforamtion.\"",
+                        "Details" : "Commander {Commander.LastName} clumped in to the Command Deck, with Magboots ringing out with a methodical <i>click-snick</i>, <i>click-snick</i> of someone very comfortable in microgravity.\r\n\r\n\"Ok, Sumire, pipe it though to the main holodesk and we'll see what the ruckus is all about. \r\n\r\n \"Seems that a representative of the Centrellian first Family is rather anxious to elicit some help outside the MRB.\"\r\n\r\n\"Thought it was too quiet. Farah, can you start a search on keywords in the conversation and see if we can't get some more inforamtion.\"",
                         "Icon" : null
                     },
                     "Weight" : 100,

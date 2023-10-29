@@ -742,11 +742,11 @@
                         },
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "<Stats.Company.[TBW_FailCount]> Good news Commander {Commander.LastName}, the MIM have made significant discoveries to enable us to better define our next move. Sending you the mission parameters.",
+                            "value" : "Good news Commander {Commander.LastName}, the MIM have made significant discoveries to enable us to better define our next move. Sending you the mission parameters.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "--Several hours Later--",
+                            "-- Several hours Later --",
                             "castDef_anaMariaC"
                             ]
                         },

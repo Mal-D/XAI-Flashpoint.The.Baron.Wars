@@ -15,7 +15,7 @@
     "DialogueCastDefId": "castDef_theFixer",
     "Dialogue": "Commander {Commander.LastName}, stay... and you will not survive... Flee the field before our DropShip arrives and you just might.",
     "AllyLanceCount": 2,
-    "AllyLances": ["lanceDef_TBW_BaronSingle","lancedef_theBaron_AL_Escort2"]
+    "AllyLances": ["lanceDef_TBW_BaronSingle","lancedef_theBaron_AL_Escort3"]
   },
   "ExtendedLances": {
     "Enable": false,
@@ -24,7 +24,7 @@
   },
   "ExtendedBoundaries": {
     "Enable": true,
-    "IncreaseBoundarySizeByPercentage": 0.6
+    "IncreaseBoundarySizeByPercentage": 0.3
   },
   "DynamicWithdraw": {
     "Enable": false

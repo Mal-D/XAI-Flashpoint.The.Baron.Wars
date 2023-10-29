@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_AmbushRathbottom_f",
-    "contractName" : "Ambush Kidnapping 'Mech. (F)",
+    "contractName" : "Ambush Kidnapping 'Mech.",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -536,7 +536,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Excellent work Commander. While the Magastry Judicial System is as accomodating as possible but, Treason is still treason and it still brings the severest of punishment.",
+                    "words" : "Excellent work Commander. While the Magastry Judicial System is as accomodating as possible but Treason is still treason and it still brings the severest of punishments.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
