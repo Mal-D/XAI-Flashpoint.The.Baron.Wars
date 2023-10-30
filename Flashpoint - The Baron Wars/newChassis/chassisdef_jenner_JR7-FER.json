@@ -14,9 +14,7 @@
     }, 
     "VariantName": "JR7-FER", 
     "ChassisTags": {
-        "items": [
-            "unit_mechtool"
-        ], 
+        "items": [], 
         "tagSetSourceFile": ""
     }, 
     "StockRole": "Fast Striker Cavalry", 
