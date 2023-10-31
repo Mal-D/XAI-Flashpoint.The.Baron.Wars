@@ -7,52 +7,65 @@ This is a Mod for the Battletech game by HBS and required the following DLC's an
 3. Urban Warfare DLC
 4. Heavy Metal DLC
 
-# Please Note: 
-The Flashpoint is internally linked to the Mod Pack - XAI BattleTech 3025 by Xeryx and must be fully installed for this Flashpoint to work. XAI BattleTech 3025 is available through Nexus at this location https://www.nexusmods.com/battletech/mods/391
+### Please Note: 
+The Flashpoint is internally linked to the Mod Pack - XAI BattleTech 3025 by Xeryx and must be fully installed for this Flashpoint to work. XAI BattleTech 3025 is available through Nexus at the following location 
+https://www.nexusmods.com/battletech/mods/391
 
-The Flashpoint is dependent upon the following Mods
-1. XAI
-2. XAI Battle Pack 3025
-3. ModTek versions > 4.1.0.0
+The Flashpoint is dependent upon the following Mods - INSTALL THESE FIRST !!
+1. XAI - Latest Version from Nexus
+2. XAI Battle Pack 3025 - Latest Version from Nexus
+3. ModTek versions > 4.1.0.0 Latest Version from GitHub
 4. ExtentededConversations 0.6.0
 5. MissionControl 1.5.1
 
-# Flashpoint Installation Directions
+## Flashpoint Installation Directions
 
-The Flashpoint and supporting files are contained in the 7Zip archive "TBW-Release-v1.1.x.7z"
-
-There are 5 folders in the archive and the installation is designed to only Add to the contents of the /Mods folder. 
+The Flashpoint and supporting files are contained in the 7Zip installation archive named "XAI-TBW-Release-v1.1.(x).7z" and will contain the following 5 folders:
+ 
 1.  ColourfulFlashpoints
 2.  IRBTModUtils
 3.  MapRandomizer
 4.  MissionControl
 5.  XAI Flashpoints
 
+the installation is designed to only Add to the contents of the /Mods folder.
 
-Other Mods Supplied with this Flashpoint
+Other Mods Supplied with this Flashpoint.  
+1.  MapRandomizer
+2.  IRBTModUtils
 
-    1. MapRandomizer
-    2. IRBTModUtils
+The Baron Wars is optionally Dependant on 
+1.  ColourfulFlashpoints
+2.  IRBTModUtils
+3.  MapRandomizer
 
-A huge shout out to FrostRaptor for giving permission to package the above two MODs in this installation. The Settings.json and the Mod.json files within each have already been altered to provide ONLY the functionality required by this flashpoint. 
+##Notes on IRBTModUtils and MapRandomizer Mods.
 
-Optionally Dependant on 
-1. ColourfulFlashpoints
+A huge shout out to FrostRaptor for giving permission to package the above two MODs in this installation. The Settings.json and the Mod.json files within each Mod have already been altered to provide ONLY the functionality required by this flashpoint. Fiddling with these settings from what is in this installation - whilst using XAI - could result in you having performance issues. 
 
-The Author of this Mod has provided permission to bundle the Settings.json file ONLY. The Settings.json supplied has already been altered to provide the functionality required by this flashpoint. The Mod itself will need to be sourced from 
+##Note on ColourFul FlashPoints Mod.
+
+The author of this Mod has provided permission to bundle the Settings.json file ONLY. The Settings.json supplied has already been altered to provide the functionality required by this flashpoint. The Mod itself will need to be sourced from 
+https://github.com/wmtorode/ColourfulFlashPoints  (Currently at time of writing is Version 1.1.0)
+
+Install ColourFul FlashPoints Mod and replace the Settings.json file in the mod with the one in the Flashpoint installation Archive
+
+Although these three Mods are listed in the Mod.json file as 'optional' the Mod has been tested without these Mods installed but the game immersion suffers somewhat. 
 
 ### ModTek versions 4.1.0.0 and up
 The current installation has been successfully tested on 4.1.0.0.
 
-The installation archive will be named XAI-TheBaronWars-ReleaseEdition and will contain the following folders
+# Install 
+If your XAI Installation conforms with the information above the installation is as simple as extracting the contects of the Archive into your /Mods folder. (GoG Battletech installations will be in a different Directory.)
 
-1.ColourfulFlashpoints     
-2.MissionControl    
-3.XAI Flashpoints
-
-Install by unzipping directly into    
+### Steam Installation
 [your game installation drive]/Steam/Steamapps/Common/Battletech/Mods directory.     
-The folders in the archive file contain only files to support the Flashpoint.
+Open the Archive and copy the folders in the archive file into the /Mods Directory. The folders contain only files to support the Flashpoint and the Flashpoint itself. If you are asked to replace files PLEASE SAY YES!
+
+### GOG Install
+You should have a link on your desktop to start the game, if you right click it and go to Properties you should be able to click "Open File Location" button in the "Shortcut" tab of the window that opens up. This should bring you to the game folder, create the Mods folder and then install the mods in the Mods Directory you have just created. See above. 
+
+7Zip Archives can be opened in WinRar and later versions of WinZip.
 
 
 
