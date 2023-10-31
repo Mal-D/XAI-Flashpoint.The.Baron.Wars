@@ -19,23 +19,15 @@ The Flashpoint is dependent upon the following Mods
 
 # Flashpoint Installation Directions
 
-The Flashpoint is contained in the 7Zip archive "TBW-Release-v1.1.x.7z"
+The Flashpoint and supporting files are contained in the 7Zip archive "TBW-Release-v1.1.x.7z"
 
-There are 5 folders in the and the installation is designed to only Add to the contents of the /Mods folder. 
+There are 5 folders in the archive and the installation is designed to only Add to the contents of the /Mods folder. 
 1.  ColourfulFlashpoints
 2.  IRBTModUtils
 3.  MapRandomizer
 4.  MissionControl
 5.  XAI Flashpoints
 
-
-
-The Flashpoint is dependent upon the following Mods
-1. XAI
-2. XAI Battle Pack 3025
-3. ModTek versions > 4.1.0.0
-4. ExtentededConversations 0.6.0
-5. MissionControl 1.5.1
 
 Other Mods Supplied with this Flashpoint
 
