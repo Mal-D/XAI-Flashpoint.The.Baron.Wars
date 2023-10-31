@@ -1,28 +1,48 @@
 # The Baron's War
 
-This is a Mod for the Battletech game by HBS and required the following DLC's and version
-
+This is a Mod for the Battletech game by HBS and required the following DLC's and versions
 
 1. Battletech Game 1.9.1
 2. Flashpoint DLC
 3. Urban Warfare DLC
 4. Heavy Metal DLC
 
-# Installation Directions
+# Please Note: 
+The Flashpoint is internally linked to the Mod Pack - XAI BattleTech 3025 by Xeryx and must be fully installed for this Flashpoint to work. XAI BattleTech 3025 is available through Nexus at this location https://www.nexusmods.com/battletech/mods/391
 
-There are 4 folders and the installation is designed to only Add to the contents of the /Mods folder. The main listed Mod is not included in this Flashpoint.  The Flashpoint is dependent upon the following Mods
+The Flashpoint is dependent upon the following Mods
 1. XAI
 2. XAI Battle Pack 3025
 3. ModTek versions > 4.1.0.0
-3. ExtentededConversations 0.6.0
-4. MissionControl 1.5.1
+4. ExtentededConversations 0.6.0
+5. MissionControl 1.5.1
+
+# Flashpoint Installation Directions
+
+The Flashpoint is contained in the 7Zip archive "TBW-Release-v1.1.x.7z"
+
+There are 5 folders in the and the installation is designed to only Add to the contents of the /Mods folder. 
+1.  ColourfulFlashpoints
+2.  IRBTModUtils
+3.  MapRandomizer
+4.  MissionControl
+5.  XAI Flashpoints
+
+
+
+The Flashpoint is dependent upon the following Mods
+1. XAI
+2. XAI Battle Pack 3025
+3. ModTek versions > 4.1.0.0
+4. ExtentededConversations 0.6.0
+5. MissionControl 1.5.1
 
 Other Mods Supplied with this Flashpoint
 
     1. MapRandomizer
     2. IRBTModUtils
 
-Permission has been granted by the Mod's Author to package the above two MODs in this installation. The Settings.json and the Mod.json files within each have already been altered to provide ONLY the functionality required by this flashpoint. 
+A huge shout out to FrostRaptor for giving permission to package the above two MODs in this installation. The Settings.json and the Mod.json files within each have already been altered to provide ONLY the functionality required by this flashpoint. 
 
 Optionally Dependant on 
 1. ColourfulFlashpoints
