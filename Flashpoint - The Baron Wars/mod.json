@@ -16,7 +16,7 @@
     "Manifest": [
 	{ "Type": "CastDef", "Path": "cast" },
 	{ "Type": "ChassisDef", "Path": "newChassis" },
-	{ "Type": "MechDef", "Path": "NewMech" },
+	{ "Type": "MechDef", "Path": "newMech" },
 	{ "Type": "ContractOverride", "Path": "contracts" }, 
 	{ "Type": "LanceDef" , "Path": "lances", "AddToDB": true },
 	{ "Type": "SimGameEventDef", "Path": "events" },

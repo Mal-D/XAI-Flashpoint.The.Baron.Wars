@@ -1,7 +1,7 @@
 {
 	"Description": {
 		"Id": "lancedef_eleonoreT_AL_LightScout",
-		"Name": "D5 Light Scout",
+		"Name": "D3 Light Scout",
 		"Details": "",
 		"Icon": "",
 		"Cost": 0,
@@ -13,7 +13,6 @@
 		"items": [
 			"lance_bracket_low",
 			"lance_type_light",
-			"lance_type_medium",
 			"lance_type_recon",
 			"lance_type_dynamic",
 			"lance_type_mech",
@@ -27,7 +26,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_medium" ],
+				"items": [ "unit_mech", "unit_light", "unit_lance_vanguard"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -35,7 +34,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_d5_lancer" ],
+				"items": [ "pilot_npc_d3" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -48,7 +47,7 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_medium", "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_light", "unit_lance_vanguard"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -56,7 +55,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_recon", "pilot_npc_d4" ],
+				"items": [ "pilot_npc_d3" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -69,19 +68,15 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_light" , "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_light"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [ "unit_lance_tank", "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d4" ],
+				"items": [ "pilot_npc_d3" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -94,15 +89,15 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_light", "unit_speed_high" ],
+				"items": [ "unit_mech"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_vehicle", "unit_lance_tank", "unit_noncombatant" ,"unit_speed_low"],
+				"items": [ "unit_heavy", "unit_assault", "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d4", "pilot_npc_striker" ],
+				"items": [ "pilot_npc_d3" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

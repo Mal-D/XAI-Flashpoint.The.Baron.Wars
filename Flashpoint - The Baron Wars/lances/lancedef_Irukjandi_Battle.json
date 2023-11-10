@@ -11,7 +11,6 @@
 	"Difficulty": 4,
 	"LanceTags": {
 		"items": [
-			
 			"lance_type_medium",
 			"lance_type_dynamic",
 			"lance_type_mech",
@@ -25,88 +24,88 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_range_long" , "unit_medium"],
+				"items": [ "unit_mech", "unit_medium", "unit_lance_tank" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_type_vehicle","unit_noncombatant", "unit_speed_low" ],
+				"items": [ "unit_noncombatant" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			},
+			"locked": false
 		},
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_gunner",
+			"pilotId": "pilot_Ico5_tactician",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_medium", "unit_speed_high"],
+				"items": [ "unit_mech", "unit_medium" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_type_vehicle","unit_noncombatant", "unit_speed_low" ],
+				"items": [ "unit_lance_vanguard", "unit_noncombatant" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			},
+			"locked": false
 		},
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_gunner",
+			"pilotId": "pilot_Ico5_pilot",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_heavy" , "unit_speed_high"  ],
+				"items": [ "unit_mech", "unit_medium" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [ "unit_lance_vanguard", "unit_noncombatant" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			},
+			"locked": false
 		},
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_gunner",
+			"pilotId": "pilot_Ico5_tactician",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
+				"items": [ "unit_mech", "unit_medium", "unit_lance_support" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_vehicle", "unit_lance_tank", "unit_noncombatant" ,"unit_speed_low"],
+				"items": [ "unit_noncombatant" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			},
+			"locked": false
 		}
 	]
 }

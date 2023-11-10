@@ -9,7 +9,7 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Neutralize WB's Contractors"],
+    "EnemyLanceObjectiveNames": ["Eliminate WB's Additional Lance"],
     "EnemyLances": ["lancedef_theBaron_AL_Escort"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theDaughter",

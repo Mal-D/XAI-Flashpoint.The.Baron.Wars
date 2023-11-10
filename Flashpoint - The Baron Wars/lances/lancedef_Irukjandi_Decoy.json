@@ -80,7 +80,7 @@
 		{
 			"unitType": "Vehicle",
 			"unitId": "vehicledef_PEGASUS",
-			"pilotId": "pilot_Ico5_gunner",
+			"pilotId": "pilot_Ico5_tactician",
 			"unitTagSet": {
 				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"

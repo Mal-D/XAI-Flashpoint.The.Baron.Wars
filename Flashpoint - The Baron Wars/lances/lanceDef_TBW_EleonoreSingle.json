@@ -11,7 +11,10 @@
     "Difficulty" : 1,
     "LanceTags" : {
         "items" : [
-            "lance_type_mech"
+            "lance_type_mech",
+			"lance_type_custom",
+			"lance_type_solo",
+			"lance_type_notfull"
         ],
         "tagSetSourceFile" : "Tags/LanceTags"
     },
@@ -23,9 +26,7 @@
             "pilotId" : "pilot_BW_eleonoreR",
             "pilotSimGameID" : null,
             "unitTagSet" : {
-                "items" : [
-                    "unit_mech"
-                ],
+                "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"
             },
             "excludedUnitTagSet" : {

@@ -285,7 +285,7 @@
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : [],
+                    "items" : ["-f9af713a466f"],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
@@ -347,7 +347,7 @@
                     "Scope" : "Company",
                     "Requirements" : null,
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["-028e2188fa89"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -635,7 +635,7 @@
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : [],
+                    "items" : ["3bf90ef951fb"],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {
@@ -714,15 +714,7 @@
                     "items" : [],
                     "tagSetSourceFile" : ""
                 },
-                "Stats" : [
-                    {
-                        "typeString" : "System.Single",
-                        "name" : "ContractBonusRewardPct",
-                        "value" : "0.1",
-                        "set" : false,
-                        "valueConstant" : null
-                    }
-                ],
+                "Stats" : [],
                 "Actions" : [],
                 "ForceEvents" : [],
                 "TemporaryResult" : false,
@@ -738,7 +730,7 @@
             },
             "title" : "All of {COMPANY.CompanyName} Lance must survive",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -1709,7 +1701,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "I think you all need some counciling. Farah... I think we need to go over the Battle Comm transcripts, there's something fishy about this whole mess.",
+                    "words" : "I think you all need some counciling. Farah... I think we need to go over the Battle Comm transcripts, there's something rotten about this whole mess.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1725,7 +1717,39 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Yes Boss! I'll have them ready for you ASAP.",
+                    "words" : "Yeah, like stinking like rotten Wagyu. Reminds me of the time that shi.....",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes Yang...I think we get the picture.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Yes Boss! I'll have the decoded transcripts ready for you ASAP.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2281,7 +2305,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Company.HasTag.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
+                    "words" : "{MC.If.Company.HasTag.TBW_Badger_safe}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2418,7 +2442,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Shit, SHIT <i>SHIT!</i> Looks like we've been right royally screwed, All WB 'Mechs...shoot everything or we'll die on on this damned planet.",
+                    "words" : "shit... Shit... <i>SHIT...</i> Looks like we've been right royally screwed, All WB 'Mechs...shoot everything or we'll die on on this damned planet.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2760,7 +2784,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "{MC.Modification.AddTo.CompanyTags.TBW_LeanoraSurvives} Primary L's TagAdded, That's it Commander we did what we came here to do.",
+                    "words" : "{MC.Modification.AddTo.CompanyTags.TBW_LeanoraSurvives} That's it Commander we did what we came here to do.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2776,7 +2800,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "{MC.If.Encounter.HasNoTag.TBW_Badger_down}{MC.Modification.AddTo.CompanyTags.TBW_Badger_safe}TagAdded dAnd Commander, I thank you for keeping my Daughter safe.",
+                    "words" : "{MC.If.Encounter.HasNoTag.TBW_Badger_down}{MC.Modification.AddTo.CompanyTags.TBW_Badger_safe}And Commander, I thank you for keeping my Daughter safe.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2784,6 +2808,70 @@
                         "a" : 1
                     },
                     "selectedCastDefId" : "castDef_TeamLeader_EmployersAlly",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Encounter.HasTag.TBW_Badger_down}{MC.Modification.AddTo.CompanyTags._TBW_countessMad}You're damned lucky the Salvage team found my Daughter alive. Don't think this is over between us Commander.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_TeamLeader_EmployersAlly",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "{MC.If.Encounter.HasTag.TBW_Badger_down}There are no assurances on the battlefield your <i>highness</i>. She's still lucky to have a mother don't forget that and yes <i>this incident is over!</i>.\r\n\r\n////BattleComms Cleared////\r\n\r\n Sumire where's our damned dropship.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "\r\n\r\n////BattleComms Cleared////\r\n\r\n Sumire, where's our damned dropship.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Dropship inbound Commander. Standby for pickup.\r\n////click////\r\n\r\n<i>The boss is in a bad mood today and who would blame him!</i>",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_SumireDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2817,7 +2905,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "PLACEHOLDER We won't get paid for covering their evac if we leave before them, plan accodingly Commander.",
+                    "words" : "We won't get paid for covering their evac if we leave before them, plan accodingly Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2842,7 +2930,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, we're clear of the AO, thanks Commander.",
+                    "words" : "PLACEHOLDER1, we're clear of the AO, thanks Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2867,7 +2955,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "PLACEHOLDER, we're clear of the AO, thanks Commander.",
+                    "words" : "PLACEHOLDER2, we're clear of the AO, thanks Commander.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3707,7 +3795,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Thanks for the advise but, I don't need a second mother telling me what I can and cannot do.",
+                    "words" : "Thanks for the advice but, I don't need a second mother telling me what I can and cannot do.",
                     "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",

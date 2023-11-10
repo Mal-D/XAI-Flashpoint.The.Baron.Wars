@@ -7,13 +7,13 @@
 		"Callsign": "Booma",
 		"Gender": "Male",
 		"factionID": "wagyuBarons",
-		"Age": 36,
-		"Details": "Only pilots his family 'Mech very occasionally.",
+		"Age": 35,
+		"Details": "Pilots his family <i>Blackjack</i>. Jebadiah is a decorated member of the First Canopian Cuirassiers that replused the Taurians in 3012. Decorated by Magestrix with the 'Fist of Raventhir' for single handedly preventing three Tarians'Mechs from entering the Capital.",
 		"Icon": "guiTxrPort_theBaron_pilot"
 	},
 	"BaseGunnery": "5",
 	"BonusGunnery": 0,
-	"BasePiloting": "4",
+	"BasePiloting": "5",
 	"BonusPiloting": 0,
 	"BaseGuts": "8",
 	"BonusGuts": 0,
@@ -30,8 +30,10 @@
 	"abilityDefNames": [
 		"TraitDefRefireReduceTwo",
 		"TraitDefRefireReduceOne",
-		"TraitDefCalledShotImprove",
+		"TraitDefBallisticLvl01",
+		"TraitDefEnergyLvl01",
 		"TraitDefSprintIncrease05",
+		"TraitDefEvasiveChargeAddOne",
 		"TraitDefOverheatAddFifteen",
 		"TraitDefOverheatAddTen",
 		"TraitDefOverheatAddFive",
@@ -41,9 +43,9 @@
 		"TraitDefGladiatorTrngLvl01",
 		"TraitDefIndirectReduceOne",
 		"TraitDefMinRangeReduce30",
+		"AbilityDefG5",
 		"AbilityDefGu5",
-		"AbilityDefGu8",
-		"AbilityDefG5"
+		"AbilityDefGu8"
 	],
 	"AIPersonality": "Undefined",
 	"PilotTags": {

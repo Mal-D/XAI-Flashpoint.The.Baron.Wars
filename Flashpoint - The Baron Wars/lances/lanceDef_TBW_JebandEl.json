@@ -11,7 +11,9 @@
     "Difficulty" : 1,
     "LanceTags" : {
         "items" : [
-            "lance_type_mech"
+            "lance_type_mech",
+			"lance_type_custom",
+			"lance_type_notfull"
         ],
         "tagSetSourceFile" : "Tags/LanceTags"
     },
@@ -23,9 +25,7 @@
             "pilotId" : "pilot_BW_eleonoreR",
             "pilotSimGameID" : "pilot_BW_eleonoreR",
             "unitTagSet" : {
-                "items" : [
-                    "unit_mech"
-                ],
+                "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"
             },
             "excludedUnitTagSet" : {
@@ -49,9 +49,7 @@
             "pilotId" : "pilot_BW_theBaron",
             "pilotSimGameID" : "pilot_BW_theBaron",
             "unitTagSet" : {
-                "items" : [
-                    "unit_mech"
-                ],
+                "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"
             },
             "excludedUnitTagSet" : {

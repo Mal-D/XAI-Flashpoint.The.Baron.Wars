@@ -5,19 +5,19 @@
         "FirstName": "Defender",
         "LastName": "NONE",
         "Callsign": "Defender",
-        "Gender": "",
-        "factionID": "",
+        "Gender": "Male",
+        "factionID": "irukjandiCompany",
         "Age": 30,
         "Details": "NONE",
-        "Icon": "Wildfire"
+        "Icon": "Kraken"
     },
-    "BaseGunnery": "3",
+	"BaseGunnery": "4",
     "BonusGunnery": 0,
     "BasePiloting": "3",
     "BonusPiloting": 0,
-    "BaseGuts": "5",
+	"BaseGuts": "6",
     "BonusGuts": 0,
-    "BaseTactics": "2",
+	"BaseTactics": "3",
     "BonusTactics": 0,
     "ExperienceUnspent": 0,
     "ExperienceSpent": 0,
@@ -26,10 +26,15 @@
     "LethalInjury": false,
     "Incapacitated": false,
     "Morale": 0,
-    "Voice": "",
+    "Voice": "m_pro03_brit",
     "abilityDefNames": [
-		"TraitDefHealthAddOne",
 		"TraitDefRefireReduceOne",
+		"TraitDefEnergyLvl01",
+		"TraitDefOverheatAddTen",
+		"TraitDefOverheatAddFive",
+		"TraitDefHealthAddOne",
+		"TraitDefUnsteadySet60",
+		"TraitDefIndirectReduceOne",
 		"AbilityDefGu5"
     ],
     "AIPersonality": "Undefined",
@@ -37,7 +42,7 @@
         "items": [
             "pilot_npc_defender",
             "pilot_npc_dynamic",
-            "pilot_npc_d4"
+            "pilot_npc_d5"
         ],
         "tagSetSourceFile": ""
     },

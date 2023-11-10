@@ -11,7 +11,10 @@
     "Difficulty" : 1,
     "LanceTags" : {
         "items" : [
-            "lance_type_mech"
+        "lance_type_mech",
+		"lance_type_custom",
+		"lance_type_solo",
+		"lance_type_notfull"
         ],
         "tagSetSourceFile" : "Tags/LanceTags"
     },
@@ -19,13 +22,11 @@
         {
             "unitType" : "Mech",
             "unitId" : "mechdef_crab_CRB-27b",
-            "unitSimGameID" : null,
+            "unitSimGameID" : "mechdef_crab_CRB-27b",
             "pilotId" : "pilot_BW_theFixer",
-            "pilotSimGameID" : null,
+            "pilotSimGameID" : "pilot_BW_theFixer",
             "unitTagSet" : {
-                "items" : [
-                    "unit_mech"
-                ],
+                "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"
             },
             "excludedUnitTagSet" : {

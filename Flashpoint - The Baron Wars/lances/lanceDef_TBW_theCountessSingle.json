@@ -11,7 +11,10 @@
     "Difficulty" : 1,
     "LanceTags" : {
         "items" : [
-            "lance_type_mech"
+            "lance_type_mech",
+			"lance_type_custom",
+			"lance_type_solo",
+			"lance_type_notfull"
         ],
         "tagSetSourceFile" : "Tags/LanceTags"
     },
@@ -19,13 +22,11 @@
         {
             "unitType" : "Mech",
             "unitId" : "mechdef_centurion_CN9-A",
-            "unitSimGameID" : null,
+            "unitSimGameID" : "mechdef_centurion_CN9-A",
             "pilotId" : "pilot_theCountess",
-            "pilotSimGameID" : null,
+            "pilotSimGameID" : "pilot_theCountess",
             "unitTagSet" : {
-                "items" : [
-                    "unit_mech"
-                ],
+                "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"
             },
             "excludedUnitTagSet" : {

@@ -9,15 +9,15 @@
         "factionID": "Davion",
         "Age": 30,
         "Details": "NONE",
-        "Icon": "Wildfire"
+        "Icon": "Showboat"
     },
     "BaseGunnery": "3",
     "BonusGunnery": 0,
     "BasePiloting": "3",
     "BonusPiloting": 0,
-    "BaseGuts": "2",
+	"BaseGuts": "3",
     "BonusGuts": 0,
-    "BaseTactics": "5",
+	"BaseTactics": "6",
     "BonusTactics": 0,
     "ExperienceUnspent": 0,
     "ExperienceSpent": 0,
@@ -28,8 +28,15 @@
     "Morale": 0,
     "Voice": "f_overload01",
     "abilityDefNames": [
+		"TraitDefRefireReduceOne",
+		"TraitDefSprintIncrease05",			
+		"TraitDefHealthAddOne",
+		"TraitDefOverheatAddFive",
+		"TraitDefUnsteadySet50",
+		"TraitDefIndirectReduceTwo",
 		"TraitDefIndirectReduceOne",
 		"TraitDefMinRangeReduce45",
+		"TraitDefMinRangeReduce30",		
 		"AbilityDefT5A"
     ],
     "AIPersonality": "Undefined",
@@ -37,7 +44,7 @@
         "items": [
             "pilot_npc_tactician",
             "pilot_npc_dynamic",
-            "pilot_npc_d4"
+            "pilot_npc_d5"
         ],
         "tagSetSourceFile": ""
     },

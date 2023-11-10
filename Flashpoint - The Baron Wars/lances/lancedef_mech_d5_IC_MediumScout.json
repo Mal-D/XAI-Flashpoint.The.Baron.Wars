@@ -8,11 +8,11 @@
 		"Rarity": 0,
 		"Purchasable": false
 	},
-	"Difficulty": 3,
+	"Difficulty": 5,
 	"LanceTags": {
 		"items": [
 			"lance_bracket_low",
-			"lance_type_light",
+			"lance_type_medium",
 			"lance_type_recon",
 			"lance_type_dynamic",
 			"lance_type_mech",
@@ -26,61 +26,24 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_range_long" , "unit_light", "unit_speed_high" ],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"excludedUnitTagSet": {
-				"items": [ "unit_noncombatant", "unit_speed_low" ],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"pilotTagSet": {
-				"items": [ "pilot_npc_d5" ],
-				"tagSetSourceFile": "Tags/PilotTags"
-			},
-			"excludedPilotTagSet": {
-				"items": null,
-				"tagSetSourceFile": "Tags/PilotTags"
-			}
-		},
-		{
-			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
-			"unitTagSet": {
-				"items": [ "unit_mech", "unit_light", "unit_speed_high"  ],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"excludedUnitTagSet": {
-				"items": [ "unit_noncombatant", "unit_speed_low" ],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"pilotTagSet": {
-				"items": [ "pilot_npc_recon", "pilot_npc_d5" ],
-				"tagSetSourceFile": "Tags/PilotTags"
-			},
-			"excludedPilotTagSet": {
-				"items": null,
-				"tagSetSourceFile": "Tags/PilotTags"
-			}
-		},
-		{
-			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
-			"unitTagSet": {
-				"items": [ "unit_medium" , "unit_speed_high" ],
+				"items": [
+					"unit_mech",
+					"unit_medium",
+					"unit_lance_vanguard"
+				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
 				"items": [
-
 					"unit_noncombatant",
 					"unit_speed_low"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d3" ],
+				"items": [
+					"pilot_npc_d5"
+				],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -93,15 +56,83 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [ "unit_lance_support" , "unit_medium", "unit_speed_high" ],
+				"items": [
+					"unit_mech",
+					"unit_medium",
+					"unit_lance_vanguard"
+				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [ "unit_vehicle", "unit_lance_tank", "unit_noncombatant" ,"unit_speed_low"],
+				"items": [
+					"unit_noncombatant",
+					"unit_speed_low"
+				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d5", "pilot_npc_striker" ],
+				"items": [
+					"pilot_npc_d5"
+				],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [
+					"unit_mech",
+					"unit_medium"
+				],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [
+					"unit_noncombatant",
+					"unit_speed_low"
+				],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [
+					"pilot_npc_d5"
+				],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [
+					"unit_mech"
+				],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [
+					"unit_assault",
+					"unit_heavy",
+					"unit_noncombatant",
+					"unit_speed_low"
+				],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [
+					"pilot_npc_d5"
+				],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
