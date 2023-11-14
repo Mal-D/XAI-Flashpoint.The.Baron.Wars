@@ -25,7 +25,7 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_range_long", "unit_medium", ],
+				"items": [ "unit_mech", "unit_range_long", "unit_medium"],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -67,7 +67,7 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_light" ],
+				"items": [ "unit_light" , "unit_mech"],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
@@ -88,7 +88,7 @@
 			"unitId": "Tagged",
 			"pilotId": "pilot_Ico5_gunner",
 			"unitTagSet": {
-				"items": [ "unit_lance_support" , "unit_light"],
+				"items": [ "unit_mech", "unit_lance_support" , "unit_light"],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {

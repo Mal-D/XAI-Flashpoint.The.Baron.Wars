@@ -40,7 +40,7 @@
 	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
     "DefaultRepresentativeCastDefId" : "castDef_theBaron",
     "DataManager" : null,
-    "factionID" : "faction_girin",
+    "factionID" : "girin",
   	"icon" : "",
     "heraldryDefId" : "",
     "storePanelImage" : null,

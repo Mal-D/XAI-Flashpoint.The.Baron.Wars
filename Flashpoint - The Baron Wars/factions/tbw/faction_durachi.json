@@ -36,8 +36,8 @@
 	"BadFaithFailureStatements" : [ 
 		"Are you sure you are working for us, or just watching things burn?"
     ],
-	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
-    "DefaultRepresentativeCastDefId" : "castDef_theBaron",
+	"DefaultCombatLeaderCastDefId" : "",
+    "DefaultRepresentativeCastDefId" : "",
     "DataManager" : null,
     "factionID" : "durachi",
   	"icon" : "",

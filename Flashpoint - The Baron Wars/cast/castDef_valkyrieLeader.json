@@ -1,0 +1,23 @@
+{
+   "id" : "castDef_valkyrieLeader",
+   "internalName" : "ValkyrieLeader",
+   "firstName" : "Helene",
+   "lastName" : "",
+   "callsign" : "Freyja",
+   "rank" : "S",
+   "gender" : "Female",
+   "faction" : "",
+   "sgCharType" : "UNSET",
+   "showRank" : true,
+   "showFirstName" : true,
+   "showCallsign" : true,
+   "showLastName" : false,
+   "localizeName" : false,
+   "defaultEmotePortrait" : {
+      "emote" : "Default",
+      "portraitAssetPath" : "../../mods/XAI Flashpoints/Flashpoint - The Baron Wars/sprites/Portraits/guiTxrPort_Freyja.png"
+   },
+   "emotePotraitList" : [
+      
+   ]
+}

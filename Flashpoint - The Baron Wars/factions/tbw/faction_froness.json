@@ -38,8 +38,8 @@
 	"BadFaithFailureStatements" : [ 
 		"Are you sure you are working for us, or just watching things burn?"
     ],
-	"DefaultCombatLeaderCastDefId" : "castDef_theBaron",
-    "DefaultRepresentativeCastDefId" : "castDef_theBaron",
+	"DefaultCombatLeaderCastDefId" : "castDef_theCountess",
+    "DefaultRepresentativeCastDefId" : "castDef_theCountess",
     "DataManager" : null,
     "factionID" : "froness",
   	"icon" : "",
