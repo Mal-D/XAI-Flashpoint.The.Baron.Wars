@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_babysittingSupplies",
-    "contractName" : "Baby-sitting Supplies..",
+    "contractName" : "Babysitting Supplies..V2",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 1,
@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "Looks the {TEAM_TAR.FactionDef.Name} is taking matters into their own hands. We have reports that one of The Barons' shipments under {TEAM_EMP.FactionDef.Name} protection is being hijacked by supposed {TEAM_TAR.FactionDef.Demonym} forces. This will put future Beef export operations in jeopardy. We need you to protect the convoy and escort it to the {TEAM_EMP.FactionDef.Demonym} dropship, which will carry the shipment to our Spaceport for transport off world.",
     "longDescription" : "As soon as {TEAM_TAR.FactionDef.Demonym} leadership realizes what we're doing, Commander, they're going to send others to destroy the convoy, so expect {TEAM_TAR.FactionDef.Demonym} reinforcements to target the vehicles.",
-    "salvagePotential" : 12,
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [{
         "Scope" : "Company",
@@ -83,10 +83,10 @@
         -1
     ],
     "mechMaxTonnages" : [
-        60,
-        60,
-        60,
-        60
+        55,
+        55,
+        55,
+        55
     ],
     "mapMood" : null,
     "startingFogOfWarVisibility" : "Surveyed",
@@ -786,7 +786,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Just shut it and <i>DRIVE!</i>. Commander {Commander.LastName} target the incomming units and keep them away from the Convoy.",
+                    "words" : "Just shut it and <i>DRIVE!</i>. Commander {Commander.LastName} target the incoming units and keep them away from the Convoy.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -969,7 +969,7 @@
     ],
     "overwriteMissionCompleteWhenAutoComplete" : true,
     "overrideAutoCompleteDialogueId" : "4011a4c3-cba2-4d22-b2b3-3b19a3297ab9",
-    "disableNegotations" : true,
+    "disableNegotations" : false,
     "disableLanceConfiguration" : false,
     "disableCancelButton" : false,
     "disableAfterAction" : false,
@@ -978,8 +978,8 @@
     "useTravelCostPenalty" : false,
     "usesExpiration" : false,
     "expirationTimeOverride" : -1,
-    "negotiatedSalary" : 0,
-    "negotiatedSalvage" : 0,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -1341,12 +1341,9 @@
                     "EncounterObjectGuid" : "9df10d9c-bf14-43ad-aa64-9202f93d3d49"
                 },
                 "name" : "Lance_Enemy_BlockingForce",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_Irukjandi_MedCavalry",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_recon",
-                        "lance_type_notallvehicles"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1500,7 +1497,7 @@
                     "EncounterObjectGuid" : "b6f407f2-2cfc-4c3a-8545-2dbf2c50f61a"
                 },
                 "name" : "Lance_Enemy_Reinforcement",
-                "lanceDefId" : "lancedef_Irukjandi_Scout",
+                "lanceDefId" : "lancedef_Irukjandi_MedHeavyBattle",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1510,11 +1507,11 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : ["spawn_poorly_maintained_50"],
+                    "items" : ["spawn_poorly_maintained_25"],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : -1,
-                "selectedLanceDefId" : "lancedef_Irukjandi_Scout",
+                "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
@@ -1534,7 +1531,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1567,7 +1564,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1600,7 +1597,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1633,7 +1630,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1656,12 +1653,9 @@
                     "EncounterObjectGuid" : "8a365fc5-d25b-4d64-afbb-4ebf423721a9"
                 },
                 "name" : "Lance_Enemy_Hunter",
-                "lanceDefId" : "lancedef_Irukjandi_Scout",
+                "lanceDefId" : "lancedef_Irukjandi_MedCavalry",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_fire",
-                        "lance_type_notallvehicles"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1673,7 +1667,7 @@
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : "lancedef_Irukjandi_Scout",
+                "selectedLanceDefId" : "",
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {

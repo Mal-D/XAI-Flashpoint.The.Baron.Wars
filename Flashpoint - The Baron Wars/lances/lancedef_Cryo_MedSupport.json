@@ -1,19 +1,21 @@
 {
 	"Description": {
-		"Id": "lancedef_Irukjandi_Scout",
-		"Name": "Dynamic Irukjandi Scout",
-		"Details": "Irukjandi Scout",
-		"Icon": "uixTxrIcon_Irukjandi",
+		"Id": "lancedef_Cryo_MedSupport",
+		"Name": "Dynamic Dif 5 Light Support",
+		"Details": "",
+		"Icon": "",
 		"Cost": 0,
 		"Rarity": 0,
 		"Purchasable": false
 	},
-	"Difficulty": 4,
+	"Difficulty": 5,
 	"LanceTags": {
 		"items": [
+			"lance_bracket_med",
 			"lance_type_medium",
+			"lance_type_support",
 			"lance_type_dynamic",
-			"lance_type_mech",
+			"lance_type_mixed",
 			"lance_type_notallvehicles"
 		],
 		"tagSetSourceFile": "Tags/LanceTags"
@@ -22,86 +24,106 @@
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_gunner",
+			"unitSimGameID": null,
+			"pilotId": "Tagged",
+			"pilotSimGameID": null,
 			"unitTagSet": {
-				"items": [ "unit_mech", "unit_range_long", "unit_medium"],
+				"items": [ "unit_mech" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [],
+				"items": [
+					"unit_noncombatant",
+					"unit_lance_vanguard",
+					"unit_heavy",
+					"unit_assault"
+				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			},
+			"locked": false
+		},
+		{
+			"unitType" : "Vehicle",
+			"unitId": "Tagged",
+			"unitSimGameID": null,
+			"pilotId": "Tagged",
+			"pilotSimGameID": null,
+			"unitTagSet": {
+				"items": [ "unit_vehicle", "unit_medium", "unit_indirectFire" ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [
+					"unit_noncombatant",
+					"unit_lance_vanguard"
+				],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_d5" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"locked": false
 		},
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_tactician",
+			"unitSimGameID": null,
+			"pilotId": "Tagged",
+			"pilotSimGameID": null,
 			"unitTagSet": {
-				"items": [ "unit_medium", "unit_speed_high" ],
+				"items": [ "unit_mech", "unit_lance_support" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [],
+				"items": [ "unit_noncombatant", "unit_heavy", "unit_assault" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			},
+			"locked": false
 		},
 		{
-			"unitType": "Mech",
+			"unitType" : "Vehicle",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_gunner",
+			"unitSimGameID": null,
+			"pilotId": "Tagged",
+			"pilotSimGameID": null,
 			"unitTagSet": {
-				"items": [ "unit_light" ],
+				"items": [ "unit_vehicle", "unit_medium", "unit_lance_support", "unit_indirectFire" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [],
+				"items": [ "unit_noncombatant" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
 				"items": null,
 				"tagSetSourceFile": "Tags/PilotTags"
-			}
-		},
-		{
-			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_gunner",
-			"unitTagSet": {
-				"items": [ "unit_lance_support" , "unit_light"],
-				"tagSetSourceFile": "Tags/UnitTags"
 			},
-			"excludedUnitTagSet": {
-				"items": [],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"pilotTagSet": {
-				"items": [],
-				"tagSetSourceFile": "Tags/PilotTags"
-			},
-			"excludedPilotTagSet": {
-				"items": null,
-				"tagSetSourceFile": "Tags/PilotTags"
-			}
+			"locked": false
 		}
 	]
 }

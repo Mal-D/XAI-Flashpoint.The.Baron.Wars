@@ -11,12 +11,9 @@
 	"Difficulty": 5,
 	"LanceTags": {
 		"items": [
-			"lance_bracket_low",
-			"lance_type_medium",
-			"lance_type_recon",
 			"lance_type_dynamic",
-			"lance_type_mech",
-			"lance_type_notallvehicles"
+			"lance_type_medium",
+			"lance_type_mech"
 		],
 		"tagSetSourceFile": "Tags/LanceTags"
 	},
@@ -51,8 +48,8 @@
 			"unitTagSet": {
 				"items": [
 					"unit_mech",
-					"unit_light",
-					"unit_speed_high"
+					"unit_jumpOK",
+					"unit_light"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
@@ -110,7 +107,7 @@
 				"items": [
 					"unit_mech",
 					"unit_medium",
-					"unit_speed_high"
+					"unit_jumpOK"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},

@@ -1,5 +1,5 @@
 {
-  "ID": "c_fp_TBW_babysittingSupplies",
+  "ID": "c_fp_TBW_protectCyroCoolers",
   "RandomSpawns": {
     "Enable": true
   },
@@ -10,7 +10,7 @@
     "Enable": true,
     "EnemyLanceCount": 1,
     "EnemyLanceObjectiveNames": ["Neutralize AgCo's Contractor Lance"],
-    "EnemyLances": ["lancedef_mech_d5_IC_MediumScout"],
+    "EnemyLances": ["lancedef_Cryo_AL_MedScout"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron",
     "Dialogue": "Commander {Commander.LastName}, I don't know why Leanora is so adament in destroying me. She's a bit of hothead but, she's not stupid. I just hope she isn't here.",
@@ -23,7 +23,7 @@
     "AllyLanceSize": 4
   },
   "ExtendedBoundaries": {
-    "Enable": true,
+    "Enable": false,
     "IncreaseBoundarySizeByPercentage": 0.6
   },
   "DynamicWithdraw": {

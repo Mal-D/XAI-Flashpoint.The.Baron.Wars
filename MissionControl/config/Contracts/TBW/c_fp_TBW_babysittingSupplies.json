@@ -10,7 +10,7 @@
     "Enable": true,
     "EnemyLanceCount": 1,
     "EnemyLanceObjectiveNames": ["Neutralize AgCo's Contractor Lance"],
-    "EnemyLances": ["lancedef_eleonoreT_AL_LightScout"],
+    "EnemyLances": ["lancedef_Irukjandi_MedSupport"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
     "Dialogue": "Commander {Commander.LastName}, I don't know why Leanora is so adament in destroying me. She's a bit of hothead but, she's not stupid. I just hope she isn't here.",
@@ -23,7 +23,7 @@
     "AllyLanceSize": 4
   },
   "ExtendedBoundaries": {
-    "Enable": true,
+    "Enable": false,
     "IncreaseBoundarySizeByPercentage": 0.5
   },
   "DynamicWithdraw": {
