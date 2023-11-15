@@ -11,6 +11,7 @@
 	"Difficulty": 3,
 	"LanceTags": {
 		"items": [
+			"lance_type_custom",
 			"lance_bracket_low",
 			"lance_type_light",
 			"lance_type_recon",

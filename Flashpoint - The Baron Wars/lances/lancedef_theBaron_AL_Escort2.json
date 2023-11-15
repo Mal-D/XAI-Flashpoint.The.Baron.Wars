@@ -11,6 +11,7 @@
 	"Difficulty": 5,
 	"LanceTags": {
 		"items": [
+			"lance_type_custom",
 			"lance_type_dynamic",
 			"lance_type_medium",
 			"lance_type_mech"
@@ -61,7 +62,7 @@
 			},
 			"pilotTagSet": {
 				"items": [
-					"pilot_d5_tactician"
+					"pilot_npc_dynamic"
 				],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
@@ -78,6 +79,7 @@
 				"items": [
 					"unit_mech",
 					"unit_medium",
+					"unit_jumpOK",
 					"unit_support"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
@@ -90,7 +92,7 @@
 			},
 			"pilotTagSet": {
 				"items": [
-					"pilot_d5_gunner"
+					"pilot_npc_dynamic"
 				],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
@@ -119,7 +121,7 @@
 			},
 			"pilotTagSet": {
 				"items": [
-					"pilot_d5_pilot"
+					"pilot_npc_dynamic"
 				],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},

@@ -8,9 +8,12 @@
 		"Rarity": 0,
 		"Purchasable": false
 	},
-	"Difficulty": 3,
+	"Difficulty": 5,
 	"LanceTags": {
-		"items": [],
+		"items": [
+			"lance_type_custom",
+			"lance_type_vehicle"
+			],
 		"tagSetSourceFile": "Tags/LanceTags"
 	},
 	"LanceUnits": [

@@ -8,11 +8,11 @@
         "UIName" : "null",
         "Id" : "heraldrydef_wagyuBarons",
         "Name" : "Wagyu Barons",
-        "Details" : "The Selfprofessed majority landholder on New Abilene.",    
+        "Details" : "The Self-professed majority landholder on New Abilene.",    
         "Icon" : ""
     },
     "textureLogoID" : "uixTxrIcon_wagyuBarons",
-    "primaryMechColorID" : "Metallic_Chrome",
-    "secondaryMechColorID" : "Metallic_Chrome",
+    "primaryMechColorID" : "Red_02",
+    "secondaryMechColorID" : "Yellow_02",
     "tertiaryMechColorID" : "Metallic_Chrome"
 }

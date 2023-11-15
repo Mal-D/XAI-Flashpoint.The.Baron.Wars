@@ -86,7 +86,7 @@
 	"encounterPlayStyle": "SinglePlayer",
 	"maxNumberOfPlayerUnits": 4,
 	"lanceMinTonnage": -1,
-	"lanceMaxTonnage": 180,
+	"lanceMaxTonnage": 220,
 	"mechMinTonnages": [
 		-1,
 		-1,
@@ -300,7 +300,7 @@
 			"objective": {
 				"EncounterObjectGuid": "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
 			},
-			"title": "Destroy Additional Enemy Forces",
+			"title": "Destroy Additonal Enemy Forces",
 			"description": "",
 			"isPrimary": true,
 			"OnSuccessResults": [
@@ -1867,7 +1867,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "I think you all need some counseling. Farah... I think we need to go over the Battle Comm transcripts, there's something fishy about this whole mess.",
+					"words": "I think you all need some counseling. Farah... I think we need to go over the Battle Comm transcripts, I think we need to go over the Battle Comm transcripts, there's something rotten about this whole mess.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1883,7 +1883,39 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "Yes Boss! I'll have them ready for you ASAP.",
+                    "words" : "Yeah, like stinking like rotten Wagyu. Reminds me of the time that shi.....",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_YangDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+				{
+                    "words" : "Yes Yang...I think we get the picture.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_Commander",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+				{
+					"words": "Yes Boss! I'll have the decoded transcripts ready for you ASAP.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1940,7 +1972,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasTag.TBW_LeanoraDisabled}}Trigger...I know she is a pain but please Commander, get her out",
+					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasTag.TBW_LeanoraDisabled}}I know she is a pain but please Commander, get her out",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1956,7 +1988,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled}}At least Mother and Daughter are safe. But the rest of your performance was less than sterling.",
+					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled}}At least Mother and Daughter are safe. But the rest of your performance was hardly stellar.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2055,12 +2087,8 @@
 			"dialogueContent": [
 				{
 					"words": "{MC.Modification.AddTo.EncounterTags.TBW_LeanoraDisabled}Commander, We have lost 'Mech contact with the Countess.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+
 					"selectedCastDefId": "castDef_MagRep",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2071,12 +2099,8 @@
 				},
 				{
 					"words": "I'm glad you're not taking the loss too hard, But, let's try to keep the death to minimum.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+
 					"selectedCastDefId": "castDef_DariusDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2087,12 +2111,8 @@
 				},
 				{
 					"words": "She a tough old bird; we are still getting her CARVAS signal. The <i>MIM</i> would appreciate a few 'Contractor' <i>survivors</i> to umm... have a chat.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+
 					"selectedCastDefId": "castDef_MagRep",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2103,12 +2123,8 @@
 				},
 				{
 					"words": "How many of those things are out there?",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+
 					"selectedCastDefId": "castDef_DariusDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2119,12 +2135,8 @@
 				},
 				{
 					"words": "Enough...!",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+
 					"selectedCastDefId": "castDef_MagRep",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2144,12 +2156,7 @@
 			"dialogueContent": [
 				{
 					"words": "{MC.Modification.AddTo.EncounterTags.TBW_Badger_down}<i>Eleonore...</i> I'm coming...",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_theBaron",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2160,12 +2167,7 @@
 				},
 				{
 					"words": "Don't do anything rash Baron. The LZ is still hot and you won't help if we have to send a bloody rescue out there for you as well. Just let the professionals handle this.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_Commander",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2176,12 +2178,7 @@
 				},
 				{
 					"words": "You were supposed to keep her safe.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_theBaron",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2191,13 +2188,8 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "It was her choice to be out there not mine, <i>bloody amateurs</i>.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "It was her choice to be out there not mine. <i>bloody amateurs</i>.",
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_Commander",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2215,20 +2207,48 @@
 			"name": "Dialogue_Interrupt_EmployerLanceDestroyed_PrimaryAndSecondary",
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [{
-				"words": "PlaceHoldr 10 - Commander...? EmployerLanceDestroyed_PrimaryAndSecondary confusing.",
-				"wordsColor": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"selectedCastDefId": "castDef_theDaughter",
-				"emote": "Default",
-				"audioName": "NONE",
-				"cameraFocusGuid": "",
-				"cameraDistance": "Far",
-				"cameraHeight": "Default",
-				"revealRadius": -1
+				"words" : "{{MC.If.Encounter.HasNoTag.TBW_Badger_down} AND {MC.If.Encounter.HasNoTag.TBW_Badger_safe})<i>MOTHER NO...</i>. Commander...?",
+				"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+				"selectedCastDefId" : "castDef_theDaughter",
+				"emote" : "Default",
+				"audioName" : "NONE",
+				"cameraFocusGuid" : "",
+				"cameraDistance" : "Far",
+				"cameraHeight" : "Default",
+				"revealRadius" : -1
+			},
+			{
+				"words" : "{MC.Modification.AddTo.CompanyTags.TBW_LeanoraDisabled}Tombstone, this is on you. She might have been a bit protective of an over protective mother but, she didn't need to be here.",
+				"wordsColor" : { "r" : 1,"g" : 1,"b" : 1,"a" : 1},
+				"selectedCastDefId" : "castDef_Commander",
+				"emote" : "Default",
+				"audioName" : "NONE",
+				"cameraFocusGuid" : "",
+				"cameraDistance" : "Far",
+				"cameraHeight" : "Default",
+				"revealRadius" : -1
+			},
+			{
+				"words" : "You are being outragous. This is not my doing, these are <i>NOT</i> my forces. I was contacted by Eleonore that her Mother was going to do something silly. I didn't expect her to actually wade into combat.",
+				"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+				"selectedCastDefId" : "castDef_theBaron",
+				"emote" : "Default",
+				"audioName" : "NONE",
+				"cameraFocusGuid" : "",
+				"cameraDistance" : "Far",
+				"cameraHeight" : "Default",
+				"revealRadius" : -1
+			},
+			{
+				"words" : "We are still receiving her medical implant information and forwarding her postion to Local militia forces.",
+				"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+				"selectedCastDefId" : "castDef_FarahDefault",
+				"emote" : "Default",
+				"audioName" : "NONE",
+				"cameraFocusGuid" : "",
+				"cameraDistance" : "Far",
+				"cameraHeight" : "Default",
+				"revealRadius" : -1
 			}]
 		},
 		{
@@ -2239,13 +2259,8 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "{MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled}<i>..my..our... last hope.</i> I will have you ALL held accountable for this absolute <i>DISASTER!</i>",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "{{MC.If.Encounter.HasNoTag.TBW_LeanoraDisabled} AND {MC.If.Encounter.HasNoTag.TBW_LeanoraSurvives}}<i>..my..our... last hope.</i> I will have you ALL held accountable for this absolute <i>DISASTER!</i>",
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2256,12 +2271,7 @@
 				},
 				{
 					"words": "{MC.Modification.AddTo.EncounterTags.TBW_Badger_down}<i>Eleonore...</i> Please Commander... is there any hope she's...alive?",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_theBaron",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2272,12 +2282,7 @@
 				},
 				{
 					"words": "Rest assured Baron Tombstone, her CARVAS vitals are strong and I have relayed her position to the local militia.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2288,12 +2293,7 @@
 				},
 				{
 					"words": "Thank goodness for that. This is all a senseless waste of people and material.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_theBaron",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2394,7 +2394,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "{MC.If.Company.HasAnyTags.TBW_Badger_down}GameLogic_PlayerEscapeOpen - find a new location for this --Threat eliminated. Let's go find 'Badger'.",
+					"words": "{MC.If.Company.HasAnyTags.TBW_Badger_down,TBW_LeanoraDisabled}Threat eliminated. Farah, locate any survivors.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2410,7 +2410,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{MC.If.Company.HasAnyTags.TBW_Badger_down}////ssssttsss... cough...groan...Sooner than later would appreciated Darius. It's a bit tight in here.",
+					"words": "{MC.If.Company.HasTags.TBW_Badger_down}////ssssttsss... cough...groan...Sooner than later would appreciated Darius. It's a bit tight in here.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2426,7 +2426,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{MC.If.Company.HasAnyTags.TBW_Badger_down}Hang on sweetheart they are on their way.",
+					"words": "{MC.If.Company.HasTags.TBW_Badger_down}Hang on sweetheart they are on their way.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2474,7 +2474,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{MC.If.Company.HasTag.TBW_Badger_down}Hang on sweetheart, that's a big decision, I'll follow you whatever but... your Mother might have other ideas.",
+					"words": "{MC.If.Company.HasTag.TBW_Badger_safe}Hang on sweetheart, that's a big decision, I'll follow you across the galaxy but, your Mother might have other ideas.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2490,7 +2490,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{MC.If.Company.HasTag.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here...but you're right.",
+					"words": "{MC.If.Company.HasTag.TBW_Badger_safe}Awww! That's sweet Jeb. Mother can handle things here... but you're right.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2798,7 +2798,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "PLACEHOLDER All our objectives are complete, cover our withdraw Commander.",
+					"words": "All our objectives are complete, cover our withdraw Commander.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2814,7 +2814,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "PLACEHOLDER We won't get paid for covering their evac if we leave before them, plan accordingly Commander.",
+					"words": "We won't get paid for covering their evac if we leave before them, plan accordingly Commander.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -2839,13 +2839,8 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "{MC.If.Company.HasTags.TBW_Badger_safe}Countess's Dust Off successful Commander.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "Dust Off successful Commander.",
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_Sumire",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2855,14 +2850,9 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{MC.If.Company.HasTags.TBW_Badger_safe}Safe. You'd have better keep my daughter safe - she is more important than you realize.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
-					"selectedCastDefId": "castDef_Sumire",
+					"words": "{{MC.If.Company.HasNoTag.TBW_Badger_safe} AND {MC.If.Company.HasNoTag.TBW_Badger_down}}You'd have better keep my daughter safe - she is more important than you realize.",
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
+					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
 					"cameraFocusGuid": "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -2872,12 +2862,7 @@
 				},
 				{
 					"words": "{MC.If.Company.HasTags.TBW_Badger_down}Countess is safe. Any location on 'Badger's bio-signal.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_SumireDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2888,13 +2873,8 @@
 				},
 				{
 					"words": "{MC.If.Company.HasTags.TBW_Badger_down}My Daughter! Where's my daughter? If she is hurt...!",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
-					"selectedCastDefId": "castDef_TeamLeader_Employer",
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
+					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
 					"cameraFocusGuid": "",
@@ -2903,13 +2883,8 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{MC.If.Company.HasTags.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's CarVas transponder signal - she's alive.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "{MC.If.Company.HasTags.TBW_Badger_down}Calm down Leanora. I gave them Eleonore's <i>CarVas</i> transponder signal - she's alive.",
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_theBaron",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2920,12 +2895,7 @@
 				},
 				{
 					"words": "{MC.If.Company.HasTags.TBW_Badger_down}Calm down... <i>CALM DOWN</i>... I'll bloody calm down when my Daughter is safe.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_TeamLeader_Employer",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -2944,17 +2914,28 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "PLACEHOLDER Thanks for the assist, we're clear. 0ecacdaa8945",
+					"words": "Dusting off Commander. <i>Badger</i> is safe.",
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
+					"selectedCastDefId": "castDef_SumireDefault",
+					"emote": "Default",
+					"audioName": "NONE",
+					"cameraFocusGuid": "a251ed88-0ea5-4d3a-a70c-f05604c81352",
+					"cameraDistance": "Far",
+					"cameraHeight": "Default",
+					"revealRadius": -1
+				},
+				{
+					"words": "Let's get out of here. I need a bath and beer.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
 						"b": 1,
 						"a": 1
 					},
-					"selectedCastDefId": "castDef_TeamLeader_Employer",
+					"selectedCastDefId": "castDef_theDaughter",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "a251ed88-0ea5-4d3a-a70c-f05604c81352",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -3198,7 +3179,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "PLACEhHOLDER, holy cow what a suprise its a {TEAM_TAR_ALLY.FactionDef.Demonym} lance! A suprise indeed. This is the Primary Objective version.",
+					"words": "PLACEhHOLDER_1, holy cow what a suprise its a {TEAM_TAR_ALLY.FactionDef.Demonym} lance! A suprise indeed. This is the Primary Objective version.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3214,7 +3195,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "PLAChEHOLDER Our Employer has kindly added taking this group to contract. If we want to get paid we need to take them out.",
+					"words": "PLAChEHOLDER_1 Our Employer has kindly added taking this group to contract. If we want to get paid we need to take them out.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3239,7 +3220,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "Well, this has certianly taken on a different aspect. Commander, I would recommend you leave the <i>Four Valkyries</i> to delivery devine justic or their own and we concentrate on fixing the Fixer.",
+					"words": "Well, this has certianly taken on a different aspect. Commander, I would recommend you leave the <i>Four Valkyries</i> to delivery devine justic on their own and we concentrate on fixing the Fixer.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3347,7 +3328,7 @@
 					"selectedCastDefId": "castDef_DariusDefault",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "a7944fc0-efe6-44e4-a5fc-b32fb14dbb3b",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -3362,7 +3343,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "PLACEHOLDER More {TEAM_EMP.FactionDef.Demonym} forces on the field. This is the Primary Objective Version.",
+					"words": "PLACEHOLDER_2 More {TEAM_EMP.FactionDef.Demonym} forces on the field. This is the Primary Objective Version.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3378,7 +3359,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "PLACEHOLDER Our Employer has kindly added taking this group to contract. If we want to get paid we need to take them out.",
+					"words": "PLACEHOLDER_2 Our Employer has kindly added taking this group to contract. If we want to get paid we need to take them out.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3403,7 +3384,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "PLACEHOLDER More {TEAM_EMP.FactionDef.Demonym} forces on the field. This is the Secondary Objective Version.",
+					"words": "Shit more of the bastards from {TEAM_TAR.FactionDef.Demonym}. This is the Secondary Objective Version.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3419,7 +3400,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "PLACEHOLDER Our Employer has kindly added taking this group to contract as a bonus. If we want to make some extra C-bills we can take them out if we want.",
+					"words": "PLACEHOLDER_3 Our Employer has kindly added taking this group to contract as a bonus. If we want to make some extra C-bills we can take them out if we want.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3429,7 +3410,7 @@
 					"selectedCastDefId": "castDef_DariusDefault",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "9cd2da77-9a07-4c41-afbe-bbfdfbe0a257",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -4110,7 +4091,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "My sisters will be commanded only by me. Spare no thought for their fate for they are already in Valhalla.",
+					"words": "My sisters will be commanded only by me. We have the Wagyu Baron forces in our sights. Spare no thought for their fate, ponder only your own path to Valhalla.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -4126,7 +4107,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "We thank you for your assisstance.",
+					"words": "Commander {Commander.LastName) they will look after the Wagyu Baron forces and then evac. Get on with hunting down and destroying the Fixer and his thugs and we can all get out of here.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -4142,7 +4123,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "You have already paid the price and your reward is already assured.",
+					"words": "The call comes only once so be ready Commander.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -4158,7 +4139,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "What the hell was that...?",
+					"words": "What the hell was that about...?",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -4174,7 +4155,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "Just a warning;",
+					"words": "A warning and promise.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -4779,8 +4760,8 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "00c4ad37-d0f5-45e4-b54e-ab29d1646935"
 						},
-						"customUnitName": "Hired Gun Leader",
-						"customHeraldryDefId": "heraldrydef_wagyuBarons",
+						"customUnitName": "Duke",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -4812,8 +4793,8 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "fb517114-a960-4d21-ac59-7af694107ab1"
 						},
-						"customUnitName": "Hired Gun One",
-						"customHeraldryDefId": "heraldrydef_wagyuBarons",
+						"customUnitName": "Josey",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -4845,8 +4826,8 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "4c74c107-23a4-4648-b758-11f8a8917d64"
 						},
-						"customUnitName": "Hired Gun Two",
-						"customHeraldryDefId": "heraldrydef_wagyuBarons",
+						"customUnitName": "Doc",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -4880,8 +4861,8 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "666fff26-8734-4d15-858d-12ed74f036d2"
 						},
-						"customUnitName": "Hired Gun Three",
-						"customHeraldryDefId": "heraldrydef_wagyuBarons",
+						"customUnitName": "Django",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5544,18 +5525,13 @@
 					"EncounterObjectGuid": "675af3cb-60f8-4525-a204-c047dfa91801"
 				},
 				"name": "DestroyLanceSpawner_Tarqet_AdditionalForces_EnemyAlly_Primary (Optional)",
-				"lanceDefId": "lancedef_mech_d3_IC_LightScout",
+				"lanceDefId": "lancedef_TBW_theFixerEscort",
 				"lanceTagSet": {
-					"items": [
-						"lance_type_mech"
-					],
+					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
 				},
 				"lanceExcludedTagSet": {
-					"items": [
-						"lance_type_turret",
-						"lance_type_convoy"
-					],
+					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
 				},
 				"spawnEffectTags": {
@@ -5563,7 +5539,7 @@
 					"tagSetSourceFile": "tags/SpawnEffectTags"
 				},
 				"lanceDifficultyAdjustment": 0,
-				"selectedLanceDefId": "lancedef_mech_d3_IC_LightScout",
+				"selectedLanceDefId": "",
 				"selectedLanceDifficulty": 0,
 				"overrideSpawnMethod": "DropPod",
 				"unitSpawnPointOverrideList": [
@@ -5572,7 +5548,7 @@
 							"EncounterObjectGuid": "29139fb8-409a-419e-b74f-14ba90966ed2"
 						},
 						"customUnitName": "Sting 1",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5605,7 +5581,7 @@
 							"EncounterObjectGuid": "dd40a59e-116c-444f-b4b6-81dbbcbe6e9f"
 						},
 						"customUnitName": "Sting 2",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5638,7 +5614,7 @@
 							"EncounterObjectGuid": "f618b4a6-dd79-45c8-aae1-c646e6b6c65a"
 						},
 						"customUnitName": "Sting 3",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5671,7 +5647,7 @@
 							"EncounterObjectGuid": "1af71078-185f-44b2-a01a-4cf524199169"
 						},
 						"customUnitName": "Sting 4",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5706,18 +5682,13 @@
 					"EncounterObjectGuid": "af277092-16fb-4e01-80b8-9be5052c8caf"
 				},
 				"name": "DestroyLanceSpawner_Tarqet_AdditionalForces_EnemyAlly_Secondary (Optional)",
-				"lanceDefId": "lancedef_mech_d3_IC_LightScout",
+				"lanceDefId": "lancedef_mech_d5_general_MedFire",
 				"lanceTagSet": {
-					"items": [
-						"lance_type_mech"
-					],
+					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
 				},
 				"lanceExcludedTagSet": {
-					"items": [
-						"lance_type_turret",
-						"lance_type_convoy"
-					],
+					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
 				},
 				"spawnEffectTags": {
@@ -5734,7 +5705,7 @@
 							"EncounterObjectGuid": "785f8449-8866-4428-b21d-d5bb8948b898"
 						},
 						"customUnitName": "Sting 5",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5767,7 +5738,7 @@
 							"EncounterObjectGuid": "50f7c4f6-f1b1-4812-a429-c9a28ea3e235"
 						},
 						"customUnitName": "Sting 6",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5800,7 +5771,7 @@
 							"EncounterObjectGuid": "19f04425-43d4-4803-be9e-2d1d9bfc180e"
 						},
 						"customUnitName": "Sting 7",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -5833,7 +5804,7 @@
 							"EncounterObjectGuid": "973788e1-b3a8-4e39-8c9c-a93fad9465a6"
 						},
 						"customUnitName": "Sting 8",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
@@ -6369,7 +6340,7 @@
 					"EncounterObjectGuid": "facf893c-7ed1-48ac-8e9d-1fda02a9c059"
 				},
 				"name": "Lance_HostileAll_Secondary",
-				"lanceDefId": "Manual",
+				"lanceDefId": "lancedef_TBW_theFixerEscort",
 				"lanceTagSet": {
 					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
@@ -6391,10 +6362,10 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "d197294c-d865-4ccb-a74f-cd87234ccdb0"
 						},
-						"customUnitName": "Fix 1",
-						"customHeraldryDefId": "heraldrydef_indriConsortium",
+						"customUnitName": "Dargon",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_wasp_WSP-1W",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6407,7 +6378,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_Ico5_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6424,10 +6395,10 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "c726959b-b848-41ff-9cf6-13b23460cbc4"
 						},
-						"customUnitName": "Fix 2",
-						"customHeraldryDefId": "heraldrydef_indriConsortium",
+						"customUnitName": "Zene",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_wasp_WSP-1W",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6440,7 +6411,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_Ico5_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6457,10 +6428,10 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "b12b7fda-63ed-4317-88ac-2c83a28d056e"
 						},
-						"customUnitName": "Fix 3",
-						"customHeraldryDefId": "heraldrydef_indriConsortium",
+						"customUnitName": "Alderok",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_wasp_WSP-1W",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6473,7 +6444,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_Ico5_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6490,10 +6461,10 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "69c427bd-caf3-4ae7-b22b-1ce86b74f946"
 						},
-						"customUnitName": "Fix 4",
-						"customHeraldryDefId": "heraldrydef_irukjandiCompany",
+						"customUnitName": "Hoplite",
+						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_wasp_WSP-1W",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6506,7 +6477,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_Ico5_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6694,7 +6665,7 @@
 					"EncounterObjectGuid": "8fa00d6a-7f24-4efc-9c7f-3c704c77768a"
 				},
 				"name": "Lance_EmployerAlly_Secondary",
-				"lanceDefId": "Manual",
+				"lanceDefId": "lancedef_TBW_theCountessEscort",
 				"lanceTagSet": {
 					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
@@ -6716,9 +6687,9 @@
 							"EncounterObjectGuid": "5804416a-73d0-4ab1-a18b-1b464b4617b8"
 						},
 						"customUnitName" : "Herja",
-						"customHeraldryDefId": "heraldrydef_agrarianCollective",
+						"customHeraldryDefId": "heraldrydef_valkyrieLance",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_valkyrie_VLK-QL",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6731,7 +6702,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d5_pilot",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6749,9 +6720,9 @@
 							"EncounterObjectGuid": "7309f8bb-ea6d-4c84-9bac-cb17441b487f"
 						},
 						"customUnitName" : "Hildr",
-						"customHeraldryDefId": "heraldrydef_agrarianCollective",
+						"customHeraldryDefId": "heraldrydef_valkyrieLance",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_valkyrie_VLK-QL",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6764,7 +6735,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d5_pilot",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6782,9 +6753,9 @@
 							"EncounterObjectGuid": "6cfac32b-a8d0-4864-8572-b5723d0a5d7d"
 						},
 						"customUnitName" : "Hrund",
-						"customHeraldryDefId": "heraldrydef_agrarianCollective",
+						"customHeraldryDefId": "heraldrydef_valkyrieLance",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_valkyrie_VLK-QL",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6797,7 +6768,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d5_pilot",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -6815,9 +6786,9 @@
 							"EncounterObjectGuid": "55787ae1-57b7-401f-88b2-c767e7280f99"
 						},
 						"customUnitName" : "Róta",
-						"customHeraldryDefId": "heraldrydef_agrarianCollective",
+						"customHeraldryDefId": "heraldrydef_valkyrieLance",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_valkyrie_VLK-QL",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6830,7 +6801,7 @@
 							"items": [],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d5_pilot",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
