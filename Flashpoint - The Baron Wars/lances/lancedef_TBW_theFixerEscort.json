@@ -1,0 +1,102 @@
+{
+	"Description": {
+		"Id": "lancedef_TBW_theFixerEscort",
+		"Name": "Countess support lance",
+		"Details": "",
+		"Icon": "uixTxrIcon_wagyuBarons",
+		"Cost": 0,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"Difficulty": 5,
+	"LanceTags": {
+		"items": [ "lance_type_custom", "lance_type_dynamic", "lance_type_light", "lance_type_mech" ],
+		"tagSetSourceFile": "Tags/LanceTags"
+	},
+	"LanceUnits": [
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_wasp_WSP-1W",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_tactician", "pilot_npc_d5" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_wasp_WSP-1W",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_pilot", "pilot_npc_d5" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_jumpOK", "unit_mech", "unit_medium"  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_noncombatant", "unit_lance_tank", "unit_speed_low" ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_gunner", "pilot_npc_d5" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [ "unit_jumpOK", "unit_indirectFire", "unit_mech", "unit_medium"  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [ "unit_noncombatant", "unit_lance_tank", "unit_speed_low" ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_tactician", "pilot_npc_d5" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		}
+	]
+}

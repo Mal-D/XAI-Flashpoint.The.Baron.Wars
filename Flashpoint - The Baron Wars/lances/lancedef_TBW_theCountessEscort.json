@@ -1,0 +1,102 @@
+{
+	"Description": {
+		"Id": "lancedef_TBW_theCountessEscort",
+		"Name": "Countess support lance",
+		"Details": "",
+		"Icon": "uixTxrIcon_wagyuBarons",
+		"Cost": 0,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"Difficulty": 5,
+	"LanceTags": {
+		"items": [ "lance_type_custom", "lance_type_dynamic", "lance_type_light", "lance_type_mech" ],
+		"tagSetSourceFile": "Tags/LanceTags"
+	},
+	"LanceUnits": [
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_valkyrie_VLK-QL",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_d6" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Valkyrie VLK-QA",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_d6" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_valkyrie_VLK-QM",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_d6" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_valkyrie_VLK-QM",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [  ],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [ "pilot_npc_d6" ],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		}
+	]
+}
