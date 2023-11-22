@@ -1,47 +1,43 @@
 {
-    "Description" : {
-        "Id" : "lanceDef_TBW_theFixerSingle",
-        "Name" : "FixerSingle",
-        "Details" : "Single Unit Lance",
-        "Icon" : "",
-        "Cost" : 0,
-        "Rarity" : 0,
-        "Purchasable" : false
-    },
-    "Difficulty" : 1,
-    "LanceTags" : {
-        "items" : [
-        "lance_type_mech",
-		"lance_type_custom",
-		"lance_type_solo",
-		"lance_type_notfull"
-        ],
-        "tagSetSourceFile" : "Tags/LanceTags"
-    },
-    "LanceUnits" : [
-        {
-            "unitType" : "Mech",
-            "unitId" : "mechdef_crab_CRB-27b",
-            "unitSimGameID" : "mechdef_crab_CRB-27b",
-            "pilotId" : "pilot_BW_theFixer",
-            "pilotSimGameID" : "pilot_BW_theFixer",
-            "unitTagSet" : {
-                "items" : [],
-                "tagSetSourceFile" : "Tags/UnitTags"
-            },
-            "excludedUnitTagSet" : {
-                "items" : [],
-                "tagSetSourceFile" : "Tags/UnitTags"
-            },
-            "pilotTagSet" : {
-                "items" : [],
-                "tagSetSourceFile" : "Tags/PilotTags"
-            },
-            "excludedPilotTagSet" : {
-                "items" : null,
-                "tagSetSourceFile" : "Tags/PilotTags"
-            },
-            "locked" : false
-        }
-    ]
+	"Description": {
+		"Id": "lanceDef_TBW_theFixerSingle",
+		"Name": "Fixer Solo Lance",
+		"Details": "Fixers Main lance",
+		"Icon": "",
+		"Cost": 0,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"Difficulty": 1,
+	"LanceTags": {
+		"items": [
+			"lance_type_mech",
+			"lance_type_custom",
+			"lance_type_solo"
+		],
+		"tagSetSourceFile": "Tags/LanceTags"
+	},
+	"LanceUnits": [
+		{
+			"unitType": "Mech",
+			"unitId": "mechdef_warhammer_WHM-7A",
+			"pilotId": "pilot_BW_theFixer",
+			"unitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		}
+	]
 }

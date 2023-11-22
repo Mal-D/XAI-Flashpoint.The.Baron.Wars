@@ -20,7 +20,7 @@
     "StockRole": "Fast Striker Cavalry", 
     "YangsThoughts": "Well, I suppose it had to happen sooner or later - a 35 Ton <i>Locust</i>. Mind you, I think I'd rather it than a stupid <i>Cicada</i>. ", 
     "MovementCapDefID": "movedef_jenner_JR7-D", 
-    "PathingCapDefID": "pathingdef_light", 
+    "PathingCapDefID": "pathingdef_medium_NonCom", 
     "HardpointDataDefID": "hardpointdatadef_jenner", 
     "PrefabIdentifier": "chrPrfMech_jennerBase-001", 
     "PrefabBase": "jenner", 

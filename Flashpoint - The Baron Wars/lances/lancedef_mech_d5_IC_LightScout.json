@@ -1,9 +1,9 @@
 {
 	"Description": {
-		"Id": "lancedef_mech_d5_general_MedScout",
-		"Name": "Dynamic Dif 5 Medium Scout",
+		"Id": "lancedef_mech_d5_IC_LightScout",
+		"Name": "Dynamic Dif 5 Light Scout",
 		"Details": "",
-		"Icon": "",
+		"Icon": "uixTxrIcon_Irukjandi",
 		"Cost": 0,
 		"Rarity": 0,
 		"Purchasable": false
@@ -11,8 +11,9 @@
 	"Difficulty": 5,
 	"LanceTags": {
 		"items": [
-			"lance_bracket_med",
-			"lance_type_medium",
+			"lance_type_custom",
+			"lance_bracket_low",
+			"lance_type_light",
 			"lance_type_recon",
 			"lance_type_dynamic",
 			"lance_type_mech",
@@ -26,24 +27,15 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium",
-					"unit_lance_vanguard"
-				],
+				"items": [ "unit_mech", "unit_light", "unit_lance_vanguard"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [ "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -56,24 +48,15 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium",
-					"unit_lance_vanguard"
-				],
+				"items": [ "unit_mech", "unit_light", "unit_lance_vanguard"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [ "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -86,23 +69,15 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium"
-				],
+				"items": [ "unit_mech", "unit_light"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [ "unit_lance_tank", "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -115,24 +90,15 @@
 			"unitId": "Tagged",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [
-					"unit_mech"
-				],
+				"items": [ "unit_mech","unit_medium"  ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_assault",
-					"unit_heavy",
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [ "unit_noncombatant", "unit_speed_low" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

@@ -3,7 +3,7 @@
     "contractName" : "Babysitting Supplies..V2",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
-    "difficultyUIModifier" : 1,
+    "difficultyUIModifier" : 0,
     "weight" : 1,
     "scope" : "MID_CAMPAIGN",
     "finalDifficulty" : 0,
@@ -614,7 +614,8 @@
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
-                },{
+                },
+                {
                     "words" : "<i>urgghhh...(groaning noises vaguely sound like Darius in pain)</i>",
                     "wordsColor" : {
                         "r" : 1,
@@ -1175,7 +1176,8 @@
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
                     "items" : [
-                        "lance_type_convoy"
+						"lance_type_medium",
+						"lance_type_convoy"
                     ],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
@@ -1195,7 +1197,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Convoy Leader",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
                         "unitDefId" : "UseLance",
@@ -1211,7 +1213,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "UseLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1244,7 +1246,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "UseLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1277,7 +1279,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "UseLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1310,7 +1312,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "UseLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1333,7 +1335,7 @@
         },
         "teamGuid" : "be77cadd-e245-4240-a93e-b99cc98902a5",
         "teamName" : "TargetTeam",
-        "faction" : "agrarianCollective",
+        "faction" : "Agrarian Collective",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -1551,7 +1553,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "08e55906-bfe4-4f55-b52c-95203e7ce021"
                         },
-                        "customUnitName" : "Sting 2",
+                        "customUnitName" : "Sting Two",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1584,7 +1586,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "0a013d23-76f2-41cd-b705-797c69be9190"
                         },
-                        "customUnitName" : "Sting 3",
+                        "customUnitName" : "Sting Three",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1617,7 +1619,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "a2300a0e-7465-4c75-9a78-e8b0a8d33417"
                         },
-                        "customUnitName" : "Sting 4",
+                        "customUnitName" : "Sting Four",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1667,14 +1669,14 @@
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : "",
+                "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "unitSpawnPointOverrideList" : [
                     {
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3f8a51bd-2db0-4473-86bc-435ea1125391"
                         },
-                        "customUnitName" : "Hunter 1",
+                        "customUnitName" : "Dexter",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1707,7 +1709,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d1a04f94-29bc-4221-a4bf-793443c06165"
                         },
-                        "customUnitName" : "Hunter 2",
+                        "customUnitName" : "Artemis",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1740,7 +1742,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "de2c80f9-e0dc-4592-85de-b75d5c0cff28"
                         },
-                        "customUnitName" : "Hunter 3",
+                        "customUnitName" : "Arawn",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",
@@ -1773,7 +1775,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "82af386a-9635-4d01-a120-4a7b9bee8f3f"
                         },
-                        "customUnitName" : "Hunter 4",
+                        "customUnitName" : "Apollo",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
                         "unitDefId" : "UseLance",

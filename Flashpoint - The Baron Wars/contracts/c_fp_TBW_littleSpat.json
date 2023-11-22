@@ -1,6 +1,6 @@
 {
 	"ID": "c_fp_TBW_littleSpat",
-	"contractName": "Settling a little Spat.V8",
+	"contractName": "Settling a little Spat.V10",
 	"contractDisplayStyle": "BaseFlashpoint",
 	"difficulty": 6,
 	"difficultyUIModifier": 0,
@@ -132,7 +132,7 @@
 			"objective": {
 				"EncounterObjectGuid": "d5ee674b-8993-4804-9fa2-b0a73be466e4"
 			},
-			"title": "Terminate the WB Hired Guns",
+			"title": "Disable 'Mechs of Duke, Josey, Django and Doc.",
 			"description": "b0a73be466e4",
 			"isPrimary": true,
 			"OnSuccessResults": [
@@ -141,7 +141,7 @@
 					"Requirements": null,
 					"AddedTags": {
 						"items": [
-							"_TBW_contractorsTerminated"
+							"_TBW_BanditsTerminated"
 						],
 						"tagSetSourceFile": ""
 					},
@@ -1134,7 +1134,7 @@
 			"objective": {
 				"EncounterObjectGuid": "4222c6f6-975a-45aa-aa3e-cbfaf0c50026"
 			},
-			"title": "Ensure {TEAM_EMP_ALLY.FactionDef.Demonym} Lance safely evacs.",
+			"title": "The four Valkyries will leave when finished.",
 			"description": "",
 			"isPrimary": true,
 			"OnSuccessResults": [{
@@ -1252,24 +1252,8 @@
 			},
 			"title": "TimerObjective_HostileToAll_Primary",
 			"description": "",
-			"isPrimary": true,
-			"OnSuccessResults": [{
-                "Scope" : "Company",
-                "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : ["_HOSTALLPrimTimer-f88a63c30116"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-            "Actions" : [],
-            "ForceEvents" : [],
-            "TemporaryResult" : false,
-            "ResultDuration" : 0
-                 }],
+			"isPrimary": false,
+			"OnSuccessResults": [],
 			"OnFailureResults": [],
 			"OnSuccessDialogueGUID": "",
 			"OnFailureDialogueGUID": ""
@@ -1280,24 +1264,8 @@
 			},
 			"title": "TimerObjective_HostileToAll_Secondary",
 			"description": "",
-			"isPrimary": true,
-			"OnSuccessResults": [{
-                "Scope" : "Company",
-                "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : ["_HOSTALLSecTimer-42ffa86a445e"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-            "Actions" : [],
-            "ForceEvents" : [],
-            "TemporaryResult" : false,
-            "ResultDuration" : 0
-                 }],
+			"isPrimary": false,
+			"OnSuccessResults": [],
 			"OnFailureResults": [],
 			"OnSuccessDialogueGUID": "",
 			"OnFailureDialogueGUID": ""
@@ -2839,7 +2807,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "Dust Off successful Commander.",
+					"words": "1.Dust off successful Commander.",
 					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_Sumire",
 					"emote": "Default",
@@ -2950,7 +2918,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "{MC.Modification.AddTo.CompanyTags.TBW_LeanoraSurvives}Added BW_LeanoraSurvives. Without their Leader whipping them on, the others should be easily accounted for. I'll leave you to finish this Commander.",
+					"words": "{MC.Modification.AddTo.CompanyTags.TBW_LeanoraSurvives}Without their Leader whipping them on, the others should be easily accounted for. I'll leave you to finish this Commander.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3055,7 +3023,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "We won't get paid for only covering one of their evacs. It's both of there will be hell to pay.",
+					"words": "We won't get paid for only covering one of their evacs. It's both of them or there will be hell to pay.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3112,7 +3080,7 @@
 					"revealRadius": -1
 				},
 				{
-					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_safe} AND {MC.If.Encounter.HasNoTag.TBW_Badger_down}}Commander, You had better make sure that <i>Badger</i> make her evac. Otherwise the countess will want someones' head on a pike for putting her Daughter in harms way.",
+					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_safe} AND {MC.If.Encounter.HasNoTag.TBW_Badger_down}}Commander, You had better make sure that <i>Talon</i> makes her evac. Otherwise the Magestrix will want someones' head on a pike.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3127,7 +3095,7 @@
 					"cameraHeight": "Default",
 					"revealRadius": -1
 				},{
-					"words": "They were warned, but no, they still went anyway.",
+					"words": "{{MC.If.Encounter.HasNoTag.TBW_Badger_safe} AND {MC.If.Encounter.HasNoTag.TBW_Badger_down}}{MC.Modification.AddTo.EncounterTags.TBW_Badger_safe}|SKIPDIALOGUE|",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3220,7 +3188,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "Well, this has certianly taken on a different aspect. Commander, I would recommend you leave the <i>Four Valkyries</i> to delivery devine justic on their own and we concentrate on fixing the Fixer.",
+					"words": "Well, this has certianly taken on a different aspect. Commander, I would recommend you leave the <i>Helene's Valkyries</i> to deliver their divine justice on their own and we concentrate on fixing the Fixer.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3555,7 +3523,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "There's another contact Commander and they are going to try and cut us off from the Countess.",
+					"words": "There's another contact hot on its heels Commander, and looks like they are vectoring to cut us off from the Countess.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -3815,17 +3783,33 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "PLACHEHOLDER (Additional Dropped Forces Enemy Ally Secondary) . In bound hostile Dropship detected, drop zone marked.",
+					"words": "///hhhsss ..eave no eviden... /// Transmission garbled /// ...bitches.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
 						"b": 1,
 						"a": 1
 					},
-					"selectedCastDefId": "castDef_DariusDefault",
+					"selectedCastDefId": "castDef_theFixer",
 					"emote": "Default",
 					"audioName": "NONE",
 					"cameraFocusGuid": "eb46203c-3b98-403a-b2df-ee6419e8afef",
+					"cameraDistance": "Far",
+					"cameraHeight": "Default",
+					"revealRadius": -1
+				},
+				{
+					"words": "I think we have run this gig to ground. Shoot anything that moves or we will die on this rock.",
+					"wordsColor": {
+						"r": 1,
+						"g": 1,
+						"b": 1,
+						"a": 1
+					},
+					"selectedCastDefId": "castDef_HiredGunLeader",
+					"emote": "Default",
+					"audioName": "NONE",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -4101,13 +4085,13 @@
 					"selectedCastDefId": "castDef_valkyrieLeader",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "8a83549d-cfe3-4409-83ee-51a80a4c0263",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
 				},
 				{
-					"words": "Commander {Commander.LastName) they will look after the Wagyu Baron forces and then evac. Get on with hunting down and destroying the Fixer and his thugs and we can all get out of here.",
+					"words": "Commander {Commander.LastName} they will look after the Wagyu Baron forces and then evac. Get on with hunting down and destroying the Fixer and his thugs and we can all get out of here.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -4117,7 +4101,7 @@
 					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "8fa00d6a-7f24-4efc-9c7f-3c704c77768a",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -4133,7 +4117,7 @@
 					"selectedCastDefId": "castDef_valkyrieLeader",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "8a83549d-cfe3-4409-83ee-51a80a4c0263",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -4149,7 +4133,7 @@
 					"selectedCastDefId": "castDef_Commander",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "8a83549d-cfe3-4409-83ee-51a80a4c0263",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -4165,7 +4149,7 @@
 					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "8a83549d-cfe3-4409-83ee-51a80a4c0263",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -6185,7 +6169,7 @@
 				"name": "Lance_HostileAll_Primary",
 				"lanceDefId": "lanceDef_TBW_theFixerSingle",
 				"lanceTagSet": {
-					"items": ["lance_type_solo"],
+					"items": [],
 					"tagSetSourceFile": "tags/LanceTags"
 				},
 				"lanceExcludedTagSet": {
@@ -6208,7 +6192,7 @@
 						"customUnitName": "The Fixer",
 						"customHeraldryDefId": "heraldrydef_indriConsortium",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_crab_CRB-27b",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6240,8 +6224,8 @@
 						},
 						"customUnitName": "",
 						"customHeraldryDefId": "",
-						"unitType": "",
-						"unitDefId": "",
+						"unitType": "Mech",
+						"unitDefId": "mechDef_None",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6273,8 +6257,8 @@
 						},
 						"customUnitName": "",
 						"customHeraldryDefId": "",
-						"unitType": "",
-						"unitDefId": "",
+						"unitType": "Mech",
+						"unitDefId": "mechDef_None",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -6304,10 +6288,8 @@
 						"unitSpawnPoint": {
 							"EncounterObjectGuid": "207313a4-8902-45b5-b397-cc5c9b709c7f"
 						},
-						"customUnitName": "",
-						"customHeraldryDefId": "",
-						"unitType": "",
-						"unitDefId": "",
+						"unitType": "Mech",
+						"unitDefId": "mechDef_None",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"

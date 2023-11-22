@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_AmbushRathbottom_f",
-    "contractName" : "Ambush Kidnapping 'Mech.",
+    "contractName" : "Ambush Kidnapping 'Mech.(f)",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -266,7 +266,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "The objective for the player units escaping and finishing the mission.",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -367,7 +367,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Okay, our goal is to disable 'Mech carrying the Governor.",
+                    "words" : "Okay, our goal is to disable whichever bloody vehicle is carrying the Governor.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -383,7 +383,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "...Alright Mechwarriors, Lets get that 'Mech' and bug out before the guards get too frisky.",
+                    "words" : "...Alright Mechwarriors, Let's get the job done and bug out before the guards get too frisky.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -415,7 +415,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "These 'Shell games' are a pain. Get in, disable the 'Mech', then we will extract at our designated location.",
+                    "words" : "These 'Shell games' are a pain. Get in, find the Governor, then we will extract at our designated location.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -767,7 +767,7 @@
             "dialogueContent" : [
                 
                 {
-                    "words" : "PLACEHOLDR: SideBar Text appears here.",
+                    "words" : "PLACEHOLDR: Side panel text",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -885,7 +885,7 @@
     "UniversalContractEffects" : [],
 
     "negotiatedSalary" : 1,
-    "negotiatedSalvage" : 0,
+    "negotiatedSalvage" : 1,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -1089,12 +1089,9 @@
                     "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
                 },
                 "name" : "Lance_Enemy_Convoy",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "lancedef_d6_Extraction_Convoy",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_solo"
-                        
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1114,10 +1111,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
                         },
-                        "customUnitName" : "Extraction",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechdef_jenner_JR7-FER-d",
+                        "customUnitName" : "Extraction Team",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1130,7 +1127,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_BW_theFixer",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1147,10 +1144,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "bdb37cd1-dff5-4740-b361-d5d1aebfd452"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1163,7 +1160,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1180,10 +1177,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "0aed6f9b-c51e-4e76-9c21-b9820620ddb2"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1196,7 +1193,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1213,10 +1210,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d6a9ca5b-40e3-4392-bb03-87512cc30a77"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "customUnitName" : "Extraction Team",
+                        "customHeraldryDefId" : "",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1229,7 +1226,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1249,7 +1246,7 @@
                     "EncounterObjectGuid" : "10e8686f-8d19-4058-9541-119c4dff041c"
                 },
                 "name" : "Lance_Enemy_Bodyguard",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_d6_Extraction_Decoy",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1271,24 +1268,20 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "f6a5d450-d3af-47f0-80d1-c5e53a4d8e45"
                         },
-                        "customUnitName" : "B1",
+                        "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_light"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy","unit_medium"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1308,24 +1301,20 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ae11ab47-d0ce-4980-b3b3-39c957c34a99"
                         },
-                        "customUnitName" : "B2",
+                        "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_25"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1345,24 +1334,20 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3ad4f797-b397-44cf-9eaf-32e95383f288"
                         },
-                        "customUnitName" : "B3",
+                        "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1382,24 +1367,20 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "58ca1b45-de34-4c7d-8482-145742b34a0f"
                         },
-                        "customUnitName" : "B4",
+                        "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_25"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1422,7 +1403,7 @@
                     "EncounterObjectGuid" : "f96ff774-d7ee-4486-b513-ce77357d1867"
                 },
                 "name" : "Ambush Lance Spawner",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_mech_d5_general_MedSupport",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1432,7 +1413,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [],
+                    "items" : ["spawn_poorly_maintained_50"],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
@@ -1444,21 +1425,16 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ab47e469-5887-4a9e-89f2-055d174462c1"
                         },
-                        "customUnitName" : "A1",
+                        "customUnitName" : "Ambush Alpha",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1482,21 +1458,16 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "923f0c0d-8266-480a-8d34-8e7c8b12e1d6"
                         },
-                        "customUnitName" : "A2",
+                        "customUnitName" : "Ambush Beta",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1520,21 +1491,16 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "f7fcc4f1-3f3f-4da3-909d-54098143cef1"
                         },
-                        "customUnitName" : "A3",
+                        "customUnitName" : "Ambush Gamma",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1558,21 +1524,16 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4db659d0-49a5-4b7a-88aa-561538730982"
                         },
-                        "customUnitName" : "A4",
+                        "customUnitName" : "Ambush Delta",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_role_brawler",
-                                "unit_ready",
-                                "unit_medium",
-                                "unit_mech"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_assault","unit_heavy"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {

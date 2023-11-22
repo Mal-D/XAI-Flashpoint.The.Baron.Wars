@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_pullingFangs_2",
-    "contractName" : "Pulling Fangs",
+    "contractName" : "Pulling Fangs..",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -1149,7 +1149,7 @@
                     "EncounterObjectGuid" : "bb480a51-ce9c-4dcf-9bbc-3ef5698c4422"
                 },
                 "name" : "Lance_Enemy_Ambushers",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "lancedef_pullingTeeth_Ambushers",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1174,7 +1174,7 @@
                         "customUnitName" : "Leanora Rothall",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_clint_CLNT-2-3T",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1187,7 +1187,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d7_skirmisher",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1204,10 +1204,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4ad6002d-6d87-42c8-a99d-ffeb35d62723"
                         },
-                        "customUnitName" : "ICo Support",
+                        "customUnitName" : "Slinger One",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechdef_catapult_CPLT-C1",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1220,7 +1220,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_Ico5_gunner",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1237,10 +1237,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "98f65ba4-c2dc-4435-959b-fb5a2e30a889"
                         },
-                        "customUnitName" : "",
-                        "customHeraldryDefId" : "",
+                        "customUnitName" : "Slinger Two",
+                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1270,10 +1270,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "3839b098-fae1-429f-b0fc-276b115894f8"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Spotter",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Mech",
-                        "unitDefId" : "mechDef_None",
+                        "unitType" : "",
+                        "unitDefId" : "UseLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

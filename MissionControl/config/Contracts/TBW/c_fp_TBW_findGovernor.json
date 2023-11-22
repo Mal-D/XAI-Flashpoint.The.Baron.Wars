@@ -1,0 +1,35 @@
+{
+  "ID": "c_fp_TBW_findGovernor",
+  "RandomSpawns": {
+    "Enable": true
+  },
+  "HotDropProtection": {
+    "Enable": true
+  },
+  "AdditionalLances": {
+    "Enable": true,
+    "EnemyLanceCount": 0,
+    "EnemyLanceObjectiveNames": [],
+    "EnemyLances": [],
+    "UseDialogue": true,
+    "DialogueCastDefId": "castDef_theBaron_pilot",
+    "Dialogue": "Commander {Commander.LastName}, I have been able to request the local militia to aid you.",
+    "AllyLanceCount": 1,
+    "AllyLances": ["lancedef_theBaron_AL_Escort3"]
+  },
+  "ExtendedLances": {
+    "Enable": false,
+    "EnemyLanceSize": 4,
+    "AllyLanceSize": 4
+  },
+  "ExtendedBoundaries": {
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.4
+  },
+  "DynamicWithdraw": {
+    "Enable": false
+  },
+  "AdditionalPlayerMechs": {
+    "Enable": false
+  }
+}

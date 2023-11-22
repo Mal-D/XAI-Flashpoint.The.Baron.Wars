@@ -9,7 +9,7 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Eliminate WB's Additional Lance"],
+    "EnemyLanceObjectiveNames": ["Disable the Baron's Additional Lance"],
     "EnemyLances": ["lancedef_theBaron_AL_Escort"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theDaughter",
@@ -24,7 +24,7 @@
   },
   "ExtendedBoundaries": {
     "Enable": true,
-    "IncreaseBoundarySizeByPercentage": 0.2
+    "IncreaseBoundarySizeByPercentage": 0.3
   },
   "DynamicWithdraw": {
     "Enable": false

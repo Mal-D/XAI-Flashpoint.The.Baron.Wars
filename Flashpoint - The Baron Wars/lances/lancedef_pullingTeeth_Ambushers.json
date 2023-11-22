@@ -1,49 +1,33 @@
 {
 	"Description": {
-		"Id": "lancedef_mech_d5_general_MedScout",
-		"Name": "Dynamic Dif 5 Medium Scout",
+		"Id": "lancedef_pullingTeeth_Ambushers",
+		"Name": "Custom Ambushers Lance",
 		"Details": "",
 		"Icon": "",
 		"Cost": 0,
 		"Rarity": 0,
 		"Purchasable": false
 	},
-	"Difficulty": 5,
+	"Difficulty": 6,
 	"LanceTags": {
-		"items": [
-			"lance_bracket_med",
-			"lance_type_medium",
-			"lance_type_recon",
-			"lance_type_dynamic",
-			"lance_type_mech",
-			"lance_type_notallvehicles"
-		],
+		"items": [ "lance_type_custom" ],
 		"tagSetSourceFile": "Tags/LanceTags"
 	},
 	"LanceUnits": [
 		{
 			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitId": "mechdef_clint_CLNT-2-3T",
+			"pilotId": "pilot_theCountess",
 			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium",
-					"unit_lance_vanguard"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "name_theCountess" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -53,27 +37,18 @@
 		},
 		{
 			"unitType": "Mech",
-			"unitId": "Tagged",
+			"unitId": "mechdef_catapult_CPLT-C1",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium",
-					"unit_lance_vanguard"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "pilot_npc_d6" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -83,26 +58,18 @@
 		},
 		{
 			"unitType": "Mech",
-			"unitId": "Tagged",
+			"unitId": "mechdef_catapult_CPLT-C1",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [ "pilot_npc_d6" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -111,28 +78,19 @@
 			}
 		},
 		{
-			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
+			"unitType": "Vehicle",
+			"unitId": "vehicledef_GALLEON_TAG",
+			"pilotId": "pilot_d6_gunner",
 			"unitTagSet": {
-				"items": [
-					"unit_mech"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_assault",
-					"unit_heavy",
-					"unit_noncombatant",
-					"unit_speed_low"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [
-					"pilot_npc_d5"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

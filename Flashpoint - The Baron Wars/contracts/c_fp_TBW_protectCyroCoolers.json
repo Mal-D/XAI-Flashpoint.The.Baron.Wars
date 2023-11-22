@@ -1074,11 +1074,12 @@
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
-                "unitSpawnPointOverrideList" : [                    {
+                "unitSpawnPointOverrideList" : [
+                    {
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "4b9a4506-105a-48d1-b1e6-dde99edd6439"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Alpha",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1111,7 +1112,7 @@
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "dcfc1ad6-3fdf-42c6-8ae9-e7afa2c5a42b"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Bravo",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1144,7 +1145,7 @@
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "a76da3ec-a28a-4d59-ab63-1d175407f7f6"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Charlie",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1177,7 +1178,7 @@
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "d328624a-0615-4dcd-b9e0-f73b2031afbf"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Delta",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1210,7 +1211,7 @@
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "1fc0067d-8962-446b-83df-73edca453dcc"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Echo",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1243,7 +1244,7 @@
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "bf45e39e-3152-46c6-83db-28cf0557efc0"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Foxtrot",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1276,7 +1277,7 @@
                     "unitSpawnPoint" : {
                         "EncounterObjectGuid" : "90aa383e-cb0d-4620-8236-0c2fd7a87da3"
                     },
-                    "customUnitName" : "",
+                    "customUnitName" : "Turret Golf",
                     "customHeraldryDefId" : "",
                     "unitType" : "Turret",
                     "unitDefId" : "UseLance",
@@ -1311,9 +1312,9 @@
                     "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
                 },
                 "name" : "Lance_Escort",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
-                    "items" : [],
+                    "items" : ["lance_type_medium", "lance_type_convoy"],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1333,16 +1334,16 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d7109e5f-7e09-4a9d-98a7-a0bf651532e6"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "Engineer Transport",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "Tagged",
+						"unitType": "Vehicle",
+						"unitDefId": "UseLance",
                         "unitTagSet" : {
-                            "items" : ["unit_vehicle_apc"],
+                            "items" : [""],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_electronicWarfare","unit_role_activeprobe"],
+                            "items" : ["unit_electronicWarfare", "unit_role_activeprobe"],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
@@ -1369,20 +1370,20 @@
                         "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "Tagged",
+                        "unitDefId" : "vehicleDef_None",
                         "unitTagSet" : {
-                            "items" : ["unit_vehicle_apc"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_electronicWarfare","unit_role_activeprobe"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_gunner",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1413,7 +1414,7 @@
                     "EncounterObjectGuid" : "4d39e72c-4f99-4cc6-8fe0-d4d18cad0063"
                 },
                 "name" : "Lance_Enemy_Wave1Attackers",
-                "lanceDefId" : "lancedef_Cryo_MedFire",
+                "lanceDefId" : "lancedef_mech_d5_general_MedFire",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1570,7 +1571,7 @@
                     "EncounterObjectGuid" : "61699a08-1ed7-4ac3-b1f3-79b6b671c4ca"
                 },
                 "name" : "Lance_Enemy_Wave2Attackers",
-                "lanceDefId" : "lancedef_Cryo_MedSupport",
+                "lanceDefId" : "lancedef_mech_d5_general_MedSupport",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1727,7 +1728,7 @@
                     "EncounterObjectGuid" : "574928a1-ee1c-4cd1-a83f-d4a30aa1b05a"
                 },
                 "name" : "Lance_Enemy_Wave3Attackers",
-                "lanceDefId" : "Taglancedef_Cryo_MedCavalryged",
+                "lanceDefId" : "lancedef_mech_d5_general_MedCavalry",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1897,57 +1898,9 @@
         },
         "teamGuid" : "61612bb3-abf9-4586-952a-0559fa9dcd75",
         "teamName" : "NeutralToAllTeam",
-        "faction" : "MagistracyOfCanopus",
-        "teamLeaderCastDefId" : "castDef_MagRep",
+        "faction" : "INVALID_UNSET",
+        "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
-            {
-                "lanceSpawner" : {
-                    "EncounterObjectGuid" : "f11631eb-034f-4d16-8f4f-2599481976ff"
-                },
-                "name" : "Lance_Neutral_BaseTurrets",
-                "lanceDefId" : "Tagged",
-                "lanceTagSet" : {
-                    "items" : [ "lance_type_turret"],
-                    "tagSetSourceFile" : "tags/LanceTags"
-                },
-                "lanceExcludedTagSet" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/LanceTags"
-                },
-                "spawnEffectTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/SpawnEffectTags"
-                },
-                "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
-                "selectedLanceDifficulty" : 0,
-                "overrideSpawnMethod" : null,
-                "unitSpawnPointOverrideList" : []
-            },
-            {
-                "lanceSpawner" : {
-                    "EncounterObjectGuid" : "1245481e-b960-40e5-9c49-015a9de6404d"
-                },
-                "name" : "Lance_Enemy_BaseTurrets",
-                "lanceDefId" : "Manual",
-                "lanceTagSet" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/LanceTags"
-                },
-                "lanceExcludedTagSet" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/LanceTags"
-                },
-                "spawnEffectTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : "tags/SpawnEffectTags"
-                },
-                "lanceDifficultyAdjustment" : 0,
-                "selectedLanceDefId" : null,
-                "selectedLanceDifficulty" : 0,
-                "overrideSpawnMethod" : null,
-                "unitSpawnPointOverrideList" : []
-            }
         ]
     },
     "hostileToAllTeam" : {

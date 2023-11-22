@@ -1,7 +1,7 @@
 {
    "id" : "castDef_HiredGunLeader",
    "internalName" : "HiredGunLeader",
-   "firstName" : "Hank",
+   "firstName" : "Duke",
    "lastName" : "Klien",
    "callsign" : "WB One",
    "rank" : "",
@@ -9,9 +9,9 @@
    "faction" : "",
    "sgCharType" : "UNSET",
    "showRank" : false,
-   "showFirstName" : false,
+   "showFirstName" : true,
    "showCallsign" : true,
-   "showLastName" : false,
+   "showLastName" : true,
    "localizeName" : false,
    "defaultEmotePortrait" : {
       "emote" : "Default",

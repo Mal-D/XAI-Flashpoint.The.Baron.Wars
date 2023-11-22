@@ -1,10 +1,10 @@
 {
     "Description": {
         "Id": "pilot_Ico5_gunner",
-        "Name": "ICo Gunner",
-        "FirstName": "Gunner",
-        "LastName": "NONE",
-        "Callsign": "ICo Gunner",
+        "Name": "Ghost Gunner",
+        "FirstName": "Gwenith",
+        "LastName": "MacTavish",
+        "Callsign": "Mac",
         "Gender": "Female",
         "factionID": "irukjandiCompany",
         "Age": 30,

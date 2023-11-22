@@ -37,7 +37,7 @@
 		},
 		{
 			"unitType": "Mech",
-			"unitId": "Valkyrie VLK-QA",
+			"unitId": "mechdef_valkyrie_VLK-QA",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [  ],

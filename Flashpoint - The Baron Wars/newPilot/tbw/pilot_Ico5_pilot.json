@@ -1,10 +1,10 @@
 {
     "Description": {
         "Id": "pilot_Ico5_pilot",
-        "Name": "ICo Pilot",
-        "FirstName": "Pilot",
-        "LastName": "NONE",
-        "Callsign": "Pilot",
+        "Name": "Ghost Pilot",
+        "FirstName": "Pile",
+        "LastName": "Driver",
+        "Callsign": "Hulk",
         "Gender": "Male",
         "factionID": "",
         "Age": 30,
@@ -43,7 +43,7 @@
         "items": [
             "pilot_npc_pilot",
             "pilot_npc_dynamic",
-            "pilot_npc_d4"
+            "pilot_npc_d4","BLACKLISTED"
         ],
         "tagSetSourceFile": ""
     },

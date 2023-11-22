@@ -1,10 +1,10 @@
 {
     "Description": {
         "Id": "pilot_Ico5_tactician",
-        "Name": "Ico Tactician",
-        "FirstName": "Tactician",
-        "LastName": "NONE",
-        "Callsign": "Tactician",
+        "Name": "Trojan",
+        "FirstName": "Hellan",
+        "LastName": "Knowles",
+        "Callsign": "Trojan",
         "Gender": "Female",
         "factionID": "Davion",
         "Age": 30,
@@ -44,7 +44,8 @@
         "items": [
             "pilot_npc_tactician",
             "pilot_npc_dynamic",
-            "pilot_npc_d5"
+            "pilot_npc_d5","BLACKLISTED"
+            
         ],
         "tagSetSourceFile": ""
     },

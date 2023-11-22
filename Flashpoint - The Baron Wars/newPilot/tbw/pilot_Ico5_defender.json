@@ -1,10 +1,10 @@
 {
     "Description": {
         "Id": "pilot_Ico5_defender",
-        "Name": "ICo Defender",
-        "FirstName": "Defender",
+        "Name": "Ghost Leader",
+        "FirstName": "Casper",
         "LastName": "NONE",
-        "Callsign": "Defender",
+        "Callsign": "Ghost Leader",
         "Gender": "Male",
         "factionID": "irukjandiCompany",
         "Age": 30,
@@ -42,7 +42,8 @@
         "items": [
             "pilot_npc_defender",
             "pilot_npc_dynamic",
-            "pilot_npc_d5"
+            "pilot_npc_d5",
+            "BLACKLISTED"
         ],
         "tagSetSourceFile": ""
     },

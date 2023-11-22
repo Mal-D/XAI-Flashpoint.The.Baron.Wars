@@ -1351,12 +1351,11 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["_TBW_NormalContractLoad"],
+                            "items" : ["_TBW_loadCountOffence_1"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -1408,12 +1407,11 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },                
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["_TBW_ForceContractLoad"],
+                            "items" : ["_TBW_loadCountOffence_2"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
@@ -1465,12 +1463,11 @@
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
                 },                
-                {
-                    "Scope" : "Company",
+                {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
                         "RequirementTags" : {
-                            "items" : ["_TBW_NormalContractLoad2"],
+                            "items" : ["_TBW_loadCountOffence"],
                             "tagSetSourceFile" : ""
                         },
                         "ExclusionTags" : {
