@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "Unfortunately, the Governor's recovery team was forced to shelter not far from their FOB still and we can't move Rathbottom due to his injuries. The Crimson council urges us to keep him alive. You will have to destroy their FOB while protecting the Medical facilities.",
     "longDescription" : "This going to be a hard slog Commander. ",
-    "salvagePotential" : 20,
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [{
         "Scope" : "Company",
@@ -215,7 +215,7 @@
             },
             "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -4166,7 +4166,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
@@ -4340,7 +4340,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

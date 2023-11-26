@@ -13,7 +13,7 @@
 	"goodFaithStatementOverride": "",
 	"shortDescription": "Commander, I'm not even sure they know who's at fault here but it seems we need make sure we get The Countess and her daughter to safety. If the Wagyu Baron 'Contractors' get in the way make sure they understand that you are the law around here, not them.",
 	"longDescription": "Bloody self-appointed militias... cause nothing but trouble by getting in the way.",
-	"salvagePotential": 12,
+	"salvagePotential": 16,
 	"requirementList": [],
 	"OnContractSuccessResults": [
 		{
@@ -1788,7 +1788,7 @@
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "3f899376-6d15-413c-a260-a5f0aecff9bd",
+					"cameraFocusGuid": "dbfbd66b-1989-46be-9bcc-3668de8f30e2",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -2807,9 +2807,9 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "1.Dust off successful Commander.",
+					"words": "Dust off successful Commander.",
 					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
-					"selectedCastDefId": "castDef_Sumire",
+					"selectedCastDefId": "castDef_SumireDefault",
 					"emote": "Default",
 					"audioName": "NONE",
 					"cameraFocusGuid": "287b3743-7ff2-4179-8951-f48c86b8c696",
@@ -2823,7 +2823,7 @@
 					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "287b3743-7ff2-4179-8951-f48c86b8c696",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -3581,7 +3581,7 @@
 					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "143910b7-d02e-4381-9ec4-571286ce7707",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -3597,7 +3597,7 @@
 					"selectedCastDefId": "castDef_Commander",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "143910b7-d02e-4381-9ec4-571286ce7707",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -3613,7 +3613,7 @@
 					"selectedCastDefId": "castDef_theCountess",
 					"emote": "Default",
 					"audioName": "NONE",
-					"cameraFocusGuid": "143910b7-d02e-4381-9ec4-571286ce7707",
+					"cameraFocusGuid": "",
 					"cameraDistance": "Far",
 					"cameraHeight": "Default",
 					"revealRadius": -1
@@ -3824,7 +3824,7 @@
 			"overrideDialogueBucketId": "",
 			"dialogueContent": [
 				{
-					"words": "All units stand by... I'm opening the comms. Attention, Girim interloper... I know you are listening. I and the Agrarian Collective have had enough of your attempts to absorb our resources we need to survive. Your Contractors have gone too far this time. If you won't stop them we will.",
+					"words": "All units stand by... I'm opening the comms. Attention, Girin interloper... I know you are listening. I and the Agrarian Collective have had enough of your attempts to absorb our resources we need to survive. Your Contractors have gone too far this time. If you won't stop them we will.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,

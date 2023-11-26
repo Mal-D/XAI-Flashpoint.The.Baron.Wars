@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "Unfortunately, the Governor's recovery team was forced to shelter not far from their FOB still and we can't move Rathbottom due to his injuries. The Crimson council urges us to keep him alive. You will have to destroy their FOB while protecting the Medical facilities.",
     "longDescription" : "This going to be a hard slog Commander. ",
-    "salvagePotential" : 20,
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [{
         "Scope" : "Company",
@@ -179,7 +179,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -204,7 +204,22 @@
             "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [{"Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : ["_TBW_Attackers_down-2c3253e5b997"],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+        }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -216,33 +231,22 @@
             "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
             "description" : "",
             "isPrimary" : true,
-            "OnSuccessResults" : [
-                {
-                    "Scope" : "Company",
-                    "Requirements" : null,
-                    "AddedTags" : {
-                        "items" : ["_TBW_701_f9af713a466f"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
-                    "Actions" : [],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                }
-            ],
+            "OnSuccessResults" : [{"Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["_TBW_Attackers_down-f9af713a466f"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -4104,7 +4108,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,
@@ -4275,7 +4279,7 @@
                     "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
-                "lanceDifficultyAdjustment" : -1,
+                "lanceDifficultyAdjustment" : 0,
                 "selectedLanceDefId" : null,
                 "selectedLanceDifficulty" : 0,
                 "overrideSpawnMethod" : null,

@@ -1337,7 +1337,7 @@
                         "customUnitName" : "Engineer Transport",
                         "customHeraldryDefId" : "",
 						"unitType": "Vehicle",
-						"unitDefId": "UseLance",
+						"unitDefId": "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [""],
                             "tagSetSourceFile" : "tags/UnitTags"

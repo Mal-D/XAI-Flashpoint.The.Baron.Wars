@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
     "longDescription" : "Let's get him before they make him disappear again.",
-    "salvagePotential" : 8,
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [{"Scope" : "Company",
             "Requirements" : null,

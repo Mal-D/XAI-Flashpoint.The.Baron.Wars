@@ -1,7 +1,7 @@
 {
 	"Description": {
-		"Id": "lancedef_TBW_theCountessEscort",
-		"Name": "Countess support lance",
+		"Id": "lancedef_d5_TBW_Light_Garrison",
+		"Name": "Dif 5 Light Mech Garrison",
 		"Details": "",
 		"Icon": "",
 		"Cost": 0,
@@ -10,45 +10,45 @@
 	},
 	"Difficulty": 5,
 	"LanceTags": {
-		"items": [ "lance_type_custom", "lance_type_dynamic", "lance_type_light", "lance_type_mech" ],
+		"items": [  "lance_type_custom" ],
 		"tagSetSourceFile": "Tags/LanceTags"
 	},
 	"LanceUnits": [
 		{
 			"unitType": "Mech",
+			"unitId": "mechdef_stinger_STG-3G",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
+				"items": ["pilot_npc_d5"],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
 			"unitId": "mechdef_valkyrie_VLK-QL",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [  ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [  ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d6" ],
-				"tagSetSourceFile": "Tags/PilotTags"
-			},
-			"excludedPilotTagSet": {
-				"items": null,
-				"tagSetSourceFile": "Tags/PilotTags"
-			}
-		},
-		{
-			"unitType": "Mech",
-			"unitId": "mechdef_valkyrie_VLK-QA",
-			"pilotId": "Tagged",
-			"unitTagSet": {
-				"items": [  ],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"excludedUnitTagSet": {
-				"items": [  ],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"pilotTagSet": {
-				"items": [ "pilot_npc_d6" ],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -61,15 +61,15 @@
 			"unitId": "mechdef_valkyrie_VLK-QM",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [  ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [  ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d6" ],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
@@ -79,18 +79,18 @@
 		},
 		{
 			"unitType": "Mech",
-			"unitId": "mechdef_valkyrie_VLK-QM",
+			"unitId": "mechdef_stinger_STG-3G",
 			"pilotId": "Tagged",
 			"unitTagSet": {
-				"items": [  ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [  ],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d6" ],
+				"items": [ "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {

@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "A routine sensor sweep has revealed something unexpected; power signatures coming from an expected abandoned engineering facility. From the power readings we're getting, it could be they are using it for repairs. We're in a good strategic position to put a severe dent in the {TEAM_TAR.FactionDef.Demonym}'s forces. If we act quickly, we can deal with this before we have to face any more than necessary.",
     "longDescription" : "If the incoming DropShip is {TEAM_TAR.FactionDef.ShortName}, this could be simple, or it could be terrifying. It's not broadcasting and Ident information so assume it's hostile.",
-    "salvagePotential" : 20,
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [{"Scope" : "Company",
             "Requirements" : null,

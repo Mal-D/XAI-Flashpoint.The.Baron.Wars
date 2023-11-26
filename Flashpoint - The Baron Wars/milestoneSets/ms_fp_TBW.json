@@ -1224,11 +1224,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Employment Termination.",
+                            "value" : "Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
+                            "Employment Termination.",
                             "castDef_anaMaria"
                             ]
                         },
@@ -1273,12 +1273,12 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Security Leak Contained",
+                            "value" : "Amazing work Commander {Commander.LastName}, I would not have believed it - if not for seeing it first hand.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Amazing work Commander {Commander.LastName}, I would not have believed it - if not for seeing it first hand.",
-                            "castDef_anaMaria"
+                            "Security Leak Contained",
+                            "castDef_anaMariaC"
                             ]
                         },
                         {
@@ -1351,6 +1351,62 @@
             "Scope" : "Company",
             "Requirements" : [],
             "Results" : [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : ["_TBW_loadCountOffence"],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_AddContract",
+                            "value" : "mapGeneral_escarpmentValley_vLow",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                                "Assets/Level Design/Maps/mapGeneral_escarpmentValley_vLow/mapGeneral_escarpmentValley_vLow.unity",
+                                "65f01c56-027f-49bd-a8df-63b8ec032495",
+                                "c_fp_TBW_counterOffensive",
+                                "MagistracyOfCanopus",
+                                "irukjandiCompany",
+                                "6",
+                                "ms_fp_TBW_702_Branch",
+                                "wagyuBarons",
+                                "irukjandiCompany",
+                                "ms_fp_TBW_702_Branch",
+                                null,
+                                "irukjandiCompany"
+                            ]
+                        },
+                        {
+                            "Type" : "System_ForceDropshipRoom",
+                            "value" : "Contract",
+                            "valueConstant" : null,
+                            "additionalValues" : [
+                                "BaseFlashpoint"
+                            ]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
                 {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
@@ -1439,62 +1495,6 @@
                                 "Assets/Level Design/Maps/mapGeneral_escarpmentValley_vLow/mapGeneral_escarpmentValley_vLow.unity",
                                 "65f01c56-027f-49bd-a8df-63b8ec032495",
                                 "c_fp_TBW_counterOffensive_2",
-                                "MagistracyOfCanopus",
-                                "irukjandiCompany",
-                                "6",
-                                "ms_fp_TBW_702_Branch",
-                                "wagyuBarons",
-                                "irukjandiCompany",
-                                "ms_fp_TBW_702_Branch",
-                                null,
-                                "irukjandiCompany"
-                            ]
-                        },
-                        {
-                            "Type" : "System_ForceDropshipRoom",
-                            "value" : "Contract",
-                            "valueConstant" : null,
-                            "additionalValues" : [
-                                "BaseFlashpoint"
-                            ]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },                
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : ["_TBW_loadCountOffence"],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : []
-                    },
-                    "AddedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "Flashpoint_AddContract",
-                            "value" : "mapGeneral_escarpmentValley_vLow",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                                "Assets/Level Design/Maps/mapGeneral_escarpmentValley_vLow/mapGeneral_escarpmentValley_vLow.unity",
-                                "65f01c56-027f-49bd-a8df-63b8ec032495",
-                                "c_fp_TBW_counterOffensive",
                                 "MagistracyOfCanopus",
                                 "irukjandiCompany",
                                 "6",
@@ -1664,7 +1664,7 @@
                             "value" : "9ce95936dcbb9aca0fceccdc",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "{TGT_FLASHPOINT.Def.Description.Name} CONCLUSION",
+                                "{TGT_FLASHPOINT.Def.Description.Name} - CONCLUSION -",
                                 "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
@@ -1932,7 +1932,7 @@
                     "Stats" : [{
                         "typeString" : "System.Int32",
                         "name" : "Funds",
-                        "value" : "5000000",
+                        "value" : "15000000",
                         "set" : false,
                         "valueConstant" : null
                     },
@@ -2016,7 +2016,7 @@
                     "Stats" : [{
                         "typeString" : "System.Int32",
                         "name" : "Funds",
-                        "value" : "5000000",
+                        "value" : "10000000",
                         "set" : false,
                         "valueConstant" : null
                     },
@@ -2084,7 +2084,7 @@
                     "Stats" : [{
                         "typeString" : "System.Int32",
                         "name" : "Funds",
-                        "value" : "5000000",
+                        "value" : "7000000",
                         "set" : false,
                         "valueConstant" : null
                     },

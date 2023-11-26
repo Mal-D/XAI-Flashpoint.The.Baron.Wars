@@ -13,7 +13,7 @@
     "EnemyLances": [],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
-    "Dialogue": "Commander {Commander.LastName}, I have been able to request the local militia to aid you.",
+    "Dialogue": "Commander {Commander.LastName}, The local militia there here to aid you. They won't last long against the fixed guns if you don't take out the Turret Generator.",
     "AllyLanceCount": 1,
     "AllyLances": ["lancedef_theBaron_AL_Escort3"]
   },

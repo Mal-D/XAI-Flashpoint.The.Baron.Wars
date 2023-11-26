@@ -11,8 +11,8 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-	"shortDescription": "The CARVAS signal was recorded in the area surrounding the old SLDF Garrision Fort. We need to precisely determine his location to plan for an extraction.  We need to get three Accoustic nodes as close as possible create a scan powerful enough to penetrate the structure.",
-	"longDescription": "Commander {Commander.LastName} we only have one shot at this. We don't have a lot of time as we expect him to be quickly transferred off-world. It appears the {TEAM_TAR.FactionDef.Demonym} Techs have managed to bring the base defenses on-line so move fast, plant the Accoustic nodes and bug out.",
+	"shortDescription": "The CARVAS signal was recorded in the area surrounding the old SLDF Garrision Fort. We need to precisely determine his location to plan for an extraction.  We need to get three Accoustic nodes as close as possible create a scan powerful enough to penetrate the structure. Commander {Commander.LastName}, you only have one shot at this.",
+	"longDescription": "Time is of the essence as we expect him to be quickly transferred off-world. It appears the {TEAM_TAR.FactionDef.Demonym} Techs have managed to bring the base defenses on-line so move fast, plant the Accoustic nodes and bug out.",
 	"salvagePotential": 16,
     "requirementList" :[
         {
@@ -82,9 +82,9 @@
         -1
     ],
     "mechMaxTonnages" : [
-        60,
-        60,
-        60,
+        55,
+        55,
+        55,
         -1
     ],
     "mapMood" : null,
@@ -185,7 +185,7 @@
                 {"Scope": "Company",
                 "Requirements": null,
                 "AddedTags": {
-                    "items": ["_TBW_AlphaCharlie"],
+                    "items": ["_TBW_CharliePlaced"],
                     "tagSetSourceFile": ""
                 },
                 "RemovedTags": {
@@ -305,8 +305,8 @@
             "objective" : {
                 "EncounterObjectGuid" : "f3e1232a-f769-4479-a606-50020c0350df"
             },
-			"title": "Destroy Additional {TEAM_TAR.FactionDef.Demonym} Forces",
-			"description": "Salvage what you can. Destroy what you cannot. ",
+			"title": "Destroy Roving {TEAM_TAR.FactionDef.Demonym} Forces",
+			"description": "",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -324,7 +324,7 @@
                         {
                             "typeString" : "System.Single",
                             "name" : "ContractBonusRewardPct",
-                            "value" : "0.15",
+                            "value" : "0.10",
                             "set" : false,
                             "valueConstant" : null
                         }
@@ -344,7 +344,7 @@
                 "EncounterObjectGuid" : "6748d641-b9af-4279-a7bb-a85bbf26924d"
             },
             "title": "Destroy Additional {TEAM_TAR.FactionDef.Demonym} Forces",
-            "description" : "They just keep coming.",
+            "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [
                 {
@@ -358,15 +358,7 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [
-                        {
-                            "typeString" : "System.Single",
-                            "name" : "ContractBonusRewardPct",
-                            "value" : "0.15",
-                            "set" : false,
-                            "valueConstant" : null
-                        }
-                    ],
+                    "Stats" : [],
                     "Actions" : [],
                     "ForceEvents" : [],
                     "TemporaryResult" : false,
@@ -471,8 +463,24 @@
             },
 			"title": "Place E.L.F. Scanners Quickly",
 			"description": "Complete the Scanning Network",
-            "isPrimary" : true,
-            "OnSuccessResults" : [],
+            "isPrimary" : false,
+            "OnSuccessResults" : [{"Scope": "Company",
+                "Requirements": null,
+                "AddedTags": {
+                    "items": ["_TBW_All_Scanners_placed"],
+                    "tagSetSourceFile": ""
+                },
+                "RemovedTags": {
+                    "items": [],
+                    "tagSetSourceFile": ""
+                },
+                "Stats": [],
+                "Actions": [],
+                "ForceEvents": [],
+                "TemporaryResult": false,
+                "ResultDuration": 0
+                }
+        ],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
             "OnFailureDialogueGUID" : ""
@@ -852,29 +860,19 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Commander, I'll try to keep this brief, because there's a lot happening on this one",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words" : "Commander, The Turrets are hot, and scanners are picking up a few light Fusion signatures. The first priority should be the Turret Generator located somewhere in this region.",
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "693ada30-bb18-4b70-960f-3a64abacd5ce",
                     "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
+                    "cameraHeight" : "High",
                     "revealRadius" : -1
                 },
                 {
-					"words": "You need to move into position in three marked locations, here...",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+					"words": "To plant the E.L.F scanners you need to move into position in three marked locations, first one here...",
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -884,13 +882,8 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "Here...",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words": "Second one here...",
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -900,13 +893,8 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "And here. You'll have to station a unit in each location long enough to get the E.L.F. units deployed.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words": "And lastly, here. You'll have to station a unit in each location long enough to get the E.L.F. units deployed.",
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -916,29 +904,19 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "The {TEAM_TAR.FactionDef.Demonym} don't know we're coming, so, move fast.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words": "The {TEAM_TAR.FactionDef.Demonym} shouldn't know we're coming, so, move fast.",
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
                 },
                 {
 					"words": "Once the nodes connect to Governor Rathbottom's CARVAS signal, the E.L.F.'s uplink will transmit the signals' location in Tri-D. All Nodes are required for the hack. No data, no Governor.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_SumireDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -949,12 +927,7 @@
 				},
                 {
                     "words": "After the CARVAS signal has been verified, you'll get confirmation and you can make for the evac point. Sumire will be on station to pull you out of there.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
                     "selectedCastDefId" : "castDef_anaMariaC",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -964,13 +937,8 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "As long as you have the Turrets offline.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "As long as you have those Anti-Air Turrets offline.",
+					"wordsColor": {"r": 1,"g": 1,"b": 1,"a": 1},
 					"selectedCastDefId": "castDef_SumireDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -1001,7 +969,7 @@
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
                     "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
+                    "cameraHeight" : "High",
                     "revealRadius" : -1
                 },
                 {
@@ -1015,7 +983,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1031,7 +999,7 @@
                     "selectedCastDefId" : "castDef_Commander",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -1087,7 +1055,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Acquistion Complete - Demolition charge pattern transmitted.",
+                    "words": "///<i>ACQUISTION COMPLETE</i>///\r\n\r\n<i>///<i>DEMOLITION PATTERN CONFIGURED</i>///",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
@@ -1103,14 +1071,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "Demolition... What Demolition? Oh.. ou've got to be kidding.",
+                    "words": "Demolition... What Demolition? Oh.. you've got to be kidding.",
 					"wordsColor": {
 						"r": 1,
 						"g": 1,
 						"b": 1,
 						"a": 1
 					},
-					"selectedCastDefId": "castDef_Farah",
+					"selectedCastDefId": "castDef_FarahDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "0bc80178-ee22-4613-8988-3a3f3546d027",
@@ -1251,7 +1219,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Attention! All {TEAM_TAR.FactionDef.Demonym} forces, Fire at will and bring them down!",
+                    "words" : "Incomming 'Mech forces...Get off your arses! <i>How do they get here undetected...?</i>\r\n\r\nFire at will and bring them down!",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1267,7 +1235,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Well, if they didn't know we were here - they certainly do now.",
+                    "words" : "Well, if they didn't know we were here - they certainly do now. Move quickly Commander",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1292,7 +1260,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "WARNING - WARNING {TEAM_TAR.FactionDef.Demonym} FORCES IN CLOSE PROXIMITY",
+                    "words": "///<i>WARNING</i>///\r\n\r\n{TEAM_TAR.FactionDef.Demonym} FORCES IN CLOSE PROXIMITY.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1635,7 +1603,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "{{MC.If.Company.HasTag._TBW_AlphaPlaced} AND {MC.If.Company.HasTag._TBW_BravoPlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}|SKIPDIALOGUE|",
+                    "words": "{{MC.If.Company.HasTag._TBW_AlphaPlaced} AND {MC.If.Company.HasTag._TBW_BravoPlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}A and B placed",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1651,7 +1619,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "{{MC.If.Company.HasTag._TBW_AlphaPlaced} AND {MC.If.Company.HasTag._TBW_CharliePlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}|SKIPDIALOGUE|",
+                    "words": "{{MC.If.Company.HasTag._TBW_AlphaPlaced} AND {MC.If.Company.HasTag._TBW_CharliePlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}A and C Placed",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1667,7 +1635,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words": "{{MC.If.Company.HasTag._TBW_BravoPlaced} AND {MC.If.Company.HasTag._TBW_CharliePlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}|SKIPDIALOGUE|",
+                    "words": "{{MC.If.Company.HasTag._TBW_BravoPlaced} AND {MC.If.Company.HasTag._TBW_CharliePlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}B and C placed",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1790,7 +1758,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Warning: Incoming artillery fire.",
+                    "words" : "///<i>CHARGE PATTERN ACTIVATED</i>///\r\n\r\n ///<i>WARNING: DETONATION IMMINENT</i>///",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -1799,10 +1767,10 @@
                     },
                     "selectedCastDefId" : "castDef_Computer",
                     "emote" : "Default",
-                    "audioName" : "Audio_Event_ArtilleryIncoming",
-                    "cameraFocusGuid" : "",
+                    "audioName" : "",
+                    "cameraFocusGuid" : "693ada30-bb18-4b70-960f-3a64abacd5ce",
                     "cameraDistance" : "Far",
-                    "cameraHeight" : "Default",
+                    "cameraHeight" : "High",
                     "revealRadius" : -1
                 }
             ]
@@ -1856,17 +1824,34 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "KillerTeam_2_Warning - Inbound kill team, Boss. We've lingered a bit too long and their quick reinforcements are arriving shortly.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words" : "Looks like we have more units to deal with. We've lingered too long Commander in the AO.",
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "048bb4d4-b8eb-4ee5-99d6-c18603c7cf1a",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "We've seen them before - Not as good as they were - but still dangerous.",
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+                    "selectedCastDefId" : "castDef_FarahDefault",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "You have done all that we need for the time being. Suggest you get to the Evac zone and await confirmation.",
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
+                    "selectedCastDefId" : "castDef_anaMariaC",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -2290,17 +2275,13 @@
                     "EncounterObjectGuid" : "e7acc01a-0514-468f-8b6c-7c8eeb68e1ff"
                 },
                 "name" : "Lance_Enemy_Garrison",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "lancedef_d5_TBW_Light_Garrison",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_battle"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
-                    "items" : [
-                        "lance_type_turret"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
@@ -2316,10 +2297,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "c4a320e6-5da3-4659-a5b8-9d20dc80d99e"
                         },
-                        "customUnitName": "Gar 1",
+                        "customUnitName": "Garrison 1",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3Gb",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -2332,7 +2313,7 @@
 							"items": ["spawn_poorly_maintained_25"],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d4_tactician",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -2349,7 +2330,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "faa421eb-0b2b-48f6-a57f-207592bc10c5"
                         },
-                        "customUnitName": "Gar 2",
+                        "customUnitName": "Garrison 2",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
 						"unitDefId": "mechdef_stinger_STG-3G",
@@ -2367,7 +2348,7 @@
 							],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d4_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -2384,10 +2365,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ba98ef5e-4315-4cb3-889d-da5e2fa5aa74"
                         },
-                        "customUnitName": "Gar 3",
+                        "customUnitName": "Garrison 3",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3G",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -2402,7 +2383,7 @@
 							],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d4_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -2419,10 +2400,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ef27dad8-3576-4b94-9d8b-540db23a213a"
                         },
-                        "customUnitName": "Gar 4",
+                        "customUnitName": "Garrison 4",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3G",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -2437,7 +2418,7 @@
 							],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d4_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -2479,10 +2460,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "5bc8386c-bb9c-4d58-a0c9-50f8f0e40b2b"
                         },
-                        "customUnitName": "Sup 1-1",
+                        "customUnitName": "Rover 1",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "UseLance",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -2512,10 +2493,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "cd5ad8c9-be5e-41bc-8f2e-ec0922a3949b"
                         },
-                        "customUnitName": "Sup 1-2",
+                        "customUnitName": "Rover 2",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "UseLance",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -2545,10 +2526,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "8bfc2b10-b292-47e5-a2bd-a610e41aadd5"
                         },
-                        "customUnitName": "Sup 1-3",
+                        "customUnitName": "Rover 3",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "UseLance",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -2578,10 +2559,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "dab6530d-58de-48fe-87fc-3299d966dd08"
                         },
-                        "customUnitName": "Sup 1-4",
+                        "customUnitName": "Rover 4",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "UseLance",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -3224,7 +3205,7 @@
                     "EncounterObjectGuid" : "ad99bc62-1a2f-4272-ace2-6a99badabaff"
                 },
                 "name" : "Lance_Enemy_KillTeam_2",
-                "lanceDefId" : "Manual",
+                "lanceDefId" : "lancedef_Irukjandi_MedCavalry",
                 "lanceTagSet" : {
                     "items" : [
                         
@@ -3232,9 +3213,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
-                    "items" : [
-                        "lance_type_turret"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
@@ -3250,10 +3229,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "b9e73ece-3aa8-4af2-b132-65bb65edd52c"
                         },
-                        "customUnitName": "Killer 1",
+                        "customUnitName": "Duke",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3Gb",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -3263,10 +3242,10 @@
 							"tagSetSourceFile": "tags/UnitTags"
 						},
 						"spawnEffectTags": {
-							"items": [],
+							"items": ["spawn_poorly_maintained_50"],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d7_striker",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -3283,10 +3262,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4f59f24c-ac58-462d-af58-923030e035e3"
                         },
-                        "customUnitName": "Killer 2",
+                        "customUnitName": ", Josey",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3R",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -3299,7 +3278,7 @@
 							"items": ["spawn_poorly_maintained_25"],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d3_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -3316,10 +3295,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "7d0a4b52-966e-4f13-8ceb-595d8ffd3aed"
                         },
-                        "customUnitName": "Killer 3",
+                        "customUnitName": "Django",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3R",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -3329,10 +3308,10 @@
 							"tagSetSourceFile": "tags/UnitTags"
 						},
 						"spawnEffectTags": {
-							"items": [],
+							"items": ["spawn_poorly_maintained_25"],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d3_gunner",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
@@ -3349,10 +3328,10 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "ce303da9-c1d9-4369-bfbe-a72659b454c5"
                         },
-                        "customUnitName": "Killer 4",
+                        "customUnitName": " Doc",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_stinger_STG-3R",
+						"unitDefId": "mechDef_InheritLance",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/UnitTags"
@@ -3365,7 +3344,7 @@
 							"items": ["spawn_poorly_maintained_25"],
 							"tagSetSourceFile": "tags/SpawnEffectTags"
 						},
-						"pilotDefId": "pilot_d6_tactician",
+						"pilotDefId": "pilotDef_InheritLance",
 						"pilotTagSet": {
 							"items": [],
 							"tagSetSourceFile": "tags/PilotTags"
