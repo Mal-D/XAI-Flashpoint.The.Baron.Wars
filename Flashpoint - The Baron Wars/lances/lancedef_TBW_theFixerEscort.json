@@ -1,9 +1,9 @@
 {
 	"Description": {
 		"Id": "lancedef_TBW_theFixerEscort",
-		"Name": "Countess support lance",
+		"Name": "Fixer support lance",
 		"Details": "",
-		"Icon": "uixTxrIcon_wagyuBarons",
+		"Icon": "",
 		"Cost": 0,
 		"Rarity": 0,
 		"Purchasable": false

@@ -2,7 +2,7 @@
     "identifier" : "DialogBkt_600_Interrupt_AmbushWarning",
     "contents" : [
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}Looks like we have a few more to contend with. Yang? What's that engine signature?",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}Looks like we have a few more to contend with. Yang? What's that engine signature?",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -18,7 +18,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}It's... shit. They must have fixed the damned <i>Clint</i> the Countess was driving. And she's brought a friend.",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}It's... shit. They must have fixed the damned <i>Clint</i> the Countess was driving. And she's brought a friend.",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -34,7 +34,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}Mother, this is madness. Is this necessary to protect New Abilene... and <i>ME!</i>",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}Mother, this is madness. Is this necessary to protect New Abilene... and <i>ME!</i>",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -50,7 +50,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}Fool girl! It's not just about <i>YOU</i>. Recovering from your father's lack of forethought and proclivity to indulge in various vices has drawn a heavy price. Here we pay!",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}Fool girl! It's not just about <i>YOU</i>. Recovering from your father's lack of forethought and proclivity to indulge in various vices has drawn a heavy price. Here we pay!",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -66,7 +66,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}Commander {Commander.LastName} I'll try and distract Leonora the best I can. You concentrate on the Repair Facility.",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}Commander {Commander.LastName} I'll try and distract Leonora the best I can. You concentrate on the Repair Facility.",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -82,7 +82,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}<i>sob!</i>Jeb...this isn't worth it, I don't want her... please... let her...",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}<i>sob!</i>Jeb...this isn't worth it, I don't want her... please... let her...",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -98,7 +98,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}Stay to the plan my Love. I'll do my best but, she chose to this path...we all did.",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}Stay to the plan my Love. I'll do my best but, she chose to this path...we all did.",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -114,7 +114,7 @@
             "revealRadius" : -1
         },
         {
-            "words" : "{MC.If.Encounter.HasTag.TBW_LeanoraSurvives}Oh... too much! Farah, what's your read on that repair facility?",
+            "words" : "{MC.If.Company.HasTag.TBW_LeanoraDisabled}Oh... too much! Farah, what's your read on that repair facility?",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,

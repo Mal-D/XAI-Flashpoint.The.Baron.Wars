@@ -14,8 +14,7 @@
 			"lance_type_custom",
 			"lance_type_medium",
 			"lance_type_dynamic",
-			"lance_type_mech",
-			"lance_type_notallvehicles"
+			"lance_type_mech"
 		],
 		"tagSetSourceFile": "Tags/LanceTags"
 	},
@@ -89,7 +88,7 @@
 		{
 			"unitType": "Mech",
 			"unitId": "Tagged",
-			"pilotId": "pilot_Ico5_tactician",
+			"pilotId": "pilot_d6_gunner",
 			"unitTagSet": {
 				"items": [ "unit_mech", "unit_medium", "unit_lance_support" ],
 				"tagSetSourceFile": "Tags/UnitTags"

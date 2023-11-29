@@ -9,7 +9,7 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["ICo Lance"], 
+    "EnemyLanceObjectiveNames": ["BONUS for deading the ICo Lance"], 
     "EnemyLances": ["lancedef_mech_d5_IC_MediumScout"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theFixer",
@@ -23,7 +23,7 @@
     "AllyLanceSize": 4
   },
   "ExtendedBoundaries": {
-    "Enable": true,
+    "Enable": false,
     "IncreaseBoundarySizeByPercentage": 0.1
   },
   "DynamicWithdraw": {

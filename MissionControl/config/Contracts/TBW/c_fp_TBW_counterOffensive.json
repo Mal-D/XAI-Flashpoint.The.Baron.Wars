@@ -1,5 +1,5 @@
 {
-  "ID": "c_fp_TBW_counterOffensive_1",
+  "ID": "c_fp_TBW_counterOffensive",
   "RandomSpawns": {
     "Enable": true
   },
@@ -23,8 +23,8 @@
     "AllyLanceSize": 4
   },
   "ExtendedBoundaries": {
-    "Enable": true,
-    "IncreaseBoundarySizeByPercentage": 0.6
+    "Enable": false,
+    "IncreaseBoundarySizeByPercentage": 0.0
   },
   "DynamicWithdraw": {
     "Enable": false

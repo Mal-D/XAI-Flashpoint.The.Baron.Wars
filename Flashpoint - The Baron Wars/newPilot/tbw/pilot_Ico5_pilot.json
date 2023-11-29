@@ -41,10 +41,7 @@
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [
-            "pilot_npc_pilot",
-            "pilot_npc_dynamic",
-            "pilot_npc_d4","BLACKLISTED"
-        ],
+            "pilot_npc_pilot", "pilot_npc_dynamic", "pilot_bracket_med", "pilot_npc_d5","BLACKLISTED"],
         "tagSetSourceFile": ""
     },
     "PilotCost": 0

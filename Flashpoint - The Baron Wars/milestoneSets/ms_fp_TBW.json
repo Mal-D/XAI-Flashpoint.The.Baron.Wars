@@ -1273,11 +1273,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Amazing work Commander {Commander.LastName}, I would not have believed it - if not for seeing it first hand.",
+                            "value" : "Amazing work Commander {Commander.LastName}. Are you sure you don't a permanent Position in the Magistracy Armed Forces?",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Security Leak Contained",
+                            "Exemplery Performance Reported",
                             "castDef_anaMariaC"
                             ]
                         },
@@ -1568,7 +1568,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "<Stats.Company.[TBW_FailCount]> - Commander {Commander.LastName}, Sorry Commander - This is less than the stirling performance we were looking for.",
+                            "Commander {Commander.LastName}, Sorry Commander - This is less than the stirling performance we were looking for.",
                             "castDef_anaMaria"
                             ]
                         },
@@ -1615,11 +1615,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Security Leak Contained",
+                            "value" : "Magistracy sovereignty is secured",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "<Stats.Company.[TBW_FailCount]> Amazing work Commander {Commander.LastName}, I would not have believed it - if not for seeing it first hand.",
+                            "Amazing work Commander {Commander.LastName}. New Abilene is safe - we now have cut out the rotten wood and replace it with strong new timbers.",
                             "castDef_anaMaria"
                             ]
                         },

@@ -126,7 +126,7 @@
                 {"Scope": "Company",
                 "Requirements": null,
                 "AddedTags": {
-                    "items": ["_TBW_AlphaPlaced"],
+                    "items": [],
                     "tagSetSourceFile": ""
                 },
                 "RemovedTags": {
@@ -156,7 +156,7 @@
                 {"Scope": "Company",
                 "Requirements": null,
                 "AddedTags": {
-                    "items": ["_TBW_BravoPlaced"],
+                    "items": [],
                     "tagSetSourceFile": ""
                 },
                 "RemovedTags": {
@@ -185,7 +185,7 @@
                 {"Scope": "Company",
                 "Requirements": null,
                 "AddedTags": {
-                    "items": ["_TBW_CharliePlaced"],
+                    "items": [],
                     "tagSetSourceFile": ""
                 },
                 "RemovedTags": {
@@ -1096,13 +1096,8 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Alpha E.L.F. deployed, Commander. Good work.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words": "[MC.Modification.AddTo.EncounterTags._TBW_AlphaPlaced]E.L.F.ALPHA deployed, Commander. Good work.",
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -1112,13 +1107,8 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "E.L.F. signal functional.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "[MC.Modification.AddTo.Company._TBW_AlphaPlaced]E.L.F. signal functional.",
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -1137,13 +1127,8 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Bravo E.L.F. deployed, Commander.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words": "[MC.Modification.AddTo.EncounterTags._TBW_BravoPlaced]E.L.F. BRAVO deployed, Commander.",
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -1153,13 +1138,8 @@
                     "revealRadius" : -1
                 },
 				{
-					"words": "Initial scan parameters set. We're almost there.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "[MC.Modification.AddTo.Company._TBW_BravoPlaced]Initial scan parameters set. We're almost there.",
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -1178,13 +1158,8 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "Charlie E.L.F. deployed and active.",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "words": "[MC.Modification.AddTo.EncounterTags._TBW_CharliePlaced]E.L.F. Charlie deployed and active.",
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -1194,13 +1169,8 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "It shouldn't be long now Commander.",
-					"wordsColor": {
-						"r": 1,
-						"g": 1,
-						"b": 1,
-						"a": 1
-					},
+					"words": "[MC.Modification.AddTo.Company._TBW_CharliePlaced]It shouldn't be long now Commander.",
+					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
 					"audioName": "NONE",
@@ -1220,12 +1190,7 @@
             "dialogueContent" : [
                 {
                     "words" : "Incomming 'Mech forces...Get off your arses! <i>How do they get here undetected...?</i>\r\n\r\nFire at will and bring them down!",
-                    "wordsColor" : {
-                        "r" : 1,
-                        "g" : 1,
-                        "b" : 1,
-                        "a" : 1
-                    },
+                    "wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
                     "selectedCastDefId" : "castDef_CabalD",
                     "emote" : "Default",
                     "audioName" : "NONE",
@@ -1603,7 +1568,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words": "{{MC.If.Company.HasTag._TBW_AlphaPlaced} AND {MC.If.Company.HasTag._TBW_BravoPlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}A and B placed",
+                    "words": "{{MC.If.Encounter.HasTag._TBW_AlphaPlaced} AND {MC.If.Encounter.HasTag._TBW_BravoPlaced}}{MC.Modification.AddTo.EncounterTags._TBW_TwoPlaced}A and B placed",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

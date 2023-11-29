@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "A routine sensor sweep has revealed something unexpected; power signatures coming from an expected abandoned engineering facility. From the power readings we're getting, it could be they are using it for repairs. We're in a good strategic position to put a severe dent in the {TEAM_TAR.FactionDef.Demonym}'s forces. If we act quickly, we can deal with this before we have to face any more than necessary.",
     "longDescription" : "If the incoming DropShip is {TEAM_TAR.FactionDef.ShortName}, this could be simple, or it could be terrifying. It's not broadcasting Transponder Ident information so assume it's hostile.",
-    "salvagePotential" : 16,
+    "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [{"Scope" : "Company",
             "Requirements" : null,
@@ -199,7 +199,7 @@
             },
             "title" : "Destroy Enemy Reserves",
             "description" : "CPLT-C1 The objective to eliminate enemy reinforcements who attack.",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -235,7 +235,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3a753f8c-2d38-4ea6-9812-c9c169cd3545"
             },
-            "title" : "Get to the evac zone",
+            "title" : "Stay or Evac. Your choice",
             "description" : "The objective for the player to extract their units.",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -315,7 +315,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Okay Farah, what's your read on that repair facility? Let's get this over with.",
+                    "words" : "Okay Farah, what's your read on that repair facility so we can get this over with.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -379,7 +379,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "<i>(just audible) bloody families ...it's why I became a merc...<i/> okay, {MC.PlayerLances.TeamPilot_Random_2.DisplayName}, time to pull a few fangs. <i>...better be more than just beer...</i>",
+                    "words" : "<i>(just audible) bloody families ...it's why I became a merc...</i> \r\n\r\nokay, {MC.PlayerLances.TeamPilot_Random_2.DisplayName}, time to pull a few fangs.\r\n\r\n<i>...better be something more than just beer...</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -826,12 +826,9 @@
                     "EncounterObjectGuid" : "5a1b1a4a-0325-4a6d-b021-d9ba167e2ac8"
                 },
                 "name" : "Lance_Enemy_OpposingForce",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_Irukjandi_Battle",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_dynamic_difficulty",
-                        "lancedef_Irukjandi_Battle"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -932,7 +929,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_25"],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -965,7 +962,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_25"],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -988,11 +985,9 @@
                     "EncounterObjectGuid" : "40decd4d-427d-4f2e-8fc7-fc379ae4bbc2"
                 },
                 "name" : "Lance_Enemy_BaseTurrets",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_turret_d3_dynamic_lightTurret",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_turret"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1174,7 +1169,7 @@
                         "customUnitName" : "Leanora Rothall",
                         "customHeraldryDefId" : "heraldrydef_agrarianCollective",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1207,7 +1202,7 @@
                         "customUnitName" : "Slinger One",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1240,7 +1235,7 @@
                         "customUnitName" : "Slinger Two",
                         "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1272,8 +1267,8 @@
                         },
                         "customUnitName" : "Spotter",
                         "customHeraldryDefId" : "",
-                        "unitType" : "",
-                        "unitDefId" : "UseLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

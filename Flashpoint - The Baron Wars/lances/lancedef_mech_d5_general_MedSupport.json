@@ -61,18 +61,15 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant",
-					"unit_lance_vanguard"
-				],
+				"items": [ "unit_noncombatant", "unit_lance_vanguard" ],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d5" ],
+				"items": [ "pilot_npc_tactician", "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
-				"items": null,
+				"items": [ "pilot_npc_vanguard" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"locked": false
@@ -92,11 +89,11 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d5" ],
+				"items": [ "pilot_npc_tactician", "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
-				"items": null,
+				"items": [ "pilot_npc_vanguard" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"locked": false
@@ -116,11 +113,11 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
-				"items": [ "pilot_npc_d5" ],
+				"items": [ "pilot_npc_tactician", "pilot_npc_d5" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"excludedPilotTagSet": {
-				"items": null,
+				"items": [ "pilot_npc_vanguard" ],
 				"tagSetSourceFile": "Tags/PilotTags"
 			},
 			"locked": false

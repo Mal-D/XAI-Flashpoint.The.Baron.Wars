@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_counterOffensive_1",
-    "contractName" : "Counter Offensive.",
+    "contractName" : "Counter Offensive...",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
@@ -2723,8 +2723,28 @@
     "contractRewardOverride" : -1,
     "travelOnly" : false,
     "useTravelCostPenalty" : false,
-    "usesExpiration" : false,
-    "expirationTimeOverride" : -1,
+
+    "usesExpiration" : true,
+    "expirationTimeOverride" : 3,
+    "ForceStartOnExpiration" : true,
+    "ResultsOnExpiration": [                
+        {"Scope" : "Company",
+        "Requirements" : null,
+        "AddedTags" : {
+            "items" : ["_TBW_counterOffensive_3"],
+            "tagSetSourceFile" : ""
+        },
+        "RemovedTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "Stats" : [],
+        "Actions" : [],
+        "ForceEvents" : [],
+        "TemporaryResult" : false,
+        "ResultDuration" : 0
+    }],
+
     "negotiatedSalary" : 0.5,
     "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
