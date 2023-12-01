@@ -11,7 +11,7 @@
 		"Details": "A Canopian defender through and through and has been in a 'Mech cockpit ever since being able to fit into a NeuroHelmet. She was bequeathed her NeuroHelmet and Assassin by her Grandfather.",
 		"Icon": "guiTxrPort_theDaughter"
 	},
-	"BaseGunnery": "4",
+	"BaseGunnery": "5",
 	"BonusGunnery": 0,
 	"BasePiloting": "6",
 	"BonusPiloting": 0,

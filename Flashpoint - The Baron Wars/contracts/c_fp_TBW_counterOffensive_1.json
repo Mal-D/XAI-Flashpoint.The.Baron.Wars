@@ -2725,13 +2725,13 @@
     "useTravelCostPenalty" : false,
 
     "usesExpiration" : true,
-    "expirationTimeOverride" : 3,
+    "expirationTimeOverride" : 2,
     "ForceStartOnExpiration" : true,
     "ResultsOnExpiration": [                
         {"Scope" : "Company",
         "Requirements" : null,
         "AddedTags" : {
-            "items" : ["_TBW_counterOffensive_3"],
+            "items" : ["_TBW_counterOffensive_2"],
             "tagSetSourceFile" : ""
         },
         "RemovedTags" : {

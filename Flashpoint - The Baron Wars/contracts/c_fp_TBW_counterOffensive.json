@@ -155,7 +155,7 @@
             },
             "title" : "HIDDEN - Flag that succeeds when the Evac region activates.",
             "description" : "",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",

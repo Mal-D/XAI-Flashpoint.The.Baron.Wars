@@ -1,8 +1,6 @@
 {
   "ID": "c_fp_TBW_AmbushRathbottom_f",
-  "RandomSpawns": {
-    "Enable": true
-  },
+  "RandomSpawns": {"Enable": true},
   "HotDropProtection": {
     "Enable": true
   },
@@ -10,12 +8,12 @@
     "Enable": true,
     "EnemyLanceCount": 1,
     "EnemyLanceObjectiveNames": ["Negate the Kidnapper's Escorts"],
-    "EnemyLances": ["lancedef_Irukjandi_Decoy"],
+    "EnemyLances": ["lancedef_d6_Extraction_Decoy"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
-    "Dialogue": "{Commander.LastName}, I have managed to get a helping hand from the local Lads and Lasses. We'll engage the other forces, you just get the Governor.",
+    "Dialogue": "Sorry {Commander.LastName}, the short drop time has prevented me getting a helping hand from the local militia... just get the Governor.",
     "AllyLanceCount": 1,
-    "AllyLances": ["lancedef_theBaron_AL_Escort2"]
+    "AllyLances": []
   },
   "ExtendedLances": {
     "Enable": false,
@@ -23,8 +21,8 @@
     "AllyLanceSize": 4
   },
   "ExtendedBoundaries": {
-    "Enable": true,
-    "IncreaseBoundarySizeByPercentage": 0.5
+    "Enable": false,
+    "IncreaseBoundarySizeByPercentage": 0.2
   },
   "DynamicWithdraw": {
     "Enable": false

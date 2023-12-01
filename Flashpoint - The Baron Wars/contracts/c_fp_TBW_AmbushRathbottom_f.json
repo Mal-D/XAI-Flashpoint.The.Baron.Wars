@@ -13,7 +13,7 @@
     "goodFaithStatementOverride" : null,
     "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
     "longDescription" : "Let's get him before they make him disappear again.",
-    "salvagePotential" : 16,
+    "salvagePotential" : 20,
     "requirementList" : [],
     "OnContractSuccessResults" : [{"Scope" : "Company",
             "Requirements" : null,
@@ -72,7 +72,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : 200,
+    "lanceMaxTonnage" : -1,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -80,10 +80,10 @@
         -1
     ],
     "mechMaxTonnages" : [
-        60,
-        60,
-        60,
-        60
+        65,
+        65,
+        65,
+        65
     ],
     "mapMood" : null,
     "startingFogOfWarVisibility" : "Surveyed",
@@ -266,7 +266,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "The objective for the player units escaping and finishing the mission.",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -295,23 +295,7 @@
             },
             "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
-            "requirementList" : [{
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : [{
-                    "obj" : "TBW_FailCount",
-                    "op" : "GreaterThan",
-                    "val" : 1,
-                    "valueConstant" : "1"
-                }]
-            }]
+            "requirementList" : []
         }
     ],
     "cameraFocusHelperList" : [
@@ -1438,7 +1422,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1494,7 +1478,7 @@
                         "customUnitName" : "Ambush Gamma",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "mechDef_InheritLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1504,10 +1488,10 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_75"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1527,7 +1511,7 @@
                         "customUnitName" : "Ambush Delta",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_None",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1537,7 +1521,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",

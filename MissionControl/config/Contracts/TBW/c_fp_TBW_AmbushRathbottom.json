@@ -1,8 +1,6 @@
 {
   "ID": "c_fp_TBW_AmbushRathbottom",
-  "RandomSpawns": {
-    "Enable": true
-  },
+  "RandomSpawns": {"Enable": true},
   "HotDropProtection": {
     "Enable": true
   },

@@ -72,7 +72,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : -1,
+    "lanceMaxTonnage" : 300,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -252,20 +252,9 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a5257151-5269-4222-9a0d-31001a70fe22"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
-            "requirementList" : [{
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : ["TBW_LeanoraDisabled"],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : []
-            }]
+            "requirementList" : []
         }
     ],
     "cameraFocusHelperList" : [
@@ -621,8 +610,8 @@
     }],
 
     "UniversalContractEffects" : [],
-    "negotiatedSalary" : 1,
-    "negotiatedSalvage" : 0,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -836,9 +825,7 @@
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "spawnEffectTags" : {
-                    "items" : [
-                        "spawn_poorly_maintained_75"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
                 "lanceDifficultyAdjustment" : 0,
@@ -863,7 +850,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_75"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -896,7 +883,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : ["spawn_poorly_maintained_25"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1022,7 +1009,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1088,7 +1075,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -1167,9 +1154,9 @@
                             "EncounterObjectGuid" : "6a902689-eca8-469b-9b45-32a1dcd904c6"
                         },
                         "customUnitName" : "Leanora Rothall",
-                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1200,9 +1187,9 @@
                             "EncounterObjectGuid" : "4ad6002d-6d87-42c8-a99d-ffeb35d62723"
                         },
                         "customUnitName" : "Slinger One",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1233,9 +1220,9 @@
                             "EncounterObjectGuid" : "98f65ba4-c2dc-4435-959b-fb5a2e30a889"
                         },
                         "customUnitName" : "Slinger Two",
-                        "customHeraldryDefId" : "heraldrydef_irukjandiCompany",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1267,8 +1254,8 @@
                         },
                         "customUnitName" : "Spotter",
                         "customHeraldryDefId" : "",
-                        "unitType" : "",
-                        "unitDefId" : "UseLance",
+                        "unitType" : "Vehicle",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"

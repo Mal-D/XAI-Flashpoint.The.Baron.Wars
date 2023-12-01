@@ -72,7 +72,7 @@
     "encounterPlayStyle" : "SinglePlayer",
     "maxNumberOfPlayerUnits" : 4,
     "lanceMinTonnage" : -1,
-    "lanceMaxTonnage" : -1,
+    "lanceMaxTonnage" : 280,
     "mechMinTonnages" : [
         -1,
         -1,
@@ -80,10 +80,10 @@
         -1
     ],
     "mechMaxTonnages" : [
-        -1,
-        -1,
-        -1,
-        -1
+        65,
+        65,
+        65,
+        65
     ],
     "mapMood" : null,
     "startingFogOfWarVisibility" : "Surveyed",
@@ -178,7 +178,7 @@
                         {
                             "typeString" : "System.Single",
                             "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
+                            "value" : "0.20",
                             "set" : false,
                             "valueConstant" : null
                         }
@@ -199,7 +199,7 @@
             },
             "title" : "Destroy Enemy Reserves",
             "description" : "CPLT-C1 The objective to eliminate enemy reinforcements who attack.",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [
                 {
                     "Scope" : "Company",
@@ -216,7 +216,7 @@
                         {
                             "typeString" : "System.Single",
                             "name" : "ContractBonusRewardPct",
-                            "value" : "0.1",
+                            "value" : "0.2",
                             "set" : false,
                             "valueConstant" : null
                         }
@@ -252,20 +252,9 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a5257151-5269-4222-9a0d-31001a70fe22"
             },
-            "enableChunkFromContract" : true,
+            "enableChunkFromContract" : false,
             "controlledByContractChunkGroupList" : [],
-            "requirementList" : [{
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : ["TBW_LeanoraDisabled"],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
-                },
-                "RequirementComparisons" : []
-            }]
+            "requirementList" : []
         }
     ],
     "cameraFocusHelperList" : [
@@ -621,8 +610,8 @@
     }],
 
     "UniversalContractEffects" : [],
-    "negotiatedSalary" : 1,
-    "negotiatedSalvage" : 0,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
@@ -1167,7 +1156,7 @@
                             "EncounterObjectGuid" : "6a902689-eca8-469b-9b45-32a1dcd904c6"
                         },
                         "customUnitName" : "Leanora Rothall",
-                        "customHeraldryDefId" : "heraldrydef_agrarianCollective",
+                        "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {

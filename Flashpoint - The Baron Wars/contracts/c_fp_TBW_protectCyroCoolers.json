@@ -1314,7 +1314,7 @@
                 "name" : "Lance_Escort",
                 "lanceDefId" : "Tagged",
                 "lanceTagSet" : {
-                    "items" : ["lance_bracket_med", "lance_type_convoy"],
+                    "items" : ["lance_bracket_med", "lance_type_convoy","lance_type_dynamic"],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
