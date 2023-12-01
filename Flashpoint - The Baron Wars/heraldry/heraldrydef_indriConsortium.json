@@ -12,7 +12,7 @@
         "Icon" : ""
     },
     "textureLogoID" : "uixTxrIcon_indriConsortium",
-    "primaryMechColorID" : "Blue_04",
-    "secondaryMechColorID" : "Metallic_Silver",
-    "tertiaryMechColorID" : "BrightRed_02"
+    "primaryMechColorID" : "BrightWhite_01",
+    "secondaryMechColorID" : "Greyscale_03",
+    "tertiaryMechColorID" : "BrightOrange_01"
 }
