@@ -1,5 +1,4 @@
-itemCollection_MoC_MuseumPieces1,,,
-itemCollection_Ammo_uncommon,Reference,2,1
-itemCollection_Upgrades_rare,Reference,1,1
-itemCollection_Mechs_uncommon,Reference,1,1
-itemCollection_SLDF,Reference,2,1
+itemCollection_MoC_MuseumPieces1,"Deployment Reward: Poor Job!","Deployment Reward: Poor Job!",
+itemCollection_loot_Item_uncommon,Reference,2,1
+itemCollection_Weapons_uncommon,Reference,2,1
+itemCollection_MechParts_uncommon,Reference,2,1

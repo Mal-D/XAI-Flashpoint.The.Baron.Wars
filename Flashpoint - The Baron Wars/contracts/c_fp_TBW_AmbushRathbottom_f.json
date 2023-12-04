@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_AmbushRathbottom_f",
-    "contractName" : "Ambush Kidnapping 'Mech.(f)",
+    "contractName" : "Ambush Rathbottom's Kidnappers..",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 5,
     "difficultyUIModifier" : 0,
@@ -11,9 +11,9 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
+    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in a remote mountainous region.",
     "longDescription" : "Let's get him before they make him disappear again.",
-    "salvagePotential" : 20,
+    "salvagePotential" : 16,
     "requirementList" : [],
     "OnContractSuccessResults" : [{"Scope" : "Company",
             "Requirements" : null,
@@ -108,9 +108,9 @@
             "contractObjective" : {
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
-            "title" : "Destroy the Convoy Guards.",
-            "description" : "Send a message by not only disabling the carrying 'Mech, but eliminte its escorts as well.",
-            "isPrimary" : false,
+            "title" : "Destroy all the Convoy units.",
+            "description" : "Send a message by not only disabling the carrying Vehicle, but eliminte its escorts as well.",
+            "isPrimary" : true,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
                 "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
@@ -122,7 +122,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "f8f77ed8-c52e-4d19-b8e0-d4c94baf2375"
             },
-            "title" : "Ambush Rathbottom's Kidnapper",
+            "title" : "Ambush Rathbottom's Kidnappers",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{"Scope" : "Company",
@@ -367,7 +367,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "...Alright Mechwarriors, Let's get the job done and bug out before the guards get too frisky.",
+                    "words" : "...Alright Mechwarriors, Let's get the job done and bug out before the Opfor 'Mechs get too frisky.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

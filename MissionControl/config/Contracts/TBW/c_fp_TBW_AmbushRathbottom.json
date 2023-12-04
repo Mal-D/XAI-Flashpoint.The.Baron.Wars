@@ -7,13 +7,13 @@
   "AdditionalLances": {
     "Enable": true,
     "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Destroy Addition enemy Lance."],
-    "EnemyLances": ["lancedef_mech_d5_general_MedFire"],
+    "EnemyLanceObjectiveNames": ["Destroy Additional enemy Lance."],
+    "EnemyLances": ["lancedef_mech_d6_dynamic_MedHeavyCavalry"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
-    "Dialogue": "{Commander.LastName}, The local Lads and Lasses have tramped long and hard to get here on time. We have no idea which one the vehicles the Governor is in. Shoot them all.",
+    "Dialogue": "{Commander.LastName}, The local militia have been unable to here on time. So, I'm all you have. We have no idea which one of the vehicles the Governor is in. Shoot them all and hope he survives.",
     "AllyLanceCount": 1,
-    "AllyLances": ["lancedef_theBaron_AL_Escort2"]
+    "AllyLances": ["lanceDef_TBW_BaronSingle"]
   },
   "ExtendedLances": {
     "Enable": false,
@@ -21,11 +21,11 @@
     "AllyLanceSize": 4
   },
   "ExtendedBoundaries": {
-    "Enable": false,
-    "IncreaseBoundarySizeByPercentage": 0.2
+    "Enable": true,
+    "IncreaseBoundarySizeByPercentage": 0.5
   },
   "DynamicWithdraw": {
-    "Enable": false
+    "Enable": true
   },
   "AdditionalPlayerMechs": {
     "Enable": false

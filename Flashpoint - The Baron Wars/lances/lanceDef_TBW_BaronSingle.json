@@ -3,7 +3,7 @@
 		"Id": "lanceDef_TBW_BaronSingle",
 		"Name": "BaronSingle",
 		"Details": "Single Unit Lance",
-		"Icon": "",
+		"Icon": "uixTxrIcon_wagyuBarons",
 		"Cost": 0,
 		"Rarity": 0,
 		"Purchasable": false
@@ -21,7 +21,7 @@
 	"LanceUnits": [
 		{
 			"unitType": "Mech",
-			"unitId": "mechdef_blackjack_BJ-1M",
+			"unitId": "mechdef_blackjack_BJ-1DB",
 			"unitSimGameID": null,
 			"pilotId": "pilot_BW_theBaron",
 			"pilotSimGameID": null,

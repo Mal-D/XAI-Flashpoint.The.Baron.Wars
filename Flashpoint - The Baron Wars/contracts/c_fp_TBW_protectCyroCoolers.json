@@ -1049,7 +1049,7 @@
         },
         "teamGuid" : "ecc8d4f2-74b4-465d-adf6-84445e5dfc230",
         "teamName" : "EmployerTeam",
-        "faction" : "INVALID_UNSET",
+        "faction" : "wagyuBarons",
         "teamLeaderCastDefId" : "castDef_TeamLeader_Current",
         "lanceOverrideList" : [
             {
@@ -1312,9 +1312,9 @@
                     "EncounterObjectGuid" : "d3d75b1e-ace5-43e8-b037-79a2dd2b3d4e"
                 },
                 "name" : "Lance_Escort",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_vehicle_d5_dynamic_convoy",
                 "lanceTagSet" : {
-                    "items" : ["lance_bracket_med", "lance_type_convoy","lance_type_dynamic"],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -1343,14 +1343,14 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
-                            "items" : ["unit_electronicWarfare", "unit_role_activeprobe"],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilot_d5_gunner",
+                        "pilotDefId" : "pilotDef_InheritLance",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"

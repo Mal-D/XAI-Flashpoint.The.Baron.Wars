@@ -1,5 +1,7 @@
-itemCollection_MoC_MuseumPieces3,,,
-itemCollection_Ammo_uncommon,Reference,3,1
-itemCollection_Upgrades_rare,Reference,2,1
-mechdef_clint_CLNT-2-3T,MechPart,3,1
-itemCollection_SLDF,Reference,2,1
+itemCollection_MoC_MuseumPieces3,"Deployment Reward: Fair Job!","Deployment Reward: Fair Job!",
+itemCollection_loot_Item_uncommon,Reference,4,1
+itemCollection_Weapons_uncommon,Reference,4,1
+itemCollection_Weapons_rare,Reference,2,1
+itemCollection_loot_Item_rare,Reference,2,1
+itemCollection_MechParts_uncommon,Reference,4,1
+mechdef_clint_CLNT-2-3T,Mech,1,1

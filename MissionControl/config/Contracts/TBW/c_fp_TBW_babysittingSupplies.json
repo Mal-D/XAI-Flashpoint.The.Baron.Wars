@@ -6,16 +6,17 @@
   "HotDropProtection": {
     "Enable": true
   },
-  "AdditionalLances": {
+  "AdditionalLances": 
+  {
     "Enable": true,
-    "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Neutralize AgCo's Contractor Lance"],
-    "EnemyLances": ["lancedef_Irukjandi_MedSupport"],
+    "EnemyLanceCount": 2,
+    "EnemyLanceObjectiveNames": ["Destroy the blocking lance","Stomp their support unit"],
+    "EnemyLances": ["lancedef_mech_d5_dynamic_MedCavalry","lancedef_mixed_d5_dynamic_MedSupport"],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
-    "Dialogue": "Commander {Commander.LastName}, I don't know why Leanora is so adament in destroying me. She's a bit of hothead but, she's not stupid. I just hope she isn't here.",
-    "AllyLanceCount": 1,
-    "AllyLances": ["lancedef_theBaron_AL_Escort"]
+    "Dialogue": "Commander {Commander.LastName}, I don't know why Leanora is so adamant in destroying me. She's a bit of hothead but, she's not stupid. I just hope she isn't here.",
+    "AllyLanceCount": 2,
+		"AllyLances": [ "lanceDef_TBW_BaronSingle",	"lancedef_theBaron_AL_Escort" ]
   },
   "ExtendedLances": {
     "Enable": false,
@@ -24,7 +25,7 @@
   },
   "ExtendedBoundaries": {
     "Enable": false,
-    "IncreaseBoundarySizeByPercentage": 0.5
+    "IncreaseBoundarySizeByPercentage": 0
   },
   "DynamicWithdraw": {
     "Enable": false

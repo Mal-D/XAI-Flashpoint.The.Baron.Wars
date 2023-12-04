@@ -16,7 +16,7 @@
 	"LanceUnits": [
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_APC_WheeledP_Laser",
+			"unitId": "vehicledef_APC_Turhan_Laser",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [],
@@ -37,7 +37,7 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_APC_WheeledP_Laser",
+			"unitId": "vehicledef_APC_Turhan_Laser",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [],
@@ -58,7 +58,7 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_APC_WheeledP_Laser",
+			"unitId": "vehicledef_APC_Turhan_Laser",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [],
@@ -79,7 +79,7 @@
 		},
 		{
 			"unitType": "Vehicle",
-			"unitId": "vehicledef_APC_WheeledP_Laser",
+			"unitId": "vehicledef_APC_Turhan_Laser",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [],

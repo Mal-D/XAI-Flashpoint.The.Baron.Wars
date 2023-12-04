@@ -1,0 +1,6 @@
+{
+    "Id" : "LoreDecimalDegrees",
+    "Name" : "DD",
+    "Details" :"Decimal degrees (DD's) express latitude and longitude geographic coordinates as decimal fractions of a degree. DD's are used in many geographic information systems and GPS devices.",
+	"Icon" : ""
+}

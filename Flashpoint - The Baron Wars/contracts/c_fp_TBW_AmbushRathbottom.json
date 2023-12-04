@@ -11,7 +11,7 @@
     "missionSuccessStatementOverride" : null,
     "badFaithStatementOverride" : null,
     "goodFaithStatementOverride" : null,
-    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in the hills surrounding the spaceport.",
+    "shortDescription" : "The Irukjandi Company have played their hand and are now moving Rathbottom from their mountain hold. The CARVAS transmitter has been located in a remote mountainous region.",
     "longDescription" : "Let's get him before they make him disappear again.",
     "salvagePotential" : 16,
     "requirementList" : [],
@@ -109,8 +109,8 @@
                 "EncounterObjectGuid" : "e93b9c15-0cbd-46a7-87a4-1d3de6adfd59"
             },
             "title" : "Destroy all the Convoy units.",
-            "description" : "Send a message by not only disabling the carrying Vehicle, but eliminte its escorts as well.",
-            "isPrimary" : true,
+            "description" : "",
+            "isPrimary" : false,
             "forPlayer" : "Player1",
             "objectiveGuids" : [
                 "43fe5b1b-6c77-4daf-b6be-5735ab59ea11"
@@ -266,7 +266,7 @@
             },
             "title" : "Get to the evac zone",
             "description" : "The objective for the player units escaping and finishing the mission.",
-            "isPrimary" : false,
+            "isPrimary" : true,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
@@ -279,7 +279,31 @@
             "title" : "Destroy Enemy Reinforcement Units",
             "description" : "",
             "isPrimary" : false,
-            "OnSuccessResults" : [],
+            "OnSuccessResults" : [                {
+                "Scope" : "Company",
+                "Requirements" : null,
+                "AddedTags" : {
+                    "items" : ["_TBW_EnemyReo_Destroyed"],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [
+                    {
+                        "typeString" : "System.Single",
+                        "name" : "ContractBonusRewardPct",
+                        "value" : "0.1",
+                        "set" : false,
+                        "valueConstant" : null
+                    }
+                ],
+                "Actions" : [],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+            }],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : null,
             "OnFailureDialogueGUID" : null
@@ -520,7 +544,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Excellent work Commander. While the Magastry Judicial System is as accomodating as possible but Treason is still treason and it still brings the severest of punishments.",
+                    "words" : "Excellent work Commander. While the Magistracy Judicial System is as accomodating as possible but Treason is still treason and it still brings the severest of punishments.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -735,7 +759,7 @@
                     "selectedCastDefId" : "castDef_DariusDefault",
                     "emote" : "Default",
                     "audioName" : "NONE",
-                    "cameraFocusGuid" : "",
+                    "cameraFocusGuid" : "3560382a-c082-4a0b-8cab-8e6327b74cce",
                     "cameraDistance" : "Far",
                     "cameraHeight" : "Default",
                     "revealRadius" : -1
@@ -881,24 +905,24 @@
     "expirationTimeOverride" : 5,
     "ForceStartOnExpiration" : true,
     "ResultsOnExpiration": 
-    [                
-        {"Scope" : "Company",
-        "Requirements" : null,
-        "AddedTags" : {
-            "items" : ["_TBW_rathbottom_5"],
-            "tagSetSourceFile" : ""
-        },
-        "RemovedTags" : {
-            "items" : [],
-            "tagSetSourceFile" : ""
-        },
-        "Stats" : [],
-        "Actions" : [],
-        "ForceEvents" : [],
-        "TemporaryResult" : false,
-        "ResultDuration" : 0
-        }
-    ],
+        [                
+            {"Scope" : "Company",
+            "Requirements" : null,
+            "AddedTags" : {
+                "items" : ["_TBW_rathbottom_5"],
+                "tagSetSourceFile" : ""
+            },
+            "RemovedTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "Stats" : [],
+            "Actions" : [],
+            "ForceEvents" : [],
+            "TemporaryResult" : false,
+            "ResultDuration" : 0
+            }
+        ],
     "UniversalContractEffects" : [],
 
     "negotiatedSalary" : 1,
@@ -1131,7 +1155,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1164,7 +1188,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1197,7 +1221,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1230,7 +1254,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1288,7 +1312,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1321,7 +1345,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1354,7 +1378,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1387,7 +1411,7 @@
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
                         "unitType" : "Vehicle",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "vehicleDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1420,7 +1444,7 @@
                     "EncounterObjectGuid" : "f96ff774-d7ee-4486-b513-ce77357d1867"
                 },
                 "name" : "Ambush Lance Spawner",
-                "lanceDefId" : "lancedef_mech_d5_general_MedSupport",
+                "lanceDefId" : "lancedef_mech_d6_dynamic_MedHeavyCavalry",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -1445,7 +1469,7 @@
                         "customUnitName" : "Ambush Alpha",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1478,7 +1502,7 @@
                         "customUnitName" : "Ambush Beta",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1544,7 +1568,7 @@
                         "customUnitName" : "Ambush Delta",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "UseLance",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
