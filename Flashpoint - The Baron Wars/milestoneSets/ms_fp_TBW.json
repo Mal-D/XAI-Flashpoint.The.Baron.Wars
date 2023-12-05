@@ -731,6 +731,17 @@
                     },
                     "Stats" : [],
                     "Actions" : [
+                        
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Commander, JumpShip emergance detected. We're going to have visitors and not the friendly kind.",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "JumpPoint Emergence Warning.",
+                            "castDef_FarahDefault"
+                            ]
+                        },
                         {
                             "Type" : "System_StartConversation",
                             "value" : "9c96392b1071fd5869693bcc",
@@ -807,23 +818,14 @@
                     },
                     "Stats" : [],
                     "Actions" : [
+                        
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Commander, JumpShip emergance detected. We're going to have visitors and not the friendly kind.",
+                            "value" : "MIM have re-evaluated the repair facility outputs and estimate forces will have enough units to assault the Medical compound within five days. Terrain would suggest jump capable 'Mechs. Re-Up as much as possible and sorry for the short notice Commander.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "JumpPoint Emergence Warning.",
-                            "castDef_FarahDefault"
-                            ]
-                        },
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "MIM have re-evaluated the FOB outputs and estimate enough units to assault the compound within five days. Terrain would suggest jump capable 'Mechs. Re-Up as much as possible and sorry for the short notice Commander.",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "FOB output re-evaluated.",
+                            "Repair facility output re-evaluated.",
                             "castDef_MagRep"
                             ]
                         },
@@ -990,7 +992,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "<Stats.Company.[TB_FailCount]> Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
+                            "value" : "Commander {Commander.LastName}, Sorry Commander - we are going to have to let you go",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
