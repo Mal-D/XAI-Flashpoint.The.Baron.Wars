@@ -252,9 +252,22 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "a5257151-5269-4222-9a0d-31001a70fe22"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
-            "requirementList" : []
+            "requirementList" : [{
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [
+                        "TBW_takeClintParts"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }]
         }
     ],
     "cameraFocusHelperList" : [
@@ -368,7 +381,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "<i>(just audible) bloody families ...it's why I became a merc...</i> \r\n\r\nokay, {MC.PlayerLances.TeamPilot_Random_2.DisplayName}, time to pull a few fangs.\r\n\r\n<i>...better be something more than just beer...</i>",
+                    "words" : "<i>(just audible) bloody families ...it's why I became a merc...</i>\r\n\r\nokay, {MC.PlayerLances.TeamPilot_Random_2.DisplayName}, time to pull a few fangs.\r\n\r\n<i>...better be something more than just beer...</i>",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
