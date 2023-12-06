@@ -1107,7 +1107,7 @@
                     "revealRadius" : -1
                 },
                 {
-					"words": "[MC.Modification.AddTo.Company._TBW_AlphaPlaced]E.L.F. signal functional.",
+					"words": "{MC.Modification.AddTo.Company._TBW_AlphaPlaced}E.L.F. signal functional.",
 					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
@@ -1138,7 +1138,7 @@
                     "revealRadius" : -1
                 },
 				{
-					"words": "[MC.Modification.AddTo.Company._TBW_BravoPlaced]Initial scan parameters set. We're almost there.",
+					"words": "{MC.Modification.AddTo.Company._TBW_BravoPlaced}Initial scan parameters set. We're almost there.",
 					"wordsColor" : {"r" : 1,"g" : 1,"b" : 1,"a" : 1},
 					"selectedCastDefId": "castDef_FarahDefault",
 					"emote": "Default",
@@ -1873,8 +1873,8 @@
     }],
     "UniversalContractEffects" : [],
 
-    "negotiatedSalary" : 0.50,
-    "negotiatedSalvage" : 0.50,
+    "negotiatedSalary" : 0.5,
+    "negotiatedSalvage" : 0.5,
     "excludedFromProceduralGeneration" : true,
     "player1Team" : {
         "encounterLayerData" : {
