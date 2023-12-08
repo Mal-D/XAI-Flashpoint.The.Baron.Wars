@@ -1617,11 +1617,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Magistracy sovereignty is secured",
+                            "value" : "Amazing work Commander. New Abilene is safe - we now have cut out the rotten wood and replace it with strong new timbers.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Amazing work Commander {Commander.LastName}. New Abilene is safe - we now have cut out the rotten wood and replace it with strong new timbers.",
+                            "Magistracy sovereignty is secured.",
                             "castDef_anaMaria"
                             ]
                         },
@@ -1713,7 +1713,7 @@
                         }]
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -1736,7 +1736,7 @@
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces5"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1762,7 +1762,7 @@
                         }]
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -1785,7 +1785,7 @@
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces4"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1811,7 +1811,7 @@
                         }]
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -1834,7 +1834,7 @@
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces3"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1860,7 +1860,7 @@
                         }]
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -1871,7 +1871,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward Tier Three",
+                            "value" : "Complete for Reward Tier two",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
@@ -1883,7 +1883,7 @@
                             "Type" : "Flashpoint_CompleteFlashpoint",
                             "value" : "ms_fp_TBW_801_Reward",
                             "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_KOTU_MuseumPieces"]
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces2"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1954,22 +1954,6 @@
                     }],
                     "Actions" : [
                         {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Stats and Tag updates for Failure",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward for Failure",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_999_Fail-Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : null
-                        },
-                        {
                             "Type" : "System_ForceDropshipRoom",
                             "value" : "Ship",
                             "valueConstant" : null,
@@ -1980,7 +1964,7 @@
                     ],
                     "ForceEvents" : [{
                         "Scope" : "Company",
-                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "EventID" : "fe_TBW_toBeContinued",
                         "MinDaysWait" : 10,
                         "MaxDaysWait" : 20,
                         "Probability" : 100,
@@ -2048,7 +2032,7 @@
                     ],
                     "ForceEvents" : [{
                         "Scope" : "Company",
-                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "EventID" : "fe_TBW_toBeContinued",
                         "MinDaysWait" : 10,
                         "MaxDaysWait" : 20,
                         "Probability" : 100,
@@ -2116,7 +2100,7 @@
                     ],
                     "ForceEvents" : [{
                         "Scope" : "Company",
-                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "EventID" : "fe_TBW_toBeContinued",
                         "MinDaysWait" : 10,
                         "MaxDaysWait" : 20,
                         "Probability" : 100,
@@ -2184,7 +2168,7 @@
                     ],
                     "ForceEvents" : [{
                         "Scope" : "Company",
-                        "EventID" : "fe_TBW_J&E_Wedding",
+                        "EventID" : "fe_TBW_toBeContinued",
                         "MinDaysWait" : 10,
                         "MaxDaysWait" : 20,
                         "Probability" : 100,

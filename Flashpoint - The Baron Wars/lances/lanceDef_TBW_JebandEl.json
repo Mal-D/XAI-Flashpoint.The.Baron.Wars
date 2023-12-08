@@ -21,9 +21,9 @@
         {
             "unitType" : "Mech",
             "unitId" : "mechdef_assassin_ASN-21",
-            "unitSimGameID" : "mechdef_assassin_ASN-21",
+            "unitSimGameID" : "",
             "pilotId" : "pilot_BW_eleonoreR",
-            "pilotSimGameID" : "pilot_BW_eleonoreR",
+            "pilotSimGameID" : "",
             "unitTagSet" : {
                 "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"
@@ -44,10 +44,10 @@
         },
         {
             "unitType" : "Mech",
-            "unitId" : "mechdef_blackjack_BJ-1M",
-            "unitSimGameID" : "mechdef_blackjack_BJ-1M",
+            "unitId" : "mechdef_blackjack_BJ-1DB",
+            "unitSimGameID" : "",
             "pilotId" : "pilot_BW_theBaron",
-            "pilotSimGameID" : "pilot_BW_theBaron",
+            "pilotSimGameID" : "",
             "unitTagSet" : {
                 "items" : [],
                 "tagSetSourceFile" : "Tags/UnitTags"

@@ -12,8 +12,8 @@
     "EnemyLanceObjectiveNames": [],
     "EnemyLances": [],
     "UseDialogue": true,
-    "DialogueCastDefId": "castDef_theDaughter",
-    "Dialogue": "Come Husband-to-be, Let's not leave this to <i>off-worlders</i>. I say we take back our homes and broker no quarter otherwise.",
+    "DialogueCastDefId": "castDef_theBaron_pilot",
+    "Dialogue": "Let's go my ferocious little <i>Badger</i>. We have a wedding to get to.",
     "AllyLanceCount": 1,
     "AllyLances": ["lanceDef_TBW_JebandEl"]
   },

@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fp_TBW",
         "Name" : "The Baron's War",
-        "Details" : "This is not what we wanted but, the popular media title seems to have stuck.",
+        "Details" : "We wish that people wouldn't call it that but, the popular media title seems to have stuck.",
         "Icon" : "uix_TxrSpot_TribunalBombed.png"
     },
     "Weight" : 1,
@@ -49,7 +49,7 @@
     "AvailableTimeout" : 180,
     "UseInProgressTimeoutOverride" : true,
     "InProgressTimeout" : 180,
-    "RewardCollectionID" : "itemCollection_MoC_MuseumPieces",
+    "RewardCollectionID" : "itemCollection_loot_none",
     "UnitDropTonnageHint" : "Mixed",
     "LanceDropTonnageHint" : "Mixed",
     "FlashpointShortDescription" : "Commander {Commander.LastName} You have agreed to assume the office of 'Marshall' until this situation is resolved. There are other parties involved but as to who they are, or their objectives, we are still investigating. You will the earn the eternal gratitude of the Crimson Council should you bring this to a successful conclusion.",

@@ -12,8 +12,8 @@
     "EnemyLanceObjectiveNames": [],
     "EnemyLances": [],
     "UseDialogue": true,
-    "DialogueCastDefId": "castDef_theDaughter",
-    "Dialogue": "Come Husband-to-be, Let's not leave this to <i>off-worlders</i>. I say we take back our homes and broker no quarter otherwise.",
+    "DialogueCastDefId": "castDef_theFixer",
+    "Dialogue": "Oh good you're both here. Missed you first time around but now, it's time to finish what we started.",
     "AllyLanceCount": 1,
     "AllyLances": ["lanceDef_TBW_JebandEl"]
   },

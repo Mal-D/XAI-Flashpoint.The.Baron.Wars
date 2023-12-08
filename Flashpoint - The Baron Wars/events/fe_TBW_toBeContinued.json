@@ -1,8 +1,8 @@
 {
     "Description" : {
-        "Id" : "forcedevent_co_toBeContinued",
+        "Id" : "fe_TBW_toBeContinued",
         "Name" : "To Be Continued",
-        "Details" : "Congratulations...!\r\n\r\nIf you're seeing this you have braved the machinations and intrigue of Mr. Smith and survived...so far.\r\n\r\nYou have rescued the fair maiden, made several enemies and earned Allies and hopefully made a little money along the way.\r\n\r\nThis is just a pause in the frantic pace of  'Operation - Deep Strike' and I hope you'll be here to the end.\r\n\r\nBe on the lookout for the continaution 'Laying down with Dogs'.",
+        "Details" : "Congratulations...!\r\n\r\nIf you're seeing this you have entered into the dark machinations and intrigue of the Indri Consortium, the mysterious Mr. Smith and his 'Fixer'and survived...so far.\r\n\r\nYou have rescued a Countess and a Governor, several tons of top quality beef, made several enemies and fostered Allies and made a little money along the way.\r\n\r\nThis is just a pause in the frantic pace of what is 'The Baron's War' and I hope you'll be here to the end.\r\n\r\nBe on the lookout for the continuation... 'Operation Deep Strike'.",
         "Icon" : "uix_TxrSpot_ToBeContinued.png"
     },
     "Scope" : "Company",
@@ -11,13 +11,13 @@
         "Scope" : "Company",
         "RequirementTags" : {
             "items" : [
-                "flashpoint_ODS_1_bloodyInsects_complete"
+                "flashpoint_TBW_SUCCESSFUL"
             ],
             "tagSetSourceFile" : ""
         },
         "ExclusionTags" : {
             "items" : [
-                "forcedevent_co_toBeContinued_played"
+                "fe_TBW_toBeContinued_played"
             ],
             "tagSetSourceFile" : ""
         },
@@ -39,7 +39,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Continue...",
-                        "Details" : "This Flashpoint campaign has been made possible by so many people in the Battletech community that if I miss mentioning any one it is totally my omission and I don't get a lot of space in here to type stuff.\r\n\r\nThe creators of Battletech.\r\nThose Guardians of knowledge who roam the halls of Sarna.net.\r\nThe amazingly talented people at HBS.\r\nAmechwarrior - who opened my eyes to what is be possible.\r\nEdmon - who envisaged a more balanced Battletech game.\r\nDonZappo - who made Ed's vision a reality.\r\nEck - ever willing to help with the inner mysteries of the game.\r\nCWolf and Jamie Wolf - who added such spice to the game.\r\nThe army of people on the BT-R discord channel ready and willing to test my Flashpoints and answer my stupid questions.\r\nI don't have enough room to mention you all - but you know.\r\n\r\nTo Tex of the BPL - The 'voice' of the Innershpere - I salute you.\r\n\r\nAnd finally, those who are reading this - you, who have spent your valuable time playing my Flashpoints, I hope you find them enjoyable and challenging. \r\n\r\nHang on, as the ride is not yet over.",
+                        "Details" : "This Flashpoint it a collaberation of many people. Fisrt and foremost XyerX for a wonderful remastering of the HBS BattleTech game, , FrostRaptor who provided Contract launching flexibility and the modding community as whole. If I have miss mentioning any one specific it is totally my omission. I don't get a lot of space in here to type stuff.\r\n\r\nXeryX for XAI - Battletech.\r\nCwolf, for his amazing Mission Control, Extended Conversation and ConverseteK and patience to answer my stupid questions.\r\nFrostRaptor for his Utilities and Maprandomizer\r\nAmechwarrior - who first encouraged me to see what else is possible.\r\n.\r\n.\r\n.\r\n.\r\n.\r\nI don't have enough room to mention you all - but you know.\r\n\r\nTo Tex of the BPL - The 'voice' of the Innershpere - I salute you.\r\n\r\nAnd finally, those who are reading this - you, who have spent your valuable time playing my Flashpoints, I hope you find them enjoyable and challenging. \r\n\r\nHang on, as the ride is not yet over.",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -49,7 +49,7 @@
                             "Requirements" : null,
                             "AddedTags" : {
                                 "items" : [
-                                    "forcedevent_co_toBeContinued_played"
+                                    "fe_TBW_toBeContinued_played"
                                 ],
                                 "tagSetSourceFile" : ""
                             },

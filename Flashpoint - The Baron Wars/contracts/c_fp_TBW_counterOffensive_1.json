@@ -1,6 +1,6 @@
 {
     "ID" : "c_fp_TBW_counterOffensive_1",
-    "contractName" : "Counter Offensive..",
+    "contractName" : "Counter Offensive.",
     "contractDisplayStyle" : "BaseFlashpoint",
     "difficulty" : 6,
     "difficultyUIModifier" : 0,
@@ -3457,11 +3457,9 @@
                     "EncounterObjectGuid" : "cdadba7a-1009-487f-a9ab-0617cbb3b968"
                 },
                 "name" : "Lance_Friendly_BaseTurrets",
-                "lanceDefId" : "Tagged",
+                "lanceDefId" : "lancedef_turret_d5_dynamic_standardTurret",
                 "lanceTagSet" : {
-                    "items" : [
-                        "lance_type_turret"
-                    ],
+                    "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
                 },
                 "lanceExcludedTagSet" : {
@@ -3486,10 +3484,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -3522,10 +3517,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -3558,10 +3550,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -3594,10 +3583,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretDef_InheritLance",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -4020,10 +4006,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretdef_Light_LRM",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -4056,10 +4039,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretdef_Light_Shredder",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
@@ -4092,10 +4072,7 @@
                         "unitType" : "Turret",
                         "unitDefId" : "turretdef_Light_Shredder",
                         "unitTagSet" : {
-                            "items" : [
-                                "unit_light",
-                                "unit_turret"
-                            ],
+                            "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "unitExcludedTagSet" : {
