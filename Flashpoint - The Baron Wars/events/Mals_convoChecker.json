@@ -25,8 +25,8 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "(White Text Details) Chatter Checker - [Enter Name Here]}",
-                "Details" : "(Blue Text Details) #1 CT Test",
+                "Name" : "(White Text Details) Chatter Checker - TBW Final Conversation}",
+                "Details" : "(Blue Text Details) #1 TBW Final Conversation ",
                 "Icon" : null
             },
             "RequirementList" : [
@@ -47,8 +47,8 @@
                 {
                     "Description" : {
                         "Id" : "outcome_0_0",
-                        "Name" : "#1- Holodesk Chatter Checker",
-                        "Details" : "Chatter Checker - CT Test",
+                        "Name" : "3. TBW Final Conversation",
+                        "Details" : "4. TBW Final Conversation",
                         "Icon" : null
                     },
                     "Weight" : 100,
@@ -66,32 +66,15 @@
                             },
                             "Stats" : [],
                             "Actions" : [
-                                {
-                                    "Type" : "System_SimGameCharacterVisible",
-                                    "value" : true,
-                                    "additionalValues" : [
-                                        "Farah",
-                                        "Yang",
-                                        "Darius",
-                                        "Sumire"
-                                    ]
-                                },
+                                
                                 {
                                     "Type" : "System_StartConversation",
-                                    "value" : "9c9d1c16d0effb81345a9728",
+                                    "value" : "9cca3a7320c1a625346009aa",
                                     "valueConstant" : null,
                                     "additionalValues" : [
-                                        "Chatter Checker - CT Test Conversation",
-                                        "Holodesk Chatter Checker",
+                                        "Chatter Checker - TBW Final Conversation",
+                                        "Same as above...",
                                         null,
-                                        null
-                                    ]
-                                },
-                                {
-                                    "Type" : "System_ForceDropshipRoom",
-                                    "value" : "Ship",
-                                    "valueConstant" : null,
-                                    "additionalValues" : [
                                         null
                                     ]
                                 }

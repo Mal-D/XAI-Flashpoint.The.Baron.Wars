@@ -1615,16 +1615,7 @@
                     },
                     "Stats" : [],
                     "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Amazing work Commander. New Abilene is safe - we now have cut out the rotten wood and replace it with strong new timbers.",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Magistracy sovereignty is secured.",
-                            "castDef_anaMaria"
-                            ]
-                        },
+                        
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
                             "value" : "ms_fp_TBW_703_Epilogue",
@@ -1661,13 +1652,14 @@
                     },
                     "Stats" : [],
                     "Actions" : [
+                        
                         {
                             "Type" : "System_StartConversation",
-                            "value" : "9ce95936dcbb9aca0fceccdc",
+                            "value" : "9cca3a7320c1a625346009aa",
                             "valueConstant" : null,
                             "additionalValues" : [
                                 "{TGT_FLASHPOINT.Def.Description.Name} - CONCLUSION -",
-                                "High Orbit \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
+                                "Stationary Orbit over the Capital \u2014 {TGT_FLASHPOINT.CurSystem.Name}"
                             ]
                         },
                         {
@@ -1728,7 +1720,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier Five - ms_fp_800_Complete",
+                            "Tags and stats for reward Tier Five",
                             "castDef_MagRep"
                             ]
                         },
@@ -1777,7 +1769,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier Four - ms_fp_800_Complete",
+                            "Tags and stats for reward Tier Four",
                             "castDef_MagRep"
                             ]
                         },
@@ -1875,7 +1867,7 @@
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Tags and stats for reward Tier three - ms_fp_800_Complete",
+                            "Tags and stats for reward Tier two - ms_fp_800_Complete",
                             "castDef_MagRep"
                             ]
                         },
@@ -1936,7 +1928,7 @@
                         "name" : "Funds",
                         "value" : "15000000",
                         "set" : false,
-                        "valueConstant" : null
+                        "valueConstant" : 15000000
                     },
                     {
                         "typeString" : "System.Int32",
@@ -2004,7 +1996,7 @@
                         "name" : "Funds",
                         "value" : "10000000",
                         "set" : false,
-                        "valueConstant" : null
+                        "valueConstant" : 10000000
                     },
                     {
                         "typeString" : "System.Int32",
@@ -2072,7 +2064,7 @@
                         "name" : "Funds",
                         "value" : "7000000",
                         "set" : false,
-                        "valueConstant" : null
+                        "valueConstant" : 7000000
                     },
                     {
                         "typeString" : "System.Int32",
@@ -2140,7 +2132,7 @@
                         "name" : "Funds",
                         "value" : "5000000",
                         "set" : false,
-                        "valueConstant" : null
+                        "valueConstant" : 5000000
                     },
                     {
                         "typeString" : "System.Int32",

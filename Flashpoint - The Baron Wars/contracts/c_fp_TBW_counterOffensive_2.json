@@ -1086,7 +1086,7 @@
             },
             "title" : "Entire Player Lance Must Survive",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -2465,7 +2465,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Boss, I'm seeing multiple additional DropShip blips on radar; move fast, cause they're gonna be here soon.",
+                    "words" : "Boss, I'm seeing multiple additional DropShip blips on radar; move fast, 'cause they're gonna be here soon.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -3810,7 +3810,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_25"],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -3909,7 +3909,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : ["spawn_poorly_maintained_25"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -3943,7 +3943,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_25"
+                        "spawn_poorly_maintained_50"
                     ],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
@@ -4724,7 +4724,7 @@
                 },
                 "spawnEffectTags" : {
                     "items" : [
-                        "spawn_poorly_maintained_25"
+                        "spawn_poorly_maintained_50"
                     ],
                     "tagSetSourceFile" : "tags/SpawnEffectTags"
                 },
@@ -4836,7 +4836,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "40419743-5665-48e5-bb81-e9d5e070768e"
                         },
-                        "customUnitName" : "",
+                        "customUnitName" : "ENAddSec4",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "MechDef_None",
@@ -4909,7 +4909,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -4942,7 +4942,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -4975,7 +4975,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -5008,7 +5008,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_50"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -5068,7 +5068,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : ["spawn_poorly_maintained_50"],
+                            "items" : ["spawn_poorly_maintained_25"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -5382,7 +5382,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "be719696-104c-40c1-8a9f-f0c4e97feb0d"
                         },
-                        "customUnitName" : "The Fixer",
+                        "customUnitName" : "",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
