@@ -1664,7 +1664,7 @@
                         },
                         {
                             "Type" : "Flashpoint_SetNextMilestone",
-                            "value" : "ms_fp_TBW_800_Complete",
+                            "value" : "ms_fp_TBW_800_Branch",
                             "valueConstant" : null,
                             "additionalValues" : null
                         }
@@ -1678,9 +1678,166 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {"Description" : {"Id" : "ms_fp_TBW_800_Complete",
-                "Name" : "ms_fp_TBW_800_Complete",
-                "Details" : "ms_fp_TBW_800_Complete",
+        {"Description" : {"Id" : "ms_fp_TBW_800_Branch",
+                "Name" : "800_Branch",
+                "Details" : "800_Branch",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {"Scope" : "Company",
+                "Requirements" : {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [
+                            "_TBW_progScore5"
+                        ],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                },
+                "AddedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RemovedTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "Stats" : [],
+                "Actions" : [
+                    {
+                        "Type" : "Flashpoint_SetNextMilestone",
+                        "value" : "ms_fp_TBW_805_Complete",
+                        "valueConstant" : null,
+                        "additionalValues" : null
+                    }
+                ],
+                "ForceEvents" : [],
+                "TemporaryResult" : false,
+                "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [
+                                "_TBW_progScore4"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_804_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [
+                                "_TBW_progScore3"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_803_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                },
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [
+                                "_TBW_progScore2"
+                            ],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "Flashpoint_SetNextMilestone",
+                            "value" : "ms_fp_TBW_802_Complete",
+                            "valueConstant" : null,
+                            "additionalValues" : null
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_805_Complete",
+                "Name" : "ms_fp_TBW_805_Complete",
+                "Details" : "ms_fp_TBW_805_Complete",
                 "Icon" : ""
             },
             "Scope" : "Company",
@@ -1697,12 +1854,7 @@
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 5,
-                            "valueConstant" : "5"
-                        }]
+                        "RequirementComparisons" : []
                     },
                     "AddedTags" : {
                         "items" : ["flashpoint_TBW_SUCCESSFUL"],
@@ -1726,156 +1878,9 @@
                         },
                         {
                             "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
+                            "value" : "ms_fp_TBW_805_Reward",
                             "valueConstant" : null,
                             "additionalValues" : ["itemCollection_MoC_MuseumPieces5"]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 4,
-                            "valueConstant" : "4"
-                        }]
-                    },
-                    "AddedTags" : {
-                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward level Four",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier Four",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_MoC_MuseumPieces4"]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 3,
-                            "valueConstant" : "3"
-                        }]
-                    },
-                    "AddedTags" : {
-                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward Tier Three",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier three - ms_fp_800_Complete",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_MoC_MuseumPieces3"]
-                        }
-                    ],
-                    "ForceEvents" : [],
-                    "TemporaryResult" : false,
-                    "ResultDuration" : 0
-                },
-                {"Scope" : "Company",
-                    "Requirements" : {
-                        "Scope" : "Company",
-                        "RequirementTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "ExclusionTags" : {
-                            "items" : [],
-                            "tagSetSourceFile" : ""
-                        },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 2,
-                            "valueConstant" : "2"
-                        }]
-                    },
-                    "AddedTags" : {
-                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
-                        "tagSetSourceFile" : ""
-                    },
-                    "RemovedTags" : {
-                        "items" : [],
-                        "tagSetSourceFile" : ""
-                    },
-                    "Stats" : [],
-                    "Actions" : [
-                        {
-                            "Type" : "System_PauseNotification",
-                            "value" : "Complete for Reward Tier two",
-                            "valueConstant" : null,
-                            "additionalValues" : 
-                            [
-                            "Tags and stats for reward Tier two - ms_fp_800_Complete",
-                            "castDef_MagRep"
-                            ]
-                        },
-                        {
-                            "Type" : "Flashpoint_CompleteFlashpoint",
-                            "value" : "ms_fp_TBW_801_Reward",
-                            "valueConstant" : null,
-                            "additionalValues" : ["itemCollection_MoC_MuseumPieces2"]
                         }
                     ],
                     "ForceEvents" : [],
@@ -1887,9 +1892,7 @@
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
         },
-        {
-            "Description" : {
-                "Id" : "ms_fp_TBW_801_Reward",
+        {"Description" : {"Id" : "ms_fp_TBW_805_Reward",
                 "Name" : "801_Reward",
                 "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
                 "Icon" : null
@@ -1908,12 +1911,7 @@
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 5,
-                            "valueConstant" : "5"
-                        }]
+                        "RequirementComparisons" : []
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -1964,7 +1962,20 @@
                         }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                },
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_804_Complete",
+                "Name" : "ms_fp_TBW_804_Complete",
+                "Details" : "ms_fp_TBW_804_Complete",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
                 {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
@@ -1976,12 +1987,64 @@
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 4,
-                            "valueConstant" : "4"
-                        }]
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Complete for Reward level 4",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Tags and stats for reward Tier 4",
+                            "castDef_MagRep"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_804_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces4"]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_804_Reward",
+                "Name" : "804_Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -2032,7 +2095,20 @@
                         }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                },
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_803_Complete",
+                "Name" : "ms_fp_TBW_803_Complete",
+                "Details" : "ms_fp_TBW_803_Complete",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
                 {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
@@ -2052,6 +2128,63 @@
                         }]
                     },
                     "AddedTags" : {
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Complete for Reward level 3",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Tags and stats for reward Tier 3",
+                            "castDef_MagRep"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_803_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces3"]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_803_Reward",
+                "Name" : "803_Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
@@ -2059,7 +2192,8 @@
                         "items" : [],
                         "tagSetSourceFile" : ""
                     },
-                    "Stats" : [{
+                    "Stats" : [
+                        {
                         "typeString" : "System.Int32",
                         "name" : "Funds",
                         "value" : "7000000",
@@ -2079,7 +2213,8 @@
                         "value" : "50",
                         "set" : false,
                         "valueConstant" : null
-                    }],
+                    }
+                    ],
                     "Actions" : [
                         {
                             "Type" : "System_ForceDropshipRoom",
@@ -2100,7 +2235,20 @@
                         }],
                     "TemporaryResult" : false,
                     "ResultDuration" : 0
-                },
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_802_Complete",
+                "Name" : "ms_fp_TBW_802_Complete",
+                "Details" : "ms_fp_TBW_802_Complete",
+                "Icon" : ""
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
                 {"Scope" : "Company",
                     "Requirements" : {
                         "Scope" : "Company",
@@ -2112,12 +2260,64 @@
                             "items" : [],
                             "tagSetSourceFile" : ""
                         },
-                        "RequirementComparisons" : [{
-                            "obj" : "progScore",
-                            "op" : "Equal",
-                            "val" : 2,
-                            "valueConstant" : "2"
-                        }]
+                        "RequirementComparisons" : []
+                    },
+                    "AddedTags" : {
+                        "items" : ["flashpoint_TBW_SUCCESSFUL"],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RemovedTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "Stats" : [],
+                    "Actions" : [
+                        {
+                            "Type" : "System_PauseNotification",
+                            "value" : "Complete for Reward level 2",
+                            "valueConstant" : null,
+                            "additionalValues" : 
+                            [
+                            "Tags and stats for reward Tier 2",
+                            "castDef_MagRep"
+                            ]
+                        },
+                        {
+                            "Type" : "Flashpoint_CompleteFlashpoint",
+                            "value" : "ms_fp_TBW_802_Reward",
+                            "valueConstant" : null,
+                            "additionalValues" : ["itemCollection_MoC_MuseumPieces2"]
+                        }
+                    ],
+                    "ForceEvents" : [],
+                    "TemporaryResult" : false,
+                    "ResultDuration" : 0
+                }
+            ],
+            "Repeatable" : false,
+            "UseRandomInvocation" : false,
+            "InvokeChance" : 0
+        },
+        {"Description" : {"Id" : "ms_fp_TBW_802_Reward",
+                "Name" : "802_Reward",
+                "Details" : "Extra rewards, including Reputation and bonus C-Bills go here",
+                "Icon" : null
+            },
+            "Scope" : "Company",
+            "Requirements" : [],
+            "Results" : [
+                {"Scope" : "Company",
+                    "Requirements" : {
+                        "Scope" : "Company",
+                        "RequirementTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "ExclusionTags" : {
+                            "items" : [],
+                            "tagSetSourceFile" : ""
+                        },
+                        "RequirementComparisons" : []
                     },
                     "AddedTags" : {
                         "items" : [],
@@ -2173,7 +2373,8 @@
             "Repeatable" : false,
             "UseRandomInvocation" : false,
             "InvokeChance" : 0
-        },
+        }
+        ,
         {
             "Description" : {"Id" : "ms_fp_TBW_901_Epilogue",
                 "Name" : "901_Epilogue",
