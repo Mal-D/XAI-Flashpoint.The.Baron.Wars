@@ -198,7 +198,7 @@
                 "Scope" : "Company",
                 "Requirements" : null,
                 "AddedTags" : {
-                    "items" : ["_TBW_buildingLoss"],
+                    "items" : [],
                     "tagSetSourceFile" : ""
                 },
                 "RemovedTags" : {

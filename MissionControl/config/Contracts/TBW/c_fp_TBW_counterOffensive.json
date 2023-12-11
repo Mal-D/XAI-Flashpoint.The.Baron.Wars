@@ -8,9 +8,9 @@
   },
   "AdditionalLances": {
     "Enable": true,
-    "EnemyLanceCount": 1,
-    "EnemyLanceObjectiveNames": ["Eliminate The Fixer"],
-    "EnemyLances": ["TBW_701_FixerSingle"],
+    "EnemyLanceCount": 0,
+    "EnemyLanceObjectiveNames": [],
+    "EnemyLances": [],
     "UseDialogue": true,
     "DialogueCastDefId": "castDef_theBaron_pilot",
     "Dialogue": "Let's go my ferocious little <i>Badger</i>. We have a wedding to get to.",

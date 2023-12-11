@@ -40,7 +40,7 @@
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {
-		"items": [ "BLACKLISTED" ],
+		"items": ["BLACKLISTED"],
         "tagSetSourceFile": ""
     },
     "PilotCost": 0

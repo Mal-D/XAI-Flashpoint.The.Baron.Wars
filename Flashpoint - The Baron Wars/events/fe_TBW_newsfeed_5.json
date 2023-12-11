@@ -49,7 +49,7 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [ "fe_TBW_newsFeed_5","chainto_TBW_2"],
+                                "items" : [ "fe_TBW_newsFeed_5" ],
                                 "tagSetSourceFile" : ""
                             },
                             "RemovedTags" : {

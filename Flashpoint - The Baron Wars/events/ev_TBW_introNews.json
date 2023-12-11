@@ -15,7 +15,7 @@
         },
         "ExclusionTags" : {
             "items" : [
-                "ev_TBW_introNews"
+                "ev_TBW_introNews,flashpoint_TBW_complete"
             ],
             "tagSetSourceFile" : ""
         },

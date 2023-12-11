@@ -1914,7 +1914,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_complete"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -2047,7 +2047,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_complete"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -2185,7 +2185,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_complete"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
@@ -2320,7 +2320,7 @@
                         "RequirementComparisons" : []
                     },
                     "AddedTags" : {
-                        "items" : [],
+                        "items" : ["flashpoint_TBW_complete"],
                         "tagSetSourceFile" : ""
                     },
                     "RemovedTags" : {
