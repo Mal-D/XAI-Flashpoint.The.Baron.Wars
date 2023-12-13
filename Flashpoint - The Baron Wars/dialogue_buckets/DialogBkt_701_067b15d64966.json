@@ -98,7 +98,7 @@
 			"revealRadius" : -1
 		},
         {
-            "words" : "I thought you'd see reason. Target the buildings, and it will keep the mad hags' forces busy. I'll look after these socalled Marshalls.",
+            "words" : "I thought you'd see reason. Target the buildings, and it will keep the mad hags' forces busy. I'll look after these so called Marshalls.",
             "wordsColor" : {
                 "r" : 1,
                 "g" : 1,
@@ -106,6 +106,38 @@
 				"a" : 1
     	    },
 			"selectedCastDefId" : "castDef_theFixer",
+			"emote" : "Default",
+			"audioName" : "NONE",
+			"cameraFocusGuid" : "",
+			"cameraDistance" : "Far",
+			"cameraHeight" : "Default",
+			"revealRadius" : -1
+		},
+        {
+            "words" : "They sure are desparate. When the enemy are fighting like this there is no room for civility or compassion.",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+				"b" : 1,
+				"a" : 1
+    	    },
+			"selectedCastDefId" : "castDef_FarahDefault",
+			"emote" : "Default",
+			"audioName" : "NONE",
+			"cameraFocusGuid" : "",
+			"cameraDistance" : "Far",
+			"cameraHeight" : "Default",
+			"revealRadius" : -1
+		},
+        {
+            "words" : "Clear the channel. MechWarriors, you have your orders. Let's do this fast and help get everyone out.",
+            "wordsColor" : {
+                "r" : 1,
+                "g" : 1,
+				"b" : 1,
+				"a" : 1
+    	    },
+			"selectedCastDefId" : "castDef_Commander",
 			"emote" : "Default",
 			"audioName" : "NONE",
 			"cameraFocusGuid" : "",

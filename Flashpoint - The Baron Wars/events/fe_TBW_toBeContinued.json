@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "fe_TBW_toBeContinued",
         "Name" : "To Be Continued",
-        "Details" : "Congratulations...!\r\n\r\nIf you're seeing this you have entered into the dark machinations and intrigue of the Indri Consortium, the mysterious Mr. Smith and his 'Fixer'and survived...so far.\r\n\r\nYou have rescued a Countess and a Governor, several tons of top quality beef, made several enemies and fostered Allies and made a little money along the way.\r\n\r\nThis is just a pause in the frantic pace of what is 'The Baron's War' and I hope you'll be here to the end.\r\n\r\nBe on the lookout for the continuation... 'Operation Deep Strike'.",
+        "Details" : "Congratulations...!\r\n\r\nIf you're seeing this you have entered into the dark machinations and intrigue of the Indri Consortium, the mysterious Mr. Smith and his 'Fixer' and... survived... so far.\r\n\r\nYou have rescued a Countess and a Governor plus several tons of top quality beef, made several enemies, fostered Allies and made a little money along the way.\r\n\r\nThis is just a pause in the frantic pace of what is 'The Baron's War' and I hope you'll be here to the end.\r\n\r\nBe on the lookout for the continuation... 'Operation Deep Strike'.",
         "Icon" : "uix_TxrSpot_ToBeContinued.png"
     },
     "Scope" : "Company",
@@ -29,8 +29,8 @@
         {
             "Description" : {
                 "Id" : "outcome_0",
-                "Name" : "To Be Continued",
-                "Details" : "To Be Continued",
+                "Name" : "Acknowledgements",
+                "Details" : "Acknowledgements",
                 "Icon" : null
             },
             "RequirementList" : [],
@@ -39,7 +39,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Continue...",
-                        "Details" : "This Flashpoint it a collaberation of many people. Fisrt and foremost XyerX for a wonderful remastering of the HBS BattleTech game, , FrostRaptor who provided Contract launching flexibility and the modding community as whole. If I have miss mentioning any one specific it is totally my omission. I don't get a lot of space in here to type stuff.\r\n\r\nXeryX for XAI - Battletech.\r\nCwolf, for his amazing Mission Control, Extended Conversation and ConverseteK and patience to answer my stupid questions.\r\nFrostRaptor for his Utilities and Maprandomizer\r\nAmechwarrior - who first encouraged me to see what else is possible.\r\n.\r\n.\r\n.\r\n.\r\n.\r\nI don't have enough room to mention you all - but you know.\r\n\r\nTo Tex of the BPL - The 'voice' of the Innershpere - I salute you.\r\n\r\nAnd finally, those who are reading this - you, who have spent your valuable time playing my Flashpoints, I hope you find them enjoyable and challenging. \r\n\r\nHang on, as the ride is not yet over.",
+                        "Details" : "Acknowledgements foremost for XyerX for a wonderful remastering of the HBS BattleTech game and especially for waking the AI and also, for his continual insistance for attention to detail.\r\n\r\nFor FrostRaptor who provided the Contract launching flexibility that brings the actual pace of a 'Flashpoint' to life.\r\n\r\nFor CWolf's patience in helping me research the inner workings of the BT code base. If I miss mentioning any one person or group specifically, it is not intentional and totally my omission as I don't get a lot of space in here to type stuff.\r\n\r\nAcknolegdments.\r\nHBS Battletech.\r\nCwolf - Mission Control, Extended Conversation and ConverseteK\r\nFrostRaptor - IRBTModUtils and Maprandomizer\r\nAmechwarrior - who ignited my Flashpoint creation.\r\nTo Tex of the BPL - The 'voice' of the Innershpere - I salute you.\r\n\r\nAnd finally, to those who are reading this - you, who have spent your valuable time\r\n\r\nplaying our Flashpoints. We hope you find them enjoyable and challenging.\r\n\r\nGrab the 'Bash Bars' and Hang on, as the ride is not yet over.",
                         "Icon" : null
                     },
                     "Weight" : 100,

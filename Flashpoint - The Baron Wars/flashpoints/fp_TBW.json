@@ -17,7 +17,7 @@
                 "tagSetSourceFile" : ""
             },
             "ExclusionTags" : {
-                "items" : ["TBW_CANCELLED","flashpoint_TBW_complete"],
+                "items" : ["flashpoint_TBW_complete","flashpoint_TBW_failure"],
                 "tagSetSourceFile" : "Tags/CompanyTags"
             },
             "RequirementComparisons" : []

@@ -201,7 +201,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "4e1739df-5cea-4ae8-8b98-2c3253e5b997"
             },
-            "title" : "A.Fixers Team Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
+            "title" : "Destroy the Attacking Fixers Team.",
             "description" : "",
             "isPrimary" : false,
             "OnSuccessResults" : [{"Scope" : "Company",
@@ -228,7 +228,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "c02cca7e-6e2c-4a3d-beb0-f9af713a466f"
             },
-            "title" : "B.Fixer Destroy the {TEAM_TAR.FactionDef.Demonym} Attackers",
+            "title" : "Take 'The Fixer' down once and for all.",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [{"Scope" : "Company",
@@ -399,7 +399,7 @@
             "objective" : {
                 "EncounterObjectGuid" : "3c3c1340-1c98-40f3-b7d3-14e187100d40"
             },
-            "title" : "B.Destroy the {TEAM_TAR.FactionDef.Demonym} F.O.B. Defenders",
+            "title" : "Destroy the {TEAM_TAR.FactionDef.Demonym} F.O.B. Defenders",
             "description" : "",
             "isPrimary" : true,
             "OnSuccessResults" : [],
@@ -1133,7 +1133,7 @@
             },
             "title" : "Friendly {TEAM_EMP.FactionDef.Demonym} Lance Must Survive",
             "description" : "",
-            "isPrimary" : true,
+            "isPrimary" : false,
             "OnSuccessResults" : [],
             "OnFailureResults" : [],
             "OnSuccessDialogueGUID" : "",
@@ -1218,7 +1218,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "69597849-d745-4750-bb0f-01e4df493c6d"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [],
             "requirementList" : []
         },
@@ -1245,7 +1245,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "ef0a0d81-445a-42a5-946d-58aa9765c2d9"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Destroy Lance Defenders Chunk Group"
             ],
@@ -1256,7 +1256,7 @@
             "encounterChunk" : {
                 "EncounterObjectGuid" : "980d31ca-5d9a-4dae-a1a5-bf02400fd5ee"
             },
-            "enableChunkFromContract" : false,
+            "enableChunkFromContract" : true,
             "controlledByContractChunkGroupList" : [
                 "Destroy Lance Defenders Chunk Group"
             ],
@@ -1818,7 +1818,7 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "Clear these F.O.B. scouts or it'll be raining rocket before you know it. And I don't want to get wet today.",
+                    "words" : "Clear these F.O.B. scouts or it'll be raining rockets before you know it. And I don't want to get wet today.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
@@ -2805,14 +2805,14 @@
             "overrideDialogueBucketId" : "",
             "dialogueContent" : [
                 {
-                    "words" : "We're still going to be thin on the ground so let's keep the main objective in mind. Level the enemies FOB.",
+                    "words" : "The Glory of the Sister's of Battle, the Gatherers of the brave Fallen will be sung about for time immemorial.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_Commander",
+                    "selectedCastDefId" : "castDef_valkyrieLeader",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2821,14 +2821,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Commander {Commander.LastName}, I'd suggest shooting at range due to the expected turrets.",
+                    "words" : "They really do take this to heart.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_MagRep",
+                    "selectedCastDefId" : "castDef_TeamPilot_Random_2",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2837,14 +2837,14 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Not our first rodeo Amalia, We can handle it from here.",
+                    "words" : "Helene, I thank you for answering my call. Any offering price I would gladly pay to protect home and hearth.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_DariusDefault",
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -2853,14 +2853,30 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "Well, as long as we have power we can keep August in stasis but, don't dawdle Commander.",
+                    "words" : "Lady Rothall D'Froness, by your actions your family has already been written into the ledger of the hall.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,
                         "b" : 1,
                         "a" : 1
                     },
-                    "selectedCastDefId" : "castDef_MagRep",
+                    "selectedCastDefId" : "castDef_valkyrieLeader",
+                    "emote" : "Default",
+                    "audioName" : "NONE",
+                    "cameraFocusGuid" : "",
+                    "cameraDistance" : "Far",
+                    "cameraHeight" : "Default",
+                    "revealRadius" : -1
+                },
+                {
+                    "words" : "Sisters, be a shining light to all who fall in battle this day.",
+                    "wordsColor" : {
+                        "r" : 1,
+                        "g" : 1,
+                        "b" : 1,
+                        "a" : 1
+                    },
+                    "selectedCastDefId" : "castDef_theDaughter",
                     "emote" : "Default",
                     "audioName" : "NONE",
                     "cameraFocusGuid" : "",
@@ -3449,7 +3465,7 @@
                     "EncounterObjectGuid" : "3a5b4e72-3004-4113-aa92-b9527d7fcf35"
                 },
                 "name" : "Lance_Employer_Reinforcements",
-                "lanceDefId" : "lancedef_theBaron_AL_Escort2",
+                "lanceDefId" : "lancedef_TBW_theCountessEscort",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -3471,7 +3487,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "a30c5905-082e-49e1-af49-e1e690b62884"
                         },
-                        "customUnitName" : "EMPReo1",
+                        "customUnitName" : "Herja",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -3504,7 +3520,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "d5cc9c1f-23c6-4fbc-8ce9-e2320ca662ad"
                         },
-                        "customUnitName" : "EMPReo2",
+                        "customUnitName" : "Hildr",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -3537,7 +3553,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "4f9a0c9b-b696-4c6a-a498-8c176d046620"
                         },
-                        "customUnitName" : "EMPReo3",
+                        "customUnitName" : "Róta",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -3570,7 +3586,7 @@
                         "unitSpawnPoint" : {
                             "EncounterObjectGuid" : "cc965732-8fba-4a6e-ad8c-95f15901e48f"
                         },
-                        "customUnitName" : "EMPReo4",
+                        "customUnitName" : "Hrund",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
                         "unitDefId" : "mechDef_InheritLance",
@@ -4398,7 +4414,7 @@
                     "EncounterObjectGuid" : "6011aa41-189c-4091-bd0d-b5146857b990"
                 },
                 "name" : "Lance_Enemy_Defenders_Secondary",
-                "lanceDefId" : "",
+                "lanceDefId" : "lancedef_mech_d5_IC_LightScout",
                 "lanceTagSet" : {
                     "items" : [],
                     "tagSetSourceFile" : "tags/LanceTags"
@@ -4423,7 +4439,7 @@
                         "customUnitName" : "EnDefSec1",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "MechDef_None",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -4433,7 +4449,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "",
@@ -4456,7 +4472,7 @@
                         "customUnitName" : "EnDefSec2",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "MechDef_None",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -4466,7 +4482,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "",
@@ -4489,7 +4505,7 @@
                         "customUnitName" : "EnDefSec3",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "MechDef_None",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -4522,7 +4538,7 @@
                         "customUnitName" : "EnDefSec4",
                         "customHeraldryDefId" : "",
                         "unitType" : "Mech",
-                        "unitDefId" : "MechDef_None",
+                        "unitDefId" : "mechDef_InheritLance",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -4532,7 +4548,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
@@ -4908,7 +4924,7 @@
                             "tagSetSourceFile" : "tags/UnitTags"
                         },
                         "spawnEffectTags" : {
-                            "items" : [],
+                            "items" : ["spawn_poorly_maintained_75"],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
                         "pilotDefId" : "pilotDef_InheritLance",
