@@ -4,7 +4,7 @@
 
     "Version": "TBW-1.2.4-PreRelease",
 	
-    "Author": "Mal-D",
+    "Author": "Mal-D, Xeryx",
 
 	"DependsOn": [ "XAI", "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ],
 	"OptionallyDependsOn": [ "ColourfulFlashPoints" ,"MapRandomizer" , "IRBTModUtils"  ],
