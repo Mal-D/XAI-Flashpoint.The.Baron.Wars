@@ -2,12 +2,12 @@
     "Name": "FlashPoint_TheBaronWars",
     "Enabled": true,
 
-    "Version": "TBW-1.3.0-Release",
+    "Version": "TBW-1.3.1-Release",
 	
     "Author": "Mal-D, Xeryx",
 
-	"DependsOn": [ "XAI", "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ],
-	"OptionallyDependsOn": [ "ColourfulFlashPoints" ,"MapRandomizer" , "IRBTModUtils"  ],
+	"DependsOn": [ "XAI Battle Pack 3025", "ExtendedConversations", "Mission Control" ],
+	"OptionallyDependsOn": [ "ColourfulFlashPoints" , "IRBTModUtils"  ],
     "ConflictsWith": [],
 	
 	"DataAddendumEntries":[ 
@@ -20,7 +20,7 @@
 	{ "Type": "ContractOverride", "Path": "contracts" }, 
 	{ "Type": "LanceDef" , "Path": "lances", "AddToDB": true },
 	{ "Type": "SimGameEventDef", "Path": "events" },
-	{ "Type": "FactionDef",  "Path": "factions/tbw" },
+	{ "Type": "FactionDef",  "Path": "factions" },
 	{ "Type": "FlashpointDef", "Path": "flashpoints" },
 	{ "Type": "SimGameMilestoneSet", "Path": "milestoneSets" },
 	{ "Type": "ConversationContent", "Path": "dialogue_buckets"},
@@ -28,7 +28,6 @@
 	{ "Type": "SimGameStatDescDef", "Path": "SimGameStatDesc", "AddToDB": true },
 	{ "Type": "HeraldryDef", "Path": "heraldry" },
 	{ "Type": "PilotDef", "Path": "newPilot", "AddToDB": true },
-	{ "Type": "PilotDef", "Path": "newPilot/tbw", "AddToDB": true },
 	{ "Type": "BaseDescriptionDef", "Path": "lore" },
 	{ "Type": "ItemCollectionDef", "Path": "itemCollections" },
 	{ "Type": "SimGameConversations", "Path": "simGameConversations" },

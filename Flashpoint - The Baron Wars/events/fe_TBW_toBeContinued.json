@@ -10,9 +10,7 @@
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
-            "items" : [
-                "flashpoint_TBW_SUCCESSFUL"
-            ],
+            "items" : ["flashpoint_TBW_SUCCESSFUL"],
             "tagSetSourceFile" : ""
         },
         "ExclusionTags" : {
