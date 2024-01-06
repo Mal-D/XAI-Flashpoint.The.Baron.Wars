@@ -1275,7 +1275,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Amazing work Commander {Commander.LastName}. Are you sure you don't a permanent Position in the Magistracy Armed Forces?",
+                            "value" : "Amazing work Commander {Commander.LastName}. Are you sure you don't want a permanent Position in the Magistracy Armed Forces?",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
