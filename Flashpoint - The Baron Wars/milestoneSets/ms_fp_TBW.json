@@ -306,10 +306,10 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Unexpected Loot",
+                            "value" : "Aye Cap'n this will go well in the stable.",
                             "valueConstant" : null,
                             "additionalValues" : [
-                                "Aye Cap'n this will go well in the stable.",
+                                "Unexpected Loot",
                                 "castDef_YangDefault"
                             ]
                         },
@@ -875,7 +875,7 @@
                         },
                         {
                         "Type" : "System_PauseNotification",
-                        "value" : "We need to set the ELF sensors before they arrive... You have two days to re-up as best as possible. Don't fail this one.",
+                        "value" : "We need to set the E.L.F. sensors before they arrive... You have two days to re-up as best as possible. Don't fail this one.",
                         "valueConstant" : null,
                         "additionalValues" : 
                         [
@@ -1275,7 +1275,7 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Amazing work Commander {Commander.LastName}. Are you sure you don't want a permanent Position in the Magistracy Armed Forces?",
+                            "value" : "Amazing work Commander {Commander.LastName}. Are you sure you don't want a permanent position in the Magistracy Armed Forces?",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
@@ -1566,11 +1566,11 @@
                     "Actions" : [
                         {
                             "Type" : "System_PauseNotification",
-                            "value" : "Employment Termination.",
+                            "value" : "Sorry Commander - This is less than the stirling performance we were looking for.",
                             "valueConstant" : null,
                             "additionalValues" : 
                             [
-                            "Sorry Commander - This is less than the stirling performance we were looking for.",
+                            "Employment Termination.",
                             "castDef_anaMaria"
                             ]
                         },
