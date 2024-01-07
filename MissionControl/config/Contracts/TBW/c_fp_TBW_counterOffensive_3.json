@@ -12,8 +12,8 @@
     "EnemyLanceObjectiveNames": [],
     "EnemyLances": [],
     "UseDialogue": true,
-    "DialogueCastDefId": "castDef_theBaron_pilot",
-    "Dialogue": "Let's go my ferocious little <i>Badger</i>. We have a wedding to get to.",
+    "DialogueCastDefId": "castDef_theFixer",
+    "Dialogue": "Oh good you're both here. Missed you first time around but now, it's time to finish what we started.",
     "AllyLanceCount": 1,
     "AllyLances": ["lanceDef_TBW_JebandEl"]
   },
