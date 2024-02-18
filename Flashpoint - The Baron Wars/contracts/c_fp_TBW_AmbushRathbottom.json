@@ -1220,8 +1220,8 @@
                         },
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicleDef_InheritLance",
+                        "unitType" : "",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1234,7 +1234,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
@@ -1410,8 +1410,8 @@
                         },
                         "customUnitName" : "Extraction Team",
                         "customHeraldryDefId" : "",
-                        "unitType" : "Vehicle",
-                        "unitDefId" : "vehicleDef_InheritLance",
+                        "unitType" : "",
+                        "unitDefId" : "",
                         "unitTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/UnitTags"
@@ -1424,7 +1424,7 @@
                             "items" : [],
                             "tagSetSourceFile" : "tags/SpawnEffectTags"
                         },
-                        "pilotDefId" : "pilotDef_InheritLance",
+                        "pilotDefId" : "",
                         "pilotTagSet" : {
                             "items" : [],
                             "tagSetSourceFile" : "tags/PilotTags"
