@@ -22,9 +22,9 @@ This version fixes a stuck vehicle in one mission, a couple of spelling erros an
 
 # Please now READ THIS
 
-The Support Bot for this patch, will ask you for the code word.
+The Support Bot for this version, will ask you for the code word.
 
-This patch re-adds the MapRandomizer MOD - with the gracious permission from the authors @FrostRaptor and T-Bone - The Mod itself doesn't add any player functionality however, it does add significant elements that allow Flashpoint actions that are not normally available and provide for a more immersive game play.
+This this version re-adds the MapRandomizer MOD - with the gracious permission from the authors @FrostRaptor and T-Bone - The Mod itself doesn't add any player functionality however, it does add significant elements that allow Flashpoint actions that are not normally available and provide for a more immersive game play.
 
 The Mod in particular is  
 
