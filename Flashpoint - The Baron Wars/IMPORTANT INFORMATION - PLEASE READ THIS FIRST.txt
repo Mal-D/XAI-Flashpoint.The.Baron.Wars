@@ -1,5 +1,7 @@
 # IMPORTANT INFORMATION - PLEASE READ THIS
 
+Current Version should read TBW-1.3.4-Release
+
 # DO THIS FIRST
 
 ## This Flashpoint folder is to be placed with the other flashPoints.
@@ -28,28 +30,27 @@ The Mod in particular is
 
     MapRandomiser Version: 1.2.0.3
 
-
-The Mod has been supplied in this Flashpoint patch but has been disabled. Supplying it in this state is necessary to prevent a "Map not Found" error and softlocking the game while in Story Mode.
+The Mod has been supplied in this Flashpoint but has been disabled. Supplying it in this state is necessary to prevent a "Map not Found" error and softlocking the game while in Story Mode.
 
 # 1.    Players in Story Campaign Mode
 
 If you are planning playing the Kaema Story Campaign - Use the MODS button on the bottom Left of the Main Screen.
 
-See the image 1.MapRandomizerSetup in this patch.
+See the image 1.MapRandomizerSetup in this installation folder.
  
 Scroll through the list of Mods and make sure there is a 'disabled' Mod called MapRandomizer.
 
-See Image 2.MapRandomizerSetup in this patch - this is normal and you don't need to do any further actions.
+See Image 2.MapRandomizerSetup in this installation folder - this is normal and you don't need to do any further actions.
 
 ### When you have completed the Story Campaign
 
 When you have finished the Story Campaign and you are planning to play the Open Career Mode - Again use the MODS button on the bottom Left of the Main start up game Screen (image 1.MapRandomizerSetup). Scroll through the list of Mods and find the 'disabled' Mod called MapRandomizer and select the square on the left of the entry to enable the mod.
  
-(See Image 3.MapRandomizerSetup in this patch)
+(See Image 3.MapRandomizerSetup in this installation folder)
   
 Click - save and follow the game prompts. (See image 4.MapRandomizerSetup in this patch). Restart the game. Check the Mod list again. The Mod will now be enabled. 
 
-See Image 5.MapRandomizerEnabled in this patch
+See Image 5.MapRandomizerEnabled in this installation folder
 
 # 2. Players jumping straight into Career Mode.    
 
@@ -62,7 +63,7 @@ If you wish to play the Story Campaign at a later date, you will need to set thi
 
 ### ColourfulFlashPoints Mod
 
-While we supply the folder and settings for this mod but you will have to download ColourfulFlashPoints Mod from 
+While we supply the folder and settings for this mod but you will have to download ColourfulFlashPoints Mod from the Author from the following location.
 
     https://github.com/wmtorode/ColourfulFlashPoints
 
@@ -70,9 +71,9 @@ Just replace the original settings file with the one in the folder to see all th
 
 ### WarTech IIc 
 
-This Mod will colour and sort your Missions in the Contracts screen and unfortunately it puts Flashpoint Missions at the bottom of the list. Sorry we are working on re-ordering these so the Flashpoint Mission are given top Priority.
+This Mod will colour and sort your Missions in the Contracts screen and unfortunately it puts Flashpoint Missions at the bottom of the list. We are working on re-ordering these so the Flashpoint Mission are given top Priority.
 
 Code word is 'Enlightened' we will ask you for this code word to know that you have not just skipped to the bottom.
-   
+
 
  
