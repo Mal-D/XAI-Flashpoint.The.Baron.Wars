@@ -2,7 +2,7 @@
    "id" : "castDef_valkyrieLeader",
    "internalName" : "ValkyrieLeader",
    "firstName" : "Helene",
-   "lastName" : "",
+   "lastName" : "Guttormson",
    "callsign" : "Freyja",
    "rank" : "S",
    "gender" : "Female",
@@ -11,7 +11,7 @@
    "showRank" : true,
    "showFirstName" : true,
    "showCallsign" : true,
-   "showLastName" : false,
+   "showLastName" : true,
    "localizeName" : false,
    "defaultEmotePortrait" : {
       "emote" : "Default",
