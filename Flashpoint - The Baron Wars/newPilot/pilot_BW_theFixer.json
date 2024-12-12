@@ -6,7 +6,7 @@
         "LastName": "Garvey",
         "Callsign": "Fixer",
         "Gender": "Male",
-        "factionID": "IrukjandiCompany",
+        "factionID": "irukjandiCompany",
         "Age": 35,
         "Details": "Lawrence Garvey, the 'older' of the Garvey Twins, gave up his <i>Wasp</i> to his younger brother when 'offered' employment in the Indiri Consortium. Lawrence is currently seconded to Irukjandi Company, although the leader of the Irukjandi Company has no clue of his actual roll within the Consortium that placed him here. They only took Lawrence for reasons unknown.",
         "Icon": "guiTxrPort_theFixer"

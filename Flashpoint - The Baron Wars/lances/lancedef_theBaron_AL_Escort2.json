@@ -55,39 +55,7 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant"
-				],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"pilotTagSet": {
-				"items": [
-					"pilot_npc_dynamic"
-				],
-				"tagSetSourceFile": "Tags/PilotTags"
-			},
-			"excludedPilotTagSet": {
-				"items": null,
-				"tagSetSourceFile": "Tags/PilotTags"
-			}
-		},
-		{
-			"unitType": "Mech",
-			"unitId": "Tagged",
-			"pilotId": "Tagged",
-			"unitTagSet": {
-				"items": [
-					"unit_mech",
-					"unit_medium",
-					"unit_jumpOK",
-					"unit_support"
-				],
-				"tagSetSourceFile": "Tags/UnitTags"
-			},
-			"excludedUnitTagSet": {
-				"items": [
-					"unit_noncombatant"
-				],
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {
@@ -114,9 +82,34 @@
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
+				"items": [],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"pilotTagSet": {
 				"items": [
-					"unit_noncombatant"
+					"pilot_npc_dynamic"
 				],
+				"tagSetSourceFile": "Tags/PilotTags"
+			},
+			"excludedPilotTagSet": {
+				"items": null,
+				"tagSetSourceFile": "Tags/PilotTags"
+			}
+		},
+		{
+			"unitType": "Mech",
+			"unitId": "Tagged",
+			"pilotId": "Tagged",
+			"unitTagSet": {
+				"items": [
+					"unit_mech",
+					"unit_medium",
+					"unit_indirectFire"
+				],
+				"tagSetSourceFile": "Tags/UnitTags"
+			},
+			"excludedUnitTagSet": {
+				"items": [],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"pilotTagSet": {

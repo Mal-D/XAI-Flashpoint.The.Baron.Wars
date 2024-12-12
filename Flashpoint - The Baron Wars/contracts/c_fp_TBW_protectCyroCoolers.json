@@ -462,7 +462,7 @@
                     "revealRadius" : -1
                 },
                 {
-                    "words" : "If needs be... yes! {MC.PlayerLances.TeamPilot_Random_2.DisplayName} we are paid tp protect the base, keep the buildings upright, or you don't get paid. If you have a beef with that, then I can ask Darius to void your Contract.",
+                    "words" : "If needs be... yes! {MC.PlayerLances.TeamPilot_Random_2.DisplayName} we are paid to protect the base, keep the buildings upright, or you don't get paid. If you have a beef with that, then I can ask Darius to void your Contract.",
                     "wordsColor" : {
                         "r" : 1,
                         "g" : 1,

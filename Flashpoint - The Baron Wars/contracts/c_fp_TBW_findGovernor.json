@@ -3332,7 +3332,7 @@
         },
         "teamGuid" : "31151ed6-cfc2-467e-98c4-9ae5bea784cf",
         "teamName" : "TargetsAllyTeam",
-        "faction": "IndriConsortium",
+        "faction": "indriConsortium", 
 		"teamLeaderCastDefId": "castDef_CabalD",
         "lanceOverrideList" : [
             {

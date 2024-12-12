@@ -37,7 +37,7 @@
 		},
 		{
 			"unitType": "Mech",
-			"unitId": "mechdef_catapult_CPLT-C1",
+			"unitId": "mechdef_trebuchet_TBT-5J",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [],
@@ -58,7 +58,7 @@
 		},
 		{
 			"unitType": "Mech",
-			"unitId": "mechdef_catapult_CPLT-C1",
+			"unitId": "mechdef_trebuchet_TBT-5J",
 			"pilotId": "Tagged",
 			"unitTagSet": {
 				"items": [],
