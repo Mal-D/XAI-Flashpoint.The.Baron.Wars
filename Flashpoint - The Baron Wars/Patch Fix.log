@@ -1,0 +1,16 @@
+Patch Fix 
+        modified:   Flashpoint - The Baron Wars/cast/castDef_theDaughter.json
+        modified:   Flashpoint - The Baron Wars/contracts/c_fp_TBW_findGovernor.json
+        modified:   Flashpoint - The Baron Wars/contracts/c_fp_TBW_protectCyroCoolers.json
+        modified:   Flashpoint - The Baron Wars/events/fe_TBW_toBeContinued.json
+        modified:   Flashpoint - The Baron Wars/heraldry/heraldrydef_antianLanciarii.json
+        modified:   Flashpoint - The Baron Wars/heraldry/heraldrydef_indriConsortium.json
+        modified:   Flashpoint - The Baron Wars/lances/lancedef_pullingTeeth_Ambushers.json
+        modified:   Flashpoint - The Baron Wars/lances/lancedef_theBaron_AL_Escort2.json
+        modified:   Flashpoint - The Baron Wars/newPilot/pilot_BW_theFixer.json
+        modified:   Flashpoint - The Baron Wars/simGameConversations/9ca8d6eb4a2a3934151aaafb.convo.bytes
+        modified:   Flashpoint - The Baron Wars/simGameConversations/9cead891647debd383adaaa5.convo.bytes
+Clean up
+        deleted:    Flashpoint - The Baron Wars/sprites/Portraits/theCountess.pdn
+        deleted:    Flashpoint - The Baron Wars/sprites/Portraits/theCountess_2.pdn
+        deleted:    Flashpoint - The Baron Wars/sprites/uixTxrSpot_anaMarieTransmission.pdn
